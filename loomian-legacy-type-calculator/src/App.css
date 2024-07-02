@@ -1,0 +1,81 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.App {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #666;
+}
+
+.loomian-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.loomian {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.loomian div {
+  margin: 0 10px;
+}
+
+select {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.result {
+  margin-left: 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.team-effects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-weaknesses,
+.team-resistances,
+.unresisted-types {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.team-weaknesses h2,
+.team-resistances h2,
+.unresisted-types h2 {
+  margin-bottom: 10px;
+}
