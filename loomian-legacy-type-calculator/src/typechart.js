@@ -16,8 +16,7 @@ const typeChart = {
     Spirit: { Fire: 1, Water: 1, Plant: 1, Light: 2, Dark: 0.5, Ice: 1, Electric: 0.5, Air: 1, Bug: 1, Earth: 1, Toxic: 0.5, Metal: 1, Ancient: 2, Spirit: 2, Brawler: 0, Mind: 1, Simple: 0.5  },
     Brawler: { Fire: 1, Water: 1, Plant: 1, Light: 1, Dark: 1, Ice: 0.5, Electric: 1, Air: 2, Bug: 0.5, Earth: 1, Toxic: 2, Metal: 1, Ancient: 1, Spirit: 2, Brawler: 1, Mind: 2, Simple: 1 },
     Mind: { Fire: 1, Water: 1, Plant: 1, Light: 0.5, Dark: 2, Ice: 1, Electric: 1, Air: 1, Bug: 2, Earth: 1, Toxic: 1, Metal: 1, Ancient: 1, Spirit: 2, Brawler: 0.5, Mind: 0.5, Simple: 1  },
-    Simple: { Fire: 1, Water: 1, Plant: 1, Light: 1, Dark: 1, Ice: 1, Electric: 1, Air: 1, Bug: 1, Earth: 1, Toxic: 1, Metal: 1, Ancient: 1, Spirit: 1, Brawler: 2, Mind: 2, Simple: 1  },
-    // Add the rest of the types here
+    Simple: { Fire: 1, Water: 1, Plant: 1, Light: 1, Dark: 1, Ice: 1, Electric: 1, Air: 1, Bug: 1, Earth: 1, Toxic: 1, Metal: 1, Ancient: 1, Spirit: 1, Brawler: 2, Mind: 2, Simple: 1  }
 };
 
 export default typeChart;
