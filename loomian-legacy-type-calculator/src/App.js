@@ -28,21 +28,25 @@ function App() {
     const calculateResults = () => {
         const newResults = loomians.map((loomian) => {
             let combinedEffects = {};
-
+    
             if (loomian.primaryType !== 'None') {
                 const primaryWeaknesses = typeChart[loomian.primaryType] || {};
                 for (const [type, effectiveness] of Object.entries(primaryWeaknesses)) {
-                    combinedEffects[type] = (combinedEffects[type] || 1) * effectiveness;
+                    combinedEffects[type] = effectiveness;
                 }
             }
-
+    
             if (loomian.secondaryType !== 'None') {
                 const secondaryWeaknesses = typeChart[loomian.secondaryType] || {};
                 for (const [type, effectiveness] of Object.entries(secondaryWeaknesses)) {
-                    combinedEffects[type] = (combinedEffects[type] || 1) * effectiveness;
+                    if (effectiveness === 0 || combinedEffects[type] === 0) {
+                        combinedEffects[type] = 0;
+                    } else {
+                        combinedEffects[type] = (combinedEffects[type] || 1) * effectiveness;
+                    }
                 }
             }
-
+    
             let weaknessesText = 'Weaknesses:<br>';
             let resistancesText = 'Resistances:<br>';
             for (const [type, effectiveness] of Object.entries(combinedEffects)) {
@@ -54,9 +58,9 @@ function App() {
             }
             return { weaknesses: weaknessesText, resistances: resistancesText, combinedEffects };
         });
-
+    
         setResults(newResults);
-
+    
         // Calculate team weaknesses and resistances
         const typeCount = {};
         newResults.forEach((result) => {
@@ -68,18 +72,18 @@ function App() {
                 }
             }
         });
-
+    
         const teamWeaknessesArray = Object.entries(typeCount)
             .filter(([type, count]) => count > 0)
             .map(([type, count]) => `${type}: ${count}x`);
-
+    
         const teamResistancesArray = Object.entries(typeCount)
             .filter(([type, count]) => count < 0)
             .map(([type, count]) => `${type}: ${count}x`);
-
+    
         setTeamWeaknesses(teamWeaknessesArray);
         setTeamResistances(teamResistancesArray);
-
+    
         // Calculate unresisted types
         const resistedTypes = {};
         newResults.forEach((result) => {
@@ -89,10 +93,10 @@ function App() {
                 }
             }
         });
-
+    
         const updatedUnresistedTypes = allTypes.filter((type) => type !== 'None' && !resistedTypes[type]);
         setUnresistedTypes(updatedUnresistedTypes);
-
+    
         // Calculate recommendations
         const recommendationsArray = allTypes.slice(1).map((type, index) => {
             let rating = 0;
@@ -104,9 +108,9 @@ function App() {
             });
             return { type, rating };
         }).sort((a, b) => b.rating - a.rating);
-
+    
         setRecommendations(recommendationsArray);
-    };
+    };    
 
     return (
         <div className="App">
