@@ -139,7 +139,6 @@ function App() {
                                 value={loomian.secondaryType}
                                 onChange={(e) => handleTypeChange(index, 'secondaryType', e.target.value)}
                             >
-                                <option value="None">None</option>
                                 {allTypes.map((type) => (
                                     <option key={type} value={type}>
                                         {type}
