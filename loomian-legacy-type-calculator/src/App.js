@@ -1,6 +1,7 @@
 // src/App.js
 import React, { useState } from 'react';
 import typeChart from './typechart';
+import TypeBadge from './typeBadge';
 import './App.css';
 
 const initialLoomians = Array.from({ length: 7 }, () => ({
@@ -47,16 +48,18 @@ function App() {
                 }
             }
     
-            let weaknessesText = 'Weaknesses:<br>';
-            let resistancesText = 'Resistances:<br>';
+            const weaknesses = [];
+            const resistances = [];
+    
             for (const [type, effectiveness] of Object.entries(combinedEffects)) {
                 if (effectiveness > 1) {
-                    weaknessesText += `${type}: ${effectiveness}x<br>`;
+                    weaknesses.push({ type, effectiveness });
                 } else if (effectiveness < 1) {
-                    resistancesText += `${type}: ${effectiveness}x<br>`;
+                    resistances.push({ type, effectiveness });
                 }
             }
-            return { weaknesses: weaknessesText, resistances: resistancesText, combinedEffects };
+    
+            return { weaknesses, resistances, combinedEffects };
         });
     
         setResults(newResults);
@@ -75,11 +78,11 @@ function App() {
     
         const teamWeaknessesArray = Object.entries(typeCount)
             .filter(([type, count]) => count > 0)
-            .map(([type, count]) => `${type}: ${count}x`);
+            .map(([type, count]) => ({ type, count }));
     
         const teamResistancesArray = Object.entries(typeCount)
             .filter(([type, count]) => count < 0)
-            .map(([type, count]) => `${type}: ${count}x`);
+            .map(([type, count]) => ({ type, count }));
     
         setTeamWeaknesses(teamWeaknessesArray);
         setTeamResistances(teamResistancesArray);
@@ -98,10 +101,9 @@ function App() {
         setUnresistedTypes(updatedUnresistedTypes);
     
         // Calculate recommendations
-        const recommendationsArray = allTypes.slice(1).map((type, index) => {
+        const recommendationsArray = allTypes.slice(1).map((type) => {
             let rating = 0;
-            teamWeaknessesArray.forEach((weakness) => {
-                const [weaknessType] = weakness.split(':');
+            teamWeaknessesArray.forEach(({ type: weaknessType }) => {
                 if (typeChart[type][weaknessType] < 1) {
                     rating++;
                 }
@@ -110,7 +112,7 @@ function App() {
         }).sort((a, b) => b.rating - a.rating);
     
         setRecommendations(recommendationsArray);
-    };    
+    };
 
     return (
         <div className="App">
@@ -148,8 +150,18 @@ function App() {
                         </div>
                     </div>
                     <div className="results">
-                        <div className="result" dangerouslySetInnerHTML={{ __html: results[index]?.weaknesses }}></div>
-                        <div className="result" dangerouslySetInnerHTML={{ __html: results[index]?.resistances }}></div>
+                        <div className="result">
+                            <div>Weaknesses:</div>
+                            {results[index]?.weaknesses.map(({ type, effectiveness }, i) => (
+                                <TypeBadge key={i} type={type} text={`${type}: ${effectiveness}x`} />
+                            ))}
+                        </div>
+                        <div className="result">
+                            <div>Resistances:</div>
+                            {results[index]?.resistances.map(({ type, effectiveness }, i) => (
+                                <TypeBadge key={i} type={type} text={`${type}: ${effectiveness}x`} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             ))}
@@ -157,28 +169,34 @@ function App() {
             <div className="team-effects">
                 <div className="team-weaknesses">
                     <h2>Team Weaknesses:</h2>
-                    {teamWeaknesses.map((type, index) => (
-                        <div key={index}>{type}</div>
+                    {teamWeaknesses.map(({ type, count }, index) => (
+                        <TypeBadge key={index} type={type} text={`${type}: ${count}x`} />
                     ))}
                 </div>
                 <div className="team-resistances">
                     <h2>Team Resistances:</h2>
-                    {teamResistances.map((type, index) => (
-                        <div key={index}>{type}</div>
+                    {teamResistances.map(({ type, count }, index) => (
+                        <TypeBadge key={index} type={type} text={`${type}: ${count}x`} />
                     ))}
                 </div>
             </div>
             <div className="unresisted-types">
                 <h2>Unresisted Types:</h2>
                 {unresistedTypes.map((type, index) => (
-                    <div key={index}>{type}</div>
+                    <TypeBadge key={index} type={type} text={type} />
                 ))}
             </div>
             <div className="recommendations">
                 <h2>Recommended Additions:</h2>
                 {recommendations.map(({ type, rating }, index) => (
-                    <div key={index}>{type}: {rating}</div>
+                    <TypeBadge key={index} type={type} text={`${type}: ${rating}`} />
                 ))}
+            </div>
+            <div className="watermark">
+                <a href="https://www.youtube.com/@SergeantShaky" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" className="youtube-icon" />
+                </a>
+                <span>Sergeant Shaky</span>
             </div>
         </div>
     );

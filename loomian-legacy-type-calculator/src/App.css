@@ -1,10 +1,10 @@
 /* src/App.css */
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
   padding: 20px;
   background-color: #f0f0f0;
+  text-align: center;
 }
 
 .App {
@@ -12,6 +12,8 @@ body {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: auto; 
 }
 
 h1 {
@@ -20,6 +22,7 @@ h1 {
 
 h2 {
   color: #666;
+  margin-bottom: 10px;
 }
 
 .loomian-container {
@@ -31,7 +34,6 @@ h2 {
 
 .loomian {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-right: 20px;
 }
@@ -43,17 +45,29 @@ h2 {
 select {
   padding: 10px;
   margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 button {
   padding: 10px 20px;
   margin: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
 }
 
 .results {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: left;
+  margin-top: 10px;
 }
 
 .result {
@@ -64,18 +78,39 @@ button {
 
 .team-effects {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-weaknesses,
 .team-resistances,
 .unresisted-types {
-  flex: 1;
-  margin: 0 10px;
+  margin: 20px 0;
+  text-align: center;
 }
 
-.team-weaknesses h2,
-.team-resistances h2,
-.unresisted-types h2 {
-  margin-bottom: 10px;
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: to give a background color */
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.watermark a {
+  margin-right: 5px;
+}
+
+.youtube-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.watermark span {
+  color: white;
+  font-size: 14px;
 }
