@@ -13,7 +13,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 80%;
-  margin: auto; 
+  margin: auto;
 }
 
 h1 {
@@ -26,8 +26,8 @@ h2 {
 }
 
 .loomian-container {
+  padding-left: 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -35,7 +35,6 @@ h2 {
 .loomian {
   display: flex;
   align-items: center;
-  margin-right: 20px;
 }
 
 .loomian div {
@@ -66,12 +65,12 @@ button:hover {
 .results {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  align-items: center; /* Align items to the start */
   margin-top: 10px;
+  width: 55%; /* Set a fixed width or adjust as needed */
 }
 
 .result {
-  margin-left: 20px;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -80,12 +79,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 
 .team-weaknesses,
 .team-resistances,
 .unresisted-types {
-  margin: 20px 0;
   text-align: center;
 }
 
@@ -95,7 +94,7 @@ button:hover {
   left: 10px;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: to give a background color */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 5px;
   z-index: 1000;

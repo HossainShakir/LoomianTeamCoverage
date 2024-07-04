@@ -9,7 +9,11 @@ const initialLoomians = Array.from({ length: 7 }, () => ({
     secondaryType: 'None',
 }));
 
-const allTypes = ['None', 'Fire', 'Water', 'Plant', 'Light', 'Dark', 'Ice', 'Electric', 'Air', 'Bug', 'Earth', 'Toxic', 'Metal', 'Ancient', 'Spirit', 'Brawler', 'Mind', 'Simple'];
+const allTypes = [
+    'None', 'Fire', 'Water', 'Plant', 'Light', 'Dark', 'Ice', 'Electric',
+    'Air', 'Bug', 'Earth', 'Toxic', 'Metal', 'Ancient', 'Spirit', 'Brawler',
+    'Mind', 'Simple'
+];
 
 function App() {
     const [loomians, setLoomians] = useState(initialLoomians);
@@ -29,14 +33,14 @@ function App() {
     const calculateResults = () => {
         const newResults = loomians.map((loomian) => {
             let combinedEffects = {};
-    
+
             if (loomian.primaryType !== 'None') {
                 const primaryWeaknesses = typeChart[loomian.primaryType] || {};
                 for (const [type, effectiveness] of Object.entries(primaryWeaknesses)) {
                     combinedEffects[type] = effectiveness;
                 }
             }
-    
+
             if (loomian.secondaryType !== 'None') {
                 const secondaryWeaknesses = typeChart[loomian.secondaryType] || {};
                 for (const [type, effectiveness] of Object.entries(secondaryWeaknesses)) {
@@ -47,10 +51,10 @@ function App() {
                     }
                 }
             }
-    
+
             const weaknesses = [];
             const resistances = [];
-    
+
             for (const [type, effectiveness] of Object.entries(combinedEffects)) {
                 if (effectiveness > 1) {
                     weaknesses.push({ type, effectiveness });
@@ -58,12 +62,12 @@ function App() {
                     resistances.push({ type, effectiveness });
                 }
             }
-    
+
             return { weaknesses, resistances, combinedEffects };
         });
-    
+
         setResults(newResults);
-    
+
         // Calculate team weaknesses and resistances
         const typeCount = {};
         newResults.forEach((result) => {
@@ -75,18 +79,18 @@ function App() {
                 }
             }
         });
-    
+
         const teamWeaknessesArray = Object.entries(typeCount)
             .filter(([type, count]) => count > 0)
             .map(([type, count]) => ({ type, count }));
-    
+
         const teamResistancesArray = Object.entries(typeCount)
             .filter(([type, count]) => count < 0)
             .map(([type, count]) => ({ type, count }));
-    
+
         setTeamWeaknesses(teamWeaknessesArray);
         setTeamResistances(teamResistancesArray);
-    
+
         // Calculate unresisted types
         const resistedTypes = {};
         newResults.forEach((result) => {
@@ -96,10 +100,10 @@ function App() {
                 }
             }
         });
-    
+
         const updatedUnresistedTypes = allTypes.filter((type) => type !== 'None' && !resistedTypes[type]);
         setUnresistedTypes(updatedUnresistedTypes);
-    
+
         // Calculate recommendations
         const recommendationsArray = allTypes.slice(1).map((type) => {
             let rating = 0;
@@ -110,8 +114,17 @@ function App() {
             });
             return { type, rating };
         }).sort((a, b) => b.rating - a.rating);
-    
+
         setRecommendations(recommendationsArray);
+    };
+
+    const resetCalculator = () => {
+        setLoomians(initialLoomians);
+        setResults([]);
+        setTeamWeaknesses([]);
+        setTeamResistances([]);
+        setUnresistedTypes(allTypes.slice(1));
+        setRecommendations([]);
     };
 
     return (
@@ -166,6 +179,7 @@ function App() {
                 </div>
             ))}
             <button onClick={calculateResults}>Calculate Results</button>
+            <button onClick={resetCalculator}>Reset</button>
             <div className="team-effects">
                 <div className="team-weaknesses">
                     <h2>Team Weaknesses:</h2>
@@ -203,4 +217,3 @@ function App() {
 }
 
 export default App;
- 
