@@ -1,10 +1,30 @@
-/* src/App.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   background-color: #f0f0f0;
   text-align: center;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+#navbar button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+#navbar button:hover {
+  background-color: #555;
 }
 
 .App {
@@ -26,10 +46,20 @@ h2 {
 }
 
 .loomian-container {
-  padding-left: 20px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px 50px 20px 50px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-team {
+  border: 2px solid #007bff; /* Blue border for main team */
+}
+
+.benched-loomian {
+  border: 2px solid #ff9800; /* Orange border for benched loomians */
 }
 
 .loomian {
@@ -65,9 +95,10 @@ button:hover {
 .results {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align items to the start */
+  align-items: center; 
+  margin-left: 50px;
   margin-top: 10px;
-  width: 55%; /* Set a fixed width or adjust as needed */
+  width:60%;
 }
 
 .result {

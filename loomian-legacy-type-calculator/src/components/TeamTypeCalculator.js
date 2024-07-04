@@ -1,8 +1,7 @@
-// src/App.js
 import React, { useState } from 'react';
-import typeChart from './typechart';
-import TypeBadge from './typeBadge';
-import './App.css';
+import typeChart from '../typechart';
+import TypeBadge from '../typeBadge';
+import '../App.css';
 
 const initialLoomians = Array.from({ length: 7 }, () => ({
     primaryType: 'None',
@@ -15,7 +14,7 @@ const allTypes = [
     'Mind', 'Simple'
 ];
 
-function App() {
+function TeamTypeCalculator() {
     const [loomians, setLoomians] = useState(initialLoomians);
     const [results, setResults] = useState([]);
     const [teamWeaknesses, setTeamWeaknesses] = useState([]);
@@ -131,7 +130,7 @@ function App() {
         <div className="App">
             <h1>Loomian Legacy Type Calculator</h1>
             {loomians.map((loomian, index) => (
-                <div key={index} className="loomian-container">
+                <div key={index} className={`loomian-container ${index < 5 ? 'main-team' : 'benched-loomian'}`}>
                     <div className="loomian">
                         <div>
                             <label htmlFor={`primaryType-${index}`}>Select Primary Type:</label>
@@ -183,28 +182,28 @@ function App() {
             <div className="team-effects">
                 <div className="team-weaknesses">
                     <h2>Team Weaknesses:</h2>
-                    {teamWeaknesses.map(({ type, count }, index) => (
-                        <TypeBadge key={index} type={type} text={`${type}: ${count}x`} />
+                    {teamWeaknesses.map(({ type, count }) => (
+                        <TypeBadge key={type} type={type} text={`${type}: ${count}`} />
                     ))}
                 </div>
                 <div className="team-resistances">
                     <h2>Team Resistances:</h2>
-                    {teamResistances.map(({ type, count }, index) => (
-                        <TypeBadge key={index} type={type} text={`${type}: ${count}x`} />
+                    {teamResistances.map(({ type, count }) => (
+                        <TypeBadge key={type} type={type} text={`${type}: ${Math.abs(count)}`} />
                     ))}
                 </div>
-            </div>
-            <div className="unresisted-types">
-                <h2>Unresisted Types:</h2>
-                {unresistedTypes.map((type, index) => (
-                    <TypeBadge key={index} type={type} text={type} />
-                ))}
-            </div>
-            <div className="recommendations">
-                <h2>Recommended Additions:</h2>
-                {recommendations.map(({ type, rating }, index) => (
-                    <TypeBadge key={index} type={type} text={`${type}: ${rating}`} />
-                ))}
+                <div className="unresisted-types">
+                    <h2>Unresisted Types:</h2>
+                    {unresistedTypes.map((type) => (
+                        <TypeBadge key={type} type={type} text={type} />
+                    ))}
+                </div>
+                <div className="recommendations">
+                    <h2>Recommended Types:</h2>
+                    {recommendations.map(({ type, rating }) => (
+                        <TypeBadge key={type} type={type} text={`${type}: ${rating}`} />
+                    ))}
+                </div>
             </div>
             <div className="watermark">
                 <a href="https://www.youtube.com/@SergeantShaky" target="_blank" rel="noopener noreferrer">
@@ -216,4 +215,4 @@ function App() {
     );
 }
 
-export default App;
+export default TeamTypeCalculator;

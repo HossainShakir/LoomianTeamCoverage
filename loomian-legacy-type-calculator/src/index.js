@@ -1,17 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import TeamTypeCalculator from './components/TeamTypeCalculator';
+import TypeCoverageCalculator from './components/TypeCoverageCalculator';
+import './App.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function renderApp(Component) {
+    ReactDOM.render(<Component />, document.getElementById('root'));
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+document.getElementById('team-type-calculator-btn').addEventListener('click', () => {
+    renderApp(TeamTypeCalculator);
+});
+
+document.getElementById('type-coverage-calculator-btn').addEventListener('click', () => {
+    renderApp(TypeCoverageCalculator);
+});
+
+// Default view
+renderApp(TeamTypeCalculator);
