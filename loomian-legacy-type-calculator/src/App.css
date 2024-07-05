@@ -156,3 +156,25 @@ button:hover {
   border: 1px solid #ccc;
   margin: 5px;
 }
+
+.move-selector {
+  margin: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.search-results {
+  margin: 20px;
+}
+
+.move-selector {
+  margin: 10px;
+}
+
+.move-selector input {
+  width: 200px;
+  padding: 5px;
+}
