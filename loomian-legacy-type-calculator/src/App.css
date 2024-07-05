@@ -144,3 +144,15 @@ button:hover {
   color: white;
   font-size: 14px;
 }
+
+.coverage-results {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coverage-category {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
