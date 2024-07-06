@@ -8,7 +8,27 @@ const loomiansData = [
     // Add more Loomians and their moves here
 ];
 
-const allMoves = ['Move1', 'Move2', 'Move3', 'Move4', 'Move5', 'Move6', 'Move7']; // Example moves
+const allMoves = [
+    'Accelerate', 'Aim', 'Bait', 'Barter', 'Battle Chime', 'Battle Horn', 'Bequeath',
+    'Body Slam', 'Brace', 'Chase Down', 'Climate Cannon', 'Conclusion', 'Dawdle', 'Daydream',
+    'Dissonant Chord', 'Dodge', 'Drudge', 'Ear Slap', 'Eerie Stare', 'Enamor', 'Examine', 
+    'Give Up', 'Gnaw', 'Growl', 'Harmonious Chord', 'Headbutt', 'High-Pitch Screech',
+    'Ill Will', 'Nab', 'Pounce', 'Power Focus', 'Quick Pounce', 'Raging Howl', 'Raging Tackle',
+    'Rainbow Blast', 'Recycle', 'Rejuvenate', 'Repeating Tune', 'Resonate', 'Scapegoat',
+    'Shriek', 'Slash', 'Slumber', 'Spare', 'Spit', 'Spit Out', 'Squawk', 'Stampede', 'Stare',
+    'Stretch', 'Strike', 'Summon', 'Swipe', 'Tail Slap', 'Teamwork', 'Tear Down', 'Tone Barrier',
+    'Tribute', 'Blaze Chomp', 'Blaze Punch', 'Boiling Press', 'Burn Up', 'Eruption', 'Fiery Fondant',
+    'Fire Breath', 'Fire Slam', 'Flaming Kick', 'Flare Blast', 'Heat Wave', 'Hellstorm', 
+    'Kindled Rage', 'Lava Slash', 'Magma Block', 'Magma Burst', 'Pepper Burst', 'Phoenix Flame',
+    'Pyrokinesis', 'Raging Flame', 'Rapid Fire', 'Singe', 'Aqua Jaws', 'Douse', 'Downpour', 
+    'Geyser', 'Headless Rush', 'Hydro Blast', 'Hydro Slash', 'Maroon', 'Marsh Wave', 'Piercing Drive',
+    'Plunge', 'Shell Bash', 'Shell Shrapnel', 'Soft Water', 'Spray', 'Submerge', 'Torrential Slash',
+    'Tsunami', 'Vicious Snap', 'Water Bomb', 'Wave Wrecker', 'Briar Block', 'Bush Whack', 
+    'Carnivorous Snap', 'Coconut Bomb', 'Flora Blast', 'Fungus Curse', 'Harvest', 'Leaf Barrage',
+    'Life Drain', 'Nature\'s Force', 'Nature\'s Rage', 'Petal Pummel', 'Photosynthesis', 
+    'Pine Shot', 'Sap Plant', 'Snore Spores', 'Static Spores', 'Take Root', 'Thistle Slash',
+    
+]; // Example moves
 
 function MovesetSearchCalculator() {
     const [selectedMoves, setSelectedMoves] = useState(Array(4).fill(''));
