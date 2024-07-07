@@ -80,6 +80,45 @@ const loomiansList = [
     { name: 'Craytal', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/craytal.png') },
     { name: 'Craytal-Holiday', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/craytal-holiday.png') },
     { name: 'Krakaloa', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/krakaloa.png') },
+    { name: 'Volkaloa', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/volkaloa.png') },
+    { name: 'Festifir', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/festifir.png') },
+    { name: 'Igneol', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/igneol.png') },
+    { name: 'Chrysite', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/chrysite.png') },
+    { name: 'Obsidrugon', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/obsidrugon.png') },
+    { name: 'Cafnote-Male', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-male.png') },
+    { name: 'Cafnote-Female', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-female.png') },
+    { name: 'Trumbull', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/trumbull.png') },
+    { name: 'Mootune', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/mootune.png') },
+    { name: 'Gobbidemic', primaryType: 'Toxic', secondaryType: 'None', icon: require('../assets/icons/gobbidemic.png') },
+    { name: 'Icigool', primaryType: 'Spirit', secondaryType: 'Ice', icon: require('../assets/icons/icigool.png') },
+    { name: 'Pyramind', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pyramind.png') },
+    { name: 'Pharoglyph', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pharoglyph.png') },
+    { name: 'Burroach', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/burroach.png') },
+    { name: 'Garbantis', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/garbantis.png') },
+    { name: 'Whimpor', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png') },
+    { name: 'Stratusoar', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar.png') },
+    { name: 'Territi', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/territi.png') },
+    { name: 'Dyeborg', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/dyeborg.png') },
+    { name: 'Operaptor', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/operaptor.png') },
+    { name: 'Concredon', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/concredon.png') },
+    { name: 'Tyrecks', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/tyrecks.png') },
+    { name: 'Chompactor', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/chompactor.png') },
+    { name: 'Munchwheel', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/munchwheel.png') },
+    { name: 'Scorb', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/scorb.png') },
+    { name: 'Veylens', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/veylens.png') },
+    { name: 'Gardrone', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/gardrone.png') },
+    { name: 'Poochrol', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/poochrol.png') },
+    { name: 'Hunder', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/hunder.png') },
+    { name: 'Goppie', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/goppie.png') },
+    { name: 'Arapaigo', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/arapaigo.png') },
+    { name: 'Pyke', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/pyke.png') },
+    { name: 'Skelic', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/pyke.png') },
+    { name: 'Zaleo', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/zaleo.png') },
+    { name: 'Joltooth', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/joltooth.png') },
+    { name: 'Dobo', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/dobo.png') },
+    { name: 'Infernix', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/infernix.png') },
+    { name: 'Kyogo', primaryType: 'Ancient', secondaryType: 'Dark', icon: require('../assets/icons/kyogo.png') },
+    { name: 'Dorogo', primaryType: 'Ancient', secondaryType: 'Dark', icon: require('../assets/icons/dorogo.png') },
 ];
 
 function TypeCoverageCalculator() {
@@ -175,7 +214,7 @@ function TypeCoverageCalculator() {
     return (
         <div className="App">
             <h1>Loomian Legacy Type Coverage Calculator</h1>
-            <p>ONLY HAS LOOMIANS #1-#53 ATM. ONLY HERE FOR TESTING PURPOSES.</p>
+            <p>ONLY HAS LOOMIANS #1-#106 ATM. ONLY HERE FOR TESTING PURPOSES.</p>
             {selectedTypes.map((type, index) => (
                 <div key={index} className="type-selector">
                     <label htmlFor={`type-${index}`}>Select Type {index + 1}:</label>
