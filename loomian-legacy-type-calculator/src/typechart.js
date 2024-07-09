@@ -1,5 +1,5 @@
 // src/typeChart.js
-const typeChart = {
+export const typeChart = {
     Fire: { Fire: 0.5, Water: 2, Plant: 0.5, Light: 1, Dark: 1, Ice: 0.5, Electric: 1, Air: 2, Bug: 0.5, Earth: 2, Toxic: 1, Metal: 0.5, Ancient: 1, Spirit: 1, Brawler: 1, Mind: 1, Simple: 1 },
     Water: { Fire: 0.5, Water: 0.5, Plant: 2, Light: 1, Dark: 1, Ice: 0.5, Electric: 2, Air: 1, Bug: 1, Earth: 1, Toxic: 2, Metal: 0.5, Ancient: 1, Spirit: 1, Brawler: 1, Mind: 1, Simple: 1  },
     Plant: { Fire: 2, Water: 0.5, Plant: 0.5, Light: 0, Dark: 2, Ice: 2, Electric: 0.5, Air: 1, Bug: 2, Earth: 0.5, Toxic: 2, Metal: 1, Ancient: 1, Spirit: 1, Brawler: 1, Mind: 1, Simple: 1  },
@@ -17,6 +17,28 @@ const typeChart = {
     Brawler: { Fire: 1, Water: 1, Plant: 1, Light: 1, Dark: 1, Ice: 0.5, Electric: 1, Air: 2, Bug: 0.5, Earth: 1, Toxic: 2, Metal: 1, Ancient: 1, Spirit: 2, Brawler: 1, Mind: 2, Simple: 1 },
     Mind: { Fire: 1, Water: 1, Plant: 1, Light: 0.5, Dark: 2, Ice: 1, Electric: 1, Air: 1, Bug: 2, Earth: 1, Toxic: 1, Metal: 1, Ancient: 1, Spirit: 2, Brawler: 0.5, Mind: 0.5, Simple: 1  },
     Simple: { Fire: 1, Water: 1, Plant: 1, Light: 1, Dark: 1, Ice: 1, Electric: 1, Air: 1, Bug: 1, Earth: 1, Toxic: 1, Metal: 1, Ancient: 1, Spirit: 1, Brawler: 2, Mind: 2, Simple: 1  }
+};
+
+export const specialTypeCharts = {
+    TotalEclipse: { Light: 0, Dark: 0 },
+    CoursingVenom: { Toxic: 0 },
+    Woodsman: { Plant: 0 },
+    Prismatic: { Light: 0 },
+    LightningRod: { Electric: 0 },
+    Insulated: { Ice: 0.5, Fire: 0.5},
+    NoxiousWeeds: {Plant: 0},
+    Combustible: {Fire: 0},
+    ToxicFilter: { Toxic: 0 },
+    AquaBody: { Fire: 0.5 },
+    HardCandy: { Water: 2 },
+    FanningFlame: { Air: 0.5 },
+    Hydrate: { Water: 0 },
+    Wholesome: {Brawler: 0.5, Mind: 0.5 },
+    Sponge: { Water: 0 },
+    Reflective: { Light: 0 },
+    HydroVortex: { Water: 0 },
+    RagingFire: {Fire: 0},
+    Rechargeable: { Electric: 0 },
 };
 
 export default typeChart;
