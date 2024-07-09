@@ -466,7 +466,6 @@ function TypeCoverageCalculator() {
     return (
         <div className="App">
             <h1>Loomian Legacy Type Coverage Calculator</h1>
-            <p>MISSING SOULBURSTS AND ABILITIES BUT OTHERWISE ALL LOOMIANS ADDED. ONLY HERE FOR TESTING PURPOSES.</p>
             {selectedTypes.map((type, index) => (
                 <div key={index} className="type-selector">
                     <label htmlFor={`type-${index}`}>Select Type {index + 1}:</label>
