@@ -8,7 +8,7 @@ const loomiansData = [
             "Pounce", "Growl", "Singe", "Burrow", "Ear Slap", "Hop Kick", 
             "Fire Slam", "Power Focus", "Flaming Kick", "Barbs", "Body Crash", 
             "Boiling Press", "Chase Down", "Drudge", "Fire Breath", "Mega Punch", 
-            "Raging Flame", "Slap Down", "Bait", "Dodge", "Fire Breath"
+            "Raging Flame", "Slap Down", "Bait", "Dodge", "Fire Breath", "Preemptive Strike"
         ]
     },
     {
@@ -18,7 +18,7 @@ const loomiansData = [
             "Barbs", "Body Crash", "Boiling Press", "Chase Down", "Drudge",
             "Fire Breath", "Mega Punch", "Raging Flame", "Slap Down", "Bait",
             "Bulk Up", "Dodge", "Fire Breath", "Pounce", "Growl", "Singe",
-            "Burrow", "Ear Slap"
+            "Burrow", "Ear Slap", "Preemptive Strike"
         ]
     },
     {
@@ -29,7 +29,7 @@ const loomiansData = [
             "Fire Breath", "Mega Punch", "Raging Flame", "Slap Down", "Bait",
             "Bulk Up", "Dodge", "Fire Breath", "Pounce", "Growl", "Singe",
             "Burrow", "Ear Slap", "Rapid Fire", "Hop Kick", "Fire Slam",
-            "Power Focus"
+            "Power Focus", "Preemptive Strike"
         ]
     },
     {
