@@ -204,9 +204,26 @@ export const loomiansData = [
             "Quick Punch", "Parasitize", "Bulk Up", "Horn-Dashi", "Body Slam", 
             "Fire Slam", "Barter", "Ill will"
         ] },
-    { name: 'Twittle', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/twittle.png') },
-    { name: 'Paratweet', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/paratweet.png') },
-    { name: 'Avitross', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/avitross.png') },
+    { name: 'Twittle', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/twittle.png'),
+        moves: [
+            "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
+            "Cyclone Slam", "Perch", "Slash", "Accelerate", "Air Blade", "Body Slam",
+            "Brawn Boost", "Rogue Assault", "Sharpen", "Thunder Crash", "Dodge"
+        ] },
+    { name: 'Paratweet', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/paratweet.png'),
+        moves: [
+            "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
+            "Cyclone Slam", "Perch", "Slash", "Accelerate", "Air Blade", "Body Slam",
+            "Brawn Boost", "Rogue Assault", "Sharpen", "Thunder Crash", "Dodge",
+            "Scavenge", "Driving Force"
+        ] },
+    { name: 'Avitross', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/avitross.png'),
+        moves: [
+            "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
+            "Cyclone Slam", "Perch", "Slash", "Accelerate", "Air Blade", "Body Slam",
+            "Brawn Boost", "Rogue Assault", "Sharpen", "Thunder Crash", "Dodge",
+            "Scavenge", "Driving Force", "Nosedive"
+        ] },
     { name: 'Pyder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png') },
     { name: 'Pyder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'), specialTypeChart: 'CoursingVenom' },
     { name: 'Swolder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png') },

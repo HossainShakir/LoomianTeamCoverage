@@ -157,6 +157,18 @@ button:hover {
   margin: 5px;
 }
 
+@media (max-width: 916px) {
+  .App {
+    zoom: 75%;
+  }
+}
+
+@media (max-width: 704px) {
+  .App {
+    zoom: 50%;
+  }
+}
+
 .move-selector {
   margin: 10px;
 }
