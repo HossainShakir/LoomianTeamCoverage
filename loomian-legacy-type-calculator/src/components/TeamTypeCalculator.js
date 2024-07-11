@@ -128,7 +128,7 @@ function TeamTypeCalculator() {
 
     return (
         <div className="App">
-            <h1>Loomian Legacy Type Calculator</h1>
+            <h1>Loomian Legacy Team Type Calculator</h1>
             {loomians.map((loomian, index) => (
                 <div key={index} className={`loomian-container ${index < 5 ? 'main-team' : 'benched-loomian'}`}>
                     <div className="loomian">

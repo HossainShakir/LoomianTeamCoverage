@@ -178,3 +178,17 @@ button:hover {
   width: 200px;
   padding: 5px;
 }
+
+.checkbox-container {
+  display: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-input {
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  font-size: 16px;
+}

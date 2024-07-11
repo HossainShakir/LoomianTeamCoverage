@@ -369,12 +369,17 @@ function TypeCoverageCalculator() {
         noEffect: []
     });
     const [error, setError] = useState('');
+    const [excludeParentheses, setExcludeParentheses] = useState(false); // New state for checkbox
 
     const handleTypeChange = (index, value) => {
         const updatedTypes = selectedTypes.map((type, i) =>
             i === index ? value : type
         );
         setSelectedTypes(updatedTypes);
+    };
+
+    const handleCheckboxChange = (e) => {
+        setExcludeParentheses(e.target.checked);
     };
 
     const calculateCoverage = () => {
@@ -390,7 +395,7 @@ function TypeCoverageCalculator() {
             });
             return;
         }
-    
+
         setError('');
         const results = {
             superEffective: [],
@@ -398,10 +403,14 @@ function TypeCoverageCalculator() {
             notVeryEffective: [],
             noEffect: []
         };
-    
+
         loomiansList.forEach(loomian => {
+            if (excludeParentheses && loomian.name.includes('(')) {
+                return; // Skip Loomians with parentheses if checkbox is checked
+            }
+
             let combinedEffects = {};
-    
+
             // Calculate using primary and secondary types
             if (loomian.primaryType !== 'None') {
                 const primaryWeaknesses = typeChart[loomian.primaryType] || {};
@@ -409,7 +418,7 @@ function TypeCoverageCalculator() {
                     combinedEffects[attackType] = effectiveness;
                 }
             }
-    
+
             if (loomian.secondaryType !== 'None') {
                 const secondaryWeaknesses = typeChart[loomian.secondaryType] || {};
                 for (const [attackType, effectiveness] of Object.entries(secondaryWeaknesses)) {
@@ -420,7 +429,7 @@ function TypeCoverageCalculator() {
                     }
                 }
             }
-    
+
             // Adjust with special type chart if available
             if (loomian.specialTypeChart && specialTypeCharts[loomian.specialTypeChart]) {
                 const specialWeaknesses = specialTypeCharts[loomian.specialTypeChart];
@@ -432,12 +441,12 @@ function TypeCoverageCalculator() {
                     }
                 }
             }
-    
+
             const isSuperEffective = selectedTypesFiltered.some(type => combinedEffects[type] > 1);
             const isNormalEffectiveness = selectedTypesFiltered.some(type => combinedEffects[type] === 1 || combinedEffects[type] === undefined);
             const isNotVeryEffective = selectedTypesFiltered.some(type => combinedEffects[type] < 1 && combinedEffects[type] > 0);
             const isImmune = selectedTypesFiltered.every(type => combinedEffects[type] === 0);
-    
+
             if (isImmune) {
                 results.noEffect.push(loomian);
             } else if (isSuperEffective) {
@@ -448,7 +457,7 @@ function TypeCoverageCalculator() {
                 results.notVeryEffective.push(loomian);
             }
         });
-    
+
         setCoverageResults(results);
     };
 
@@ -461,6 +470,7 @@ function TypeCoverageCalculator() {
             noEffect: []
         });
         setError('');
+        setExcludeParentheses(false); // Reset checkbox
     };
 
     return (
@@ -482,6 +492,16 @@ function TypeCoverageCalculator() {
                     </select>
                 </div>
             ))}
+            <div className="checkbox-container">
+                <input
+                    type="checkbox"
+                    id="exclude-parentheses"
+                    checked={excludeParentheses}
+                    onChange={handleCheckboxChange}
+                    className="checkbox-input"
+                />
+                <label htmlFor="exclude-parentheses" className="checkbox-label">Exclude Abilities</label>
+            </div>
             <button onClick={calculateCoverage}>Calculate Coverage</button>
             <button onClick={resetCalculator}>Reset</button>
             {error && <div className="error">{error}</div>}
