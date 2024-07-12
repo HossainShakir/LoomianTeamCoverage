@@ -157,7 +157,7 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe", "Scapegoat",
             "Body Slam", "Chase Down", "Disperse", "Gloominous Roar", "High-Pitch Screech",
-            "Power Focus", "Raging Howl", "Raging Tackle", "Sharpen", "Dodge"
+            "Power Focus", "Raging Howl", "Raging Tackle", "Sharpen", "Dodge", "Rainbow Blast"
         ] },
     { name: 'Umbrat', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/umbrat.png'),
         moves: [
@@ -224,19 +224,69 @@ export const loomiansData = [
             "Brawn Boost", "Rogue Assault", "Sharpen", "Thunder Crash", "Dodge",
             "Scavenge", "Driving Force", "Nosedive"
         ] },
-    { name: 'Pyder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png') },
+    { name: 'Pyder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'),
+        moves: [
+            "Web Shot", "Sting", "Bug Bite", "Burrow", "Eerie", "Corrode", "Pestilence",
+            "Pester", "Slime", "Parasitize", "Baneful Bash", "Body Slam", "Eerie Stare",
+            "Mega Chomp", "Vital Jab", "Dodge", "Rejuvenate"
+        ] },
     { name: 'Pyder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'), specialTypeChart: 'CoursingVenom' },
-    { name: 'Swolder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png') },
+    { name: 'Swolder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'),
+        moves: [
+            "Web Shot", "Sting", "Bug Bite", "Burrow", "Eerie", "Corrode", "Pestilence",
+            "Pester", "Slime", "Parasitize", "Baneful Bash", "Body Slam", "Eerie Stare",
+            "Mega Chomp", "Vital Jab", "Dodge", "Rejuvenate", "Poison", "Mega Punch", 
+            "Brawn Boost", "Bulk Up"
+        ] },
     { name: 'Swolder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'), specialTypeChart: 'CoursingVenom' },
-    { name: 'Antsee', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png') },
+    { name: 'Antsee', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png'),
+        moves: [
+            "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
+            "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
+            "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
+            "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge"
+        ] },
     { name: 'Antsee (Woodsman)', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png'), specialTypeChart: 'Woodsman' },
-    { name: 'Florant', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png') },
+    { name: 'Florant', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png'),
+        moves: [
+            "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
+            "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
+            "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
+            "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Sap Plant", "Bulk up",
+            "Rainbow Blast"
+        ] },
     { name: 'Florant (Woodsman)', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png'), specialTypeChart: 'Woodsman' },
-    { name: 'Florant-Flychomp', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant-flychomp.png') },
-    { name: 'Grubby', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/grubby.png') },
-    { name: 'Coonucopia', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/coonucopia.png') },
-    { name: 'Terrafly', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/terrafly.png') },
-    { name: 'Terraclaw', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/terraclaw.png') },
+    { name: 'Florant-Flychomp', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant-flychomp.png'),
+        moves: [
+            "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
+            "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
+            "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
+            "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Sap Plant", "Bulk up",
+            "Rainbow Blast", "Carnivorous Snap"
+        ] },
+    { name: 'Grubby', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/grubby.png'),
+        moves: [
+            "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
+            "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge"
+        ] },
+    { name: 'Coonucopia', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/coonucopia.png'),
+        moves: [
+            "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
+            "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace"
+        ] },
+    { name: 'Terrafly', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/terrafly.png'),
+        moves: [
+            "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
+            "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace",
+            "Double Sting", "Poison Barbs", "Slime", "Muck Blast", "Air Whip"
+        ] },
+    { name: 'Terraclaw', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/terraclaw.png'),
+        moves: [
+            "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
+            "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace",
+            "Clamp Claw", "Eerie Stare", "Cyclone Slam", "Headbutt", "Mega Chomp", "Body Slam",
+            "Mud Spatter"
+        ] },
     { name: 'Kleptyke', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kleptyke.png') },
     { name: 'Ragoon', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/ragoon.png') },
     { name: 'Babore', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/babore.png') },
