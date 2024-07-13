@@ -313,16 +313,52 @@ export const loomiansData = [
             "Headbutt", "Body Slam", "Boulder Blast", "Bulk Up", "Body Crash", "Earthquake", 
             "Mega Chomp", "Raging Tackle", "Rogue Assault", "Dodge", "Muck Buck"
         ] },
-    { name: 'Geklow', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png') },
+    { name: 'Geklow', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'),
+        moves: [
+            "Static Shock", "Stare", "Spare", "Shine", "Dodge", "Tase", "Light Dash", 
+            "Energize", "Examine", "Gamma Pulse", "Thunder Crash", "Dazzling Barrage",
+            "Earthquake", "Jolt", "Luster Loot", "Mudslide", "Thunderstrike", "Zip-Zap",
+            "Flash n' Flee", "Gamma Pulse", "Rejuvenate"
+        ] },
     { name: 'Geklow (Prismatic)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'Prismatic' },
     { name: 'Geklow (Lightning Rod)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'LightningRod' },
-    { name: 'Eleguana', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png') },
+    { name: 'Eleguana', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'),
+        moves: [
+            "Static Shock", "Stare", "Spare", "Shine", "Dodge", "Tase", "Light Dash", 
+            "Energize", "Examine", "Gamma Pulse", "Thunder Crash", "Dazzling Barrage",
+            "Earthquake", "Jolt", "Luster Loot", "Mudslide", "Thunderstrike", "Zip-Zap",
+            "Flash n' Flee", "Gamma Pulse", "Rejuvenate", "Magnify"
+        ] },
     { name: 'Eleguana (Prismatic)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'), specialTypeChart: 'Prismatic' },
     { name: 'Eleguana (Lightning Rod)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'), specialTypeChart: 'LightningRod' },
-    { name: 'Slugling', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/slugling.png') },
-    { name: 'Escargrow', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/escargrow.png') },
-    { name: 'Gastroak', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/gastroak.png') },
-    { name: 'Gastroak-Terraform', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/gastroak-terraform.png'), specialTypeChart: 'Insulated' },
+    { name: 'Slugling', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/slugling.png'),
+        moves: [
+            "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
+            "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
+            "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", 
+            "Sap Plant", "Tamp", "Peace Mind"
+        ] },
+    { name: 'Escargrow', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/escargrow.png'),
+        moves: [
+            "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
+            "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
+            "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", 
+            "Sap Plant", "Tamp", "Peace Mind", "Trip Root"
+        ] },
+    { name: 'Gastroak', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/gastroak.png'),
+        moves: [
+            "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
+            "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
+            "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", 
+            "Sap Plant", "Tamp", "Peace Mind", "Trip Root", "Briar Block"
+        ] },
+    { name: 'Gastroak-Terraform', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/gastroak-terraform.png'), specialTypeChart: 'Insulated',
+        moves: [
+            "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
+            "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
+            "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", 
+            "Sap Plant", "Tamp", "Peace Mind", "Trip Root", "Briar Block", "Flora Blast"
+        ] },
     { name: 'Kabunga', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png') },
     { name: 'Kabunga (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png'), specialTypeChart: 'NoxiousWeeds' },
     { name: 'Kabunga-Halloween', primaryType: 'Plant', secondaryType: 'Mind', icon: require('../assets/icons/kabunga-halloween.png') },
