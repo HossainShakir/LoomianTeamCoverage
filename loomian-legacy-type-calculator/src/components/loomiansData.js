@@ -287,10 +287,32 @@ export const loomiansData = [
             "Clamp Claw", "Eerie Stare", "Cyclone Slam", "Headbutt", "Mega Chomp", "Body Slam",
             "Mud Spatter"
         ] },
-    { name: 'Kleptyke', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kleptyke.png') },
-    { name: 'Ragoon', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/ragoon.png') },
-    { name: 'Babore', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/babore.png') },
-    { name: 'Boarrok', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/boarrok.png') },
+    { name: 'Kleptyke', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kleptyke.png'),
+        moves: [
+            "Pounce", "Dawdle", "Chomp", "Quick Pounce", "Sharpen", "Pilfer", "Charade", 
+            "Rant", "Mega Chomp", "Provoke", "Dark Surge", "Mega Punch", "Bag of Tricks", 
+            "Body Slam", "Chase Down", "Gnarly Gash", "Hop Kick", "Nab", "Preemptive Strike", 
+            "Rogue Assault", "Spare", "Tricky Tactics", "Barter", "Dodge", "Ill Will"
+        ] },
+    { name: 'Ragoon', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/ragoon.png'),
+        moves: [
+            "Pounce", "Dawdle", "Chomp", "Quick Pounce", "Sharpen", "Pilfer", "Charade", 
+            "Rant", "Mega Chomp", "Provoke", "Dark Surge", "Mega Punch", "Bag of Tricks", 
+            "Body Slam", "Chase Down", "Gnarly Gash", "Hop Kick", "Nab", "Preemptive Strike", 
+            "Rogue Assault", "Spare", "Tricky Tactics", "Barter", "Dodge", "Ill Will", "Slap Down"
+        ] },
+    { name: 'Babore', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/babore.png'),
+        moves: [
+            "Pounce", "Burrow", "Chomp", "Aim", "Quick Pounce", "Mud Spatter", "Quicksand", 
+            "Headbutt", "Body Slam", "Boulder Blast", "Bulk Up", "Body Crash", "Earthquake", 
+            "Mega Chomp", "Raging Tackle", "Rogue Assault", "Dodge"
+        ] },
+    { name: 'Boarrok', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/boarrok.png'),
+        moves: [
+            "Pounce", "Burrow", "Chomp", "Aim", "Quick Pounce", "Mud Spatter", "Quicksand", 
+            "Headbutt", "Body Slam", "Boulder Blast", "Bulk Up", "Body Crash", "Earthquake", 
+            "Mega Chomp", "Raging Tackle", "Rogue Assault", "Dodge", "Muck Buck"
+        ] },
     { name: 'Geklow', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png') },
     { name: 'Geklow (Prismatic)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'Prismatic' },
     { name: 'Geklow (Lightning Rod)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'LightningRod' },
