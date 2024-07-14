@@ -24,7 +24,6 @@ function MovesetSearchCalculator() {
 
         setError('');
         const results = loomiansData.filter(loomian =>
-            !loomian.specialTypeChart &&  // Exclude Loomians with specialTypeChart
             filteredMoves.every(move => loomian.moves && Array.isArray(loomian.moves) && loomian.moves.includes(move))
         );
 
@@ -45,7 +44,7 @@ function MovesetSearchCalculator() {
     return (
         <div className="App">
             <h1>Loomian Legacy Moveset Searcher</h1>
-            <p>Only works for Loomians #1-#49, simply here for testing.</p>
+            <p>Only works for Loomians #1-#54, simply here for testing.</p>
             {selectedMoves.map((move, index) => (
                 <div key={index} className="move-selector">
                     <label htmlFor={`move-${index}`}>Select Move {index + 1}: </label>

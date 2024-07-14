@@ -359,16 +359,55 @@ export const loomiansData = [
             "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", 
             "Sap Plant", "Tamp", "Peace Mind", "Trip Root", "Briar Block", "Flora Blast"
         ] },
-    { name: 'Kabunga', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png') },
+    { name: 'Kabunga', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png'),
+        moves: [
+            "Strike", "Brace", "Petal Pummel", "Dodge", "Pine Shot", "Bush Whack", "Life Drain",
+            "Photosynthesis", "Nature's Force", "Bait", "Burn Up", "Coconut Bomb",
+            "Muck Blast", "Provoke", "Scapegoat", "Toxic Spores", "Barter", "Ill Will",
+            "Rejuvenate"
+        ] },
     { name: 'Kabunga (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png'), specialTypeChart: 'NoxiousWeeds' },
-    { name: 'Kabunga-Halloween', primaryType: 'Plant', secondaryType: 'Mind', icon: require('../assets/icons/kabunga-halloween.png') },
+    { name: 'Kabunga-Halloween', primaryType: 'Plant', secondaryType: 'Mind', icon: require('../assets/icons/kabunga-halloween.png'),
+        moves: [
+            "Strike", "Brace", "Petal Pummel", "Brainwash", "Pine Shot", "Bane of Haste", 
+            "Life Drain", "Flabbergast", "Photosynthesis", "Nature's Force", "Peace of Mind", 
+            "Bag of Tricks", "Gamma Pulse", "Luster Loot", "Muck Blast", "Provoke", "Psycho Blast", 
+            "Scapegoat", "Tear Down", "Toxic Spores", "Barter", "Dodge", "Fade Away", "Ill will",
+            "Rejuvenate", "Thunderstrike"
+        ] },
     { name: 'Kabunga-Halloween (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga-halloween.png'), specialTypeChart: 'NoxiousWeeds' },
-    { name: 'Wiki-Wiki', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/wiki-wiki.png') },
+    { name: 'Wiki-Wiki', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/wiki-wiki.png'),
+        moves: [
+            "Strike", "Brace", "Petal Pummel", "Dodge", "Pine Shot", "Bush Whack", "Life Drain",
+            "Photosynthesis", "Nature's Force", "Bait", "Burn Up", "Coconut Bomb",
+            "Muck Blast", "Provoke", "Scapegoat", "Toxic Spores", "Barter", "Ill Will",
+            "Rejuvenate", "Wonder Herb", "Energy Gift", "Health Gift", "Bequeath", "Poison",
+            "Sap Plant", "Mudslide", "Hypnotize"
+        ] },
     { name: 'Wiki-Wiki (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/wiki-wiki.png'), specialTypeChart: 'NoxiousWeeds' },
-    { name: 'Chartiki', primaryType: 'Plant', secondaryType: 'Fire', icon: require('../assets/icons/chartiki.png') },
+    { name: 'Chartiki', primaryType: 'Plant', secondaryType: 'Fire', icon: require('../assets/icons/chartiki.png'),
+        moves: [
+            "Strike", "Brace", "Petal Pummel", "Dodge", "Pine Shot", "Bush Whack", "Life Drain",
+            "Photosynthesis", "Nature's Force", "Bait", "Burn Up", "Coconut Bomb",
+            "Muck Blast", "Provoke", "Scapegoat", "Toxic Spores", "Barter", "Ill Will",
+            "Rejuvenate", "Fire Breath", "Briar Block", "Blaze Punch"
+        ] },
     { name: 'Chartiki (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'Fire', icon: require('../assets/icons/chartiki.png'), specialTypeChart: 'NoxiousWeeds' },
-    { name: 'Waka-Laka', primaryType: 'Plant', secondaryType: 'Mind', icon: require('../assets/icons/waka-laka.png') },
-    { name: 'Shawchi', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/shawchi.png') },
+    { name: 'Waka-Laka', primaryType: 'Plant', secondaryType: 'Mind', icon: require('../assets/icons/waka-laka.png'),
+        moves: [
+            "Strike", "Brace", "Petal Pummel", "Brainwash", "Pine Shot", "Bane of Haste", 
+            "Life Drain", "Flabbergast", "Photosynthesis", "Nature's Force", "Peace of Mind", 
+            "Bag of Tricks", "Gamma Pulse", "Luster Loot", "Muck Blast", "Provoke", "Psycho Blast", 
+            "Scapegoat", "Tear Down", "Toxic Spores", "Barter", "Dodge", "Fade Away", "Ill will",
+            "Rejuvenate", "Thunderstrike", "Fungus Curse"
+        ] },
+    { name: 'Shawchi', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/shawchi.png'),
+        moves: [
+            "Brainwash", "Dawdle", "Mind's Eye", "Aim", "Swipe", "Quick Pounce", "Peace of Mind",
+            "Foul Chant", "Tear Down", "Bag of Tricks", "Bane of Haste", "Elemental Burst", 
+            "Energy Gift", "Flabbergast", "Health Gift", "Psycho Blast", "Pyrokinesis", "Barter", 
+            "Dodge", "Frost Beam", "Thunderstrike", "Rainbow Blast"
+        ] },
     { name: 'Rakrawla', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/rakrawla.png') },
     { name: 'Sedimars', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/sedimars.png') },
     { name: 'Gumpod', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/gumpod.png') },
