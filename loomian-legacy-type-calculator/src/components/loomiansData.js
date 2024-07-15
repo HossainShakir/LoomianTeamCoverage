@@ -408,32 +408,144 @@ export const loomiansData = [
             "Energy Gift", "Flabbergast", "Health Gift", "Psycho Blast", "Pyrokinesis", "Barter", 
             "Dodge", "Frost Beam", "Thunderstrike", "Rainbow Blast"
         ] },
-    { name: 'Rakrawla', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/rakrawla.png') },
-    { name: 'Sedimars', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/sedimars.png') },
-    { name: 'Gumpod', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/gumpod.png') },
-    { name: 'Ventacean', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/ventacean.png') },
-    { name: 'Phancub', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/phancub.png') },
-    { name: 'Phancub-Valentine', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/phancub-valentine.png') },
-    { name: 'Ursoul', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/ursoul.png') },
-    { name: 'Ursnac', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/ursnac.png') },
-    { name: 'Whispup', primaryType: 'Spirit', secondaryType: 'Fire', icon: require('../assets/icons/whispup.png') },
-    { name: 'Revenine', primaryType: 'Spirit', secondaryType: 'Fire', icon: require('../assets/icons/revenine.png') },
-    { name: 'Skilava', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/skilava.png') },
+    { name: 'Rakrawla', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/rakrawla.png'),
+        moves: [
+            "Burrow", "Gnaw", "Boulder Blast", "Swipe", "Mud Spatter", "Examine", "Chomp",
+            "Provoke", "Sharpen", "Earthquake", "Mudslide", "Blaze Chomp", "Body Slam", 
+            "Chase Down", "Talent Trade", "Thunder Chomp", "Dodge", "Rejuvenate"
+        ] },
+    { name: 'Sedimars', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/sedimars.png'),
+        moves: [
+            "Burrow", "Gnaw", "Boulder Blast", "Swipe", "Mud Spatter", "Examine", "Chomp",
+            "Provoke", "Sharpen", "Earthquake", "Mudslide", "Blaze Chomp", "Body Slam", 
+            "Chase Down", "Talent Trade", "Thunder Chomp", "Dodge", "Rejuvenate", "Raging Tackle",
+            "Ill Will"
+        ] },
+    { name: 'Gumpod', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/gumpod.png'),
+        moves: [
+            "Spray", "Brace", "Eerie Stare", "Sleet Shot", "Water Bomb", "Scapegoat", 
+            "Hydro Slash", "Dodge", "Soft Water", "Maroon", "Battering Ram", "Burn Up", 
+            "Slumber", "Frost Beam", "Tsunami"
+        ] },
+    { name: 'Ventacean', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/ventacean.png'),
+        moves: [
+            "Spray", "Brace", "Eerie Stare", "Sleet Shot", "Water Bomb", "Scapegoat", 
+            "Hydro Slash", "Dodge", "Soft Water", "Maroon", "Battering Ram", "Burn Up", 
+            "Slumber", "Frost Beam", "Tsunami", "Geyser"
+        ] },
+    { name: 'Phancub', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/phancub.png'),
+        moves: [
+            "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
+            "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
+            "Spectral Burst"
+        ] },
+    { name: 'Phancub-Valentine', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/phancub-valentine.png'),
+        moves: [
+            "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
+            "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
+            "Spectral Burst", "Heart Break", "Bait"
+        ] },
+    { name: 'Ursoul', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/ursoul.png'),
+        moves: [
+            "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
+            "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
+            "Spectral Burst", "Steel Trap", "Hop Kick"
+        ] },
+    { name: 'Ursnac', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/ursnac.png'),
+        moves: [
+            "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
+            "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
+            "Spectral Burst", "Heart Break", "Baffle", "Gain Drain", "Rough Up", "Bait", "Fade Away"
+        ] },
+    { name: 'Whispup', primaryType: 'Spirit', secondaryType: 'Fire', icon: require('../assets/icons/whispup.png'),
+        moves: [
+            "Startle", "Stare", "Singe", "Gnaw", "Final Ruse", "Stretch", "Shadow Sprint",
+            "Blaze Chomp", "Accelerate", "Spectral Burst", "Dark Surge", "Fire Breath", "Harrow", 
+            "Mega Chomp", "Phantom Slash", "Power Focus", "Soul Storm", "Dodge", "Fade Away"
+        ] },
+    { name: 'Revenine', primaryType: 'Spirit', secondaryType: 'Fire', icon: require('../assets/icons/revenine.png'),
+        moves: [
+            "Startle", "Stare", "Singe", "Gnaw", "Final Ruse", "Stretch", "Shadow Sprint",
+            "Blaze Chomp", "Accelerate", "Spectral Burst", "Dark Surge", "Fire Breath", "Harrow", 
+            "Mega Chomp", "Phantom Slash", "Power Focus", "Soul Storm", "Dodge", "Fade Away",
+            "Ghost Howl"
+        ] },
+    { name: 'Skilava', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/skilava.png'),
+        moves: [
+            "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Burn Up", "Magma Block",
+            "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
+            "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
+            "Mud Spatter"
+        ] },
     { name: 'Skilava (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/skilava.png'), specialTypeChart: 'Combustible' },
-    { name: 'Geksplode', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/geksplode.png') },
+    { name: 'Geksplode', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/geksplode.png'),
+        moves: [
+            "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Burn Up", "Magma Block",
+            "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
+            "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
+            "Mud Spatter", "Fire Slam"
+        ] },
     { name: 'Geksplode (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/geksplode.png'), specialTypeChart: 'Combustible' },
-    { name: 'Eruptidon', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/eruptidon.png') },
+    { name: 'Eruptidon', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/eruptidon.png'),
+        moves: [
+            "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Burn Up", "Magma Block",
+            "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
+            "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
+            "Mud Spatter", "Fire Slam", "Lava Slash"
+        ] },
     { name: 'Eruptidon (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/eruptidon.png'), specialTypeChart: 'Combustible' },
-    { name: 'Eruptidon-Magmadire', primaryType: 'Fire', secondaryType: 'Earth', icon: require('../assets/icons/eruptidon-magmadire.png') },
-    { name: 'Craytal', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/craytal.png') },
+    { name: 'Eruptidon-Magmadire', primaryType: 'Fire', secondaryType: 'Earth', icon: require('../assets/icons/eruptidon-magmadire.png'),
+        moves: [
+            "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Burn Up", "Magma Block",
+            "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
+            "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
+            "Mud Spatter", "Fire Slam", "Lava Slash", "Hellstorm"
+        ] },
+    { name: 'Craytal', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/craytal.png'),
+        moves: [
+            "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
+            "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
+            "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate"
+        ] },
     { name: 'Craytal (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/craytal.png'), specialTypeChart: 'Combustible' },
-    { name: 'Craytal-Holiday', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/craytal-holiday.png') },
-    { name: 'Krakaloa', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/krakaloa.png') },
+    { name: 'Craytal-Holiday', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/craytal-holiday.png'),
+        moves: [
+            "Petal Pummel", "Flurry", "Brace", "Spare", "Leaf Barrage", "Snowdozer", "Sap Plant", 
+            "Icicle Trap", "Bush Whack", "Briar Block", "Ice Hammer", "Thistle Slash", "Brawn Boost", 
+            "Earthquake", "Raging Tackle", "Timber Thrash", "Tricky Tactics", "Bait", "Dodge",
+            "Frost Beam", "Hypnotize", "Ill Will", "Rejuvenate"
+        ] },
+    { name: 'Krakaloa', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/krakaloa.png'),
+        moves: [
+            "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
+            "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
+            "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
+            "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge"
+        ] },
     { name: 'Krakaloa (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/krakaloa.png'), specialTypeChart: 'Combustible' },
-    { name: 'Krakaloa-Lavafiend', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/krakaloa-lavafiend.png') },
-    { name: 'Volkaloa', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/volkaloa.png') },
+    { name: 'Krakaloa-Lavafiend', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/krakaloa-lavafiend.png'),
+        moves: [
+            "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
+            "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
+            "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
+            "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge",
+            "Eruption"
+        ] },
+    { name: 'Volkaloa', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/volkaloa.png'),
+        moves: [
+            "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
+            "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
+            "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
+            "Savage Greed", "Coconut Bomb", "Blaze Chomp", "Primal Slash", "Blaze Punch", "Ill Will"
+        ] },
     { name: 'Volkaloa (Combustible)', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/volkaloa.png'), specialTypeChart: 'Combustible' },
-    { name: 'Festifir', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/festifir.png') },
+    { name: 'Festifir', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/festifir.png'),
+        moves: [
+            "Petal Pummel", "Flurry", "Brace", "Spare", "Leaf Barrage", "Snowdozer", "Sap Plant", 
+            "Icicle Trap", "Bush Whack", "Briar Block", "Ice Hammer", "Thistle Slash", "Brawn Boost", 
+            "Earthquake", "Raging Tackle", "Timber Thrash", "Tricky Tactics", "Bait", "Dodge",
+            "Frost Beam", "Hypnotize", "Ill Will", "Rejuvenate", "Fungus Curse"
+        ] },
     { name: 'Igneol', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/igneol.png') },
     { name: 'Chrysite', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/chrysite.png') },
     { name: 'Obsidrugon', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/obsidrugon.png') },
