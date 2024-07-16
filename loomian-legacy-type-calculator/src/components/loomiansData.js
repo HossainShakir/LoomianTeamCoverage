@@ -546,40 +546,214 @@ export const loomiansData = [
             "Earthquake", "Raging Tackle", "Timber Thrash", "Tricky Tactics", "Bait", "Dodge",
             "Frost Beam", "Hypnotize", "Ill Will", "Rejuvenate", "Fungus Curse"
         ] },
-    { name: 'Igneol', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/igneol.png') },
-    { name: 'Chrysite', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/chrysite.png') },
-    { name: 'Obsidrugon', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/obsidrugon.png') },
-    { name: 'Cafnote-Male', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-male.png') },
-    { name: 'Cafnote-Female', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-female.png') },
-    { name: 'Trumbull', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/trumbull.png') },
-    { name: 'Mootune', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/mootune.png') },
-    { name: 'Gobbidemic', primaryType: 'Toxic', secondaryType: 'None', icon: require('../assets/icons/gobbidemic.png') },
-    { name: 'Icigool', primaryType: 'Spirit', secondaryType: 'Ice', icon: require('../assets/icons/icigool.png') },
-    { name: 'Icigool-Incarnate', primaryType: 'Spirit', secondaryType: 'Ice', icon: require('../assets/icons/icigool-incarnate.png') },
-    { name: 'Pyramind', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pyramind.png') },
-    { name: 'Pharoglyph', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pharoglyph.png') },
-    { name: 'Burroach', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/burroach.png') },
-    { name: 'Garbantis', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/garbantis.png') },
-    { name: 'Whimpor', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png') },
+    { name: 'Igneol', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/igneol.png'),
+        moves: [
+            "Gnaw", "Burrow", "Mud Spatter", "Power Focus", "Headbutt", "Scapegoat", "Raging Tackle", 
+            "Sharpen", "Primal Slash", "Body Crash", "Body Slam", "Earthquake", "Mega Chomp", 
+            "Dodge"
+        ] },
+    { name: 'Chrysite', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/chrysite.png'),
+        moves: [
+            "Gnaw", "Burrow", "Mud Spatter", "Power Focus", "Headbutt", "Scapegoat", "Raging Tackle", 
+            "Sharpen", "Primal Slash", "Body Crash", "Body Slam", "Earthquake", "Mega Chomp", 
+            "Dodge", "Brace"
+        ] },
+    { name: 'Obsidrugon', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/obsidrugon.png'),
+        moves: [
+            "Gnaw", "Burrow", "Mud Spatter", "Power Focus", "Headbutt", "Scapegoat", "Raging Tackle", 
+            "Sharpen", "Primal Slash", "Body Crash", "Body Slam", "Earthquake", "Mega Chomp", 
+            "Dodge", "Brace", "Beast's Slumber", "Drudge"
+        ] },
+    { name: 'Cafnote-Male', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-male.png'),
+        moves: [
+            "Stare", "Strike", "Spare", "Stretch", "Tone Barrier", "Quick Pounce", "Headbutt", 
+            "Provoke", "Body Slam", "Driving Force", "Earthquake", "Mega Chomp", "Raging Tackle",
+            "Rogue Assault", "Dodge"
+        ] },
+    { name: 'Cafnote-Female', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-female.png'),
+        moves: [
+            "Stare", "Strike", "Spare", "Stretch", "Repeating Tune", "Quick Pounce", "Harmonious Chord", 
+            "Tease", "Dissonant Chord", "Gamma Pulse", "Peace of Mind", "Raging Howl", "Dodge"
+        ] },
+    { name: 'Trumbull', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/trumbull.png'),
+        moves: [
+            "Stare", "Strike", "Spare", "Stretch", "Tone Barrier", "Quick Pounce", "Headbutt", 
+            "Provoke", "Body Slam", "Driving Force", "Earthquake", "Mega Chomp", "Raging Tackle",
+            "Rogue Assault", "Dodge", "Battle Horn"
+        ] },
+    { name: 'Mootune', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/mootune.png'),
+        moves: [
+            "Stare", "Strike", "Spare", "Stretch", "Repeating Tune", "Quick Pounce", "Harmonious Chord", 
+            "Tease", "Dissonant Chord", "Gamma Pulse", "Peace of Mind", "Raging Howl", "Dodge",
+            "Resonate"
+        ] },
+    { name: 'Gobbidemic', primaryType: 'Toxic', secondaryType: 'None', icon: require('../assets/icons/gobbidemic.png'),
+        moves: [
+            "Sting", "Squawk", "Peck", "Corrode", "Stretch", "Slime", "Muck Blast", 
+            "Gobble Goop", "Air Blade", "Barbs", "Energy Gift", "Far Enchantment", "Near Enchantment",
+            "Poison", "Poison Barbs", "Provoke", "Trip Root", "Wonder Herb", "Bait", "Dodge",
+            "Hypnotize"
+        ] },
+    { name: 'Icigool', primaryType: 'Spirit', secondaryType: 'Ice', icon: require('../assets/icons/icigool.png'),
+        moves: [
+            "Bag of Tricks", "Startle", "Snowdozer", "Chomp", "Gain Drain", "Chilly Chomp", 
+            "Phantom Slash", "Mega Chomp", "Impersonate", "Bane of Haste", "Soul Storm", "Baffle", 
+            "Blaze Chomp", "Energy Gift", "Fade Away", "Health Gift", "Ice Hammer", "Icicle Trap",
+            "Thunder Chomp", "Tricky Tactics", "Barter", "Dark Surge", "Dodge", "Frost Beam", 
+            "Hypnotize", "Ill Will", "Rejuvenate", "Spectral Burst"
+        ] },
+    { name: 'Icigool-Incarnate', primaryType: 'Spirit', secondaryType: 'Ice', icon: require('../assets/icons/icigool-incarnate.png'),
+        moves: [
+            "Bag of Tricks", "Startle", "Snowdozer", "Chomp", "Gain Drain", "Chilly Chomp", 
+            "Phantom Slash", "Mega Chomp", "Impersonate", "Bane of Haste", "Soul Storm", "Baffle", 
+            "Blaze Chomp", "Energy Gift", "Fade Away", "Health Gift", "Ice Hammer", "Icicle Trap",
+            "Thunder Chomp", "Tricky Tactics", "Barter", "Dark Surge", "Dodge", "Frost Beam", 
+            "Hypnotize", "Ill Will", "Rejuvenate", "Spectral Burst", "Frightful Surprise"
+        ] },
+    { name: 'Pyramind', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pyramind.png'),
+        moves: [
+            "Brainwash", "Mind's Eye", "Rant", "Return to Sender", "Boulder Blast", "Peace of Mind", 
+            "Spectral Burst", "Flabbergast", "Bane of Haste", "Shrewd Blast", "Bulk up", "Landslide",
+            "Dark Surge", "Déjà Vu", "Deja Vu", "Draco Beam", "Earthquake", "Gain Drain", 
+            "Outburst", "Phantom Slash", "Primal Slash", "Provoke", "Psycho Blast", "Rogue Assault", 
+            "Talent Trade", "Tribute", "Dodge", "Mud Spatter", "Rainbow Blast"
+        ] },
+    { name: 'Pharoglyph', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pharoglyph.png'),
+        moves: [
+            "Brainwash", "Mind's Eye", "Rant", "Return to Sender", "Boulder Blast", "Peace of Mind", 
+            "Spectral Burst", "Flabbergast", "Bane of Haste", "Shrewd Blast", "Bulk up", "Landslide",
+            "Dark Surge", "Déjà Vu", "Deja Vu", "Draco Beam", "Earthquake", "Gain Drain", 
+            "Outburst", "Phantom Slash", "Primal Slash", "Provoke", "Psycho Blast", "Rogue Assault", 
+            "Talent Trade", "Tribute", "Dodge", "Mud Spatter", "Rainbow Blast", "Memorize", "Hop Kick",
+            "Cerebral Slash"
+        ] },
+    { name: 'Burroach', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/burroach.png'),
+        moves: [
+            "Gnaw", "Burrow", "Bug Bite", "Mud Spatter", "Stretch", "Venom Chomp", "Headbutt",
+            "Eerie Stare", "Provoke", "Clay Slap", "Parasitize", "Earthquake", "Body Crash", 
+            "Poison", "Dodge"
+        ] },
+    { name: 'Garbantis', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/garbantis.png'),
+        moves: [
+            "Gnaw", "Burrow", "Bug Bite", "Mud Spatter", "Stretch", "Venom Chomp", "Headbutt",
+            "Eerie Stare", "Provoke", "Clay Slap", "Parasitize", "Earthquake", "Body Crash", 
+            "Poison", "Dodge", "Battering Ram", "Molt", "Bulk Up"
+        ] },
+    { name: 'Whimpor', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png'),
+        moves: [
+            "Tail Slap", "Metal Swipes", "Brace", "Gust", "Body Slam", "Metal Shriek", "Cyclone Slam",
+            "Heavy Bash", "Air Blade", "Reflection Burst", "Dissonant Chord", "Energy Surge", "Jet Stream", 
+            "Jump Start", "Metal Blast", "Perch", "Tase", "Dodge"
+        ] },
     { name: 'Whimpor (Toxic Filter)', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png'), specialTypeChart: 'ToxicFilter' },
-    { name: 'Stratusoar', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar.png') },
+    { name: 'Stratusoar', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar.png'),
+        moves: [
+            "Tail Slap", "Metal Swipes", "Brace", "Gust", "Body Slam", "Metal Shriek", "Cyclone Slam",
+            "Heavy Bash", "Air Blade", "Reflection Burst", "Dissonant Chord", "Energy Surge", "Jet Stream", 
+            "Jump Start", "Metal Blast", "Perch", "Tase", "Dodge", "Second Wind", "Magnify"
+        ] },
     { name: 'Stratusoar (Toxic Filter)', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar.png'), specialTypeChart: 'ToxicFilter' },
-    { name: 'Stratusoar-Jetwing', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar-jetwing.png') },
-    { name: 'Territi', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/territi.png') },
-    { name: 'Dyeborg', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/dyeborg.png') },
-    { name: 'Operaptor', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/operaptor.png') },
-    { name: 'Concredon', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/concredon.png') },
-    { name: 'Tyrecks', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/tyrecks.png') },
-    { name: 'Chompactor', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/chompactor.png') },
-    { name: 'Munchwheel', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/munchwheel.png') },
-    { name: 'Scorb', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/scorb.png') },
-    { name: 'Veylens', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/veylens.png') },
-    { name: 'Gardrone', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/gardrone.png') },
-    { name: 'Poochrol', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/poochrol.png') },
-    { name: 'Hunder', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/hunder.png') },
-    { name: 'Goppie', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/goppie.png') },
-    { name: 'Arapaigo', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/arapaigo.png') },
-    { name: 'Pyke', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/pyke.png') },
+    { name: 'Stratusoar-Jetwing', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar-jetwing.png'),
+        moves: [
+            "Tail Slap", "Metal Swipes", "Brace", "Gust", "Body Slam", "Metal Shriek", "Cyclone Slam",
+            "Heavy Bash", "Air Blade", "Reflection Burst", "Dissonant Chord", "Energy Surge", "Jet Stream", 
+            "Jump Start", "Metal Blast", "Perch", "Tase", "Dodge", "Second Wind", "Magnify", "Airstrike"
+        ] },
+    { name: 'Territi', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/territi.png'),
+        moves: [
+            "Corrode", "Dawdle", "Bash", "Punch", "Power Focus", "Hop Kick", "Canister Burst", "Heavy Bash",
+            "Paint Shower", "Provoke", "Bag of Tricks", "Baneful Bash", "Far Enchantment", "Mega Punch", 
+            "Metal Blast", "Muck Blast", "Near Enchantment", "Poison", "Square One", "Steel Crusher",
+            "Tricky Tactics", "Barter", "Dodge", "Hypnotize"
+        ] },
+    { name: 'Dyeborg', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/dyeborg.png'),
+        moves: [
+            "Corrode", "Dawdle", "Bash", "Punch", "Power Focus", "Hop Kick", "Canister Burst", "Heavy Bash",
+            "Paint Shower", "Provoke", "Bag of Tricks", "Baneful Bash", "Far Enchantment", "Mega Punch", 
+            "Metal Blast", "Muck Blast", "Near Enchantment", "Poison", "Square One", "Steel Crusher",
+            "Tricky Tactics", "Barter", "Dodge", "Hypnotize", "Graffiti"
+        ] },
+    { name: 'Operaptor', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/operaptor.png'),
+        moves: [
+            "Gnaw", "Clamp", "Burrow", "Chomp", "Headbutt", "Power Focus", "Quicksand", "Scapegoat",
+            "Body Slam", "Heavy Bash", "Metal Shriek", "Earthquake", "Sharpen", "Steel Crusher", 
+            "Tear Down", "Thunder Chomp", "Vice Jaws", "Dodge", "Mud Spatter"
+        ] },
+    { name: 'Concredon', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/concredon.png'),
+        moves: [
+            "Gnaw", "Clamp", "Burrow", "Chomp", "Headbutt", "Power Focus", "Quicksand", "Scapegoat",
+            "Body Slam", "Heavy Bash", "Metal Shriek", "Earthquake", "Sharpen", "Steel Crusher", 
+            "Tear Down", "Thunder Chomp", "Vice Jaws", "Dodge", "Mud Spatter", "Clay Slap"
+        ] },
+    { name: 'Tyrecks', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/tyrecks.png'),
+        moves: [
+            "Gnaw", "Clamp", "Burrow", "Chomp", "Headbutt", "Power Focus", "Quicksand", "Scapegoat",
+            "Body Slam", "Heavy Bash", "Metal Shriek", "Earthquake", "Sharpen", "Steel Crusher", 
+            "Tear Down", "Thunder Chomp", "Vice Jaws", "Dodge", "Mud Spatter", "Clay Slap", 
+            "Complete Demolition"
+        ] },
+    { name: 'Chompactor', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/chompactor.png'),
+        moves: [
+            "Gnaw", "Aim", "Metal Swipes", "Oil Leak", "Chomp", "Bash", "Double Whack", "Quick Punch",
+            "Mega Chomp", "Bulk Up", "Barbs", "Blaze Chomp", "Chilly Chomp", "Recycle", 
+            "Steel Crusher", "Thunder Chomp", "Vice Jaws", "Dodge"
+        ] },
+    { name: 'Munchwheel', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/munchwheel.png'),
+        moves: [
+            "Gnaw", "Aim", "Metal Swipes", "Oil Leak", "Chomp", "Bash", "Double Whack", "Quick Punch",
+            "Mega Chomp", "Bulk Up", "Barbs", "Blaze Chomp", "Chilly Chomp", "Recycle", 
+            "Steel Crusher", "Thunder Chomp", "Vice Jaws", "Dodge", "Heavy Bash"
+        ] },
+    { name: 'Scorb', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/scorb.png'),
+        moves: [
+            "Bash", "Static Shock", "Singe", "Flurry", "Metal Shriek", "Examine", "Dodge"
+        ] },
+    { name: 'Veylens', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/veylens.png'),
+        moves: [
+            "Bash", "Static Shock", "Singe", "Flurry", "Metal Shriek", "Examine", "Dodge", "Heavy Bash",
+            "Reflection Burst", "Accelerate", "Thunder Slam", "Precision Bolt", "Fire Slam", 
+            "Raging Flame", "Snowdozer", "Sleet Shot", "Eerie Stare", "Mind's Eye", "Deep Freeze"
+        ] },
+    { name: 'Gardrone', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/gardrone.png'),
+        moves: [
+            "Bash", "Static Shock", "Singe", "Flurry", "Metal Shriek", "Examine", "Dodge", "Heavy Bash",
+            "Reflection Burst", "Accelerate", "Thunder Slam", "Precision Bolt", "Fire Slam", 
+            "Raging Flame", "Snowdozer", "Sleet Shot", "Eerie Stare", "Mind's Eye", "Deep Freeze",
+            "Jump Start", "Metal Blast", "Steel Crusher", "Thunderstrike", "Fire Breath", "Frost Beam"
+        ] },
+    { name: 'Poochrol', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/poochrol.png'),
+        moves: [
+            "Growl", "Static Shock", "Metal Swipes", "Quick Pounce", "Precision Bolt", "Chomp", 
+            "Sharpen", "Heavy Bash", "Mega Chomp", "Chase Down", "Blaze Chomp", "Chilly Chomp", 
+            "Tase", "Thunder Chomp", "Vice Jaws", "Dodge", "Mud Spatter", "Thunderstrike"
+        ] },
+    { name: 'Hunder', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/hunder.png'),
+        moves: [
+            "Growl", "Static Shock", "Metal Swipes", "Quick Pounce", "Precision Bolt", "Chomp", 
+            "Sharpen", "Heavy Bash", "Mega Chomp", "Chase Down", "Blaze Chomp", "Chilly Chomp", 
+            "Tase", "Thunder Chomp", "Vice Jaws", "Dodge", "Mud Spatter", "Thunderstrike"
+        ] },
+    { name: 'Goppie', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/goppie.png'),
+        moves: [
+            "Strike", "Dawdle", "Spray", "Flurry", "Chomp", "Stare", "Body Slam", "Water Bomb",
+            "Rant", "Eerie Stare", "Tsunami", "Dark Surge", "Frost Beam", "Magnify", "Dodge",
+            "Ill Will", "Maroon", "Plunge", "Rejuvenate", "Rainbow Blast"
+        ] },
+    { name: 'Arapaigo', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/arapaigo.png'),
+        moves: [
+            "Strike", "Dawdle", "Spray", "Flurry", "Chomp", "Stare", "Body Slam", "Water Bomb",
+            "Rant", "Eerie Stare", "Tsunami", "Dark Surge", "Frost Beam", "Magnify", "Dodge",
+            "Ill Will", "Maroon", "Plunge", "Rejuvenate", "Rainbow Blast", "Hydro Slash", 
+            "Sleet Shot"
+        ] },
+    { name: 'Pyke', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/pyke.png'),
+        moves: [
+            "Tail Slap", "Brace", "Spray", "Chomp", "Confound", "Tease", "Water Bomb", "Baffle",
+            "Chilly Chomp", "Aqua Jaws", "Final Ruse", "Mega Chomp", "Primal Slash", "Drudge", "Bulk Up",
+            "Charade", "Outburst", "Phantom Slash", "Provoke", "Shadow Sprint", "Square One", 
+            "Wave Wrecker", "Barter", "Dodge", "Fade Away", "Ill Will", "Maroon", "Plunge", "Spectral Burst",
+            "Tsunami"
+        ] },
     { name: 'Skelic', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/skelic.png') },
     { name: 'Skelic-Seascourge', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/skelic-seascourge.png') },
     { name: 'Zaleo', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/zaleo.png') },

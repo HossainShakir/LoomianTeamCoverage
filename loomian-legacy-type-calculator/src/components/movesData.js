@@ -57,7 +57,7 @@ export const movesData = [
     "Driving Force", "Heart Break", "Hop Kick", "Horn-Dashi", "Junglejutsu",
     "Mega Kick", "Mega Punch", "Pep Jab", "Preemptive Strike", "Punch",
     "Quick Punch", "Rogue Assault", "Rough Up", "Shadowbox", "Swat",
-    "Vital Jab", "Brain Exercise", "Brainwash", "Cerebral Slash", "Déjà Vu",
+    "Vital Jab", "Brain Exercise", "Brainwash", "Cerebral Slash", "Déjà Vu", "Deja Vu",
     "Dissipate", "Empathize", "Energy Gift", "Flabbergast", "Foul Chant",
     "Health Gift", "Hypnotize", "Memorize", "Mind's Eye", "Peace of Mind",
     "Psychal Slap", "Psycho Blast", "Return to Sender", "Splitting Headache", "Stratagem",
