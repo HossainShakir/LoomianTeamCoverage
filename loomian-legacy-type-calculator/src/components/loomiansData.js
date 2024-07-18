@@ -754,11 +754,43 @@ export const loomiansData = [
             "Wave Wrecker", "Barter", "Dodge", "Fade Away", "Ill Will", "Maroon", "Plunge", "Spectral Burst",
             "Tsunami"
         ] },
-    { name: 'Skelic', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/skelic.png') },
-    { name: 'Skelic-Seascourge', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/skelic-seascourge.png') },
-    { name: 'Zaleo', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/zaleo.png') },
-    { name: 'Joltooth', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/joltooth.png') },
-    { name: 'Joltooth-Thunderking', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/joltooth-thunderking.png') },
+    { name: 'Skelic', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/skelic.png'),
+        moves: [
+            "Tail Slap", "Brace", "Spray", "Chomp", "Confound", "Tease", "Water Bomb", "Baffle",
+            "Chilly Chomp", "Aqua Jaws", "Final Ruse", "Mega Chomp", "Primal Slash", "Drudge", "Bulk Up",
+            "Charade", "Outburst", "Phantom Slash", "Provoke", "Shadow Sprint", "Square One", 
+            "Wave Wrecker", "Barter", "Dodge", "Fade Away", "Ill Will", "Maroon", "Plunge", "Spectral Burst",
+            "Tsunami", "Piercing Drive"
+        ] },
+    { name: 'Skelic-Seascourge', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/skelic-seascourge.png'),
+        moves: [
+            "Tail Slap", "Brace", "Spray", "Chomp", "Confound", "Tease", "Water Bomb", "Baffle",
+            "Chilly Chomp", "Aqua Jaws", "Final Ruse", "Mega Chomp", "Primal Slash", "Drudge", "Bulk Up",
+            "Charade", "Outburst", "Phantom Slash", "Provoke", "Shadow Sprint", "Square One", 
+            "Wave Wrecker", "Barter", "Dodge", "Fade Away", "Ill Will", "Maroon", "Plunge", "Spectral Burst",
+            "Tsunami", "Piercing Drive", "Heedless Rush"
+        ] },
+    { name: 'Zaleo', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/zaleo.png'),
+        moves: [
+            "Static Shock", "Spare", "Dino Claws", "Power Siphon", "Tase", "Precision Bolt", "Sharpen", 
+            "Thunder Slam", "Shrewd Blast", "Bamboozle", "Primal Slash", "Thunder Crash", "Bane of Haste", 
+            "Bulk Up", "Clay Slap", "Earthquake", "Jump Start", "Bait", "Dodge", "Ill Will", "Mud Spatter",
+            "Thunderstrike"
+        ] },
+    { name: 'Joltooth', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/joltooth.png'),
+        moves: [
+            "Static Shock", "Spare", "Dino Claws", "Power Siphon", "Tase", "Precision Bolt", "Sharpen", 
+            "Thunder Slam", "Shrewd Blast", "Bamboozle", "Primal Slash", "Thunder Crash", "Bane of Haste", 
+            "Bulk Up", "Clay Slap", "Earthquake", "Jump Start", "Bait", "Dodge", "Ill Will", "Mud Spatter",
+            "Thunderstrike", "Thunder Clap"
+        ] },
+    { name: 'Joltooth-Thunderking', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/joltooth-thunderking.png'),
+        moves: [
+            "Static Shock", "Spare", "Dino Claws", "Power Siphon", "Tase", "Precision Bolt", "Sharpen", 
+            "Thunder Slam", "Shrewd Blast", "Bamboozle", "Primal Slash", "Thunder Crash", "Bane of Haste", 
+            "Bulk Up", "Clay Slap", "Earthquake", "Jump Start", "Bait", "Dodge", "Ill Will", "Mud Spatter",
+            "Thunderstrike", "Thunder Clap", "Fulgur Fangs"
+        ] },
     { name: 'Dobo', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/dobo.png') },
     { name: 'Infernix', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/infernix.png') },
     { name: 'Kyogo', primaryType: 'Ancient', secondaryType: 'Dark', icon: require('../assets/icons/kyogo.png') },
