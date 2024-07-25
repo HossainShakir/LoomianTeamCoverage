@@ -195,7 +195,7 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Brace", "Mystic Breeze", "Snore Spores", "Toxic Spores",
-            "Gust", "Pestilence", "Wing Slap", "Life Drain", "Magnify"
+            "Gust", "Pestilence", "Wing Slap", "Life Drain", "Magnify", "Jet Stream"
         ] },
     { name: 'Sumobito', primaryType: 'Bug', secondaryType: 'Brawler', icon: require('../assets/icons/sumobito.png'),
         moves: [
@@ -278,14 +278,14 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace",
-            "Double Sting", "Poison Barbs", "Slime", "Muck Blast", "Air Whip"
+            "Double Sting", "Poison Barbs", "Slime", "Muck Blast", "Air Whip", "Drudge"
         ] },
     { name: 'Terraclaw', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/terraclaw.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace",
             "Clamp Claw", "Eerie Stare", "Cyclone Slam", "Headbutt", "Mega Chomp", "Body Slam",
-            "Mud Spatter"
+            "Mud Spatter", "Bulk Up"
         ] },
     { name: 'Kleptyke', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kleptyke.png'),
         moves: [
@@ -637,7 +637,7 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Burrow", "Bug Bite", "Mud Spatter", "Stretch", "Venom Chomp", "Headbutt",
             "Eerie Stare", "Provoke", "Clay Slap", "Parasitize", "Earthquake", "Body Crash", 
-            "Poison", "Dodge", "Battering Ram", "Molt", "Bulk Up"
+            "Poison", "Dodge", "Battering Ram", "Molt", "Bulk Up", "Tamp"
         ] },
     { name: 'Whimpor', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png'),
         moves: [
@@ -791,17 +791,71 @@ export const loomiansData = [
             "Bulk Up", "Clay Slap", "Earthquake", "Jump Start", "Bait", "Dodge", "Ill Will", "Mud Spatter",
             "Thunderstrike", "Thunder Clap", "Fulgur Fangs"
         ] },
-    { name: 'Dobo', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/dobo.png') },
-    { name: 'Infernix', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/infernix.png') },
-    { name: 'Kyogo', primaryType: 'Ancient', secondaryType: 'Dark', icon: require('../assets/icons/kyogo.png') },
-    { name: 'Dorogo', primaryType: 'Ancient', secondaryType: 'Dark', icon: require('../assets/icons/dorogo.png') },
-    { name: 'Wiledile', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/wiledile.png') },
+    { name: 'Dobo', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/dobo.png'),
+        moves: [
+            "Singe", "Squawk", "Peck", "Confound", "Dawdle", "Pyrokinesis", "Power Focus", "Primal Slash",
+            "Shrewd Blast", "Burn Up", "Fire Breath", "Bane of Haste", "Air Blade", "Bequeath",
+            "Draco Beam", "Gust", "Jet Stream", "Peace of Mind", "Raging Flame", "Return to Sender",
+            "Wonder Herb", "Dodge", "Mud Spatter"
+        ] },
+    { name: 'Infernix', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/infernix.png'),
+        moves: [
+            "Singe", "Squawk", "Peck", "Confound", "Dawdle", "Pyrokinesis", "Power Focus", "Primal Slash",
+            "Shrewd Blast", "Burn Up", "Fire Breath", "Bane of Haste", "Air Blade", "Bequeath",
+            "Draco Beam", "Gust", "Jet Stream", "Peace of Mind", "Raging Flame", "Return to Sender",
+            "Wonder Herb", "Dodge", "Mud Spatter", "Phoenix Flame"
+        ] },
+    { name: 'Kyogo', primaryType: 'Ancient', secondaryType: 'Dark', icon: require('../assets/icons/kyogo.png'),
+        moves: [
+            "Gnaw", "Tease", "Chomp", "Dino Claws", "Chop", "Stretch", "Headbutt", "Pilfer",
+            "Primal Slash", "Baffle", "Slap Down", "Augment", "Mega Punch", "Barbs", "Bulk Up",
+            "Draco Beam", "Poison Barbs", "Power Focus", "Provoke", "Scapegoat", "Scavenge",
+            "Venom Chomp", "Barter", "Dodge", "Ill Will", "Mud Spatter"
+        ] },
+    { name: 'Dorogo', primaryType: 'Ancient', secondaryType: 'Dark', icon: require('../assets/icons/dorogo.png'),
+        moves: [
+            "Gnaw", "Tease", "Chomp", "Dino Claws", "Chop", "Stretch", "Headbutt", "Pilfer",
+            "Primal Slash", "Baffle", "Slap Down", "Augment", "Mega Punch", "Barbs", "Bulk Up",
+            "Draco Beam", "Poison Barbs", "Power Focus", "Provoke", "Scapegoat", "Scavenge",
+            "Venom Chomp", "Barter", "Dodge", "Ill Will", "Mud Spatter", "Egg Lob", "Dark Surge"
+        ] },
+    { name: 'Wiledile', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/wiledile.png'),
+        moves: [
+            "Gnaw", "Growl", "Spray", "Petal Pummel", "Examine", "Chomp", "Sap Plant", "Hydro Slash",
+            "Bush Whack", "Aqua Jaws", "Fungus Curse", "Mega Chomp", "Life Drain", "Tsunami", "Boom Bash",
+            "Bulk Up", "Driving Force", "Gnarly Gash", "Mudslide", "Photosynthesis", "Provoke",
+            "Wave Wrecker", "Dodge", "Ill Will", "Maroon", "Mud Spatter"
+        ] },
     { name: 'Wiledile (Woodsman)', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/wiledile.png'), specialTypeChart: 'Woodsman' },
-    { name: 'Mawamurk', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/mawamurk.png') },
+    { name: 'Mawamurk', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/mawamurk.png'),
+        moves: [
+            "Gnaw", "Growl", "Spray", "Petal Pummel", "Examine", "Chomp", "Sap Plant", "Hydro Slash",
+            "Bush Whack", "Aqua Jaws", "Fungus Curse", "Mega Chomp", "Life Drain", "Tsunami", "Boom Bash",
+            "Bulk Up", "Driving Force", "Gnarly Gash", "Mudslide", "Photosynthesis", "Provoke",
+            "Wave Wrecker", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Marsh Wave"
+        ] },
     { name: 'Mawamurk (Woodsman)', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/mawamurk.png'), specialTypeChart: 'Woodsman' },
-    { name: 'Ampole', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/ampole.png') },
-    { name: 'Amphiton', primaryType: 'Electric', secondaryType: 'Mind', icon: require('../assets/icons/amphiton.png') },
-    { name: 'Meditoad', primaryType: 'Electric', secondaryType: 'Mind', icon: require('../assets/icons/meditoad.png') },
+    { name: 'Ampole', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/ampole.png'),
+        moves: [
+            "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
+            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", "Déjà Vu", 
+            "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Barter", "Dodge", "Hypnotize", 
+            "Ill Will", "Thunderstrike"
+        ] },
+    { name: 'Amphiton', primaryType: 'Electric', secondaryType: 'Mind', icon: require('../assets/icons/amphiton.png'),
+        moves: [
+            "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
+            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", "Déjà Vu", 
+            "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Barter", "Dodge", "Hypnotize", 
+            "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash"
+        ] },
+    { name: 'Meditoad', primaryType: 'Electric', secondaryType: 'Mind', icon: require('../assets/icons/meditoad.png'),
+        moves: [
+            "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
+            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", "Déjà Vu", 
+            "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Barter", "Dodge", "Hypnotize", 
+            "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash", "Psychal Slap", "Electro-Punch"
+        ] },
     { name: 'Pwuff', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/pwuff.png') },
     { name: 'Bloatox', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/bloatox.png') },
     { name: 'Barblast', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/barblast.png') },
