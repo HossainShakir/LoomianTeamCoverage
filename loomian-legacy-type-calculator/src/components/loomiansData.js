@@ -856,26 +856,120 @@ export const loomiansData = [
             "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Barter", "Dodge", "Hypnotize", 
             "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash", "Psychal Slap", "Electro-Punch"
         ] },
-    { name: 'Pwuff', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/pwuff.png') },
-    { name: 'Bloatox', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/bloatox.png') },
-    { name: 'Barblast', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/barblast.png') },
-    { name: 'Swimp', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/swimp.png') },
-    { name: 'Snapr', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/snapr.png') },
-    { name: 'Garlash', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/garlash.png') },
-    { name: 'Hydrini', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/hydrini.png') },
+    { name: 'Pwuff', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/pwuff.png'),
+        moves: [
+            "Tail Slap", "Brace", "Spray", "Flurry", "Tease", "Headbutt", "Water Bomb", "Stretch", 
+            "Venom Chomp", "Power Focus", "Chilly Chomp", "Hydro Slash", "Baneful Bash", "Icicle Trap", 
+            "Poison", "Sharpen", "Tsunami", "Wave Wrecker", "Dodge", "Ill Will", "Marooon",
+            "Rejuvenate"
+        ] },
+    { name: 'Bloatox', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/bloatox.png'),
+        moves: [
+            "Tail Slap", "Brace", "Spray", "Flurry", "Tease", "Headbutt", "Water Bomb", "Stretch", 
+            "Venom Chomp", "Power Focus", "Chilly Chomp", "Hydro Slash", "Baneful Bash", "Icicle Trap", 
+            "Poison", "Sharpen", "Tsunami", "Wave Wrecker", "Dodge", "Ill Will", "Marooon",
+            "Rejuvenate", "Aqua Jaws", "Bulk Up"
+        ] },
+    { name: 'Barblast', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/barblast.png'),
+        moves: [
+            "Tail Slap", "Brace", "Spray", "Flurry", "Tease", "Headbutt", "Water Bomb", "Stretch", 
+            "Venom Chomp", "Power Focus", "Chilly Chomp", "Hydro Slash", "Baneful Bash", "Icicle Trap", 
+            "Poison", "Sharpen", "Tsunami", "Wave Wrecker", "Dodge", "Ill Will", "Marooon",
+            "Rejuvenate", "Toxiblast"
+        ] },
+    { name: 'Swimp', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/swimp.png'),
+        moves: [
+            "Tail Slap", "Stare", "Spray", "Stretch", "Chomp", "Water Bomb", "Charade", "Sleet Shot",
+            "Quick Pounce", "Provoke", "Aqua Jaws", "Mega Chomp", "Shrewd Blast", "Clay Slap", 
+            "Primal Slash", "Tease", "Toxic Tail", "Venom Chomp", "Barter", "Dodge", "Ill Will",
+            "Mud Spatter", "Plunge"
+        ] },
+    { name: 'Snapr', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/snapr.png'),
+        moves: [
+            "Tail Slap", "Stare", "Spray", "Stretch", "Chomp", "Water Bomb", "Charade", "Sleet Shot",
+            "Quick Pounce", "Provoke", "Aqua Jaws", "Mega Chomp", "Shrewd Blast", "Clay Slap", 
+            "Primal Slash", "Tease", "Toxic Tail", "Venom Chomp", "Barter", "Dodge", "Ill Will",
+            "Mud Spatter", "Plunge", "Chilly Chomp"
+        ] },
+    { name: 'Garlash', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/garlash.png'),
+        moves: [
+            "Tail Slap", "Stare", "Spray", "Stretch", "Chomp", "Water Bomb", "Charade", "Sleet Shot",
+            "Quick Pounce", "Provoke", "Aqua Jaws", "Mega Chomp", "Shrewd Blast", "Clay Slap", 
+            "Primal Slash", "Tease", "Toxic Tail", "Venom Chomp", "Barter", "Dodge", "Ill Will",
+            "Mud Spatter", "Plunge", "Chilly Chomp", "Vicious Snap"
+        ] },
+    { name: 'Hydrini', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/hydrini.png'),
+        moves: [
+            "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
+            "Venom Chomp", "Hydro Slash", "Parasitize", "Pheroblast", "Aqua Jaws", "Baneful Bash", 
+            "Hydro Blast", "Jet Stream", "Peace of Mind", "Thunderstrike", "Zip-Zap", "Dodge", "Ill Will",
+            "Maroon", "Tsunami"
+        ] },
     { name: 'Hydrini (Aqua Body)', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/hydrini.png'), specialTypeChart: 'AquaBody' },
-    { name: 'Bezeldew', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/bezeldew.png') },
+    { name: 'Bezeldew', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/bezeldew.png'),
+        moves: [
+            "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
+            "Venom Chomp", "Hydro Slash", "Parasitize", "Pheroblast", "Aqua Jaws", "Baneful Bash", 
+            "Hydro Blast", "Jet Stream", "Peace of Mind", "Thunderstrike", "Zip-Zap", "Dodge", "Ill Will",
+            "Maroon", "Tsunami", "Clay Slap", "Soft Water"
+        ] },
     { name: 'Bezeldew (Aqua Body)', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/bezeldew.png'), specialTypeChart: 'AquaBody' },
-    { name: 'Deludrix', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/deludrix.png') },
+    { name: 'Deludrix', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/deludrix.png'),
+        moves: [
+            "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
+            "Venom Chomp", "Hydro Slash", "Parasitize", "Pheroblast", "Aqua Jaws", "Baneful Bash", 
+            "Hydro Blast", "Jet Stream", "Peace of Mind", "Thunderstrike", "Zip-Zap", "Dodge", "Ill Will",
+            "Maroon", "Tsunami", "Clay Slap", "Soft Water", "Douse"
+        ] },
     { name: 'Deludrix (Aqua Body)', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/deludrix.png'), specialTypeChart: 'AquaBody' },
-    { name: 'Ceratot', primaryType: 'Ancient', secondaryType: 'Plant', icon: require('../assets/icons/ceratot.png') },
-    { name: 'Trepodon', primaryType: 'Ancient', secondaryType: 'Plant', icon: require('../assets/icons/trepodon.png') },
-    { name: 'Colossotrops', primaryType: 'Ancient', secondaryType: 'Plant', icon: require('../assets/icons/colossotrops.png') },
-    { name: 'Cupoink', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/cupoink.png') },
-    { name: 'Hoganosh', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/hoganosh.png') },
-    { name: 'Mochibi', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/mochibi.png') },
-    { name: 'Totemochi', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/totemochi.png') },
-    { name: 'Mocho', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/mocho.png') },
+    { name: 'Ceratot', primaryType: 'Ancient', secondaryType: 'Plant', icon: require('../assets/icons/ceratot.png'),
+        moves: [
+            "Gnaw", "Stare", "Petal Pummel", "Dino Claws", "Chomp", "Take Root", "Headbutt", "Leaf Barrage",
+            "Life Drain", "Sap Plant", "Primal Slash", "Earthquake", "Brawn Boost", "Bulk Up", "Mega Chomp",
+            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter"
+        ] },
+    { name: 'Trepodon', primaryType: 'Ancient', secondaryType: 'Plant', icon: require('../assets/icons/trepodon.png'),
+        moves: [
+            "Gnaw", "Stare", "Petal Pummel", "Dino Claws", "Chomp", "Take Root", "Headbutt", "Leaf Barrage",
+            "Life Drain", "Sap Plant", "Primal Slash", "Earthquake", "Brawn Boost", "Bulk Up", "Mega Chomp",
+            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter", "Briar Block"
+        ] },
+    { name: 'Colossotrops', primaryType: 'Ancient', secondaryType: 'Plant', icon: require('../assets/icons/colossotrops.png'),
+        moves: [
+            "Gnaw", "Stare", "Petal Pummel", "Dino Claws", "Chomp", "Take Root", "Headbutt", "Leaf Barrage",
+            "Life Drain", "Sap Plant", "Primal Slash", "Earthquake", "Brawn Boost", "Bulk Up", "Mega Chomp",
+            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter", "Briar Block", "Timber Thrash"
+        ] },
+    { name: 'Cupoink', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/cupoink.png'),
+        moves: [
+            "Stare", "Singe", "Pounce", "Burn Up", "Chomp", "Headbutt", "Fire Slam", "Sharpen", "Body Slam",
+            "Mega Chomp", "Bait", "Baneful Bash", "Battle Chime", "Muck Buck", "Raging Tackle", "Venom Chomp",
+            "Bulk Up", "Dodge", "Ill Will", "Rejuvenate"
+        ] },
+    { name: 'Hoganosh', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/hoganosh.png'),
+        moves: [
+            "Stare", "Singe", "Pounce", "Burn Up", "Chomp", "Headbutt", "Fire Slam", "Sharpen", "Body Slam",
+            "Mega Chomp", "Bait", "Baneful Bash", "Battle Chime", "Muck Buck", "Raging Tackle", "Venom Chomp",
+            "Bulk Up", "Dodge", "Ill Will", "Rejuvenate", "Fiery Fondant"
+        ] },
+    { name: 'Mochibi', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/mochibi.png'),
+        moves: [
+            "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
+            "Bamboozle", "Peace of Mind", "Chilly Chomp", "Icicle Trap", "Boom Bash", "Deep Freeze", "Scapegoat", 
+            "Barter", "Dodge", "Frost Beam"
+        ] },
+    { name: 'Totemochi', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/totemochi.png'),
+        moves: [
+            "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
+            "Bamboozle", "Peace of Mind", "Chilly Chomp", "Icicle Trap", "Boom Bash", "Deep Freeze", "Scapegoat", 
+            "Barter", "Dodge", "Frost Beam", "Charade"
+        ] },
+    { name: 'Mocho', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/mocho.png'),
+        moves: [
+            "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
+            "Bamboozle", "Peace of Mind", "Chilly Chomp", "Icicle Trap", "Boom Bash", "Deep Freeze", "Scapegoat", 
+            "Barter", "Dodge", "Frost Beam", "Charade", "Peppermint Breath"
+        ] },
     { name: 'Gwurm', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/gwurm.png') },
     { name: 'Gwurm (Hard Candy)', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/gwurm.png'), specialTypeChart: 'HardCandy' },
     { name: 'Odasho', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/odasho.png') },
