@@ -1287,32 +1287,117 @@ export const loomiansData = [
         ] },
     { name: 'Somata', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/somata.png'),
         moves: [
-            "Gnaw", "Stare", "Tail Slap", "Stretch", "Quick Pounce", "Harmonious Chord", "Provoke",
-            "Repeating Tune", "Peace of Mind", "Rant", "Dissonant Chord", "Magnify", "Resonate", 
-            "Boom Bash", "Discordance", "Raging Howl", "Splitting Headache", "Swat", "Bait", "Barter", 
-            "Dodge", "Hypnotize", "Ill Will", "Spare", "High-Pitch Screech"
+            "Spray", "Brainwash", "Dawdle", "Mind's Eye", "Spare", "Water Bomb", "Bait", "Flabbergast",
+            "Peace of Mind", "Dissipate", "Maroon", "Rant", "Déjà Vu", "Deja Vu", "Stratagem",
+            "Energy Gift", "Gust", "Health Gift", "Dodge", "Rejuvenate", "Tsunami"
         ] },
-    { name: 'Clionae', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/clionae.png') },
-    { name: 'Cinnaboo', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/cinnaboo.png') },
-    { name: 'Cinnogre', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/cinnogre.png') },
-    { name: 'Swirelle', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/swirelle.png') },
-    { name: 'Swishy', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/swishy.png') },
-    { name: 'Fiscarna', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/fiscarna.png') },
-    { name: 'Bunpuff', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunpuff.png') },
+    { name: 'Clionae', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/clionae.png'),
+        moves: [
+            "Spray", "Brainwash", "Dawdle", "Mind's Eye", "Spare", "Water Bomb", "Bait", "Flabbergast",
+            "Peace of Mind", "Dissipate", "Maroon", "Rant", "Déjà Vu", "Deja Vu", "Stratagem",
+            "Energy Gift", "Gust", "Health Gift", "Dodge", "Rejuvenate", "Tsunami", "Far Enchantment",
+            "Near Enchantment"
+        ] },
+    { name: 'Cinnaboo', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/cinnaboo.png'),
+        moves: [
+            "Startle", "Stare", "Stupefy", "Stretch", "Slime", "Mind's Eye", "Headbutt", "Spectral Burst",
+            "Provoke", "Fade Away", "Final Ruse", "Bag of Tricks", "Charade", "Energy Gift", "Health Gift",
+            "Muck Blast", "Poison", "Tricky Tactics", "Wonder Herb", "Bait", "Dodge", "Peace of Mind", "Spare"
+        ] },
+    { name: 'Cinnogre', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/cinnogre.png'),
+        moves: [
+            "Startle", "Stare", "Stupefy", "Stretch", "Slime", "Mind's Eye", "Headbutt", "Spectral Burst",
+            "Provoke", "Fade Away", "Final Ruse", "Bag of Tricks", "Charade", "Energy Gift", "Health Gift",
+            "Muck Blast", "Poison", "Tricky Tactics", "Wonder Herb", "Bait", "Dodge", "Peace of Mind", "Spare",
+            "Spite", "Boom Bash"
+        ] },
+    { name: 'Swirelle', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/swirelle.png'),
+        moves: [
+            "Strike", "Gust", "Spare", "Stretch", "Swat", "Quick Pounce", "Scavenge", "Pilfer", "Air Blade",
+            "Provoke", "Nosedive", "Perch", "Jet Stream", "Barter", "Dodge", "Mud Spatter"
+        ] },
+    { name: 'Swishy', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/swishy.png'),
+        moves: [
+            "Strike", "Spray", "Brace", "Water Bomb", "Provoke", "Examine", "Soft Water", "Maroon", "Scapegoat",
+            "Square One", "Mudslide", "Empathize", "Energy Gift", "Health Gift", "Stratagem", "Bait", "Barter",
+            "Dodge", "Frost Beam", "Peace of Mind", "Plunge", "Spare", "Tsunami"
+        ] },
+    { name: 'Fiscarna', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/fiscarna.png'),
+        moves: [
+            "Strike", "Spray", "Brace", "Water Bomb", "Provoke", "Examine", "Soft Water", "Maroon", "Scapegoat",
+            "Square One", "Mudslide", "Empathize", "Energy Gift", "Health Gift", "Stratagem", "Bait", "Barter",
+            "Dodge", "Frost Beam", "Peace of Mind", "Plunge", "Spare", "Tsunami", "Recycle"
+        ] },
+    { name: 'Bunpuff', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunpuff.png'),
+        moves: [
+            "Gnaw", "Petal Pummel", "Burrow", "Quicksand", "Swat", "Leaf Barrage", "Sap Plant", "Hop Kick", "Pine Shot",
+            "Tease", "Landslide", "Boom Bash", "Brawn Boost", "Earthquake", "Life Drain", "Magnify", "Nature's Force",
+            "Pheroblast", "Poison", "Timber Thrash", "Wonder Herb", "Dodge", "Mud Spatter", "Spare"
+        ] },
     { name: 'Bunpuff (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunpuff.png'), specialTypeChart: 'NoxiousWeeds' },
-    { name: 'Bunnecki', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunnecki.png') },
+    { name: 'Bunnecki', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunnecki.png'),
+        moves: [
+            "Gnaw", "Petal Pummel", "Burrow", "Quicksand", "Swat", "Leaf Barrage", "Sap Plant", "Hop Kick", "Pine Shot",
+            "Tease", "Landslide", "Boom Bash", "Brawn Boost", "Earthquake", "Life Drain", "Magnify", "Nature's Force",
+            "Pheroblast", "Poison", "Timber Thrash", "Wonder Herb", "Dodge", "Mud Spatter", "Spare", "Nab", "Boulder Blast"
+        ] },
     { name: 'Bunnecki (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunnecki.png'), specialTypeChart: 'NoxiousWeeds' },
-    { name: 'Dractus', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/dractus.png') },
+    { name: 'Dractus', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/dractus.png'),
+        moves: [
+            "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
+            "Pine Shot", "Coconut Bomb", "Hydro Slash", "Life Drain", "Nature's Force", "Primal Slash", "Shrewd Blast", 
+            "Wave Wrecker", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Peace of Mind", "Spare"
+        ] },
     { name: 'Dractus (Insulated)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/dractus.png'), specialTypeChart: 'Insulated' },
-    { name: 'Frutress', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/frutress.png') },
+    { name: 'Frutress', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/frutress.png'),
+        moves: [
+            "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
+            "Pine Shot", "Coconut Bomb", "Hydro Slash", "Life Drain", "Nature's Force", "Primal Slash", "Shrewd Blast", 
+            "Wave Wrecker", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Peace of Mind", "Spare", "Briar Block",
+            "Sap Plant", "Take Root", "Harvest", "Bequeath"
+        ] },
     { name: 'Frutress (Insulated)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/frutress.png'), specialTypeChart: 'Insulated' },
-    { name: 'Seedrake', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/seedrake.png') },
+    { name: 'Seedrake', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/seedrake.png'),
+        moves: [
+            "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
+            "Pine Shot", "Coconut Bomb", "Hydro Slash", "Life Drain", "Nature's Force", "Primal Slash", "Shrewd Blast", 
+            "Wave Wrecker", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Peace of Mind", "Spare", "Briar Block",
+            "Sap Plant", "Take Root", "Harvest", "Bequeath", "Thorn Slam"
+        ] },
     { name: 'Seedrake (Insulated)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/seedrake.png'), specialTypeChart: 'Insulated' },
-    { name: 'Volpup', primaryType: 'Electric', secondaryType: 'Toxic', icon: require('../assets/icons/volpup.png') },
-    { name: 'Halvantic', primaryType: 'Electric', secondaryType: 'Toxic', icon: require('../assets/icons/halvantic.png') },
-    { name: 'Impkin', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/impkin.png') },
-    { name: 'Grimmick', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/grimmick.png') },
-    { name: 'Imperior', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/imperior.png') },
+    { name: 'Volpup', primaryType: 'Electric', secondaryType: 'Toxic', icon: require('../assets/icons/volpup.png'),
+        moves: [
+            "Static Shock", "Gnaw", "Stare", "Chomp", "Poison", "Tase", "Swat", "Venom Chomp", "Stretch", "Thunder Chomp",
+            "Slash", "Sharpen", "Electro-Punch", "Baneful Bash", "Mega Chomp", "Muck Blast", "Primal Slash", 
+            "Thunder Crash", "Zip-Zap", "Bulk Up", "Dodge", "Ill Will", "Spare", "Thunderstrike"
+        ] },
+    { name: 'Halvantic', primaryType: 'Electric', secondaryType: 'Toxic', icon: require('../assets/icons/halvantic.png'),
+        moves: [
+            "Static Shock", "Gnaw", "Stare", "Chomp", "Poison", "Tase", "Swat", "Venom Chomp", "Stretch", "Thunder Chomp",
+            "Slash", "Sharpen", "Electro-Punch", "Baneful Bash", "Mega Chomp", "Muck Blast", "Primal Slash", 
+            "Thunder Crash", "Zip-Zap", "Bulk Up", "Dodge", "Ill Will", "Spare", "Thunderstrike", "Gnarly Gash"
+        ] },
+    { name: 'Impkin', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/impkin.png'),
+        moves: [
+            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt", "Déjà Vu",
+            "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Energy Gift", "Fade Away", "Health Gift",
+            "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Bait", "Barter",
+            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare"
+        ] },
+    { name: 'Grimmick', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/grimmick.png'),
+        moves: [
+            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt", "Déjà Vu",
+            "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Energy Gift", "Fade Away", "Health Gift",
+            "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Bait", "Barter",
+            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare"
+        ] },
+    { name: 'Imperior', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/imperior.png'),
+        moves: [
+            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt", "Déjà Vu",
+            "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Energy Gift", "Fade Away", "Health Gift",
+            "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Bait", "Barter",
+            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Tricky Tactics", "Boom Bash"
+        ] },
     { name: 'Mistlebud', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/mistlebud.png') },
     { name: 'Hollibunch', primaryType: 'Plant', secondaryType: 'Light', icon: require('../assets/icons/hollibunch.png') },
     { name: 'Cryocub', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/cryocub.png') },
