@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import TeamTypeCalculator from './components/TeamTypeCalculator';
 import TypeCoverageCalculator from './components/TypeCoverageCalculator';
 import MovesetSearchCalculator from './components/MovesetSearchCalculator';
+import Teambuilder from './components/Teambuilder'; 
 import './App.css';
 
 function renderApp(Component) {
@@ -21,5 +22,8 @@ document.getElementById('moveset-search-calculator-btn').addEventListener('click
     renderApp(MovesetSearchCalculator);
 });
 
-// Default view
+document.getElementById('teambuilder-btn').addEventListener('click', () => {
+    renderApp(Teambuilder);
+});
+
 renderApp(TeamTypeCalculator);

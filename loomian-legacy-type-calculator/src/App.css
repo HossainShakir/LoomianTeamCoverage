@@ -204,3 +204,46 @@ button:hover {
 .checkbox-label {
   font-size: 16px;
 }
+
+.loomian-editor {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.loomian-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.type-badges {
+  display: flex;
+  gap: 5px;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #e0e0e0;
+  font-size: 14px;
+}
+
+button {
+  margin: 5px;
+}
+
+.loomian-container {
+  border: 2px solid #007bff;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.loomian-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

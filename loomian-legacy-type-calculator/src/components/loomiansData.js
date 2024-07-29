@@ -4,14 +4,14 @@ export const loomiansData = [
             "Pounce", "Growl", "Singe", "Burrow", "Ear Slap", "Hop Kick", 
             "Fire Slam", "Power Focus", "Flaming Kick", "Barbs", "Body Crash", 
             "Boiling Press", "Chase Down", "Drudge", "Fire Breath", "Mega Punch", 
-            "Raging Flame", "Slap Down", "Bait", "Dodge", "Fire Breath", "Preemptive Strike", "Spare"
+            "Raging Flame", "Slap Down", "Bait", "Dodge", "Preemptive Strike", "Spare"
         ] },
     { name: 'Rabburn', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/rabburn.png'),
         moves: [
             "Rapid Fire", "Hop Kick", "Fire Slam", "Power Focus", "Flaming Kick",
             "Barbs", "Body Crash", "Boiling Press", "Chase Down", "Drudge",
             "Fire Breath", "Mega Punch", "Raging Flame", "Slap Down", "Bait",
-            "Bulk Up", "Dodge", "Fire Breath", "Pounce", "Growl", "Singe",
+            "Bulk Up", "Dodge", "Pounce", "Growl", "Singe",
             "Burrow", "Ear Slap", "Preemptive Strike", "Spare"
         ] },
     { name: 'Searknight', primaryType: 'Fire', secondaryType: 'Metal', icon: require('../assets/icons/searknight.png'),
@@ -19,7 +19,7 @@ export const loomiansData = [
             "Searing Steel", "Flaming Kick", "Armor Down",
             "Barbs", "Body Crash", "Boiling Press", "Chase Down", "Drudge",
             "Fire Breath", "Mega Punch", "Raging Flame", "Slap Down", "Bait",
-            "Bulk Up", "Dodge", "Fire Breath", "Pounce", "Growl", "Singe",
+            "Bulk Up", "Dodge", "Pounce", "Growl", "Singe",
             "Burrow", "Ear Slap", "Rapid Fire", "Hop Kick", "Fire Slam",
             "Power Focus", "Preemptive Strike", "Spare"
         ] },
@@ -1398,18 +1398,77 @@ export const loomiansData = [
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Bait", "Barter",
             "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Tricky Tactics", "Boom Bash"
         ] },
-    { name: 'Mistlebud', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/mistlebud.png') },
-    { name: 'Hollibunch', primaryType: 'Plant', secondaryType: 'Light', icon: require('../assets/icons/hollibunch.png') },
-    { name: 'Cryocub', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/cryocub.png') },
-    { name: 'Barbadger', primaryType: 'Ice', secondaryType: 'Brawler', icon: require('../assets/icons/barbadger.png') },
-    { name: 'Kyeggo', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kyeggo.png') },
-    { name: 'Doreggo', primaryType: 'Dark', secondaryType: 'Air', icon: require('../assets/icons/doreggo.png') },
-    { name: 'Dreggodyne', primaryType: 'Dark', secondaryType: 'Air', icon: require('../assets/icons/dreggodyne.png') },
-    { name: 'Wispur', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/wispur.png') },
-    { name: 'Lampurge', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/lampurge.png') },
-    { name: 'Charonyx', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/charonyx.png') },
-    { name: 'Smoal', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/smoal.png') },
-    { name: 'Charkiln', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/charkiln.png') },
+    { name: 'Mistlebud', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/mistlebud.png'),
+        moves: [
+            "Dawdle", "Petal Pummel", "Shine", "Sap Plant", "Leaf Barrage", "Energy Surge", "Disperse", "Summon", "Wonder Herb", 
+            "Gamma Pulse", "Nature's Force", "Energy Gift", "Health Gift", "Life Drain", "Luster Loot", "Pheroblast", "Dodge", 
+            "Flash 'n Flee", "Peace of Mind", "Spare", "Spectral Burst"
+        ] },
+    { name: 'Hollibunch', primaryType: 'Plant', secondaryType: 'Light', icon: require('../assets/icons/hollibunch.png'),
+        moves: [
+            "Dawdle", "Petal Pummel", "Shine", "Sap Plant", "Leaf Barrage", "Energy Surge", "Disperse", "Summon", "Wonder Herb", 
+            "Gamma Pulse", "Nature's Force", "Energy Gift", "Health Gift", "Life Drain", "Luster Loot", "Pheroblast", "Dodge", 
+            "Flash 'n Flee", "Peace of Mind", "Spare", "Spectral Burst", "Nova Blast"
+        ] },
+    { name: 'Cryocub', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/cryocub.png'),
+        moves: [
+            "Dawdle", "Flurry", "Burrow", "Gnaw", "Snowdozer", "Chomp", "Swipe", "Tamp", "Chilly Chomp", "Brawn Boost",
+            "Body Slam", "Ice Hammer", "Clay Slap", "Earthquake", "Dodge", "Frost Beam", "Spare"
+        ] },
+    { name: 'Barbadger', primaryType: 'Ice', secondaryType: 'Brawler', icon: require('../assets/icons/barbadger.png'),
+        moves: [
+            "Dawdle", "Flurry", "Burrow", "Gnaw", "Snowdozer", "Chomp", "Swipe", "Tamp", "Chilly Chomp", "Brawn Boost",
+            "Body Slam", "Ice Hammer", "Clay Slap", "Earthquake", "Dodge", "Frost Beam", "Spare", "Rogue Assault",
+            "Mega Punch", "Ill Will"
+        ] },
+    { name: 'Kyeggo', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kyeggo.png'),
+        moves: [
+            "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
+            "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
+            "Spare"
+        ] },
+    { name: 'Doreggo', primaryType: 'Dark', secondaryType: 'Air', icon: require('../assets/icons/doreggo.png'),
+        moves: [
+            "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
+            "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
+            "Spare", "Air Blade", "Gust", "Jet Stream"
+        ] },
+    { name: 'Dreggodyne', primaryType: 'Dark', secondaryType: 'Air', icon: require('../assets/icons/dreggodyne.png'),
+        moves: [
+            "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
+            "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
+            "Spare", "Air Blade", "Gust", "Jet Stream", "Egg Storm"
+        ] },
+    { name: 'Wispur', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/wispur.png'),
+        moves: [
+            "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Spectral Burst", 
+            "Luster Loot", "Gamma Pulse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast", "Rant", "Soul Storm", "Spite", "Square One", 
+            "Tear Down", "Tricky Tactics", "Fade Away", "Flash 'n Flee", "Frost Beam", "Peace of Mind", "Spare"
+        ] },
+    { name: 'Lampurge', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/lampurge.png'),
+        moves: [
+            "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Blindspot Batter",
+            "Charade", "Spectral Burst", "Luster Loot", "Gamma Pulse", "Final Ruse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast",
+            "Rant", "Soul Storm", "Spite", "Square One", "Tear Down", "Tricky Tactics", "Fade Away", "Flash 'n Flee", "Frost Beam", 
+            "Peace of Mind", "Spare"
+        ] },
+    { name: 'Charonyx', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/charonyx.png'),
+        moves: [
+            "Apparition", "Gamma Pulse", "Final Ruse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast",
+            "Rant", "Soul Storm", "Spite", "Square One", "Tear Down", "Tricky Tactics", "Dodge", "Fade Away", "Flash 'n Flee", "Frost Beam", 
+            "Peace of Mind", "Spare", "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", 
+            "Sleet Shot", "Blindspot Batter", "Charade", "Spectral Burst", "Luster Loot"
+        ] },
+    { name: 'Smoal', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/smoal.png'),
+        moves: [
+            "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", "Bash", "Poison", "Fire Slam", "Burn Up", "Power Focus", "Baneful Bash",
+            "Muck Blast", "Heavy Bash", "Fire Breath", "Boiling Press", "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast",
+            "Paint Shower", "Raging Flame", "Steel Crusher", "Tamp", "Tear Down", "Tribute", "Bulk Up", "Dodge", "Ill Will", "Spare"
+        ] },
+    { name: 'Charkiln', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/charkiln.png'),
+        moves: [
+            
+        ] },
     { name: 'Billoforge', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/billoforge.png') },
     { name: 'Sherbot', primaryType: 'Ice', secondaryType: 'Metal', icon: require('../assets/icons/sherbot.png') },
     { name: 'Llamba', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/llamba.png') },
