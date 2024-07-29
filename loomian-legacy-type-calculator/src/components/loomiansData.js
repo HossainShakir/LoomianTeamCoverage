@@ -1515,25 +1515,115 @@ export const loomiansData = [
         ] },
     { name: 'Naukout', primaryType: 'Ancient', secondaryType: 'Brawler', icon: require('../assets/icons/naukout.png'),
         moves: [
-            "Confound", "Dino Claws", "Shriek", "Strike", "Dodge", "Spare"
+            "Confound", "Dino Claws", "Shriek", "Strike", "Dodge", "Spare", "Shadowbox", "Punch", "Tamp", 
+            "Mega Punch", "Primal Slash", "Wave Wrecker", "Bane of Haste", "Vital Jab", "Bulk Up"
         ] },
-    { name: 'Yutiny', primaryType: 'Ancient', secondaryType: 'Air', icon: require('../assets/icons/yutiny.png') },
-    { name: 'Yuteen', primaryType: 'Ancient', secondaryType: 'Air', icon: require('../assets/icons/yuteen.png') },
-    { name: 'Yutyphoon', primaryType: 'Ancient', secondaryType: 'Air', icon: require('../assets/icons/yutyphoon.png') },
-    { name: 'Venile', primaryType: 'Ancient', secondaryType: 'Toxic', icon: require('../assets/icons/venile.png') },
-    { name: 'Verinox', primaryType: 'Ancient', secondaryType: 'Toxic', icon: require('../assets/icons/verinox.png') },
-    { name: 'Verinosaur', primaryType: 'Ancient', secondaryType: 'Toxic', icon: require('../assets/icons/verinosaur.png') },
-    { name: 'Nymvolt', primaryType: 'Electric', secondaryType: 'Bug', icon: require('../assets/icons/nymvolt.png') },
-    { name: 'Ohmbolt', primaryType: 'Electric', secondaryType: 'Bug', icon: require('../assets/icons/ohmbolt.png') },
-    { name: 'Plasmoth', primaryType: 'Electric', secondaryType: 'Bug', icon: require('../assets/icons/plasmoth.png') },
-    { name: 'Cicalute', primaryType: 'Bug', secondaryType: 'Mind', icon: require('../assets/icons/cicalute.png') },
-    { name: 'Violana', primaryType: 'Bug', secondaryType: 'Mind', icon: require('../assets/icons/violana.png') },
-    { name: 'Goswing', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/goswing.png') },
+    { name: 'Yutiny', primaryType: 'Ancient', secondaryType: 'Air', icon: require('../assets/icons/yutiny.png'),
+        moves: [
+            "Dino Claws", "Gust", "Peck", "Stare", "Headbutt", "Augment", "Cyclone Slam", "Slash", 
+            "Sharpen", "Air Blade", "Perch", "Body Slam", "Near Enchantment", "Aqua Jaws", "Nosedive",
+            "Outburst", "Provoke", "Wave Wrecker", "Dodge", "Ill Will", "Spare"
+        ] },
+    { name: 'Yuteen', primaryType: 'Ancient', secondaryType: 'Air', icon: require('../assets/icons/yuteen.png'),
+        moves: [
+            "Dino Claws", "Gust", "Peck", "Stare", "Headbutt", "Augment", "Cyclone Slam", "Slash", 
+            "Sharpen", "Air Blade", "Perch", "Body Slam", "Near Enchantment", "Aqua Jaws", "Nosedive",
+            "Outburst", "Provoke", "Wave Wrecker", "Dodge", "Ill Will", "Spare", "Primal Slash"
+        ] },
+    { name: 'Yutyphoon', primaryType: 'Ancient', secondaryType: 'Air', icon: require('../assets/icons/yutyphoon.png'),
+        moves: [
+            "Dino Claws", "Gust", "Peck", "Stare", "Headbutt", "Augment", "Cyclone Slam", "Slash", 
+            "Sharpen", "Air Blade", "Perch", "Body Slam", "Near Enchantment", "Aqua Jaws", "Nosedive",
+            "Outburst", "Provoke", "Wave Wrecker", "Dodge", "Ill Will", "Spare", "Primal Slash",
+            "Ruffled Feathers"
+        ] },
+    { name: 'Venile', primaryType: 'Ancient', secondaryType: 'Toxic', icon: require('../assets/icons/venile.png'),
+        moves: [
+            "Dino Claws", "Poison Barbs", "Toxic Tail", "Stare", "Headbutt", "Augment", "Venom Chomp", "Slash", 
+            "Sharpen", "Venom Slash", "Poison", "Body Slam", "Far Enchantment", "Baneful Bash", "Mega Punch",
+            "Outburst", "Provoke", "Dodge", "Ill Will", "Spare"
+        ] },
+    { name: 'Verinox', primaryType: 'Ancient', secondaryType: 'Toxic', icon: require('../assets/icons/verinox.png'),
+        moves: [
+            "Dino Claws", "Poison Barbs", "Toxic Tail", "Stare", "Headbutt", "Augment", "Venom Chomp", "Slash", 
+            "Sharpen", "Venom Slash", "Poison", "Body Slam", "Far Enchantment", "Baneful Bash", "Mega Punch",
+            "Outburst", "Provoke", "Dodge", "Ill Will", "Spare", "Primal Slash"
+        ] },
+    { name: 'Verinosaur', primaryType: 'Ancient', secondaryType: 'Toxic', icon: require('../assets/icons/verinosaur.png'),
+        moves: [
+            "Dino Claws", "Poison Barbs", "Toxic Tail", "Stare", "Headbutt", "Augment", "Venom Chomp", "Slash", 
+            "Sharpen", "Venom Slash", "Poison", "Body Slam", "Far Enchantment", "Baneful Bash", "Mega Punch",
+            "Outburst", "Provoke", "Dodge", "Ill Will", "Spare", "Primal Slash", "Barb Trap"
+        ] },
+    { name: 'Nymvolt', primaryType: 'Electric', secondaryType: 'Bug', icon: require('../assets/icons/nymvolt.png'),
+        moves: [
+            "Thunderstorm", "Static Shock", "Preemptive Strike", "Bug Bite", "Tase", "Shine", "Flash", 
+            "Precision Bolt", "Pester", "Tribute", "Power Siphon", "Pestilence", "Jump Start", "Energy Surge", 
+            "Pheroblast", "Energize", "Jolt", "Dissipate", "Energy Break", "Lightspeed Ray", "Provoke",
+            "Square One", "Teamwork", "Tear Down", "Thunder Blast", "Tricky Tactics", "Dodge", "Flash 'n Flee",
+            "Rejuvenate", "Spare", "Thunderstrike", "Zip-Zap"
+        ] },
+    { name: 'Ohmbolt', primaryType: 'Electric', secondaryType: 'Bug', icon: require('../assets/icons/ohmbolt.png'),
+        moves: [
+            "Thunderstorm", "Static Shock", "Preemptive Strike", "Bug Bite", "Tase", "Shine", "Flash", 
+            "Precision Bolt", "Pester", "Tribute", "Power Siphon", "Pestilence", "Jump Start", "Energy Surge", 
+            "Pheroblast", "Energize", "Jolt", "Dissipate", "Energy Break", "Lightspeed Ray", "Provoke",
+            "Square One", "Teamwork", "Tear Down", "Thunder Blast", "Tricky Tactics", "Dodge", "Flash 'n Flee",
+            "Rejuvenate", "Spare", "Thunderstrike", "Zip-Zap", "Tamp"
+        ] },
+    { name: 'Plasmoth', primaryType: 'Electric', secondaryType: 'Bug', icon: require('../assets/icons/plasmoth.png'),
+        moves: [
+            "Thunderstorm", "Static Shock", "Preemptive Strike", "Bug Bite", "Tase", "Shine", "Flash", 
+            "Precision Bolt", "Pester", "Tribute", "Power Siphon", "Pestilence", "Jump Start", "Energy Surge", 
+            "Pheroblast", "Energize", "Jolt", "Dissipate", "Energy Break", "Lightspeed Ray", "Provoke",
+            "Square One", "Teamwork", "Tear Down", "Thunder Blast", "Tricky Tactics", "Dodge", "Flash 'n Flee",
+            "Rejuvenate", "Spare", "Thunderstrike", "Zip-Zap", "Tamp", "Power Surge"
+        ] },
+    { name: 'Cicalute', primaryType: 'Bug', secondaryType: 'Mind', icon: require('../assets/icons/cicalute.png'),
+        moves: [
+            "Bug Bite", "Shriek", "Brainwash", "Brace", "Pester", "Déjà Vu", "Deja Vu", "Harmonious Chord",
+            "Flabbergast", "Mind's Eye", "Dissonant Chord", "Stratagem", "Pheroblast", "High-Pitch Screech", 
+            "Landslide", "Psycho Blast", "Repeating Tune", "Resonate", "Square One", "Dodge", "Mud Splatter",
+            "Peace of Mind", "Rejuvenate", "Spare"
+        ] },
+    { name: 'Violana', primaryType: 'Bug', secondaryType: 'Mind', icon: require('../assets/icons/violana.png'),
+        moves: [
+            "Bug Bite", "Shriek", "Brainwash", "Brace", "Pester", "Déjà Vu", "Deja Vu", "Harmonious Chord",
+            "Flabbergast", "Mind's Eye", "Dissonant Chord", "Stratagem", "Pheroblast", "High-Pitch Screech", 
+            "Landslide", "Psycho Blast", "Repeating Tune", "Resonate", "Square One", "Dodge", "Mud Splatter",
+            "Peace of Mind", "Rejuvenate", "Spare", "Discordance", "Air Blade", "Gust"
+        ] },
+    { name: 'Goswing', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/goswing.png'),
+        moves: [
+            "Peck", "Strike", "Gust", "Quick Pounce", "Charade", "Scavenge", "Slash", "Enamor", "Slap Down",
+            "Chase Down", "Sharpen", "Nab", "Perch", "Nosedive", "Body Slam", "Baffle", "Barbs", "Empathize",
+            "Examine", "Far Enchantment", "Icicle Trap", "Near Enchantment", "Poison Barbs", "Preemptive Strike",
+            "Provoke", "Raging Tackle", "Rogue Assault", "Teamwork", "Wave Wrecker", "Barter", "Bulk Up",
+            "Dodge", "Ill Will", "Plunge", "Spare"
+        ] },
     { name: 'Goswing (Hydrate)', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/goswing.png'), specialTypeChart: 'Hydrate' },
-    { name: 'Ganderveil', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/ganderveil.png') },
+    { name: 'Ganderveil', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/ganderveil.png'),
+        moves: [
+            "Peck", "Strike", "Gust", "Quick Pounce", "Charade", "Scavenge", "Slash", "Enamor", "Slap Down",
+            "Chase Down", "Sharpen", "Nab", "Perch", "Nosedive", "Body Slam", "Baffle", "Barbs", "Empathize",
+            "Examine", "Far Enchantment", "Icicle Trap", "Near Enchantment", "Poison Barbs", "Preemptive Strike",
+            "Provoke", "Raging Tackle", "Rogue Assault", "Teamwork", "Wave Wrecker", "Barter", "Bulk Up",
+            "Dodge", "Ill Will", "Plunge", "Spare", "Double Beat"
+        ] },
     { name: 'Ganderveil (Hydrate)', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/ganderveil.png'), specialTypeChart: 'Hydrate' },
-    { name: 'Duskit', primaryType: 'Spirit', secondaryType: 'Mind', icon: require('../assets/icons/duskit.png') },
-    { name: 'Ikazune', primaryType: 'Fire', secondaryType: 'Electric', icon: require('../assets/icons/ikazune.png') },
+    { name: 'Duskit', primaryType: 'Spirit', secondaryType: 'Mind', icon: require('../assets/icons/duskit.png'),
+        moves: [
+            "Startle", "Final Ruse", "Brainwash", "Stupefy", "Return to Sender", "Oppress", "Spectral Burst", 
+            "Peace of Mind", "Phantom Slash", "Déjà Vu", "Deja Vu", "Cerebral Slash", "Chase Down", "Dark Surge",
+            "Fade Away", "Flabbergast", "Harrow", "Outburst", "Psycho Blast", "Pyrokinesis", "Raging Flame", 
+            "Shadow Sprint", "Spare", "Tribute", "Dodge", "Hypnotize", "Rainbow Blast"
+        ] },
+    { name: 'Ikazune', primaryType: 'Fire', secondaryType: 'Electric', icon: require('../assets/icons/ikazune.png'),
+        moves: [
+            "Tase", "Singe", "Static Shock", "Thunder Chomp", "Blaze Chomp", "Electro Burst", "Fire Breath", 
+            "Power Focus", "Thunder Crash", "Energy Surge", "Nature's Force", "Burn Up", "Energize", "Jolt",
+            "Magnify", "Raging Flame", "Thunderstrike", "Zip-Zap", "Bait", "Dodge", "Flash 'n Flee", "Spare", 
+        ] },
     { name: 'Ikazune (Raging Fire)', primaryType: 'Fire', secondaryType: 'Electric', icon: require('../assets/icons/ikazune.png'), specialTypeChart: 'RagingFire' },
     { name: 'Ikazune (Rechargeable)', primaryType: 'Fire', secondaryType: 'Electric', icon: require('../assets/icons/ikazune.png'), specialTypeChart: 'Rechargeable' },
     { name: 'Protogon', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/protogon.png') },
