@@ -1,10 +1,8 @@
-// src/TypeBadge.js
 import React from 'react';
 import { typeAttributes } from './colors';
 
 const TypeBadge = ({ type, text }) => {
     const { color, textColor, icon } = typeAttributes[type] || { color: 'black', textColor: 'white', icon: '' };
-    const iconHTML = icon ? `<img src="${icon}" alt="${type}" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;">` : '';
 
     return (
         <span
@@ -13,11 +11,14 @@ const TypeBadge = ({ type, text }) => {
                 color: textColor,
                 padding: '2px 8px',
                 borderRadius: '12px',
-                display: 'inline-block',
+                display: 'inline-flex',
+                alignItems: 'center',
                 margin: '2px',
             }}
-            dangerouslySetInnerHTML={{ __html: `${iconHTML}${text}` }}
-        />
+        >
+            {icon && <img src={icon} alt={type} style={{ width: '16px', height: '16px', marginRight: '4px' }} />}
+            {text || type} 
+        </span>
     );
 };
 
