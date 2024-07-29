@@ -1439,11 +1439,36 @@ export const loomiansData = [
             "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
             "Spare", "Air Blade", "Gust", "Jet Stream", "Egg Storm"
         ] },
-    { name: 'Wispur', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/wispur.png') },
-    { name: 'Lampurge', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/lampurge.png') },
-    { name: 'Charonyx', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/charonyx.png') },
-    { name: 'Smoal', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/smoal.png') },
-    { name: 'Charkiln', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/charkiln.png') },
+    { name: 'Wispur', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/wispur.png'),
+        moves: [
+            "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Spectral Burst", 
+            "Luster Loot", "Gamma Pulse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast", "Rant", "Soul Storm", "Spite", "Square One", 
+            "Tear Down", "Tricky Tactics", "Fade Away", "Flash 'n Flee", "Frost Beam", "Peace of Mind", "Spare"
+        ] },
+    { name: 'Lampurge', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/lampurge.png'),
+        moves: [
+            "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Blindspot Batter",
+            "Charade", "Spectral Burst", "Luster Loot", "Gamma Pulse", "Final Ruse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast",
+            "Rant", "Soul Storm", "Spite", "Square One", "Tear Down", "Tricky Tactics", "Fade Away", "Flash 'n Flee", "Frost Beam", 
+            "Peace of Mind", "Spare"
+        ] },
+    { name: 'Charonyx', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/charonyx.png'),
+        moves: [
+            "Apparition", "Gamma Pulse", "Final Ruse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast",
+            "Rant", "Soul Storm", "Spite", "Square One", "Tear Down", "Tricky Tactics", "Dodge", "Fade Away", "Flash 'n Flee", "Frost Beam", 
+            "Peace of Mind", "Spare", "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", 
+            "Sleet Shot", "Blindspot Batter", "Charade", "Spectral Burst", "Luster Loot"
+        ] },
+    { name: 'Smoal', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/smoal.png'),
+        moves: [
+            "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", "Bash", "Poison", "Fire Slam", "Burn Up", "Power Focus", "Baneful Bash",
+            "Muck Blast", "Heavy Bash", "Fire Breath", "Boiling Press", "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast",
+            "Paint Shower", "Raging Flame", "Steel Crusher", "Tamp", "Tear Down", "Tribute", "Bulk Up", "Dodge", "Ill Will", "Spare"
+        ] },
+    { name: 'Charkiln', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/charkiln.png'),
+        moves: [
+            
+        ] },
     { name: 'Billoforge', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/billoforge.png') },
     { name: 'Sherbot', primaryType: 'Ice', secondaryType: 'Metal', icon: require('../assets/icons/sherbot.png') },
     { name: 'Llamba', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/llamba.png') },
