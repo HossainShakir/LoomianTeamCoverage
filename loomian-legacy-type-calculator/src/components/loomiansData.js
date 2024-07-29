@@ -1467,11 +1467,31 @@ export const loomiansData = [
         ] },
     { name: 'Charkiln', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/charkiln.png'),
         moves: [
-            
+            "Slime", "Blaze Punch", "Power Focus", "Double Whack", "Baneful Bash", "Muck Blast", "Heavy Bash", "Fire Breath", "Boiling Press",
+            "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast", "Paint Shower", "Raging Flame", "Steel Crusher", 
+            "Tamp", "Tear Down", "Tribute", "Bulk Up", "Dodge", "Ill Will", "Spare", "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", 
+            "Bash", "Poison", "Fire Slam", "Burn Up"
         ] },
-    { name: 'Billoforge', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/billoforge.png') },
-    { name: 'Sherbot', primaryType: 'Ice', secondaryType: 'Metal', icon: require('../assets/icons/sherbot.png') },
-    { name: 'Llamba', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/llamba.png') },
+    { name: 'Billoforge', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/billoforge.png'),
+        moves: [
+            "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", "Bash", "Poison", "Fire Slam", "Burn Up",
+            "Slime", "Blaze Punch", "Power Focus", "Double Whack", "Baneful Bash", "Boiling Press",
+            "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast", "Paint Shower", "Raging Flame", "Steel Crusher", 
+            "Tamp", "Tear Down", "Tribute"
+        ] },
+    { name: 'Sherbot', primaryType: 'Ice', secondaryType: 'Metal', icon: require('../assets/icons/sherbot.png'),
+        moves: [
+            "Flurry", "Strike", "Squawk", "Bash","Tune-up", "Sleet Shot", "Harmonious Chord", "Jump Start", "Heavy Bash",
+            "Metal Shriek", "Out of Order", "Dissonant Chord", "Metal Blast", "Air Blade", "Barbs", "Deep Freeze", "Deja Vu",
+            "Gust", "Icicle Trap", "Jet Stream", "Resonate", "Splitting Headache", "Tase", "Tribute", "Zip-Zap", "Dodge", 
+            "Frost Beam", "Peace of Mind", "Spare",
+        ] },
+    { name: 'Llamba', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/llamba.png'),
+        moves: [
+            "Spit", "Daydream", "Growl", "Chase Down", "Stretch", "Quick Pounce", "Scapegoat", "Nab", "Accelerate", "High Pitch Screech", 
+            "Recycle", "Body Slam", "Power Focus", "Stampede", "Boom Bash", "Energy Gift", "Health Gift", "Mega Kick", "Provoke",
+            "Raging Howl", "Raging Tackle", "Slumber", "Bait", "Dodge", "Ill Will", "Spare"
+        ] },
     { name: 'Llamba (Wholesome)', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/llamba.png'), specialTypeChart: 'Wholesome' },
     { name: 'Choochew', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/choochew.png') },
     { name: 'Choochew (Wholesome)', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/choochew.png'), specialTypeChart: 'Wholesome' },
