@@ -1129,32 +1129,169 @@ export const loomiansData = [
             "Earthquake", "Harrow", "Barter", "Dodge", "Ill Will", "Mud Spatter", "Spare", "Spectral Burst",
             "Brace", "Soul Harvest", "Icicle Tremor"
         ] },
-    { name: 'Snowl', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/snowl.png') },
-    { name: 'Stricicle', primaryType: 'Ice', secondaryType: 'Air', icon: require('../assets/icons/stricicle.png') },
-    { name: 'Wintrix', primaryType: 'Ice', secondaryType: 'Air', icon: require('../assets/icons/wintrix.png') },
-    { name: 'Snagull', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/snagull.png') },
-    { name: 'Snagulp', primaryType: 'Air', secondaryType: 'Toxic', icon: require('../assets/icons/snagulp.png') },
-    { name: 'Snagoop', primaryType: 'Air', secondaryType: 'Toxic', icon: require('../assets/icons/snagoop.png') },
-    { name: 'Makame', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/makame.png') },
-    { name: 'Makoro', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/makoro.png') },
-    { name: 'Tsukame', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/tsukame.png') },
-    { name: 'Cavenish', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/cavenish.png') },
-    { name: 'Banfino', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/banfino.png') },
-    { name: 'Kanki', primaryType: 'Water', secondaryType: 'Brawler', icon: require('../assets/icons/kanki.png') },
-    { name: 'Kanibo', primaryType: 'Water', secondaryType: 'Brawler', icon: require('../assets/icons/kanibo.png') },
-    { name: 'Sharpod', primaryType: 'Water', secondaryType: 'Metal', icon: require('../assets/icons/sharpod.png') },
-    { name: 'Samarine', primaryType: 'Water', secondaryType: 'Metal', icon: require('../assets/icons/samarine.png') },
-    { name: 'Lumica', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/lumica.png') },
-    { name: 'Lumello', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/lumello.png') },
-    { name: 'Polypi', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/polypi.png') },
-    { name: 'Laphyra', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/laphyra.png') },
-    { name: 'Jellusa', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/jellusa.png') },
-    { name: 'Taoshi', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/taoshi.png') },
-    { name: 'Taoshinu', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/taoshinu.png') },
-    { name: 'Kittone', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/kittone.png') },
-    { name: 'Lyricat', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/lyricat.png') },
-    { name: 'Boonary', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/boonary.png') },
-    { name: 'Somata', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/somata.png') },
+    { name: 'Snowl', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/snowl.png'),
+        moves: [
+            "Snowdozer", "Baffle", "Gust", "Icicle Trap", "Jet Stream", "Peace of Mind", "Perch", "Rant",
+            "Resonate", "Square One", "Dodge", "Spare"
+        ] },
+    { name: 'Stricicle', primaryType: 'Ice', secondaryType: 'Air', icon: require('../assets/icons/stricicle.png'),
+        moves: [
+            "Snowdozer", "Baffle", "Gust", "Icicle Trap", "Jet Stream", "Peace of Mind", "Perch", "Rant",
+            "Resonate", "Square One", "Dodge", "Spare", "Sleet Shot", "Scavenge", "Chilly Chomp",
+            "Power Focus", "Air Whip", "Provoke", "Air Blade", "Frost Beam", "Mud Spatter"
+        ] },
+    { name: 'Wintrix', primaryType: 'Ice', secondaryType: 'Air', icon: require('../assets/icons/wintrix.png'),
+        moves: [
+            "Snowdozer", "Baffle", "Gust", "Icicle Trap", "Jet Stream", "Peace of Mind", "Perch", "Rant",
+            "Resonate", "Square One", "Dodge", "Spare", "Sleet Shot", "Scavenge", "Chilly Chomp",
+            "Power Focus", "Air Whip", "Provoke", "Air Blade", "Frost Beam", "Mud Spatter", "Brain Freeze"
+        ] },
+    { name: 'Snagull', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/snagull.png'),
+        moves: [
+            "Peck", "Gnaw", "Squawk", "Stretch", "Gust", "Scavenge", "Provoke", "Poison", "Eerie Stare",
+            "Air Blade", "Jet Stream", "Perch", "Buck Up", "Muck Blast", "Nab", "Raging Howl", "Barter",
+            "Dodge", "Spare", "Tsunami"
+        ] },
+    { name: 'Snagulp', primaryType: 'Air', secondaryType: 'Toxic', icon: require('../assets/icons/snagulp.png'),
+        moves: [
+            "Peck", "Gnaw", "Squawk", "Stretch", "Gust", "Scavenge", "Provoke", "Poison", "Eerie Stare",
+            "Air Blade", "Jet Stream", "Perch", "Buck Up", "Muck Blast", "Nab", "Raging Howl", "Barter",
+            "Dodge", "Spare", "Tsunami", "Venom Chomp", "Slime"
+        ] },
+    { name: 'Snagoop', primaryType: 'Air', secondaryType: 'Toxic', icon: require('../assets/icons/snagoop.png'),
+        moves: [
+            "Peck", "Gnaw", "Squawk", "Stretch", "Gust", "Scavenge", "Provoke", "Poison", "Eerie Stare",
+            "Air Blade", "Jet Stream", "Perch", "Buck Up", "Muck Blast", "Nab", "Raging Howl", "Barter",
+            "Dodge", "Spare", "Tsunami", "Venom Chomp", "Slime", "Poison Barbs"
+        ] },
+    { name: 'Makame', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/makame.png'),
+        moves: [
+            "Spray", "Brace", "Examine", "Soft Water", "Repeating Tune", "Water Bomb", "Chilly Chomp", 
+            "Harmonious Chord", "Charade", "Dissonant Chord", "Sleet Shot", "Maroon", "Battle Horn", 
+            "Body Crash", "Peace of Mind", "Rant", "Rejuvenate", "Dodge", "Frost Beam", "Plunge", 
+            "Spare", "Tsunami"
+        ] },
+    { name: 'Makoro', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/makoro.png'),
+        moves: [
+            "Spray", "Brace", "Examine", "Soft Water", "Repeating Tune", "Water Bomb", "Chilly Chomp", 
+            "Harmonious Chord", "Charade", "Dissonant Chord", "Sleet Shot", "Maroon", "Battle Horn", 
+            "Body Crash", "Peace of Mind", "Rant", "Rejuvenate", "Dodge", "Frost Beam", "Plunge", 
+            "Spare", "Tsunami", "Aqua Jaws"
+        ] },
+    { name: 'Tsukame', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/tsukame.png'),
+        moves: [
+            "Spray", "Brace", "Examine", "Soft Water", "Repeating Tune", "Water Bomb", "Chilly Chomp", 
+            "Harmonious Chord", "Charade", "Dissonant Chord", "Sleet Shot", "Maroon", "Battle Horn", 
+            "Body Crash", "Peace of Mind", "Rant", "Rejuvenate", "Dodge", "Frost Beam", "Plunge", 
+            "Spare", "Tsunami", "Aqua Jaws", "Resonate"
+        ] },
+    { name: 'Cavenish', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/cavenish.png'),
+        moves: [
+            "Spray", "Petal Pummel", "Sap Plant", "Pounce", "Water Bomb", "Leaf Barrage", "Tease",
+            "Wonder Herb", "Life Drain", "Baffle", "Maroon", "Charade", "Nature's Force", "Photosynthesis",
+            "Provoke", "Scapegoat", "Slap Down", "Tear Down", "Tsunami", "Dodge", "Frost Beam", "Plunge", 
+            "Spare"
+        ] },
+    { name: 'Banfino', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/banfino.png'),
+        moves: [
+            "Spray", "Petal Pummel", "Sap Plant", "Pounce", "Water Bomb", "Leaf Barrage", "Tease",
+            "Wonder Herb", "Life Drain", "Baffle", "Maroon", "Charade", "Nature's Force", "Photosynthesis",
+            "Provoke", "Scapegoat", "Slap Down", "Tear Down", "Tsunami", "Dodge", "Frost Beam", "Plunge", 
+            "Spare", "Harvest"
+        ] },
+    { name: 'Kanki', primaryType: 'Water', secondaryType: 'Brawler', icon: require('../assets/icons/kanki.png'),
+        moves: [
+            "Spray", "Strike", "Swat", "Swipe", "Sharpen", "Hydro Slash", "Bludgeon", "Chase Down",
+            "Eerie Stare", "Bulk Up", "Piercing Drive", "Rough Up", "Body Slam", "Wave Wrecker", "Driving Force",
+            "Ice Hammer", "Raging Tackle", "Ill Will"
+        ] },
+    { name: 'Kanibo', primaryType: 'Water', secondaryType: 'Brawler', icon: require('../assets/icons/kanibo.png'),
+        moves: [
+            "Spray", "Strike", "Swat", "Swipe", "Sharpen", "Hydro Slash", "Bludgeon", "Chase Down",
+            "Eerie Stare", "Bulk Up", "Piercing Drive", "Rough Up", "Body Slam", "Wave Wrecker", "Driving Force",
+            "Ice Hammer", "Raging Tackle", "Ill Will", "Clawber"
+        ] },
+    { name: 'Sharpod', primaryType: 'Water', secondaryType: 'Metal', icon: require('../assets/icons/sharpod.png'),
+        moves: [
+            "Spray", "Tune-Up", "Metal Swipes", "Provoke", "Chomp", "Bash", "Sharpen", "Water Bomb", "Baffle",
+            "Aqua Jaws", "Double Whack", "Wave Wrecker", "Steel Crusher", "Thunder Chomp", "Vice Jaws", "Dodge",
+            "Fade Away", "Ill Will", "Mud Spatter", "Plunge", "Spare", "Tsunami"
+        ] },
+    { name: 'Samarine', primaryType: 'Water', secondaryType: 'Metal', icon: require('../assets/icons/samarine.png'),
+        moves: [
+            "Spray", "Tune-Up", "Metal Swipes", "Provoke", "Chomp", "Bash", "Sharpen", "Water Bomb", "Baffle",
+            "Aqua Jaws", "Double Whack", "Wave Wrecker", "Steel Crusher", "Thunder Chomp", "Vice Jaws", "Dodge",
+            "Fade Away", "Ill Will", "Mud Spatter", "Plunge", "Spare", "Tsunami"
+        ] },
+    { name: 'Lumica', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/lumica.png'),
+        moves: [
+            "Sting", "Spray", "Brace", "Water Bomb", "Sharpen", "Headbutt", "Poison Barbs", "Eerie Stare", 
+            "Hydro Slash", "Barbs", "Tamp", "Icicle Trap", "Blindspot Batter", "Bulk Up", "Piercing Drive", 
+            "Provoke", "Slumber", "Tear Down", "Wave Wrecker", "Dodge", "Spare", "Hypnotize"
+        ] },
+    { name: 'Lumello', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/lumello.png'),
+        moves: [
+            "Sting", "Spray", "Brace", "Water Bomb", "Sharpen", "Headbutt", "Poison Barbs", "Eerie Stare", 
+            "Hydro Slash", "Barbs", "Tamp", "Icicle Trap", "Blindspot Batter", "Bulk Up", "Piercing Drive", 
+            "Provoke", "Slumber", "Tear Down", "Wave Wrecker", "Dodge", "Spare", "Hypnotize", "Baneful Bash"
+        ] },
+    { name: 'Polypi', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/polypi.png'),
+        moves: [
+            "Spray", "Dawdle", "Shine", "Disperse", "Luster Loot", "Water Bomb", "Soft Water", 
+            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Déjà Vu", "Deja Vu", 
+            "Resonate", "Tease", "Dodge", "Flash 'n Flee", "Frost Beam", "Spare", "Tsunami"
+        ] },
+    { name: 'Laphyra', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/laphyra.png'),
+        moves: [
+            "Spray", "Dawdle", "Shine", "Disperse", "Luster Loot", "Water Bomb", "Soft Water", 
+            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Déjà Vu", "Deja Vu", 
+            "Resonate", "Tease", "Dodge", "Flash 'n Flee", "Frost Beam", "Spare", "Tsunami", 
+            "Peace of Mind"
+        ] },
+    { name: 'Jellusa', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/jellusa.png'),
+        moves: [
+            "Spray", "Dawdle", "Shine", "Disperse", "Luster Loot", "Water Bomb", "Soft Water", 
+            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Déjà Vu", "Deja Vu", 
+            "Resonate", "Tease", "Dodge", "Flash 'n Flee", "Frost Beam", "Spare", "Tsunami", 
+            "Peace of Mind", "Enamor"
+        ] },
+    { name: 'Taoshi', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/taoshi.png'),
+        moves: [
+            "Gnaw", "Spare", "Dawdle", "Chomp", "Stretch", "Scapegoat", "Swipe", "Quick Pounce",
+            "Sharpen", "Bequeath", "Blindspot Batter", "Mega Chomp", "Body Slam", "Bulk Up", "Swat", 
+            "Tear Down", "Bait", "Dodge", "Barter", "Mud Spatter", "Rejuvenate"
+        ] },
+    { name: 'Taoshinu', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/taoshinu.png'),
+        moves: [
+            "Gnaw", "Spare", "Dawdle", "Chomp", "Stretch", "Scapegoat", "Swipe", "Quick Pounce",
+            "Sharpen", "Bequeath", "Blindspot Batter", "Mega Chomp", "Body Slam", "Bulk Up", "Swat", 
+            "Tear Down", "Bait", "Dodge", "Barter", "Mud Spatter", "Rejuvenate", "Empathize"
+        ] },
+    { name: 'Kittone', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/kittone.png'),
+        moves: [
+            "Gnaw", "Stare", "Tail Slap", "Stretch", "Quick Pounce", "Harmonious Chord", "Provoke",
+            "Repeating Tune", "Peace of Mind", "Rant", "Dissonant Chord", "Magnify", "Resonate", 
+            "Boom Bash", "Discordance", "Raging Howl", "Splitting Headache", "Swat", "Bait", "Barter", 
+            "Dodge", "Hypnotize", "Ill Will", "Spare"
+        ] },
+    { name: 'Lyricat', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/lyricat.png'),
+        moves: [
+            "Gnaw", "Stare", "Tail Slap", "Stretch", "Quick Pounce", "Harmonious Chord", "Provoke",
+            "Repeating Tune", "Peace of Mind", "Rant", "Dissonant Chord", "Magnify", "Resonate", 
+            "Boom Bash", "Discordance", "Raging Howl", "Splitting Headache", "Swat", "Bait", "Barter", 
+            "Dodge", "Hypnotize", "Ill Will", "Spare", "High-Pitch Screech"
+        ] },
+    { name: 'Boonary', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/boonary.png'),
+        moves: [
+            "Emulate", "Startle", "Stupefy"
+        ] },
+    { name: 'Somata', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/somata.png'),
+        moves: [
+            "Gnaw", "Stare", "Tail Slap", "Stretch", "Quick Pounce", "Harmonious Chord", "Provoke",
+            "Repeating Tune", "Peace of Mind", "Rant", "Dissonant Chord", "Magnify", "Resonate", 
+            "Boom Bash", "Discordance", "Raging Howl", "Splitting Headache", "Swat", "Bait", "Barter", 
+            "Dodge", "Hypnotize", "Ill Will", "Spare", "High-Pitch Screech"
+        ] },
     { name: 'Clionae', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/clionae.png') },
     { name: 'Cinnaboo', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/cinnaboo.png') },
     { name: 'Cinnogre', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/cinnogre.png') },
