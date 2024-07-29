@@ -4,14 +4,14 @@ export const loomiansData = [
             "Pounce", "Growl", "Singe", "Burrow", "Ear Slap", "Hop Kick", 
             "Fire Slam", "Power Focus", "Flaming Kick", "Barbs", "Body Crash", 
             "Boiling Press", "Chase Down", "Drudge", "Fire Breath", "Mega Punch", 
-            "Raging Flame", "Slap Down", "Bait", "Dodge", "Fire Breath", "Preemptive Strike", "Spare"
+            "Raging Flame", "Slap Down", "Bait", "Dodge", "Preemptive Strike", "Spare"
         ] },
     { name: 'Rabburn', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/rabburn.png'),
         moves: [
             "Rapid Fire", "Hop Kick", "Fire Slam", "Power Focus", "Flaming Kick",
             "Barbs", "Body Crash", "Boiling Press", "Chase Down", "Drudge",
             "Fire Breath", "Mega Punch", "Raging Flame", "Slap Down", "Bait",
-            "Bulk Up", "Dodge", "Fire Breath", "Pounce", "Growl", "Singe",
+            "Bulk Up", "Dodge", "Pounce", "Growl", "Singe",
             "Burrow", "Ear Slap", "Preemptive Strike", "Spare"
         ] },
     { name: 'Searknight', primaryType: 'Fire', secondaryType: 'Metal', icon: require('../assets/icons/searknight.png'),
@@ -19,7 +19,7 @@ export const loomiansData = [
             "Searing Steel", "Flaming Kick", "Armor Down",
             "Barbs", "Body Crash", "Boiling Press", "Chase Down", "Drudge",
             "Fire Breath", "Mega Punch", "Raging Flame", "Slap Down", "Bait",
-            "Bulk Up", "Dodge", "Fire Breath", "Pounce", "Growl", "Singe",
+            "Bulk Up", "Dodge", "Pounce", "Growl", "Singe",
             "Burrow", "Ear Slap", "Rapid Fire", "Hop Kick", "Fire Slam",
             "Power Focus", "Preemptive Strike", "Spare"
         ] },
