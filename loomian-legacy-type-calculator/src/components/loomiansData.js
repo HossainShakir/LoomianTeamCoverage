@@ -1441,13 +1441,13 @@ export const loomiansData = [
         ] },
     { name: 'Wispur', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/wispur.png'),
         moves: [
-            "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Spectral Burst", 
+            "Hazy Shroud", "Dawdle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Spectral Burst", 
             "Luster Loot", "Gamma Pulse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast", "Rant", "Soul Storm", "Spite", "Square One", 
             "Tear Down", "Tricky Tactics", "Fade Away", "Flash 'n Flee", "Frost Beam", "Peace of Mind", "Spare"
         ] },
     { name: 'Lampurge', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/lampurge.png'),
         moves: [
-            "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Blindspot Batter",
+            "Hazy Shroud", "Dawdle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Blindspot Batter",
             "Charade", "Spectral Burst", "Luster Loot", "Gamma Pulse", "Final Ruse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast",
             "Rant", "Soul Storm", "Spite", "Square One", "Tear Down", "Tricky Tactics", "Fade Away", "Flash 'n Flee", "Frost Beam", 
             "Peace of Mind", "Spare"
@@ -1456,7 +1456,7 @@ export const loomiansData = [
         moves: [
             "Apparition", "Gamma Pulse", "Final Ruse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast",
             "Rant", "Soul Storm", "Spite", "Square One", "Tear Down", "Tricky Tactics", "Dodge", "Fade Away", "Flash 'n Flee", "Frost Beam", 
-            "Peace of Mind", "Spare", "Hazy Shroud", "Dwadle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", 
+            "Peace of Mind", "Spare", "Hazy Shroud", "Dawdle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", 
             "Sleet Shot", "Blindspot Batter", "Charade", "Spectral Burst", "Luster Loot"
         ] },
     { name: 'Smoal', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/smoal.png'),
@@ -1685,26 +1685,143 @@ export const loomiansData = [
         ] },
     { name: 'Ikazune (Raging Fire)', primaryType: 'Fire', secondaryType: 'Electric', icon: require('../assets/icons/ikazune.png'), specialTypeChart: 'RagingFire' },
     { name: 'Ikazune (Rechargeable)', primaryType: 'Fire', secondaryType: 'Electric', icon: require('../assets/icons/ikazune.png'), specialTypeChart: 'Rechargeable' },
-    { name: 'Protogon', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/protogon.png') },
-    { name: 'Dakuda', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/dakuda.png') },
+    { name: 'Protogon', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/protogon.png'),
+        moves: [
+            "Bash", "Tail Slap", "Tune-Up", "Metal Swipes", "Power Siphon", "Dart Burst", "Energy Surge", 
+            "Augment", "Metal Blast", "Déjà Vu", "Deja Vu", "Electro-Punch", "Steel Crusher", "Thunderstrike",
+            "Dodge", "Spare", "Zip-Zap"
+        ] },
+    { name: 'Dakuda', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/dakuda.png'),
+        moves: [
+            "Spray", "Growl", "Static Shock", "Water Bomb", "Tase", "Torrential Slash", "Swipe", "Power Focus",
+            "Thunder Slam", "Energize", "Provoke", "Slap Down", "Thunder Crash", "Venom Slash", "Bulk Up",
+            "Dodge", "Gamma Pulse", "Ill Will", "Maroon", "Plunge", "Spare", "Thunderstrike", "Tsunami"
+        ] },
     { name: 'Dakuda (Hydrate)', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/dakuda.png'), specialTypeChart: 'Hydrate' },
-    { name: 'Dakuda-Overcharged', primaryType: 'Water', secondaryType: 'Electric', icon: require('../assets/icons/dakuda-overcharged.png') },
-    { name: 'Cosmeleon', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cosmeleon.png') },
-    { name: 'Mutagon', primaryType: 'Mind', secondaryType: 'Brawler', icon: require('../assets/icons/mutagon.png') },
-    { name: 'Cephalops', primaryType: 'Water', secondaryType: 'Dark', icon: require('../assets/icons/cephalops.png') },
-    { name: 'Elephage', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/elephage.png') },
-    { name: 'Phagenaut', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/phagenaut.png') },
-    { name: 'Glacadia', primaryType: 'Ice', secondaryType: 'Ancient', icon: require('../assets/icons/glacadia.png') },
-    { name: 'Arceros', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/arceros.png') },
-    { name: 'Novadeaus', primaryType: 'Fire', secondaryType: 'Ice', icon: require('../assets/icons/novadeaus.png') },
-    { name: 'Morphezu', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/morphezu.png') },
-    { name: 'Behemoroth', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/behemoroth.png') },
-    { name: 'Leviatross', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/leviatross.png') },
-    { name: 'Metronette', primaryType: 'Dark', secondaryType: 'Mind', icon: require('../assets/icons/metronette.png') },
-    { name: 'Metronette-Willbound', primaryType: 'Dark', secondaryType: 'Mind', icon: require('../assets/icons/metronette-willbound.png') },
-    { name: 'Wabalisc', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/wabalisc.png') },
-    { name: 'Nymaurae', primaryType: 'Light', secondaryType: 'Air', icon: require('../assets/icons/nymaurae.png') },
-    { name: 'Cosmiore', primaryType: 'Ancient', secondaryType: 'Mind', icon: require('../assets/icons/cosmiore.png') },
+    { name: 'Dakuda-Overcharged', primaryType: 'Water', secondaryType: 'Electric', icon: require('../assets/icons/dakuda-overcharged.png'),
+        moves: [
+            "Spray", "Growl", "Static Shock", "Water Bomb", "Tase", "Torrential Slash", "Swipe", "Power Focus",
+            "Thunder Slam", "Energize", "Provoke", "Slap Down", "Thunder Crash", "Venom Slash", "Bulk Up",
+            "Dodge", "Gamma Pulse", "Ill Will", "Maroon", "Plunge", "Spare", "Thunderstrike", "Tsunami",
+            "Electro Blast"
+        ] },
+    { name: 'Cosmeleon', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cosmeleon.png'),
+        moves: [
+            "Strike", "Shriek", "Heat Wave", "Downpour", "Gale Force", "Hazy Shroud", "Thunderstorm", "Singe",
+            "Spray", "Air Shot", "Stupefy", "Static Shock", "Power Focus", "Harmonious Chord", "Swipe",
+            "Climate Cannon", "Blaze Chomp", "Hydro Slash", "Cyclone Slam", "Phantom Slash", "Thunder Slam", 
+            "Slash", "High-Pitch Screech", "Tribute", "Pepper Burst", "Maroon", "Air Blade", "Spectral Burst",
+            "Precision Bolt", "Flare Blast", "Hydro Blast", "Typhoon", "Phantom Blast", "Thunder Blast",
+            "Far Enchantment", "Gust", "Impersonate", "Near Enchantment", "Raging Flame", "Soft Water", 
+            "Peace of Mind", "Bulk Up", "Dodge", "Spare"
+        ] },
+    { name: 'Mutagon', primaryType: 'Mind', secondaryType: 'Brawler', icon: require('../assets/icons/mutagon.png'),
+        moves: [
+            "Brainwash", "Punch", "Stare", "Swipe", "Chop", "Telekinetic Sweep", "Frost Punch", "Brawn Boost",
+            "Mega Punch", "Cerebral Slash", "Body Crash", "Boom Bash", "Psycho Blast", "Spare", "Barter",
+            "Bulk Up", "Dodge", "Ill Will", "Peace of Mind", "Spare"
+        ] },
+    { name: 'Cephalops', primaryType: 'Water', secondaryType: 'Dark', icon: require('../assets/icons/cephalops.png'),
+        moves: [
+            "Spray", "Tease", "Brainwash", "Rant", "Water Bomb", "Soul Drain", "Tsunami", "Eerie Stare",
+            "Sleet Shot", "Square One", "Dark Surge", "Frost Beam", "Icicle Trap", "Barter", "Dodge",
+            "Hypnotize", "Plunge", "Spare"
+        ] },
+    { name: 'Elephage', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/elephage.png'),
+        moves: [
+            "Static Shock", "Memorize", "Examine", "Jolt", "Jump Start", "Tase", "Thunder Slam", "Power Siphon",
+            "Precision Bolt", "Energize", "Zip-Zap", "Thunder Clap", "Thunder Crash", "Body Slam", "Déjà Vu",
+            "Deja Vu", "Dissonant Chord", "Final Ruse", "Harmonious Chord", "High-Pitch Screech", "Magnify",
+            "Provoke", "Quick Pounce", "Rant", "Repeating Tune", "Tear Down", "Bait", "Barter", "Dodge",
+            "Flash 'n Flee", "Ill Will", "Rejuvenate", "Spare", "Thunderstrike"
+        ] },
+    { name: 'Phagenaut', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/phagenaut.png'),
+        moves: [
+            "Static Shock", "Memorize", "Examine", "Jolt", "Jump Start", "Tase", "Thunder Slam", "Power Siphon",
+            "Precision Bolt", "Energize", "Zip-Zap", "Thunder Clap", "Thunder Crash", "Body Slam", "Déjà Vu",
+            "Deja Vu", "Dissonant Chord", "Final Ruse", "Harmonious Chord", "High-Pitch Screech", "Magnify",
+            "Provoke", "Quick Pounce", "Rant", "Repeating Tune", "Tear Down", "Bait", "Barter", "Dodge",
+            "Flash 'n Flee", "Ill Will", "Rejuvenate", "Spare", "Thunderstrike", "Power Draw"
+        ] },
+    { name: 'Glacadia', primaryType: 'Ice', secondaryType: 'Ancient', icon: require('../assets/icons/glacadia.png'),
+        moves: [
+            "Flurry", "Confound", "Gnaw", "Disperse", "Frost Breath", "Slash", "Icicle Trap", "Shrewd Blast",
+            "Frost Beam", "Slumber", "Chilly Chomp", "Draco Beam", "Energy Break", "Far Enchantment", 
+            "High-Pitch Screech", "Ice Hammer", "Outburst", "Primal Slash", "Raging Howl", "Raging Tackle", 
+            "Dodge", "Ill Will", "Peace of Mind", "Spare"
+        ] },
+    { name: 'Arceros', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/arceros.png'),
+        moves: [
+            "Singe", "Dino Claws", "Gnaw", "Sharpen", "Boiling Press", "Slash", "Burn Up", "Primal Slash",
+            "Flaming Kick", "Slumber", "Blaze Chomp", "Draco Beam", "High-Pitch Screech", "Near Enchantment",
+            "Outburst", "Pyrokinesis", "Raging Howl", "Raging Tackle", "Shrewd Blast", "Bulk Up", "Dodge",
+            "Fire Breath", "Ill Will", "Spare"
+        ] },
+    { name: 'Novadeaus', primaryType: 'Fire', secondaryType: 'Ice', icon: require('../assets/icons/novadeaus.png'),
+        moves: [
+            "Flurry", "Confound", "Gnaw", "Disperse", "Frost Breath", "Slash", "Icicle Trap", "Shrewd Blast",
+            "Frost Beam", "Slumber", "Chilly Chomp", "Draco Beam", "Energy Break", "Far Enchantment", 
+            "High-Pitch Screech", "Ice Hammer", "Outburst", "Primal Slash", "Raging Howl", "Raging Tackle", 
+            "Dodge", "Ill Will", "Peace of Mind", "Spare", "Singe", "Dino Claws", "Gnaw", "Sharpen", "Boiling Press", 
+            "Burn Up", "Flaming Kick", "Blaze Chomp", "Near Enchantment", "Pyrokinesis", "Bulk Up", "Fire Breath"
+        ] },
+    { name: 'Morphezu', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/morphezu.png'),
+        moves: [
+            "Expert Onslaught", "Stare", "Gust", "Air Whip", "Eerie Stare", "Cyclone Slam", "Power Focus", 
+            "Headbutt", "Air Blade", "Slumber", "High-Pitch Screech", "Nosedive", "Jet Stream",
+            "Metal Blast", "Primal Slash", "Psycho Blast", "Shrewd Blast", "Dodge", "Hypnotize",
+            "Peace of Mind", "Spare"
+        ] },
+    { name: 'Behemoroth', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/behemoroth.png'),
+        moves: [
+            "Expert Onslaught", "Stare", "Burrow", "Quicksand", "Eerie Stare", "Clay Slap", "Power Focus", 
+            "Headbutt", "Mudslide", "Slumber", "High-Pitch Screech", "Earthquake", "Driving Force",
+            "Landslide", "Primal Slash", "Shrewd Blast", "Timber Thrash", "Bulk Up", "Dodge", "Hypnotize",
+            "Mud Spatter", "Spare"
+        ] },
+    { name: 'Leviatross', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/leviatross.png'),
+        moves: [
+            "Expert Onslaught", "Stare", "Soft Water", "Water Bomb", "Eerie Stare", "Aqua Jaws", "Power Focus", 
+            "Headbutt", "Maroon", "Slumber", "High-Pitch Screech", "Wave Wrecker", "Dark Surge",
+            "Mega Chomp", "Phantom Slash", "Primal Slash", "Shrewd Blast", "Spectral Burst", "Bulk Up", "Dodge", 
+            "Hypnotize", "Peace of Mind", "Plunge", "Spare", "Tsunami"
+        ] },
+    { name: 'Metronette', primaryType: 'Dark', secondaryType: 'Mind', icon: require('../assets/icons/metronette.png'),
+        moves: [
+            "Chomp", "Brainwash", "Stupefy", "Mind's Eye", "Flabbergast", "Eerie Stare", "Pyrokinesis", 
+            "Déjà Vu", "Deja Vu", "Phantom Slash", "Dark Surge", "Charade", "Bag of Tricks",
+            "Cerebral Slash", "Gnarly Gash", "Mega Punch", "Peace of Mind", "Provoke", "Psycho Blast",
+            "Soul Storm", "Splitting Headache", "Barter", "Bulk Up", "Dodge", "Hypnotize", "Ill Will",
+            "Mud Spatter", "Spare"
+        ] },
+    { name: 'Metronette-Willbound', primaryType: 'Dark', secondaryType: 'Mind', icon: require('../assets/icons/metronette-willbound.png'),
+        moves: [
+            "Chomp", "Brainwash", "Stupefy", "Mind's Eye", "Flabbergast", "Eerie Stare", "Pyrokinesis", 
+            "Déjà Vu", "Deja Vu", "Phantom Slash", "Dark Surge", "Charade", "Bag of Tricks",
+            "Cerebral Slash", "Gnarly Gash", "Mega Punch", "Peace of Mind", "Provoke", "Psycho Blast",
+            "Soul Storm", "Splitting Headache", "Barter", "Bulk Up", "Dodge", "Hypnotize", "Ill Will",
+            "Mud Spatter", "Spare", "Sinister Shackles"
+        ] },
+    { name: 'Wabalisc', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/wabalisc.png'),
+        moves: [
+            "Flurry", "Growl", "Headbutt", "Sharpen", "Chilly Chomp", "Eerie Stare", "Sleet Shot", 
+            "Talent Trade", "Frost Punch", "Body Slam", "Frost Beam", "Barbs", "Clay Slap", "Deep Freeze",
+            "Driving Force", "Earthquake", "Electro-Punch", "Ice Hammer", "Icicle Trap", "Luster Loot",
+            "Power Focus", "Rant", "Rogue Assault", "Scapegoat", "Dodge", "Ill Will", "Mud Spatter", "Spare"
+        ] },
+    { name: 'Nymaurae', primaryType: 'Light', secondaryType: 'Air', icon: require('../assets/icons/nymaurae.png'),
+        moves: [
+            "Shine", "Gust", "Tail Slap", "Disperse", "Air Whip", "Luster Loot", "Harmonious Chord", 
+            "Déjà Vu", "Deja Vu", "Air Blade", "Dissonant Chord", "Gamma Pulse", "Jet Stream", "Peace of Mind",
+            "Perch", "Wonder Herb", "Barter", "Dodge", "Flash 'n Flee", "Gamma Pulse", "Hypnotize", "Spare",
+            "Rainbow Blast"
+        ] },
+    { name: 'Cosmiore', primaryType: 'Ancient', secondaryType: 'Mind', icon: require('../assets/icons/cosmiore.png'),
+        moves: [
+            "Brace", "Confound", "Brainwash", "Bane of Haste", "Spare", "Power Focus", "Cerebral Slash", 
+            "Meteor Crash", "Meteor Smash", "Headbutt", "Slumber", "Psycho Blast", "Bulk Up", "Dissipate",
+            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast"
+        ] },
     { name: 'Nevermare', primaryType: 'Plant', secondaryType: 'Spirit', icon: require('../assets/icons/nevermare.png') },
     { name: 'Akhalos', primaryType: 'Ice', secondaryType: 'Water', icon: require('../assets/icons/akhalos.png') },
     { name: 'Akhalos (Aqua Body)', primaryType: 'Ice', secondaryType: 'Water', icon: require('../assets/icons/akhalos.png'), specialTypeChart: 'AquaBody' },

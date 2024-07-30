@@ -242,8 +242,53 @@ button {
 }
 
 .loomian-container img {
-  width: 50px;
+  width: 70px;
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.saved-team {
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.confirmation-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.message {
+  color: green;
+  font-weight: bold;
+}
+
+.loomian-icons img {
+  width: 70px;
+  height: 50px;
+  margin-right: 5px;
 }
