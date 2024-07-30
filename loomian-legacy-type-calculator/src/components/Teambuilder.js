@@ -117,16 +117,15 @@ function Teambuilder() {
     const exportTeam = () => {
         const teamString = currentTeam.map(loomian => {
             const { name, attributes } = loomian;
-            const { item, ability, tps, ups, personality, moves } = attributes;
+            const { item, ability, gender, tps, ups, personality, moves } = attributes;
             
             const tpsString = Object.entries(tps).map(([stat, value]) => value > 0 ? `${value} ${stat.toUpperCase()}` : '').filter(Boolean).join(' / ');
             const upsString = Object.entries(ups)
                 .map(([stat, value]) => value !== 40 ? `${value} ${stat.toUpperCase()}` : '')
                 .filter(Boolean)
                 .join(' / ');
-            const movesString = moves.filter(Boolean).map(move => `- ${move}`).join('\n');
-            
-            return `${name} @ ${item}\nAbility: ${ability}\nTPs: ${tpsString}\nUPs: ${upsString}\nPersonality: ${personality}\n${movesString}`;
+                const movesString = moves.filter(Boolean).map(move => `- ${move}`).join('\n');
+                return `${name} @ ${item}\nAbility: ${ability}\nGender: ${gender}\nTPs: ${tpsString}\nUPs: ${upsString}\nPersonality: ${personality}\n${movesString}`;
         }).join('\n\n');
         
         navigator.clipboard.writeText(teamString).then(() => {
@@ -195,10 +194,12 @@ function Teambuilder() {
                                             {loomian.types.primary !== 'None' && <TypeBadge type={loomian.types.primary} />}
                                             {loomian.types.secondary !== 'None' && <TypeBadge type={loomian.types.secondary} />}
                                         </div>
-                                        <button onClick={() => handleToggleEditor(index)}>
-                                            {expandedIndex === index ? 'Collapse' : 'Expand'}
-                                        </button>
-                                        <button onClick={() => removeLoomianFromTeam(index)}>Remove</button>
+                                        <div className="button-group">
+                                            <button onClick={() => handleToggleEditor(index)}>
+                                                {expandedIndex === index ? 'Collapse' : 'Expand'}
+                                            </button>
+                                            <button onClick={() => removeLoomianFromTeam(index)}>Remove</button>
+                                        </div>
                                     </div>
                                     {expandedIndex === index && (
                                         <LoomianEditor

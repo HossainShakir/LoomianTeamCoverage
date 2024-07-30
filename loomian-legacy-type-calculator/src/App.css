@@ -1,3 +1,4 @@
+/* Include the old CSS styles here */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -299,75 +300,75 @@ button {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 700px; /* Adjust width as needed */
+  width: 700px;
   padding: 20px;
   box-sizing: border-box;
 }
 
-.input-group {
+.loomian-editor .input-group {
   display: flex;
   align-items: center;
   gap: 15px;
   width: 100%;
 }
 
-.input-group label {
-  width: 150px; /* Adjust width as needed */
+.loomian-editor .input-group label {
+  width: 150px;
 }
 
-input[type="text"], select {
+.loomian-editor input[type="text"], .loomian-editor select {
   width: 100%;
 }
 
-.stats-container {
+.loomian-editor .stats-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.tp-up-labels {
+.loomian-editor .tp-up-labels {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.label {
-  width: 80px; /* Adjust width as needed */
+.loomian-editor .label {
+  width: 80px; 
   text-align: center;
   font-weight: bold;
-  /* Adding padding to move the text more to the right */
-  padding-left: 130px; /* Increase or decrease as needed */
+  padding-left: 130px; 
 }
 
-.stat-item {
+.loomian-editor .stat-item {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 100%;
 }
 
-.stat-item span {
-  width: 120px; /* Adjust width as needed */
+.loomian-editor .stat-item span {
+  width: 120px; 
   display: inline-block;
 }
 
-.tp-slider {
-  flex: 1; /* Allow sliders to grow and fill available space */
+.loomian-editor .tp-slider {
+  flex: 1;
 }
 
-.tp-number, .up-number {
-  width: 80px; /* Adjust width as needed */
+.loomian-editor .tp-number, .loomian-editor .up-number {
+  width: 80px;
   text-align: center;
 }
 
-input[type="number"] {
-  width: 80px; /* Adjust width as needed */
+.loomian-editor input[type="number"] {
+  width: 80px; 
 }
 
-.tp-number {
+.loomian-editor .tp-number {
   margin-right: 10px;
 }
 
-.tp-slider {
+.loomian-editor .tp-slider {
   margin-right: 10px;
 }
+

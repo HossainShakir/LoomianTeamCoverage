@@ -12,6 +12,7 @@ function LoomianEditor({ loomian, onSave }) {
     const [remainingTP, setRemainingTP] = useState(TOTAL_MAX_TP);
     const [statsData, setStatsData] = useState({});
     const [abilityOptions, setAbilityOptions] = useState([]);
+    const [confirmationMessage, setConfirmationMessage] = useState('');
 
     useEffect(() => {
         const loomianData = loomiansData.find((l) => l.name === loomian.name);
@@ -20,15 +21,6 @@ function LoomianEditor({ loomian, onSave }) {
             const sortedMoves = loomianData.moves.sort();
             setAvailableMoves(sortedMoves);
             setStatsData(loomianData.stats);
-
-            // Initialize attributes with loomian data
-            setAttributes((prevAttributes) => ({
-                ...prevAttributes,
-                ability: loomianData.abilities[0] || '',
-                gender: loomianData.gender || '',
-                tps: loomianData.tps || {},
-                ups: loomianData.ups || {}
-            }));
 
             // Set ability options including secret ability
             const abilitiesWithSecret = loomianData.secretAbility
@@ -83,6 +75,12 @@ function LoomianEditor({ loomian, onSave }) {
         }
     };
     
+    const handleSave = () => {
+        onSave(attributes);
+        setConfirmationMessage('Saved changes');
+        setTimeout(() => setConfirmationMessage(''), 2000); // Hide message after 2 seconds
+    };
+
     return (
         <div className="loomian-editor">
             <div className="input-group">
@@ -169,7 +167,8 @@ function LoomianEditor({ loomian, onSave }) {
                     onChange={(e) => handleAttributeChange('personality', e.target.value)}
                 />
             </div>
-            <button onClick={() => onSave(attributes)}>Save</button>
+            <button onClick={handleSave}>Save</button>
+            {confirmationMessage && <div className="message">{confirmationMessage}</div>}
         </div>
     );
 }
