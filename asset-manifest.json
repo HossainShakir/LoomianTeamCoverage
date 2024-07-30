@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/LoomianTeamCoverage/static/css/main.50431a10.css",
-    "main.js": "/LoomianTeamCoverage/static/js/main.f9cfdfa8.js",
+    "main.js": "/LoomianTeamCoverage/static/js/main.82846325.js",
     "static/media/ikazune.png": "/LoomianTeamCoverage/static/media/ikazune.28cede64d768ef241261.png",
     "index.html": "/LoomianTeamCoverage/index.html",
     "main.50431a10.css.map": "/LoomianTeamCoverage/static/css/main.50431a10.css.map",
-    "main.f9cfdfa8.js.map": "/LoomianTeamCoverage/static/js/main.f9cfdfa8.js.map"
+    "main.82846325.js.map": "/LoomianTeamCoverage/static/js/main.82846325.js.map"
   },
   "entrypoints": [
     "static/css/main.50431a10.css",
-    "static/js/main.f9cfdfa8.js"
+    "static/js/main.82846325.js"
   ]
 }
