@@ -7,14 +7,35 @@ const MAX_TP = 200;
 const TOTAL_MAX_TP = 500;
 
 function LoomianEditor({ loomian, onSave }) {
-    const [attributes, setAttributes] = useState(loomian.attributes);
+    const [attributes, setAttributes] = useState(loomian.attributes || { tps: {}, ups: {} });
     const [availableMoves, setAvailableMoves] = useState([]);
     const [remainingTP, setRemainingTP] = useState(TOTAL_MAX_TP);
+    const [statsData, setStatsData] = useState({});
+    const [abilityOptions, setAbilityOptions] = useState([]);
 
     useEffect(() => {
         const loomianData = loomiansData.find((l) => l.name === loomian.name);
-        const sortedMoves = loomianData.moves.sort();
-        setAvailableMoves(sortedMoves);
+        
+        if (loomianData) {
+            const sortedMoves = loomianData.moves.sort();
+            setAvailableMoves(sortedMoves);
+            setStatsData(loomianData.stats);
+
+            // Initialize attributes with loomian data
+            setAttributes((prevAttributes) => ({
+                ...prevAttributes,
+                ability: loomianData.abilities[0] || '',
+                gender: loomianData.gender || '',
+                tps: loomianData.tps || {},
+                ups: loomianData.ups || {}
+            }));
+
+            // Set ability options including secret ability
+            const abilitiesWithSecret = loomianData.secretAbility
+                ? loomianData.abilities.concat(loomianData.secretAbility)
+                : loomianData.abilities;
+            setAbilityOptions(abilitiesWithSecret);
+        }
     }, [loomian.name]);
 
     useEffect(() => {
@@ -23,44 +44,60 @@ function LoomianEditor({ loomian, onSave }) {
     }, [attributes.tps]);
 
     const handleAttributeChange = (attribute, value) => {
-        setAttributes({ ...attributes, [attribute]: value });
+        setAttributes((prevAttributes) => ({
+            ...prevAttributes,
+            [attribute]: value,
+        }));
     };
 
     const handleMoveChange = (index, value) => {
-        const updatedMoves = attributes.moves.map((move, i) => (i === index ? value : move));
-        setAttributes({ ...attributes, moves: updatedMoves });
-    };
-
-    const handleUPChange = (stat, value) => {
-        setAttributes({
-            ...attributes,
-            ups: { ...attributes.ups, [stat]: Math.min(MAX_UP, Math.max(0, parseInt(value))) },
+        setAttributes((prevAttributes) => {
+            const updatedMoves = prevAttributes.moves.map((move, i) => (i === index ? value : move));
+            return { ...prevAttributes, moves: updatedMoves };
         });
     };
 
     const handleTPChange = (stat, value) => {
-        const newValue = Math.min(MAX_TP, Math.max(0, parseInt(value)));
-        const totalTP = Object.values(attributes.tps).reduce((a, b) => a + b, 0) - attributes.tps[stat] + newValue;
+        const newValue = Math.min(MAX_TP, Math.max(0, parseInt(value, 10)));
+        setAttributes((prevAttributes) => {
+            const totalTP = Object.values(prevAttributes.tps).reduce((a, b) => a + b, 0) - (prevAttributes.tps[stat] || 0) + newValue;
 
-        if (totalTP <= TOTAL_MAX_TP) {
-            setAttributes({
-                ...attributes,
-                tps: { ...attributes.tps, [stat]: newValue },
-            });
-        }
+            if (totalTP <= TOTAL_MAX_TP) {
+                return {
+                    ...prevAttributes,
+                    tps: { ...prevAttributes.tps, [stat]: newValue },
+                };
+            }
+
+            return prevAttributes;
+        });
     };
 
+    const handleUPChange = (stat, value) => {
+        const newValue = parseInt(value, 10);
+        if (!isNaN(newValue)) {
+            setAttributes((prevAttributes) => ({
+                ...prevAttributes,
+                ups: { ...prevAttributes.ups, [stat]: Math.min(MAX_UP, Math.max(0, newValue)) },
+            }));
+        }
+    };
+    
     return (
         <div className="loomian-editor">
-            <div>
+            <div className="input-group">
                 <label>Ability: </label>
-                <input
-                    type="text"
+                <select
                     value={attributes.ability}
                     onChange={(e) => handleAttributeChange('ability', e.target.value)}
-                />
+                >
+                    <option value="">--Select Ability--</option>
+                    {abilityOptions.map((ability, i) => (
+                        <option key={i} value={ability}>{ability}</option>
+                    ))}
+                </select>
             </div>
-            <div>
+            <div className="input-group">
                 <label>Item: </label>
                 <input
                     type="text"
@@ -71,7 +108,7 @@ function LoomianEditor({ loomian, onSave }) {
             <div>
                 <label>Moves:</label>
                 {attributes.moves.map((move, index) => (
-                    <div key={index}>
+                    <div key={index} className="input-group">
                         <select value={move} onChange={(e) => handleMoveChange(index, e.target.value)}>
                             <option value="">--Select Move--</option>
                             {availableMoves.map((availableMove, i) => (
@@ -81,48 +118,54 @@ function LoomianEditor({ loomian, onSave }) {
                     </div>
                 ))}
             </div>
-            <div>
+            <div className="input-group">
                 <label>Gender: </label>
                 <select value={attributes.gender} onChange={(e) => handleAttributeChange('gender', e.target.value)}>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Ungendered">Ungendered</option>
+                    <option value="">--Select Gender--</option>
+                    {(loomian.gender || 'Male/Female').split('/').map((gender, i) => (
+                        <option key={i} value={gender.trim()}>{gender.trim()}</option>
+                    ))}
                 </select>
             </div>
-            <div>
-                <h3>UPs</h3>
-                {Object.keys(attributes.ups).map((stat) => (
-                    <div key={stat}>
-                        <label>{stat.toUpperCase()}: </label>
+            <div className="stats-container">
+                <div className="tp-up-labels">
+                    <div className="label">TPs</div>
+                    <div className="label">UPs</div>
+                </div>
+                {Object.keys(statsData).map((stat) => (
+                    <div key={stat} className="stat-item">
+                        <span>{stat.toUpperCase()}: {statsData[stat]}</span>
                         <input
                             type="number"
-                            value={attributes.ups[stat]}
+                            className="tp-number"
+                            value={attributes.tps[stat] || 0}
+                            onChange={(e) => handleTPChange(stat, e.target.value)}
+                            max={MAX_TP}
+                        />
+                        <input
+                            type="range"
+                            className="tp-slider"
+                            min="0"
+                            max={MAX_TP}
+                            value={attributes.tps[stat] || 0}
+                            onChange={(e) => handleTPChange(stat, e.target.value)}
+                        />
+                        <input
+                            type="number"
+                            className="up-number"
+                            value={attributes.ups[stat] !== undefined ? attributes.ups[stat] : 40}
                             onChange={(e) => handleUPChange(stat, e.target.value)}
                             max={MAX_UP}
                         />
                     </div>
                 ))}
-            </div>
-            <div>
-                <h3>TPs</h3>
-                {Object.keys(attributes.tps).map((stat) => (
-                    <div key={stat}>
-                        <label>{stat.toUpperCase()}: </label>
-                        <input
-                            type="number"
-                            value={attributes.tps[stat]}
-                            onChange={(e) => handleTPChange(stat, e.target.value)}
-                            max={MAX_TP}
-                        />
-                    </div>
-                ))}
                 <div>Remaining TPs: {remainingTP}</div>
             </div>
-            <div>
+            <div className="input-group">
                 <label>Personality: </label>
                 <input
                     type="text"
-                    value={attributes.personality}
+                    value={attributes.personality || ''}
                     onChange={(e) => handleAttributeChange('personality', e.target.value)}
                 />
             </div>

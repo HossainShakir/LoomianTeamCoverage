@@ -15,8 +15,8 @@ function Teambuilder() {
     const [error, setError] = useState('');
     const [teamToDelete, setTeamToDelete] = useState(null);
     const [message, setMessage] = useState('');
-    const [selectedTeamIndex, setSelectedTeamIndex] = useState(null); // Track the selected team
-    const [showAddTeam, setShowAddTeam] = useState(false); // Control visibility of the add team view
+    const [selectedTeamIndex, setSelectedTeamIndex] = useState(null); 
+    const [showAddTeam, setShowAddTeam] = useState(false); 
 
     useEffect(() => {
         const savedTeams = JSON.parse(localStorage.getItem('teams')) || [];
@@ -84,15 +84,10 @@ function Teambuilder() {
     };
 
     const createNewTeam = () => {
-        // Save the current team if changes were made before starting fresh
-        if (currentTeam.length > 0 || teamName) {
-            saveTeam(); // Save current team if changes were made
-        }
-        // Reset for a new team
         setTeamName('');
         setCurrentTeam([]);
-        setSelectedTeamIndex(null); // Reset selected team index
-        setShowAddTeam(true); // Show add team view
+        setSelectedTeamIndex(null);
+        setShowAddTeam(true);
     };
 
     const editTeam = (index) => {
@@ -112,7 +107,7 @@ function Teambuilder() {
         setTeams(updatedTeams);
         localStorage.setItem('teams', JSON.stringify(updatedTeams));
         setTeamToDelete(null);
-        setSelectedTeamIndex(null); // Deselect team after deletion
+        setSelectedTeamIndex(null);
     };
 
     const cancelDelete = () => {
@@ -123,9 +118,14 @@ function Teambuilder() {
         const teamString = currentTeam.map(loomian => {
             const { name, attributes } = loomian;
             const { item, ability, tps, ups, personality, moves } = attributes;
+            
             const tpsString = Object.entries(tps).map(([stat, value]) => value > 0 ? `${value} ${stat.toUpperCase()}` : '').filter(Boolean).join(' / ');
-            const upsString = Object.entries(ups).map(([stat, value]) => value < 40 ? `${value} ${stat.toUpperCase()}` : '').filter(Boolean).join(' / ');
+            const upsString = Object.entries(ups)
+                .map(([stat, value]) => value !== 40 ? `${value} ${stat.toUpperCase()}` : '')
+                .filter(Boolean)
+                .join(' / ');
             const movesString = moves.filter(Boolean).map(move => `- ${move}`).join('\n');
+            
             return `${name} @ ${item}\nAbility: ${ability}\nTPs: ${tpsString}\nUPs: ${upsString}\nPersonality: ${personality}\n${movesString}`;
         }).join('\n\n');
         
@@ -133,12 +133,12 @@ function Teambuilder() {
             setMessage('Copied to clipboard!');
             setTimeout(() => setMessage(''), 2000);
         });
-    };
+    };    
 
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-            <h1>WORK IN PROGRESS, YOUR DATA IS NOT SAFE</h1>
+
             {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>

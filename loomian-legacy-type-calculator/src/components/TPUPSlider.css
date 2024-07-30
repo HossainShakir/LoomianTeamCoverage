@@ -1,0 +1,37 @@
+.tp-up-slider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tp-up-slider label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.stats-bar {
+    display: flex;
+    align-items: center;
+}
+
+.stat-value {
+    margin-right: 10px;
+}
+
+.bar-container {
+    width: 100px;
+    height: 20px;
+    background-color: #ccc;
+    margin: 0 10px;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+}
+
+.tp-up-slider input[type="range"],
+.tp-up-slider input[type="number"] {
+    margin: 0 10px;
+}

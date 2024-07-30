@@ -292,3 +292,82 @@ button {
   height: 50px;
   margin-right: 5px;
 }
+
+/* loomian editor */
+
+.loomian-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 700px; /* Adjust width as needed */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-group label {
+  width: 150px; /* Adjust width as needed */
+}
+
+input[type="text"], select {
+  width: 100%;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tp-up-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  width: 80px; /* Adjust width as needed */
+  text-align: center;
+  font-weight: bold;
+  /* Adding padding to move the text more to the right */
+  padding-left: 130px; /* Increase or decrease as needed */
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.stat-item span {
+  width: 120px; /* Adjust width as needed */
+  display: inline-block;
+}
+
+.tp-slider {
+  flex: 1; /* Allow sliders to grow and fill available space */
+}
+
+.tp-number, .up-number {
+  width: 80px; /* Adjust width as needed */
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 80px; /* Adjust width as needed */
+}
+
+.tp-number {
+  margin-right: 10px;
+}
+
+.tp-slider {
+  margin-right: 10px;
+}

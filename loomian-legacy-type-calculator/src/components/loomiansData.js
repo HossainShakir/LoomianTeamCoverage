@@ -5,7 +5,21 @@ export const loomiansData = [
             "Fire Slam", "Power Focus", "Flaming Kick", "Barbs", "Body Crash", 
             "Boiling Press", "Chase Down", "Drudge", "Fire Breath", "Mega Punch", 
             "Raging Flame", "Slap Down", "Bait", "Dodge", "Preemptive Strike", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 57,
+            energy: 51,
+            attack: 60,
+            defense: 67,
+            rattack: 36,
+            rdefense: 50,
+            speed: 40
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Terrifying',
+        weight: '20.4 kg',
+        height: '83.8 cm'},
     { name: 'Rabburn', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/rabburn.png'),
         moves: [
             "Rapid Fire", "Hop Kick", "Fire Slam", "Power Focus", "Flaming Kick",
