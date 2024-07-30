@@ -138,7 +138,7 @@ function Teambuilder() {
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-
+            <h1>WORK IN PROGRESS, YOUR DATA IS NOT SAFE</h1>
             {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>
