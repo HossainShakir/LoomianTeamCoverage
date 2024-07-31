@@ -15,7 +15,7 @@ export const loomiansData = [
             rdefense: 50,
             speed: 40
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Terrifying',
         weight: '20.4 kg',
@@ -37,7 +37,7 @@ export const loomiansData = [
             rdefense: 68,
             speed: 60
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Terrifying',
         weight: '39.5 kg',
@@ -60,7 +60,7 @@ export const loomiansData = [
             rdefense: 82,
             speed: 65
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Terrifying',
         weight: '98.4 kg',
@@ -82,7 +82,7 @@ export const loomiansData = [
             rdefense: 45,
             speed: 41
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Power Napper',
         weight: '17.2 kg',
@@ -104,7 +104,7 @@ export const loomiansData = [
             rdefense: 65,
             speed: 51
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Power Napper',
         weight: '33.6 kg',
@@ -127,7 +127,7 @@ export const loomiansData = [
             rdefense: 83,
             speed: 60
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Power Napper',
         weight: '91.6 kg',
@@ -149,7 +149,7 @@ export const loomiansData = [
             rdefense: 36,
             speed: 64
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Thriving Pace',
         weight: '15.9 kg',
@@ -171,7 +171,7 @@ export const loomiansData = [
             rdefense: 45,
             speed: 84
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Thriving Pace',
         weight: '37.2 kg',
@@ -194,7 +194,7 @@ export const loomiansData = [
             rdefense: 65,
             speed: 104
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Thriving Pace',
         weight: '74.8 kg',
@@ -214,7 +214,7 @@ export const loomiansData = [
             rdefense: 62,
             speed: 60
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Applied Frustration',
         weight: '17.2 kg',
@@ -235,7 +235,7 @@ export const loomiansData = [
             rdefense: 63,
             speed: 90
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Applied Frustration',
         weight: '25.9 kg',
@@ -256,7 +256,7 @@ export const loomiansData = [
             rdefense: 87,
             speed: 75
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Applied Frustration',
         weight: '80.7 kg',
@@ -276,7 +276,7 @@ export const loomiansData = [
             rdefense: 50,
             speed: 69
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Sharp Claws',
         weight: '8.2 kg',
@@ -296,7 +296,7 @@ export const loomiansData = [
             rdefense: 60,
             speed: 85
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Sharp Claws',
         weight: '30.4 kg',
@@ -317,7 +317,7 @@ export const loomiansData = [
             rdefense: 65,
             speed: 99
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Sharp Claws',
         weight: '65.8 kg',
@@ -337,7 +337,7 @@ export const loomiansData = [
             rdefense: 60,
             speed: 45
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Staunch',
         weight: '6.4 kg',
@@ -358,7 +358,7 @@ export const loomiansData = [
             rdefense: 65,
             speed: 60
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Staunch',
         weight: '35.4 kg',
@@ -380,7 +380,7 @@ export const loomiansData = [
             rdefense: 75,
             speed: 45
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Staunch',
         weight: '108.9 kg',
@@ -400,7 +400,7 @@ export const loomiansData = [
             rdefense: 55,
             speed: 65
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Brute Force',
         weight: '14.1 kg',
@@ -421,7 +421,7 @@ export const loomiansData = [
             rdefense: 60,
             speed: 89
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Brute Force',
         weight: '33.6 kg',
@@ -442,7 +442,7 @@ export const loomiansData = [
             rdefense: 74,
             speed: 119
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Brute Force',
         weight: '59.9 kg',
@@ -462,7 +462,7 @@ export const loomiansData = [
             rdefense: 38,
             speed: 40
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Territorial', 'Confidence'],
         secretAbility: 'Neutralize',
         weight: '24 kg',
@@ -483,15 +483,15 @@ export const loomiansData = [
             rdefense: 78,
             speed: 71
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Dusk', 'Confidence'],
         secretAbility: 'Overshadow',
         weight: '38.1 kg',
         height: '99.1 cm' },
     { name: 'Luxoar', primaryType: 'Light', secondaryType: 'None', icon: require('../assets/icons/luxoar.png'),
         moves: [
-            "Luminous Roar", "Scapegoat", "Disperse", "Raging Howl", "Gamma Pulse", "Peace of Mind",
-            "Resonate", "Body Slam", "Chase Down", "Disperse", "Gloominous Roar", "High-Pitch Screech",
+            "Luminous Roar", "Scapegoat", "Disperse", "Gamma Pulse", "Peace of Mind",
+            "Resonate", "Body Slam", "Chase Down", "Gloominous Roar", "High-Pitch Screech",
             "Power Focus", "Raging Howl", "Raging Tackle", "Sharpen", "Dodge", "Gnaw", "Dawdle",
             "Stretch", "Quick Pounce", "Swipe", "Spare"
         ],
@@ -504,16 +504,16 @@ export const loomiansData = [
             rdefense: 69,
             speed: 91
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Dawn', 'Confidence'],
         secretAbility: 'Illuminate',
         weight: '37.2 kg',
         height: '99.1 cm' },
     { name: 'Tiklipse', primaryType: 'Light', secondaryType: 'Dark', icon: require('../assets/icons/tiklipse.png'),
         moves: [
-            "Scapegoat", "Sharpen", "Disperse", "Raging Howl", "Raging Tackle", "Gamma Pulse",
+            "Scapegoat", "Sharpen", "Raging Howl", "Raging Tackle", "Gamma Pulse",
             "Dark Surge", "Rant", "Body Slam", "Chase Down", "Disperse", "Gloominous Roar",
-            "High-Pitch Screech", "Power Focus","Sharpen", "Bulk Up", "Dodge", "Spare", 
+            "High-Pitch Screech", "Power Focus", "Bulk Up", "Dodge", "Spare", 
             "Peace of Mind", "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe"
         ],
         stats: {
@@ -525,7 +525,7 @@ export const loomiansData = [
             rdefense: 83,
             speed: 96
         },
-        gender: 'Male/Female', 
+        gender: ['Male', 'Female'], 
         abilities: ['Circadian'],
         secretAbility: 'Total Eclipse',
         weight: '42.6 kg',

@@ -332,12 +332,13 @@ button {
 }
 
 .loomian-editor .label {
-  width: 80px; 
+  width: 230px; 
   text-align: center;
   font-weight: bold;
-  padding-left: 130px; 
+  padding-left: 55px; 
 }
 
+/* Loomian Editor */
 .loomian-editor .stat-item {
   display: flex;
   align-items: center;
@@ -346,22 +347,25 @@ button {
 }
 
 .loomian-editor .stat-item span {
-  width: 120px; 
+  width: 120px;
   display: inline-block;
 }
 
 .loomian-editor .tp-slider {
-  flex: 1;
+  flex: 1; 
+  max-width: 340px; 
+  margin-right: 10px; 
 }
 
 .loomian-editor .tp-number, .loomian-editor .up-number {
-  width: 80px;
-  text-align: center;
+  width: 80px; 
+  text-align: center; 
 }
 
 .loomian-editor input[type="number"] {
   width: 80px; 
 }
+
 
 .loomian-editor .tp-number {
   margin-right: 10px;
@@ -408,4 +412,11 @@ button {
   z-index: 1;
   margin-top: -10px; 
   width: 100%; 
+}
+
+.secret-ability-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 10px;
 }

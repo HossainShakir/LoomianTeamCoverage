@@ -55,9 +55,9 @@ function Teambuilder() {
     const getDefaultAttributes = () => ({
         ability: '',
         level: 50,
-        gender: 'Male',
+        gender: '',
         moves: ['', '', '', ''],
-        ups: { hp: 40, energy: 40, attack: 40, defense: 40, rAttack: 40, rDefense: 40, speed: 40 },
+        ups: { hp: 40, energy: 40, attack: 40, defense: 40, rattack: 40, rdefense: 40, speed: 40 },
         tps: { hp: 0, energy: 0, attack: 0, defense: 0, rAttack: 0, rDefense: 0, speed: 0 },
         personality: '',
         item: '',

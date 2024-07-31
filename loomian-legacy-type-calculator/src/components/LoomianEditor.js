@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import loomiansData from './loomiansData';
+import secretAbilityIcon from '../assets/icons/secretability.png';
 import '../App.css';
 
 const MAX_UP = 40;
@@ -13,6 +14,7 @@ function LoomianEditor({ loomian, onSave }) {
     const [statsData, setStatsData] = useState({});
     const [abilityOptions, setAbilityOptions] = useState([]);
     const [confirmationMessage, setConfirmationMessage] = useState('');
+    const [genderOptions, setGenderOptions] = useState([]);
 
     useEffect(() => {
         const loomianData = loomiansData.find((l) => l.name === loomian.name);
@@ -26,6 +28,7 @@ function LoomianEditor({ loomian, onSave }) {
                 ? loomianData.abilities.concat(loomianData.secretAbility)
                 : loomianData.abilities;
             setAbilityOptions(abilitiesWithSecret);
+            setGenderOptions(loomianData.gender || []);
         }
     }, [loomian.name]);
 
@@ -92,6 +95,24 @@ function LoomianEditor({ loomian, onSave }) {
         Ungendered: 'green',
     };
 
+    const handleImageError = () => {
+        console.error('Error loading image');
+    };
+
+    const calculateStat = (baseStat, statType) => {
+        const level = attributes.level || 50;
+        const statUp = attributes.ups[statType] || 0;
+        const statTp = attributes.tps[statType] || 0;
+
+        if (statType === 'hp') {
+            return Math.floor(((2 * baseStat + statUp + statTp / 4) * level) / 100 + level + 10);
+        } else if (statType === 'energy') {
+            return Math.floor((((2 * baseStat + statUp + statTp / 4) * level) / 65) + 80);
+        } else {
+            return Math.floor((((2 * baseStat + statUp + statTp / 4) * level) / 100) + 5);
+        }
+    };
+
     return (
         <div className="loomian-editor">
             <div className="input-group">
@@ -106,7 +127,13 @@ function LoomianEditor({ loomian, onSave }) {
                     ))}
                 </select>
                 {attributes.ability && loomiansData.find((l) => l.name === loomian.name).secretAbility === attributes.ability && (
-                    <img src="secretability.png" alt="Secret Ability" className="secret-ability-icon" />
+                    <img
+                        src={secretAbilityIcon}
+                        alt="Secret Ability"
+                        className="secret-ability-icon"
+                        onError={handleImageError}
+                        onLoad={() => console.log('Image loaded successfully')}
+                    />
                 )}
             </div>
             <div className="input-group">
@@ -129,10 +156,10 @@ function LoomianEditor({ loomian, onSave }) {
             </div>
             <div className="input-group">
                 <label>Gender: </label>
-                <select value={attributes.gender} onChange={(e) => handleAttributeChange('gender', e.target.value)}>
+                <select value={attributes.gender || ''} onChange={(e) => handleAttributeChange('gender', e.target.value)}>
                     <option value="">--Select Gender--</option>
-                    {(loomian.gender || 'Male/Female').split('/').map((gender, i) => (
-                        <option key={i} value={gender.trim()}>{gender.trim()}</option>
+                    {genderOptions.map((gender, i) => (
+                        <option key={i} value={gender}>{gender}</option>
                     ))}
                 </select>
                 {attributes.gender && (
@@ -184,6 +211,7 @@ function LoomianEditor({ loomian, onSave }) {
                             onChange={(e) => handleUPChange(stat, e.target.value)}
                             max={MAX_UP}
                         />
+                        <div>{calculateStat(statsData[stat], stat)}</div>
                     </div>
                 ))}
                 <div>Remaining TPs: {remainingTP}</div>
