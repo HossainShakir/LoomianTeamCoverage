@@ -1,4 +1,3 @@
-/* Include the old CSS styles here */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -56,11 +55,11 @@ h2 {
 }
 
 .main-team {
-  border: 2px solid #007bff; /* Blue border for main team */
+  border: 2px solid #007bff; 
 }
 
 .benched-loomian {
-  border: 2px solid #ff9800; /* Orange border for benched loomians */
+  border: 2px solid #ff9800; 
 }
 
 .loomian {
@@ -375,22 +374,22 @@ button {
 .loomian-container-teambuild {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically if needed */
-  margin-bottom: 20px; /* Space between items */
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 20px;
 }
 
 .teambuilder-editor {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* Ensure it takes up full width */
+  width: 100%; 
 }
 
 .teambuilder-editor .loomian-header,
 .teambuilder-editor .loomian-builder {
-  width: 100%; /* Ensure both elements take full width of their container */
-  max-width: 800px; /* Optional: Limit the maximum width */
+  width: 100%;
+  max-width: 800px; 
 }
 
 .teambuilder-editor .loomian-header {
@@ -401,12 +400,12 @@ button {
   justify-content: space-between;
   background-color: #f9f9f9;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .teambuilder-editor .loomian-builder {
   position: relative;
   z-index: 1;
-  margin-top: -10px; /* Adjust as needed */
-  width: 100%; /* Ensure it takes full width */
+  margin-top: -10px; 
+  width: 100%; 
 }

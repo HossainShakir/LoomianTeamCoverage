@@ -19,7 +19,7 @@ function TeamTypeCalculator() {
     const [results, setResults] = useState([]);
     const [teamWeaknesses, setTeamWeaknesses] = useState([]);
     const [teamResistances, setTeamResistances] = useState([]);
-    const [unresistedTypes, setUnresistedTypes] = useState(allTypes.slice(1)); // Start with all types except 'None'
+    const [unresistedTypes, setUnresistedTypes] = useState(allTypes.slice(1)); 
     const [recommendations, setRecommendations] = useState([]);
 
     const handleTypeChange = (index, type, value) => {

@@ -54,8 +54,9 @@ function Teambuilder() {
 
     const getDefaultAttributes = () => ({
         ability: '',
-        moves: ['', '', '', ''],
+        level: 50,
         gender: 'Male',
+        moves: ['', '', '', ''],
         ups: { hp: 40, energy: 40, attack: 40, defense: 40, rAttack: 40, rDefense: 40, speed: 40 },
         tps: { hp: 0, energy: 0, attack: 0, defense: 0, rAttack: 0, rDefense: 0, speed: 0 },
         personality: '',
@@ -134,13 +135,12 @@ function Teambuilder() {
         });
     };
 
-    // Filter loomians that have stats attribute
     const filteredLoomians = loomiansData.filter(loomian => loomian.stats);
 
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#9</h3>
+            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#25</h3>
             {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>

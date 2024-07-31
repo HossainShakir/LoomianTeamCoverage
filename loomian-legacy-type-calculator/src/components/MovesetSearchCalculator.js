@@ -65,7 +65,7 @@ function MovesetSearchCalculator() {
     return (
         <div className="App">
             <h1>Loomian Legacy Moveset Searcher</h1>
-            <p>Only works for Loomians #1-#215 and #240-286, simply here for testing.</p>
+            <p>Only works for Loomians #1-#215 and #240-#286, simply here for testing.</p>
             {selectedMoves.map((move, index) => (
                 <div key={index} className="move-selector">
                     <label htmlFor={`move-${index}`}>Select Move {index + 1}: </label>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { typeChart, specialTypeCharts } from '../typechart';
-import loomiansData from './loomiansData'; // Import the centralized loomians data
+import loomiansData from './loomiansData'; 
 import '../App.css';
 
 const allTypes = [

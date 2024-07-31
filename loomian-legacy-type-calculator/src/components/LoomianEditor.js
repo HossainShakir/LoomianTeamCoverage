@@ -7,7 +7,7 @@ const MAX_TP = 200;
 const TOTAL_MAX_TP = 500;
 
 function LoomianEditor({ loomian, onSave }) {
-    const [attributes, setAttributes] = useState(loomian.attributes || { tps: {}, ups: {} });
+    const [attributes, setAttributes] = useState(loomian.attributes || { tps: {}, ups: {}, level: 50 });
     const [availableMoves, setAvailableMoves] = useState([]);
     const [remainingTP, setRemainingTP] = useState(TOTAL_MAX_TP);
     const [statsData, setStatsData] = useState({});
@@ -22,7 +22,6 @@ function LoomianEditor({ loomian, onSave }) {
             setAvailableMoves(sortedMoves);
             setStatsData(loomianData.stats);
 
-            // Set ability options including secret ability
             const abilitiesWithSecret = loomianData.secretAbility
                 ? loomianData.abilities.concat(loomianData.secretAbility)
                 : loomianData.abilities;
@@ -78,7 +77,19 @@ function LoomianEditor({ loomian, onSave }) {
     const handleSave = () => {
         onSave(attributes);
         setConfirmationMessage('Saved changes');
-        setTimeout(() => setConfirmationMessage(''), 2000); // Hide message after 2 seconds
+        setTimeout(() => setConfirmationMessage(''), 2000); 
+    };
+
+    const genderIcon = {
+        Male: '♂️',
+        Female: '♀️',
+        Ungendered: '⚲',
+    };
+
+    const genderColor = {
+        Male: 'blue',
+        Female: 'pink',
+        Ungendered: 'green',
     };
 
     return (
@@ -94,6 +105,19 @@ function LoomianEditor({ loomian, onSave }) {
                         <option key={i} value={ability}>{ability}</option>
                     ))}
                 </select>
+                {attributes.ability && loomiansData.find((l) => l.name === loomian.name).secretAbility === attributes.ability && (
+                    <img src="secretability.png" alt="Secret Ability" className="secret-ability-icon" />
+                )}
+            </div>
+            <div className="input-group">
+                <label>Level: </label>
+                <input
+                    type="number"
+                    value={attributes.level}
+                    onChange={(e) => handleAttributeChange('level', Math.max(1, Math.min(100, parseInt(e.target.value, 10))))}
+                    min="1"
+                    max="100"
+                />
             </div>
             <div className="input-group">
                 <label>Item: </label>
@@ -102,6 +126,20 @@ function LoomianEditor({ loomian, onSave }) {
                     value={attributes.item}
                     onChange={(e) => handleAttributeChange('item', e.target.value)}
                 />
+            </div>
+            <div className="input-group">
+                <label>Gender: </label>
+                <select value={attributes.gender} onChange={(e) => handleAttributeChange('gender', e.target.value)}>
+                    <option value="">--Select Gender--</option>
+                    {(loomian.gender || 'Male/Female').split('/').map((gender, i) => (
+                        <option key={i} value={gender.trim()}>{gender.trim()}</option>
+                    ))}
+                </select>
+                {attributes.gender && (
+                    <span style={{ color: genderColor[attributes.gender] }}>
+                        {genderIcon[attributes.gender]}
+                    </span>
+                )}
             </div>
             <div>
                 <label>Moves:</label>
@@ -115,15 +153,6 @@ function LoomianEditor({ loomian, onSave }) {
                         </select>
                     </div>
                 ))}
-            </div>
-            <div className="input-group">
-                <label>Gender: </label>
-                <select value={attributes.gender} onChange={(e) => handleAttributeChange('gender', e.target.value)}>
-                    <option value="">--Select Gender--</option>
-                    {(loomian.gender || 'Male/Female').split('/').map((gender, i) => (
-                        <option key={i} value={gender.trim()}>{gender.trim()}</option>
-                    ))}
-                </select>
             </div>
             <div className="stats-container">
                 <div className="tp-up-labels">
