@@ -132,12 +132,15 @@ function Teambuilder() {
             setMessage('Copied to clipboard!');
             setTimeout(() => setMessage(''), 2000);
         });
-    };    
+    };
+
+    // Filter loomians that have stats attribute
+    const filteredLoomians = loomiansData.filter(loomian => loomian.stats);
 
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-
+            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#9</h3>
             {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>
@@ -175,7 +178,7 @@ function Teambuilder() {
                             <h2>Select Loomian</h2>
                             <select value={selectedLoomian} onChange={(e) => setSelectedLoomian(e.target.value)}>
                                 <option value="">--Select Loomian--</option>
-                                {loomiansData.map((loomian) => (
+                                {filteredLoomians.map((loomian) => (
                                     <option key={loomian.name} value={loomian.name}>{loomian.name}</option>
                                 ))}
                             </select>
@@ -186,27 +189,31 @@ function Teambuilder() {
                         <div>
                             <h2>Current Team</h2>
                             {currentTeam.map((loomian, index) => (
-                                <div key={index} className="loomian-container">
-                                    <div className="loomian-header">
-                                        <img src={loomiansData.find((l) => l.name === loomian.name).icon} alt={loomian.name} />
-                                        <span>{loomian.name}</span>
-                                        <div className="type-badges">
-                                            {loomian.types.primary !== 'None' && <TypeBadge type={loomian.types.primary} />}
-                                            {loomian.types.secondary !== 'None' && <TypeBadge type={loomian.types.secondary} />}
+                                <div key={index} className="loomian-container-teambuild">
+                                    <div className="teambuilder-editor">
+                                        <div className="loomian-header">
+                                            <img src={loomiansData.find((l) => l.name === loomian.name).icon} alt={loomian.name} />
+                                            <span>{loomian.name}</span>
+                                            <div className="type-badges">
+                                                {loomian.types.primary !== 'None' && <TypeBadge type={loomian.types.primary} />}
+                                                {loomian.types.secondary !== 'None' && <TypeBadge type={loomian.types.secondary} />}
+                                            </div>
+                                            <div className="button-group">
+                                                <button onClick={() => handleToggleEditor(index)}>
+                                                    {expandedIndex === index ? 'Collapse' : 'Expand'}
+                                                </button>
+                                                <button onClick={() => removeLoomianFromTeam(index)}>Remove</button>
+                                            </div>
                                         </div>
-                                        <div className="button-group">
-                                            <button onClick={() => handleToggleEditor(index)}>
-                                                {expandedIndex === index ? 'Collapse' : 'Expand'}
-                                            </button>
-                                            <button onClick={() => removeLoomianFromTeam(index)}>Remove</button>
+                                        <div className="loomian-builder">
+                                            {expandedIndex === index && (
+                                                <LoomianEditor
+                                                    loomian={loomian}
+                                                    onSave={(attributes) => updateLoomianAttributes(index, attributes)}
+                                                />
+                                            )}
                                         </div>
                                     </div>
-                                    {expandedIndex === index && (
-                                        <LoomianEditor
-                                            loomian={loomian}
-                                            onSave={(attributes) => updateLoomianAttributes(index, attributes)}
-                                        />
-                                    )}
                                 </div>
                             ))}
                             <button onClick={saveTeam}>{selectedTeamIndex !== null ? 'Save Changes' : 'Add Team'}</button>

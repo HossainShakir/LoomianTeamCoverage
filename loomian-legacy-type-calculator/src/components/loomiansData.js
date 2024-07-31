@@ -19,7 +19,7 @@ export const loomiansData = [
         abilities: ['Awakening'],
         secretAbility: 'Terrifying',
         weight: '20.4 kg',
-        height: '83.8 cm'},
+        height: '83.8 cm' },
     { name: 'Rabburn', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/rabburn.png'),
         moves: [
             "Rapid Fire", "Hop Kick", "Fire Slam", "Power Focus", "Flaming Kick",
@@ -27,7 +27,21 @@ export const loomiansData = [
             "Fire Breath", "Mega Punch", "Raging Flame", "Slap Down", "Bait",
             "Bulk Up", "Dodge", "Pounce", "Growl", "Singe",
             "Burrow", "Ear Slap", "Preemptive Strike", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 61,
+            energy: 67,
+            attack: 75,
+            defense: 95,
+            rattack: 46,
+            rdefense: 68,
+            speed: 60
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Terrifying',
+        weight: '39.5 kg',
+        height: '149.9 cm' },
     { name: 'Searknight', primaryType: 'Fire', secondaryType: 'Metal', icon: require('../assets/icons/searknight.png'),
         moves: [
             "Searing Steel", "Flaming Kick", "Armor Down",
@@ -36,7 +50,21 @@ export const loomiansData = [
             "Bulk Up", "Dodge", "Pounce", "Growl", "Singe",
             "Burrow", "Ear Slap", "Rapid Fire", "Hop Kick", "Fire Slam",
             "Power Focus", "Preemptive Strike", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 88,
+            energy: 88,
+            attack: 102,
+            defense: 125,
+            rattack: 60,
+            rdefense: 82,
+            speed: 65
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Terrifying',
+        weight: '98.4 kg',
+        height: '208.3 cm' },
     { name: 'Dripple', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/dripple.png'),
         moves: [
             "Strike", "Dawdle", "Spray", "Mind's Eye", "Swipe", "Water Bomb",
@@ -44,7 +72,21 @@ export const loomiansData = [
             "Gamma Pulse", "Hydro Slash", "Mega Chomp", "Nova Blast",
             "Peace of Mind", "Radiant Rush", "Thunder Chomp", "Wave Wrecker",
             "Dodge", "Frost Beam", "Plunge", "Rejuvenate", "Tsunami", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 63,
+            energy: 51,
+            attack: 56,
+            defense: 50,
+            rattack: 55,
+            rdefense: 45,
+            speed: 41
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Power Napper',
+        weight: '17.2 kg',
+        height: '76.2 cm' },
     { name: 'Reptide', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/reptide.png'),
         moves: [
             "Submerge", "Water Bomb", "Sleet Shot", "Soft Water", "Maroon",
@@ -52,7 +94,21 @@ export const loomiansData = [
             "Mega Chomp", "Nova Blast", "Peace of Mind", "Radiant Rush",
             "Thunder Chomp", "Wave Wrecker", "Dodge", "Frost Beam", "Plunge",
             "Rejuvenate", "Tsunami", "Strike", "Dawdle", "Spray", "Mind's Eye", "Swipe", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 78,
+            energy: 67,
+            attack: 71,
+            defense: 70,
+            rattack: 70,
+            rdefense: 65,
+            speed: 51
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Power Napper',
+        weight: '33.6 kg',
+        height: '106.7 cm' },
     { name: 'Luminami', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/luminami.png'),
         moves: [
             "Flash Pulse", "Maroon", "Blindspot Batter",
@@ -61,7 +117,21 @@ export const loomiansData = [
             "Wave Wrecker", "Dodge", "Flash 'n Flee", "Frost Beam", "Plunge", 
             "Rejuvenate", "Tsunami", "Strike", "Dawdle", "Spray", "Mind's Eye", 
             "Swipe", "Submerge", "Sleet Shot", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 102,
+            energy: 88,
+            attack: 90,
+            defense: 93,
+            rattack: 94,
+            rdefense: 83,
+            speed: 60
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Power Napper',
+        weight: '91.6 kg',
+        height: '160 cm' },
     { name: 'Fevine', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/fevine.png'),
         moves: [
             "Pounce", "Growl", "Petal Pummel", "Stretch", "Swipe",
@@ -69,7 +139,21 @@ export const loomiansData = [
             "Boom Bash", "Bush Whack", "Poison", "Power Focus", "Tease",
             "Thistle Slash", "Timber Thrash", "Wonder Herb",
             "Barter", "Dodge", "Ill Will", "Mud Spatter", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 45,
+            energy: 51,
+            attack: 71,
+            defense: 44,
+            rattack: 50,
+            rdefense: 36,
+            speed: 64
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Thriving Pace',
+        weight: '15.9 kg',
+        height: '71.1 cm' },
     { name: 'Felver', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/felver.png'),
         moves: [
             "Nature's Rage", "Leaf Barrage", "Toxic Tail", "Life Drain", 
@@ -77,7 +161,21 @@ export const loomiansData = [
             "Poison", "Power Focus", "Tease", "Thistle Slash", "Timber Thrash", 
             "Wonder Herb", "Barter", "Bulk Up", "Dodge", "Ill Will", "Mud Spatter",
             "Pounce", "Growl", "Petal Pummel", "Stretch", "Swipe", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 55,
+            energy: 67,
+            attack: 96,
+            defense: 55,
+            rattack: 70,
+            rdefense: 45,
+            speed: 84
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Thriving Pace',
+        weight: '37.2 kg',
+        height: '116.8 cm' },
     { name: 'Tahtab', primaryType: 'Plant', secondaryType: 'Brawler', icon: require('../assets/icons/tahtab.png'),
         moves: [
             "Junglejutsu", "Nature's Force", "Splitting Headache",
@@ -86,7 +184,21 @@ export const loomiansData = [
             "Dodge", "Ill Will", "Mud Spatter", "Pounce", "Growl", "Petal Pummel", 
             "Stretch", "Swipe", "Nature's Rage", "Leaf Barrage", "Toxic Tail", 
             "Life Drain", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 72,
+            energy: 88,
+            attack: 126,
+            defense: 75,
+            rattack: 80,
+            rdefense: 65,
+            speed: 104
+        },
+        gender: 'Male/Female', 
+        abilities: ['Awakening'],
+        secretAbility: 'Thriving Pace',
+        weight: '74.8 kg',
+        height: '162.6 cm' },
     { name: 'Eaglit', primaryType: 'Light', secondaryType: 'None', icon: require('../assets/icons/eaglit.png'),
         moves: [
             "Pounce", "Stare", "Shine", "Growl", "Peck", "Luster Loot", "Cyclone Slam", 
