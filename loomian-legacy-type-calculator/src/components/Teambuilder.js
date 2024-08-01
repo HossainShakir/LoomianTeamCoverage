@@ -119,28 +119,43 @@ function Teambuilder() {
         const teamString = currentTeam.map(loomian => {
             const { name, attributes } = loomian;
             const { item, ability, gender, tps, ups, personality, moves } = attributes;
-            
-            const tpsString = Object.entries(tps).map(([stat, value]) => value > 0 ? `${value} ${stat.toUpperCase()}` : '').filter(Boolean).join(' / ');
+    
+            const combinedPersonality = [
+                personality.primary,
+                personality.secondary,
+                personality.tertiary
+            ].filter(Boolean).join(', ');
+    
+            const tpsString = Object.entries(tps)
+                .map(([stat, value]) => value > 0 ? `${value} ${stat.toUpperCase()}` : '')
+                .filter(Boolean)
+                .join(' / ');
+    
             const upsString = Object.entries(ups)
                 .map(([stat, value]) => value !== 40 ? `${value} ${stat.toUpperCase()}` : '')
                 .filter(Boolean)
                 .join(' / ');
-                const movesString = moves.filter(Boolean).map(move => `- ${move}`).join('\n');
-                return `${name} @ ${item}\nAbility: ${ability}\nGender: ${gender}\nTPs: ${tpsString}\nUPs: ${upsString}\nPersonality: ${personality}\n${movesString}`;
+    
+            const movesString = moves.filter(Boolean)
+                .map(move => `- ${move}`)
+                .join('\n');
+    
+            return `${name} @ ${item}\nAbility: ${ability}\nGender: ${gender}\nTPs: ${tpsString}\nUPs: ${upsString}\nPersonality: ${combinedPersonality}\n${movesString}`;
         }).join('\n\n');
-        
+    
         navigator.clipboard.writeText(teamString).then(() => {
             setMessage('Copied to clipboard!');
             setTimeout(() => setMessage(''), 2000);
         });
     };
+    
 
     const filteredLoomians = loomiansData.filter(loomian => loomian.stats);
 
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#25</h3>
+            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#29</h3>
             {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>

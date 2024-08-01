@@ -535,25 +535,81 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 35,
+            energy: 37,
+            attack: 40,
+            defense: 24,
+            rattack: 55,
+            rdefense: 24,
+            speed: 47
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Hasty'],
+        secretAbility: 'Defensive Priority',
+        weight: '7.3 kg',
+        height: '33 cm' },
     { name: 'Propae', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/propae.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Brace", "Snot Shot", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 50,
+            energy: 46,
+            attack: 39,
+            defense: 60,
+            rattack: 39,
+            rdefense: 55,
+            speed: 37
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Hasty'],
+        secretAbility: 'Defensive Priority',
+        weight: '14.1 kg',
+        height: '88.9 cm' },
     { name: 'Cynamoth', primaryType: 'Bug', secondaryType: 'Air', icon: require('../assets/icons/cynamoth.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Brace", "Mystic Breeze", "Snore Spores", "Toxic Spores",
             "Gust", "Pestilence", "Wing Slap", "Life Drain", "Magnify", "Jet Stream", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 60,
+            energy: 80,
+            attack: 45,
+            defense: 55,
+            rattack: 92,
+            rdefense: 80,
+            speed: 83
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Mystery Toxins'],
+        secretAbility: 'Flutter',
+        weight: '20.4 kg',
+        height: '114.3 cm' },
     { name: 'Sumobito', primaryType: 'Bug', secondaryType: 'Brawler', icon: require('../assets/icons/sumobito.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Brace", "Counter Stance", "Chop", "Bamboozle",
             "Quick Punch", "Parasitize", "Bulk Up", "Horn-Dashi", "Body Slam", 
             "Fire Slam", "Barter", "Ill will", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 57,
+            energy: 80,
+            attack: 110,
+            defense: 91,
+            rattack: 21,
+            rdefense: 86,
+            speed: 50
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Guru'],
+        secretAbility: 'Double Strike',
+        weight: '154.2 kg',
+        height: '157.5 cm' },
     { name: 'Twittle', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/twittle.png'),
         moves: [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",

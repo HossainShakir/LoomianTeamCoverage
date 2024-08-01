@@ -420,3 +420,26 @@ button {
   display: inline-block;
   margin-left: 10px;
 }
+
+.gender-icon {
+  display: inline-block;
+  width: 30px;
+  height: 24px; 
+  border-radius: 50%;
+  line-height: 24px; 
+  text-align: center;
+  color: white; 
+  font-size: 16px; 
+}
+
+.gender-icon.male {
+  background-color: blue;
+}
+
+.gender-icon.female {
+  background-color: rgb(255, 0, 255);
+}
+
+.gender-icon.ungendered {
+  background-color: green;
+}

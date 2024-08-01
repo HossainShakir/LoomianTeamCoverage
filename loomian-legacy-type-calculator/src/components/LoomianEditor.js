@@ -7,8 +7,17 @@ const MAX_UP = 40;
 const MAX_TP = 200;
 const TOTAL_MAX_TP = 500;
 
+const personalityOptions = [
+    "hyper", "brawny", "robust", "smart", "clever", "nimble",
+    "dull", "frail", "tender", "clumsy", "foolish", "sluggish", "indifferent"
+];
+
+const veryPersonalityOptions = personalityOptions
+    .filter(p => p !== "indifferent")
+    .map(p => `very ${p}`);
+
 function LoomianEditor({ loomian, onSave }) {
-    const [attributes, setAttributes] = useState(loomian.attributes || { tps: {}, ups: {}, level: 50 });
+    const [attributes, setAttributes] = useState(loomian.attributes || { tps: {}, ups: {}, level: 50, personality: {} });
     const [availableMoves, setAvailableMoves] = useState([]);
     const [remainingTP, setRemainingTP] = useState(TOTAL_MAX_TP);
     const [statsData, setStatsData] = useState({});
@@ -18,7 +27,7 @@ function LoomianEditor({ loomian, onSave }) {
 
     useEffect(() => {
         const loomianData = loomiansData.find((l) => l.name === loomian.name);
-        
+
         if (loomianData) {
             const sortedMoves = loomianData.moves.sort();
             setAvailableMoves(sortedMoves);
@@ -44,6 +53,16 @@ function LoomianEditor({ loomian, onSave }) {
         }));
     };
 
+    const handlePersonalityChange = (type, value) => {
+        setAttributes((prevAttributes) => ({
+            ...prevAttributes,
+            personality: {
+                ...prevAttributes.personality,
+                [type]: value
+            }
+        }));
+    };
+    
     const handleMoveChange = (index, value) => {
         setAttributes((prevAttributes) => {
             const updatedMoves = prevAttributes.moves.map((move, i) => (i === index ? value : move));
@@ -76,10 +95,10 @@ function LoomianEditor({ loomian, onSave }) {
             }));
         }
     };
-    
+
     const handleSave = () => {
         onSave(attributes);
-        setConfirmationMessage('Saved changes');
+        setConfirmationMessage('Saved changes!');
         setTimeout(() => setConfirmationMessage(''), 2000); 
     };
 
@@ -89,30 +108,46 @@ function LoomianEditor({ loomian, onSave }) {
         Ungendered: '⚲',
     };
 
-    const genderColor = {
-        Male: 'blue',
-        Female: 'pink',
-        Ungendered: 'green',
-    };
-
-    const handleImageError = () => {
-        console.error('Error loading image');
-    };
-
     const calculateStat = (baseStat, statType) => {
         const level = attributes.level || 50;
         const statUp = attributes.ups[statType] || 0;
         const statTp = attributes.tps[statType] || 0;
-
-        if (statType === 'hp') {
-            return Math.floor(((2 * baseStat + statUp + statTp / 4) * level) / 100 + level + 10);
-        } else if (statType === 'energy') {
-            return Math.floor((((2 * baseStat + statUp + statTp / 4) * level) / 65) + 80);
-        } else {
-            return Math.floor((((2 * baseStat + statUp + statTp / 4) * level) / 100) + 5);
+    
+        let multiplier = 1;
+    
+        const personalityBoosts = {
+            energy: { "hyper": 1.1, "dull": 0.9, "very hyper": 1.2, "very dull": 0.8 },
+            attack: { "brawny": 1.1, "frail": 0.9, "very brawny": 1.2, "very frail": 0.8 },
+            defense: { "robust": 1.1, "tender": 0.9, "very robust": 1.2, "very tender": 0.8 },
+            rattack: { "smart": 1.1, "clumsy": 0.9, "very smart": 1.2, "very clumsy": 0.8 },
+            rdefense: { "clever": 1.1, "foolish": 0.9, "very clever": 1.2, "very foolish": 0.8 },
+            speed: { "nimble": 1.1, "sluggish": 0.9, "very nimble": 1.2, "very sluggish": 0.8 }
+        };
+    
+        if (personalityBoosts[statType]) {
+            const primary = attributes.personality.primary;
+            const secondary = attributes.personality.secondary;
+            const tertiary = attributes.personality.tertiary;
+    
+            [primary, secondary, tertiary].forEach(personality => {
+                if (personality && personalityBoosts[statType][personality]) {
+                    multiplier *= personalityBoosts[statType][personality];
+                }
+            });
         }
+    
+        let statValue;
+        if (statType === 'hp') {
+            statValue = ((2 * baseStat + statUp + statTp / 4) * level) / 100 + level + 10;
+        } else if (statType === 'energy') {
+            statValue = (((2 * baseStat + statUp + statTp / 4) * level) / 65) + 80;
+        } else {
+            statValue = (((2 * baseStat + statUp + statTp / 4) * level) / 100) + 5;
+        }
+    
+        return Math.floor(Math.floor(statValue) * multiplier);
     };
-
+    
     return (
         <div className="loomian-editor">
             <div className="input-group">
@@ -131,8 +166,6 @@ function LoomianEditor({ loomian, onSave }) {
                         src={secretAbilityIcon}
                         alt="Secret Ability"
                         className="secret-ability-icon"
-                        onError={handleImageError}
-                        onLoad={() => console.log('Image loaded successfully')}
                     />
                 )}
             </div>
@@ -163,7 +196,7 @@ function LoomianEditor({ loomian, onSave }) {
                     ))}
                 </select>
                 {attributes.gender && (
-                    <span style={{ color: genderColor[attributes.gender] }}>
+                    <span className={`gender-icon ${attributes.gender.toLowerCase()}`}>
                         {genderIcon[attributes.gender]}
                     </span>
                 )}
@@ -217,15 +250,38 @@ function LoomianEditor({ loomian, onSave }) {
                 <div>Remaining TPs: {remainingTP}</div>
             </div>
             <div className="input-group">
-                <label>Personality: </label>
-                <input
-                    type="text"
-                    value={attributes.personality || ''}
-                    onChange={(e) => handleAttributeChange('personality', e.target.value)}
-                />
-            </div>
+    <label>Personality:</label>
+    <select
+        value={attributes.personality.primary || ''}
+        onChange={(e) => handlePersonalityChange('primary', e.target.value)}
+    >
+        <option value="">--Select Personality--</option>
+        {personalityOptions.map((option, i) => (
+            <option key={i} value={option}>{option}</option>
+        ))}
+    </select>
+    <select
+        value={attributes.personality.secondary || ''}
+        onChange={(e) => handlePersonalityChange('secondary', e.target.value)}
+    >
+        <option value="">--Select Personality--</option>
+        {personalityOptions.map((option, i) => (
+            <option key={i} value={option}>{option}</option>
+        ))}
+    </select>
+    <select
+        value={attributes.personality.tertiary || ''}
+        onChange={(e) => handlePersonalityChange('tertiary', e.target.value)}
+    >
+        <option value="">--Select Very Personality--</option>
+        {veryPersonalityOptions.map((option, i) => (
+            <option key={i} value={option}>{option}</option>
+        ))}
+    </select>
+</div>
+
             <button onClick={handleSave}>Save</button>
-            {confirmationMessage && <div className="message">{confirmationMessage}</div>}
+            {confirmationMessage && <div className="confirmation-message">{confirmationMessage}</div>}
         </div>
     );
 }
