@@ -615,27 +615,83 @@ export const loomiansData = [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
             "Cyclone Slam", "Perch", "Slash", "Accelerate", "Air Blade", "Body Slam",
             "Brawn Boost", "Rogue Assault", "Sharpen", "Thunder Crash", "Dodge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 44,
+            energy: 40,
+            attack: 50,
+            defense: 38,
+            rattack: 22,
+            rdefense: 33,
+            speed: 58
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Early Bird', 'Confidence'],
+        secretAbility: 'Rev Up',
+        weight: '7.7 kg',
+        height: '40.6 cm' },
     { name: 'Paratweet', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/paratweet.png'),
         moves: [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
             "Cyclone Slam", "Perch", "Slash", "Accelerate", "Air Blade", "Body Slam",
             "Brawn Boost", "Rogue Assault", "Sharpen", "Thunder Crash", "Dodge",
             "Scavenge", "Driving Force", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 54,
+            energy: 56,
+            attack: 75,
+            defense: 48,
+            rattack: 32,
+            rdefense: 43,
+            speed: 88
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Early Bird', 'Confidence'],
+        secretAbility: 'Rev Up',
+        weight: '15.9 kg',
+        height: '81.3 cm' },
     { name: 'Avitross', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/avitross.png'),
         moves: [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
             "Cyclone Slam", "Perch", "Slash", "Accelerate", "Air Blade", "Body Slam",
             "Brawn Boost", "Rogue Assault", "Sharpen", "Thunder Crash", "Dodge",
             "Scavenge", "Driving Force", "Nosedive", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 79,
+            energy: 80,
+            attack: 100,
+            defense: 68,
+            rattack: 62,
+            rdefense: 63,
+            speed: 113
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Early Bird', 'Confidence'],
+        secretAbility: 'Rev Up',
+        weight: '44.5 kg',
+        height: '160 cm' },
     { name: 'Pyder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'),
         moves: [
             "Web Shot", "Sting", "Bug Bite", "Burrow", "Eerie", "Corrode", "Pestilence",
             "Pester", "Slime", "Parasitize", "Baneful Bash", "Body Slam", "Eerie Stare",
             "Mega Chomp", "Vital Jab", "Dodge", "Rejuvenate", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 45,
+            energy: 43,
+            attack: 60,
+            defense: 40,
+            rattack: 30,
+            rdefense: 40,
+            speed: 45
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Webbing', 'Apprehension'],
+        secretAbility: 'Coursing Venom',
+        weight: '7.7 kg',
+        height: '35.6 cm' },
     { name: 'Pyder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'), specialTypeChart: 'CoursingVenom' },
     { name: 'Swolder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'),
         moves: [
@@ -643,7 +699,21 @@ export const loomiansData = [
             "Pester", "Slime", "Parasitize", "Baneful Bash", "Body Slam", "Eerie Stare",
             "Mega Chomp", "Vital Jab", "Dodge", "Rejuvenate", "Poison", "Mega Punch", 
             "Brawn Boost", "Bulk Up", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 85,
+            energy: 70,
+            attack: 115,
+            defense: 85,
+            rattack: 10,
+            rdefense: 65,
+            speed: 65
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Webbing', 'Apprehension'],
+        secretAbility: 'Coursing Venom',
+        weight: '24 kg',
+        height: '94 cm' },
     { name: 'Swolder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'), specialTypeChart: 'CoursingVenom' },
     { name: 'Antsee', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png'),
         moves: [
@@ -651,7 +721,21 @@ export const loomiansData = [
             "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
             "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
             "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 55,
+            energy: 43,
+            attack: 25,
+            defense: 60,
+            rattack: 40,
+            rdefense: 60,
+            speed: 20
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Mystery Toxins', 'Woodsman'],
+        secretAbility: 'Drainage',
+        weight: '5.4 kg',
+        height: '38.1 cm' },
     { name: 'Antsee (Woodsman)', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png'), specialTypeChart: 'Woodsman' },
     { name: 'Florant', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png'),
         moves: [
@@ -660,7 +744,21 @@ export const loomiansData = [
             "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
             "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Sap Plant", "Bulk up",
             "Rainbow Blast", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 85,
+            energy: 68,
+            attack: 45,
+            defense: 90,
+            rattack: 65,
+            rdefense: 90,
+            speed: 35
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Mystery Toxins', 'Woodsman'],
+        secretAbility: 'Drainage',
+        weight: '74 kg',
+        height: '111.76 cm' },
     { name: 'Florant (Woodsman)', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png'), specialTypeChart: 'Woodsman' },
     { name: 'Florant-Flychomp', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant-flychomp.png'),
         moves: [
@@ -669,7 +767,21 @@ export const loomiansData = [
             "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
             "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Sap Plant", "Bulk up",
             "Rainbow Blast", "Carnivorous Snap", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 100,
+            energy: 80,
+            attack: 123,
+            defense: 100,
+            rattack: 25,
+            rdefense: 100,
+            speed: 50
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Power Jaw'],
+        secretAbility: '',
+        weight: '74 kg',
+        height: '111.76 cm' },
     { name: 'Grubby', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/grubby.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 

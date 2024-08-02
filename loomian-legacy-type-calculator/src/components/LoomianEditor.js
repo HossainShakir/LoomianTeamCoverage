@@ -141,7 +141,7 @@ function LoomianEditor({ loomian, onSave }) {
         if (statType === 'hp') {
             statValue = ((2 * baseStat + statUp + statTp / 4) * level) / 100 + level + 10;
         } else if (statType === 'energy') {
-            statValue = (((2 * baseStat + statUp + statTp / 4) * level) / 65) + 80;
+            statValue = ((Math.floor(2 * baseStat + statUp + statTp / 4) * level) / 65) + 80;
         } else {
             statValue = (((2 * baseStat + statUp + statTp / 4) * level) / 100) + 5;
         }
