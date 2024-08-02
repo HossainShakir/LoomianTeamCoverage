@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import loomiansData from './loomiansData';
+import itemsData from './itemsData';
 import secretAbilityIcon from '../assets/icons/secretability.png';
 import '../App.css';
 
@@ -181,11 +182,22 @@ function LoomianEditor({ loomian, onSave }) {
             </div>
             <div className="input-group">
                 <label>Item: </label>
-                <input
-                    type="text"
+                <select
                     value={attributes.item}
                     onChange={(e) => handleAttributeChange('item', e.target.value)}
-                />
+                >
+                    <option value="">--Select Item--</option>
+                    {itemsData.map((item, i) => (
+                        <option key={i} value={item.name}>{item.name}</option>
+                    ))}
+                </select>
+                {attributes.item && (
+                    <img
+                        src={itemsData.find((item) => item.name === attributes.item).icon}
+                        alt={attributes.item}
+                        className="item-icon"
+                    />
+                )}
             </div>
             <div className="input-group">
                 <label>Gender: </label>
