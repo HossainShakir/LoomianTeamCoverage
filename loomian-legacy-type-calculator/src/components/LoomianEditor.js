@@ -25,6 +25,7 @@ function LoomianEditor({ loomian, onSave }) {
     const [abilityOptions, setAbilityOptions] = useState([]);
     const [confirmationMessage, setConfirmationMessage] = useState('');
     const [genderOptions, setGenderOptions] = useState([]);
+    const [requiredItem, setRequiredItem] = useState('');
 
     useEffect(() => {
         const loomianData = loomiansData.find((l) => l.name === loomian.name);
@@ -39,6 +40,7 @@ function LoomianEditor({ loomian, onSave }) {
                 : loomianData.abilities;
             setAbilityOptions(abilitiesWithSecret);
             setGenderOptions(loomianData.gender || []);
+            setRequiredItem(loomianData.requiredItem || '');
         }
     }, [loomian.name]);
 
@@ -185,11 +187,18 @@ function LoomianEditor({ loomian, onSave }) {
                 <select
                     value={attributes.item}
                     onChange={(e) => handleAttributeChange('item', e.target.value)}
+                    disabled={!!requiredItem}
                 >
-                    <option value="">--Select Item--</option>
-                    {itemsData.map((item, i) => (
-                        <option key={i} value={item.name}>{item.name}</option>
-                    ))}
+                    {requiredItem ? (
+                        <option value={requiredItem}>{requiredItem}</option>
+                    ) : (
+                        <>
+                            <option value="">--Select Item--</option>
+                            {itemsData.map((item, i) => (
+                                <option key={i} value={item.name}>{item.name}</option>
+                            ))}
+                        </>
+                    )}
                 </select>
                 {attributes.item && (
                     <img
@@ -198,6 +207,13 @@ function LoomianEditor({ loomian, onSave }) {
                         className="item-icon"
                     />
                 )}
+                {requiredItem && (
+            <img 
+                src={itemsData.find(item => item.name === requiredItem)?.icon} 
+                alt={requiredItem} 
+                style={{ width: '24px', height: '24px' }} 
+            />
+        )}
             </div>
             <div className="input-group">
                 <label>Gender: </label>

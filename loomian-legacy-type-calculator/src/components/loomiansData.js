@@ -18,8 +18,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Terrifying',
-        weight: '20.4 kg',
-        height: '83.8 cm' },
+        weightkg: 20.4,
+        heightcm: 83.8 },
     { name: 'Rabburn', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/rabburn.png'),
         moves: [
             "Rapid Fire", "Hop Kick", "Fire Slam", "Power Focus", "Flaming Kick",
@@ -40,8 +40,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Terrifying',
-        weight: '39.5 kg',
-        height: '149.9 cm' },
+        weightkg: 39.5,
+        heightcm: 149.9 },
     { name: 'Searknight', primaryType: 'Fire', secondaryType: 'Metal', icon: require('../assets/icons/searknight.png'),
         moves: [
             "Searing Steel", "Flaming Kick", "Armor Down",
@@ -63,8 +63,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Terrifying',
-        weight: '98.4 kg',
-        height: '208.3 cm' },
+        weightkg: 98.4,
+        heightcm: 208.3 },
     { name: 'Dripple', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/dripple.png'),
         moves: [
             "Strike", "Dawdle", "Spray", "Mind's Eye", "Swipe", "Water Bomb",
@@ -85,8 +85,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Power Napper',
-        weight: '17.2 kg',
-        height: '76.2 cm' },
+        weightkg: 17.2,
+        heightcm: 76.2 },
     { name: 'Reptide', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/reptide.png'),
         moves: [
             "Submerge", "Water Bomb", "Sleet Shot", "Soft Water", "Maroon",
@@ -107,8 +107,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Power Napper',
-        weight: '33.6 kg',
-        height: '106.7 cm' },
+        weightkg: 33.6,
+        heightcm: 106.7 },
     { name: 'Luminami', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/luminami.png'),
         moves: [
             "Flash Pulse", "Maroon", "Blindspot Batter",
@@ -130,8 +130,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Power Napper',
-        weight: '91.6 kg',
-        height: '160 cm' },
+        weightkg: 91.6,
+        heightcm: 160 },
     { name: 'Fevine', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/fevine.png'),
         moves: [
             "Pounce", "Growl", "Petal Pummel", "Stretch", "Swipe",
@@ -152,8 +152,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Thriving Pace',
-        weight: '15.9 kg',
-        height: '71.1 cm' },
+        weightkg: 15.9,
+        heightcm: 71.1 },
     { name: 'Felver', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/felver.png'),
         moves: [
             "Nature's Rage", "Leaf Barrage", "Toxic Tail", "Life Drain", 
@@ -174,8 +174,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Thriving Pace',
-        weight: '37.2 kg',
-        height: '116.8 cm' },
+        weightkg: 37.2,
+        heightcm: 116.8 },
     { name: 'Tahtab', primaryType: 'Plant', secondaryType: 'Brawler', icon: require('../assets/icons/tahtab.png'),
         moves: [
             "Junglejutsu", "Nature's Force", "Splitting Headache",
@@ -197,8 +197,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Thriving Pace',
-        weight: '74.8 kg',
-        height: '162.6 cm' },
+        weightkg: 74.8,
+        heightcm: 162.6 },
     { name: 'Eaglit', primaryType: 'Light', secondaryType: 'None', icon: require('../assets/icons/eaglit.png'),
         moves: [
             "Pounce", "Stare", "Shine", "Growl", "Peck", "Luster Loot", "Cyclone Slam", 
@@ -217,8 +217,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Applied Frustration',
-        weight: '17.2 kg',
-        height: '73.7 cm' },
+        weightkg: 17.2,
+        heightcm: 73.7 },
     { name: 'Torprey', primaryType: 'Light', secondaryType: 'None', icon: require('../assets/icons/torprey.png'),
         moves: [
             "Radiant Forecast", "Luster Loot", "Cyclone Slam", "Power Focus", 
@@ -238,8 +238,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Applied Frustration',
-        weight: '25.9 kg',
-        height: '132.1 cm' },
+        weightkg: 25.9,
+        heightcm: 132.1 },
     { name: 'Falkyrie', primaryType: 'Light', secondaryType: 'Metal', icon: require('../assets/icons/falkyrie.png'),
         moves: [
             "Holy Slash", "Gamma Pulse", "Armor Down", "Air Blade", "Magnify", 
@@ -259,8 +259,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Applied Frustration',
-        weight: '80.7 kg',
-        height: '195.6 cm' },
+        weightkg: 80.7,
+        heightcm: 195.6 },
     { name: 'Vambat', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/vambat.png'),
         moves: [
             "Gnaw", "Growl", "Chomp", "Tease", "Dive Bomb", "Bamboozle", "Air Blade", 
@@ -279,8 +279,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Sharp Claws',
-        weight: '8.2 kg',
-        height: '66 cm' },
+        weightkg: 8.2,
+        heightcm: 66 },
     { name: 'Dimpire', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/dimpire.png'),
         moves: [
             "Gnaw", "Growl", "Chomp", "Tease", "Dive Bomb", "Blood Drain", "Bamboozle", "Air Blade", 
@@ -299,8 +299,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Sharp Claws',
-        weight: '30.4 kg',
-        height: '154.9 cm' },
+        weightkg: 30.4,
+        heightcm: 154.9 },
     { name: 'Vesperatu', primaryType: 'Dark', secondaryType: 'Spirit', icon: require('../assets/icons/vesperatu.png'),
         moves: [
             "Revival", "Shadow Sprint", "Phantom Slash", "Dark Surge", "Harrow", "Mega Chomp", 
@@ -320,8 +320,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Sharp Claws',
-        weight: '65.8 kg',
-        height: '203.2 cm' },
+        weightkg: 65.8,
+        heightcm: 203.2 },
     { name: 'Snocub', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/snocub.png'),
         moves: [
             "Strike", "Brace", "Flurry", "Dawdle", "Snowdozer", "Chilly Chomp",
@@ -340,8 +340,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Staunch',
-        weight: '6.4 kg',
-        height: '48.3 cm' },
+        weightkg: 6.4,
+        heightcm: 48.3 },
     { name: 'Snowki', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/snowki.png'),
         moves: [
             "Winter's Fury", "Chilly Chomp", "Quick Punch", "Sleet Shot", "Icicle Trap", "Mudslide",
@@ -361,8 +361,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Staunch',
-        weight: '35.4 kg',
-        height: '144.8 cm' },
+        weightkg: 35.4,
+        heightcm: 144.8 },
     { name: 'Himbrr', primaryType: 'Ice', secondaryType: 'Earth', icon: require('../assets/icons/himbrr.png'),
         moves: [
             "Yeti's Wrath", "Icicle Trap", "Mudslide",
@@ -383,8 +383,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Staunch',
-        weight: '108.9 kg',
-        height: '233.7 cm' },
+        weightkg: 108.9,
+        heightcm: 233.7 },
     { name: 'Weevolt', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/weevolt.png'),
         moves: [
             "Pounce", "Growl", "Static Shock", "Stretch", "Swipe", "Thunder Slam",
@@ -403,8 +403,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Brute Force',
-        weight: '14.1 kg',
-        height: '68.6 cm' },
+        weightkg: 14.1,
+        heightcm: 68.6 },
     { name: 'Stozap', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/stozap.png'),
         moves: [
             "Storm Summon", "Thunder Slam", "Elemental Burst", "Thunder Chomp", "Thunderstrike",
@@ -424,8 +424,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Brute Force',
-        weight: '33.6 kg',
-        height: '124.5 cm' },
+        weightkg: 33.6,
+        heightcm: 124.5 },
     { name: 'Zuelong', primaryType: 'Electric', secondaryType: 'Ancient', icon: require('../assets/icons/zuelong.png'),
         moves: [
             "Ancient Roar", "Thunderstrike", "Shrewd Blast", "Blaze Chomp", "Chilly Chomp",
@@ -445,8 +445,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Awakening'],
         secretAbility: 'Brute Force',
-        weight: '59.9 kg',
-        height: '221 cm' },
+        weightkg: 59.9,
+        heightcm: 221 },
     { name: 'Twilat', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/twilat.png'),
         moves: [
             "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe", "Scapegoat", "Spare",
@@ -465,8 +465,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Territorial', 'Confidence'],
         secretAbility: 'Neutralize',
-        weight: '24 kg',
-        height: '35.56 cm' },
+        weightkg: 24,
+        heightcm: 35.56 },
     { name: 'Umbrat', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/umbrat.png'),
         moves: [
             "Gloom Fangs", "Scapegoat", "Sharpen", "Raging Tackle", "Mega Chomp", "Bulk Up", 
@@ -486,8 +486,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Dusk', 'Confidence'],
         secretAbility: 'Overshadow',
-        weight: '38.1 kg',
-        height: '99.1 cm' },
+        weightkg: 38.1,
+        heightcm: 99.1 },
     { name: 'Luxoar', primaryType: 'Light', secondaryType: 'None', icon: require('../assets/icons/luxoar.png'),
         moves: [
             "Luminous Roar", "Scapegoat", "Disperse", "Gamma Pulse", "Peace of Mind",
@@ -507,8 +507,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Dawn', 'Confidence'],
         secretAbility: 'Illuminate',
-        weight: '37.2 kg',
-        height: '99.1 cm' },
+        weightkg: 37.2,
+        heightcm: 99.1 },
     { name: 'Tiklipse', primaryType: 'Light', secondaryType: 'Dark', icon: require('../assets/icons/tiklipse.png'),
         moves: [
             "Scapegoat", "Sharpen", "Raging Howl", "Raging Tackle", "Gamma Pulse",
@@ -528,8 +528,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Circadian'],
         secretAbility: 'Total Eclipse',
-        weight: '42.6 kg',
-        height: '114.3 cm' },
+        weightkg: 42.6,
+        heightcm: 114.3 },
     { name: 'Tiklipse (Total Eclipse)', primaryType: 'Light', secondaryType: 'Dark', icon: require('../assets/icons/tiklipse.png'), specialTypeChart: 'TotalEclipse' },
     { name: 'Cathorn', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/cathorn.png'),
         moves: [
@@ -548,8 +548,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Hasty'],
         secretAbility: 'Defensive Priority',
-        weight: '7.3 kg',
-        height: '33 cm' },
+        weightkg: 7.3,
+        heightcm: 33 },
     { name: 'Propae', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/propae.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
@@ -567,8 +567,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Hasty'],
         secretAbility: 'Defensive Priority',
-        weight: '14.1 kg',
-        height: '88.9 cm' },
+        weightkg: 14.1,
+        heightcm: 88.9 },
     { name: 'Cynamoth', primaryType: 'Bug', secondaryType: 'Air', icon: require('../assets/icons/cynamoth.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
@@ -587,8 +587,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Mystery Toxins'],
         secretAbility: 'Flutter',
-        weight: '20.4 kg',
-        height: '114.3 cm' },
+        weightkg: 20.4,
+        heightcm: 114.3 },
     { name: 'Sumobito', primaryType: 'Bug', secondaryType: 'Brawler', icon: require('../assets/icons/sumobito.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
@@ -608,8 +608,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Guru'],
         secretAbility: 'Double Strike',
-        weight: '154.2 kg',
-        height: '157.5 cm' },
+        weightkg: 154.2,
+        heightcm: 157.5 },
     { name: 'Twittle', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/twittle.png'),
         moves: [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
@@ -628,8 +628,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Early Bird', 'Confidence'],
         secretAbility: 'Rev Up',
-        weight: '7.7 kg',
-        height: '40.6 cm' },
+        weightkg: 7.7,
+        heightcm: 40.6 },
     { name: 'Paratweet', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/paratweet.png'),
         moves: [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
@@ -649,8 +649,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Early Bird', 'Confidence'],
         secretAbility: 'Rev Up',
-        weight: '15.9 kg',
-        height: '81.3 cm' },
+        weightkg: 15.9,
+        heightcm: 81.3 },
     { name: 'Avitross', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/avitross.png'),
         moves: [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
@@ -670,8 +670,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Early Bird', 'Confidence'],
         secretAbility: 'Rev Up',
-        weight: '44.5 kg',
-        height: '160 cm' },
+        weightkg: 44.5,
+        heightcm: 160 },
     { name: 'Pyder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'),
         moves: [
             "Web Shot", "Sting", "Bug Bite", "Burrow", "Eerie", "Corrode", "Pestilence",
@@ -690,8 +690,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Webbing', 'Apprehension'],
         secretAbility: 'Coursing Venom',
-        weight: '7.7 kg',
-        height: '35.6 cm' },
+        weightkg: 7.7,
+        heightcm: 35.6 },
     { name: 'Pyder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'), specialTypeChart: 'CoursingVenom' },
     { name: 'Swolder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'),
         moves: [
@@ -712,8 +712,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Webbing', 'Apprehension'],
         secretAbility: 'Coursing Venom',
-        weight: '24 kg',
-        height: '94 cm' },
+        weightkg: 24,
+        heightcm: 94 },
     { name: 'Swolder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'), specialTypeChart: 'CoursingVenom' },
     { name: 'Antsee', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png'),
         moves: [
@@ -734,8 +734,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Mystery Toxins', 'Woodsman'],
         secretAbility: 'Drainage',
-        weight: '5.4 kg',
-        height: '38.1 cm' },
+        weightkg: 5.4,
+        heightcm: 38.1 },
     { name: 'Antsee (Woodsman)', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png'), specialTypeChart: 'Woodsman' },
     { name: 'Florant', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png'),
         moves: [
@@ -757,8 +757,8 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Mystery Toxins', 'Woodsman'],
         secretAbility: 'Drainage',
-        weight: '74 kg',
-        height: '111.76 cm' },
+        weightkg: 74,
+        heightcm: 111.76 },
     { name: 'Florant (Woodsman)', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png'), specialTypeChart: 'Woodsman' },
     { name: 'Florant-Flychomp', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant-flychomp.png'),
         moves: [
@@ -780,64 +780,191 @@ export const loomiansData = [
         gender: ['Male', 'Female'], 
         abilities: ['Power Jaw'],
         secretAbility: '',
-        weight: '74 kg',
-        height: '111.76 cm' },
+        weightkg: 74,
+        heightcm: 111.76,
+        requiredItem: 'Floraburst' },
     { name: 'Grubby', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/grubby.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 35,
+            energy: 39,
+            attack: 50,
+            defense: 40,
+            rattack: 35,
+            rdefense: 33,
+            speed: 42
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Odd Husk', 'Premonition'],
+        secretAbility: 'Defensive Priority',
+        weightkg: 6.8,
+        heightcm: 35.6 },
     { name: 'Coonucopia', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/coonucopia.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", "Spare", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace"
-        ] },
+        ],
+        stats: {
+            hp: 60,
+            energy: 48,
+            attack: 45,
+            defense: 65,
+            rattack: 35,
+            rdefense: 48,
+            speed: 37
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Odd Husk', 'Premonition'],
+        secretAbility: 'Defensive Priority',
+        weightkg: 12.2,
+        heightcm: 83.8 },
     { name: 'Terrafly', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/terrafly.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace",
             "Double Sting", "Poison Barbs", "Slime", "Muck Blast", "Air Whip", "Drudge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 70,
+            energy: 70,
+            attack: 97,
+            defense: 80,
+            rattack: 46,
+            rdefense: 60,
+            speed: 72
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Odd Husk', 'Ambush'],
+        secretAbility: 'Bug Fever',
+        weightkg: 37.6,
+        heightcm: 165.1 },
     { name: 'Terraclaw', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/terraclaw.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace",
             "Clamp Claw", "Eerie Stare", "Cyclone Slam", "Headbutt", "Mega Chomp", "Body Slam",
             "Mud Spatter", "Bulk Up", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 79,
+            energy: 72,
+            attack: 121,
+            defense: 106,
+            rattack: 20,
+            rdefense: 54,
+            speed: 43
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Odd Husk', 'Pincer Trap'],
+        secretAbility: 'Slick Shell',
+        weightkg: 33.1,
+        heightcm: 111.8 },
     { name: 'Kleptyke', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kleptyke.png'),
         moves: [
             "Pounce", "Dawdle", "Chomp", "Quick Pounce", "Sharpen", "Pilfer", "Charade", 
             "Rant", "Mega Chomp", "Provoke", "Dark Surge", "Mega Punch", "Bag of Tricks", 
             "Body Slam", "Chase Down", "Gnarly Gash", "Hop Kick", "Nab", "Preemptive Strike", 
             "Rogue Assault", "Spare", "Tricky Tactics", "Barter", "Dodge", "Ill Will"
-        ] },
+        ],
+        stats: {
+            hp: 55,
+            energy: 48,
+            attack: 50,
+            defense: 40,
+            rattack: 20,
+            rdefense: 30,
+            speed: 95
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Burglar', 'Apprehension'],
+        secretAbility: 'Ability Thief',
+        weightkg: 14.5,
+        heightcm: 81.3 },
     { name: 'Ragoon', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/ragoon.png'),
         moves: [
             "Pounce", "Dawdle", "Chomp", "Quick Pounce", "Sharpen", "Pilfer", "Charade", 
             "Rant", "Mega Chomp", "Provoke", "Dark Surge", "Mega Punch", "Bag of Tricks",
             "Body Slam", "Chase Down", "Gnarly Gash", "Hop Kick", "Nab", "Preemptive Strike", 
             "Rogue Assault", "Spare", "Tricky Tactics", "Barter", "Dodge", "Ill Will", "Slap Down"
-        ] },
+        ],
+        stats: {
+            hp: 90,
+            energy: 75,
+            attack: 95,
+            defense: 85,
+            rattack: 40,
+            rdefense: 50,
+            speed: 90
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Burglar', 'Apprehension'],
+        secretAbility: 'Ability Thief',
+        weightkg: 30.4,
+        heightcm: 121.9 },
     { name: 'Babore', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/babore.png'),
         moves: [
             "Pounce", "Burrow", "Chomp", "Aim", "Quick Pounce", "Mud Spatter", "Quicksand", 
             "Headbutt", "Body Slam", "Boulder Blast", "Bulk Up", "Body Crash", "Earthquake", 
             "Mega Chomp", "Raging Tackle", "Rogue Assault", "Dodge"
-        ] },
+        ],
+        stats: {
+            hp: 62,
+            energy: 46,
+            attack: 60,
+            defense: 60,
+            rattack: 30,
+            rdefense: 30,
+            speed: 38
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Boast'],
+        secretAbility: 'Resilience',
+        weightkg: 21.3,
+        heightcm: 63.5 },
     { name: 'Boarrok', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/boarrok.png'),
         moves: [
             "Pounce", "Burrow", "Chomp", "Aim", "Quick Pounce", "Mud Spatter", "Quicksand", 
             "Headbutt", "Body Slam", "Boulder Blast", "Bulk Up", "Body Crash", "Earthquake", 
             "Mega Chomp", "Raging Tackle", "Rogue Assault", "Dodge", "Muck Buck"
-        ] },
+        ],
+        stats: {
+            hp: 92,
+            energy: 76,
+            attack: 110,
+            defense: 90,
+            rattack: 40,
+            rdefense: 60,
+            speed: 68
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Boast'],
+        secretAbility: 'Resilience',
+        weightkg: 53.5,
+        heightcm: 124.5 },
     { name: 'Geklow', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'),
         moves: [
             "Static Shock", "Stare", "Spare", "Shine", "Dodge", "Tase", "Light Dash", 
             "Energize", "Examine", "Gamma Pulse", "Thunder Crash", "Dazzling Barrage",
             "Earthquake", "Jolt", "Luster Loot", "Mudslide", "Thunderstrike", "Zip-Zap",
             "Flash 'n Flee", "Gamma Pulse", "Rejuvenate"
-        ] },
+        ],
+        stats: {
+            hp: 50,
+            energy: 55,
+            attack: 50,
+            defense: 45,
+            rattack: 68,
+            rdefense: 50,
+            speed: 67
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Lightning Rod', 'Radiance'],
+        secretAbility: 'Prismatic',
+        weightkg: 17.2,
+        heightcm: 73.7 },
     { name: 'Geklow (Prismatic)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'Prismatic' },
     { name: 'Geklow (Lightning Rod)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'LightningRod' },
     { name: 'Eleguana', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'),
@@ -846,7 +973,21 @@ export const loomiansData = [
             "Energize", "Examine", "Gamma Pulse", "Thunder Crash", "Dazzling Barrage",
             "Earthquake", "Jolt", "Luster Loot", "Mudslide", "Thunderstrike", "Zip-Zap",
             "Flash 'n Flee", "Gamma Pulse", "Rejuvenate", "Magnify"
-        ] },
+        ],
+        stats: {
+            hp: 80,
+            energy: 80,
+            attack: 50,
+            defense: 85,
+            rattack: 80,
+            rdefense: 115,
+            speed: 80
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Lightning Rod', 'Radiance'],
+        secretAbility: 'Prismatic',
+        weightkg: 57.2,
+        heightcm: 129.5 },
     { name: 'Eleguana (Prismatic)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'), specialTypeChart: 'Prismatic' },
     { name: 'Eleguana (Lightning Rod)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'), specialTypeChart: 'LightningRod' },
     { name: 'Slugling', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/slugling.png'),
@@ -855,35 +996,106 @@ export const loomiansData = [
             "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
             "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", 
             "Sap Plant", "Tamp", "Peace Mind", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 70,
+            energy: 41,
+            attack: 10,
+            defense: 10,
+            rattack: 50,
+            rdefense: 70,
+            speed: 45
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Mystery Toxins', 'Ungracious Host'],
+        secretAbility: 'Slimy',
+        weightkg: 12.7,
+        heightcm: 38.1 },
     { name: 'Escargrow', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/escargrow.png'),
         moves: [
             "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
             "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
             "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", 
             "Sap Plant", "Tamp", "Peace Mind", "Trip Root", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 90,
+            energy: 65,
+            attack: 35,
+            defense: 20,
+            rattack: 65,
+            rdefense: 90,
+            speed: 50
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Mystery Toxins', 'Ungracious Host'],
+        secretAbility: 'Slimy',
+        weightkg: 30.8,
+        heightcm: 111.8 },
     { name: 'Gastroak', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/gastroak.png'),
         moves: [
             "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
             "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
             "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", 
             "Sap Plant", "Tamp", "Peace Mind", "Trip Root", "Briar Block", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 115,
+            energy: 83,
+            attack: 55,
+            defense: 35,
+            rattack: 85,
+            rdefense: 115,
+            speed: 55
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Mystery Toxins', 'Ungracious Host'],
+        secretAbility: 'Slimy',
+        weightkg: 236.22,
+        heightcm: 287 },
     { name: 'Gastroak-Terraform', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/gastroak-terraform.png'), specialTypeChart: 'Insulated',
         moves: [
             "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
             "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
             "Earthquake", "Landslide", "Life Drain", "Muck Blast", "Return to Sender", "Spare", 
             "Sap Plant", "Tamp", "Peace Mind", "Trip Root", "Briar Block", "Flora Blast"
-        ] },
+        ],
+        stats: {
+            hp: 140,
+            energy: 88,
+            attack: 60,
+            defense: 45,
+            rattack: 105,
+            rdefense: 140,
+            speed: 65
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Insulated'],
+        secretAbility: '',
+        weightkg: 287,
+        heightcm: 236.22,
+        requiredItem: 'Gastroburst' },
     { name: 'Kabunga', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png'),
         moves: [
             "Strike", "Brace", "Petal Pummel", "Dodge", "Pine Shot", "Bush Whack", "Life Drain",
             "Photosynthesis", "Nature's Force", "Bait", "Burn Up", "Coconut Bomb",
             "Muck Blast", "Provoke", "Scapegoat", "Toxic Spores", "Barter", "Ill Will",
             "Rejuvenate", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 52,
+            energy: 53,
+            attack: 76,
+            defense: 43,
+            rattack: 64,
+            rdefense: 34,
+            speed: 86
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Communication', 'Territorial'],
+        secretAbility: 'Noxious Weeds',
+        weightkg: 53,
+        heightcm: 88.9 },
     { name: 'Kabunga (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png'), specialTypeChart: 'NoxiousWeeds' },
     { name: 'Kabunga-Halloween', primaryType: 'Plant', secondaryType: 'Mind', icon: require('../assets/icons/kabunga-halloween.png'),
         moves: [
@@ -892,7 +1104,21 @@ export const loomiansData = [
             "Bag of Tricks", "Gamma Pulse", "Luster Loot", "Muck Blast", "Provoke", "Psycho Blast", 
             "Scapegoat", "Tear Down", "Toxic Spores", "Barter", "Dodge", "Fade Away", "Ill will",
             "Rejuvenate", "Thunderstrike", "Spare", "Zip-Zap"
-        ] },
+        ],
+        stats: {
+            hp: 65,
+            energy: 68,
+            attack: 23,
+            defense: 58,
+            rattack: 99,
+            rdefense: 74,
+            speed: 5
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Communication', 'Expertise'],
+        secretAbility: 'Noxious Weeds',
+        weightkg: 53,
+        heightcm: 88.9 },
     { name: 'Kabunga-Halloween (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga-halloween.png'), specialTypeChart: 'NoxiousWeeds' },
     { name: 'Wiki-Wiki', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/wiki-wiki.png'),
         moves: [
@@ -901,7 +1127,21 @@ export const loomiansData = [
             "Muck Blast", "Provoke", "Scapegoat", "Toxic Spores", "Barter", "Ill Will",
             "Rejuvenate", "Wonder Herb", "Energy Gift", "Health Gift", "Bequeath", "Poison",
             "Sap Plant", "Mudslide", "Hypnotize", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 152,
+            energy: 125,
+            attack: 49,
+            defense: 55,
+            rattack: 49,
+            rdefense: 55,
+            speed: 47
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Communication', 'Chaperone'],
+        secretAbility: 'Noxious Weeds',
+        weightkg: 117.9,
+        heightcm: 215.9 },
     { name: 'Wiki-Wiki (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/wiki-wiki.png'), specialTypeChart: 'NoxiousWeeds' },
     { name: 'Chartiki', primaryType: 'Plant', secondaryType: 'Fire', icon: require('../assets/icons/chartiki.png'),
         moves: [
@@ -909,7 +1149,21 @@ export const loomiansData = [
             "Photosynthesis", "Nature's Force", "Bait", "Burn Up", "Coconut Bomb",
             "Muck Blast", "Provoke", "Scapegoat", "Toxic Spores", "Barter", "Ill Will",
             "Rejuvenate", "Fire Breath", "Briar Block", "Blaze Punch", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 98,
+            energy: 104,
+            attack: 15,
+            defense: 75,
+            rattack: 103,
+            rdefense: 75,
+            speed: 62
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Communication', 'Inferno'],
+        secretAbility: 'Noxious Weeds',
+        weightkg: 81.6,
+        heightcm: 254 },
     { name: 'Chartiki (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'Fire', icon: require('../assets/icons/chartiki.png'), specialTypeChart: 'NoxiousWeeds' },
     { name: 'Waka-Laka', primaryType: 'Plant', secondaryType: 'Mind', icon: require('../assets/icons/waka-laka.png'),
         moves: [
@@ -918,83 +1172,265 @@ export const loomiansData = [
             "Bag of Tricks", "Gamma Pulse", "Luster Loot", "Muck Blast", "Provoke", "Psycho Blast", 
             "Scapegoat", "Tear Down", "Toxic Spores", "Barter", "Dodge", "Fade Away", "Ill will",
             "Rejuvenate", "Thunderstrike", "Fungus Curse", "Spare", "Zip-Zap"
-        ] },
+        ],
+        stats: {
+            hp: 99,
+            energy: 68,
+            attack: 23,
+            defense: 76,
+            rattack: 124,
+            rdefense: 101,
+            speed: 41
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Communication', 'Expertise'],
+        secretAbility: 'Enchanted Coat',
+        weightkg: 111.1,
+        heightcm: 188 },
     { name: 'Shawchi', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/shawchi.png'),
         moves: [
             "Brainwash", "Dawdle", "Mind's Eye", "Aim", "Swipe", "Quick Pounce", "Peace of Mind",
             "Foul Chant", "Tear Down", "Bag of Tricks", "Bane of Haste", "Elemental Burst", 
             "Energy Gift", "Flabbergast", "Health Gift", "Psycho Blast", "Pyrokinesis", "Barter", 
             "Dodge", "Frost Beam", "Thunderstrike", "Rainbow Blast", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 79,
+            energy: 91,
+            attack: 36,
+            defense: 42,
+            rattack: 99,
+            rdefense: 64,
+            speed: 89
+        },
+        gender: ['Female'], 
+        abilities: ['Enchant'],
+        secretAbility: 'Sharp Focus',
+        weightkg: 19.1,
+        heightcm: 114.3 },
     { name: 'Rakrawla', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/rakrawla.png'),
         moves: [
             "Burrow", "Gnaw", "Boulder Blast", "Swipe", "Mud Spatter", "Examine", "Chomp",
             "Provoke", "Sharpen", "Earthquake", "Mudslide", "Blaze Chomp", "Body Slam", 
             "Chase Down", "Talent Trade", "Thunder Chomp", "Dodge", "Rejuvenate", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 75,
+            energy: 59,
+            attack: 51,
+            defense: 68,
+            rattack: 44,
+            rdefense: 54,
+            speed: 43
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Clutch', 'Hasty'],
+        secretAbility: 'Lazy',
+        weightkg: 15.9,
+        heightcm: 76.2 },
     { name: 'Sedimars', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/sedimars.png'),
         moves: [
             "Burrow", "Gnaw", "Boulder Blast", "Swipe", "Mud Spatter", "Examine", "Chomp",
             "Provoke", "Sharpen", "Earthquake", "Mudslide", "Blaze Chomp", "Body Slam", 
             "Chase Down", "Talent Trade", "Thunder Chomp", "Dodge", "Rejuvenate", "Raging Tackle",
             "Ill Will", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 107,
+            energy: 87,
+            attack: 88,
+            defense: 98,
+            rattack: 47,
+            rdefense: 76,
+            speed: 54
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Clutch', 'Hasty'],
+        secretAbility: 'Lazy',
+        weightkg: 106.1,
+        heightcm: 154.9 },
     { name: 'Gumpod', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/gumpod.png'),
         moves: [
             "Spray", "Brace", "Eerie Stare", "Sleet Shot", "Water Bomb", "Scapegoat", 
             "Hydro Slash", "Dodge", "Soft Water", "Maroon", "Battering Ram", "Burn Up", 
             "Slumber", "Frost Beam", "Tsunami", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 60,
+            energy: 55,
+            attack: 42,
+            defense: 98,
+            rattack: 42,
+            rdefense: 43,
+            speed: 33
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Protective Shell'],
+        secretAbility: 'Sharp Edges',
+        weightkg: 5.4,
+        heightcm: 48.3 },
     { name: 'Ventacean', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/ventacean.png'),
         moves: [
             "Spray", "Brace", "Eerie Stare", "Sleet Shot", "Water Bomb", "Scapegoat", 
             "Hydro Slash", "Dodge", "Soft Water", "Maroon", "Battering Ram", "Burn Up", 
             "Slumber", "Frost Beam", "Tsunami", "Geyser", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 90,
+            energy: 85,
+            attack: 52,
+            defense: 142,
+            rattack: 75,
+            rdefense: 53,
+            speed: 48
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Protective Shell'],
+        secretAbility: 'Sharp Edges',
+        weightkg: 104.3,
+        heightcm: 157.5 },
     { name: 'Phancub', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/phancub.png'),
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
             "Spectral Burst", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 46,
+            energy: 60,
+            attack: 65,
+            defense: 50,
+            rattack: 46,
+            rdefense: 55,
+            speed: 60
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Sharp Claws'],
+        secretAbility: 'Adorable',
+        weightkg: 8.16,
+        heightcm: 66.04 },
     { name: 'Phancub-Valentine', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/phancub-valentine.png'),
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
             "Spectral Burst", "Heart Break", "Bait", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 58,
+            energy: 67,
+            attack: 52,
+            defense: 79,
+            rattack: 17,
+            rdefense: 63,
+            speed: 46
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Ignorant'],
+        secretAbility: 'Clingy',
+        weightkg: 8.16,
+        heightcm: 66.04 },
     { name: 'Ursoul', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/ursoul.png'),
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
             "Spectral Burst", "Steel Trap", "Hop Kick", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 99,
+            energy: 89,
+            attack: 115,
+            defense: 63,
+            rattack: 30,
+            rdefense: 80,
+            speed: 75
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Sharp Claws'],
+        secretAbility: 'Terrifying',
+        weightkg: 95.3,
+        heightcm: 203.2 },
     { name: 'Ursnac', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/ursnac.png'),
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen", "Spare",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
             "Spectral Burst", "Heart Break", "Baffle", "Gain Drain", "Rough Up", "Bait", "Fade Away"
-        ] },
+        ],
+        stats: {
+            hp: 99,
+            energy: 92,
+            attack: 86,
+            defense: 110,
+            rattack: 21,
+            rdefense: 88,
+            speed: 55
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Tank'],
+        secretAbility: 'Bursting Seams',
+        weightkg: 72.6,
+        heightcm: 188 },
     { name: 'Whispup', primaryType: 'Spirit', secondaryType: 'Fire', icon: require('../assets/icons/whispup.png'),
         moves: [
             "Startle", "Stare", "Singe", "Gnaw", "Final Ruse", "Stretch", "Shadow Sprint", "Spare",
             "Blaze Chomp", "Accelerate", "Spectral Burst", "Dark Surge", "Fire Breath", "Harrow", 
             "Mega Chomp", "Phantom Slash", "Power Focus", "Soul Storm", "Dodge", "Fade Away"
-        ] },
+        ],
+        stats: {
+            hp: 45,
+            energy: 60,
+            attack: 57,
+            defense: 42,
+            rattack: 70,
+            rdefense: 48,
+            speed: 72
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Temper', 'Scorching Skin'],
+        secretAbility: 'Vengeance',
+        weightkg: 1.8,
+        heightcm: 96.5 },
     { name: 'Revenine', primaryType: 'Spirit', secondaryType: 'Fire', icon: require('../assets/icons/revenine.png'),
         moves: [
             "Startle", "Stare", "Singe", "Gnaw", "Final Ruse", "Stretch", "Shadow Sprint", "Spare",
             "Blaze Chomp", "Accelerate", "Spectral Burst", "Dark Surge", "Fire Breath", "Harrow", 
             "Mega Chomp", "Phantom Slash", "Power Focus", "Soul Storm", "Dodge", "Fade Away",
             "Ghost Howl"
-        ] },
+        ],
+        stats: {
+            hp: 60,
+            energy: 89,
+            attack: 90,
+            defense: 58,
+            rattack: 115,
+            rdefense: 62,
+            speed: 97
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Temper', 'Scorching Skin'],
+        secretAbility: 'Vengeance',
+        weightkg: 22.7,
+        heightcm: 149.9 },
     { name: 'Skilava', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/skilava.png'),
         moves: [
             "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Burn Up", "Magma Block",
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
             "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
             "Mud Spatter", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 50,
+            energy: 70,
+            attack: 48,
+            defense: 49,
+            rattack: 58,
+            rdefense: 49,
+            speed: 55
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Combustible', 'Scorching Skin'],
+        secretAbility: 'Pyro',
+        weightkg: 6.4,
+        heightcm: 55.9 },
     { name: 'Skilava (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/skilava.png'), specialTypeChart: 'Combustible' },
     { name: 'Geksplode', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/geksplode.png'),
         moves: [
@@ -1002,7 +1438,21 @@ export const loomiansData = [
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
             "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
             "Mud Spatter", "Fire Slam", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 65,
+            energy: 80,
+            attack: 52,
+            defense: 58,
+            rattack: 80,
+            rdefense: 59,
+            speed: 60
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Combustible', 'Scorching Skin'],
+        secretAbility: 'Pyro',
+        weightkg: 54.4,
+        heightcm: 88.9 },
     { name: 'Geksplode (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/geksplode.png'), specialTypeChart: 'Combustible' },
     { name: 'Eruptidon', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/eruptidon.png'),
         moves: [
@@ -1010,7 +1460,21 @@ export const loomiansData = [
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
             "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
             "Mud Spatter", "Fire Slam", "Lava Slash", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 81,
+            energy: 90,
+            attack: 89,
+            defense: 69,
+            rattack: 100,
+            rdefense: 84,
+            speed: 77
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Combustible', 'Scorching Skin'],
+        secretAbility: 'Pyro',
+        weightkg: 102.51,
+        heightcm: 266.7 },
     { name: 'Eruptidon (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/eruptidon.png'), specialTypeChart: 'Combustible' },
     { name: 'Eruptidon-Magmadire', primaryType: 'Fire', secondaryType: 'Earth', icon: require('../assets/icons/eruptidon-magmadire.png'),
         moves: [
@@ -1018,13 +1482,42 @@ export const loomiansData = [
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
             "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
             "Mud Spatter", "Fire Slam", "Lava Slash", "Hellstorm", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 81,
+            energy: 90,
+            attack: 99,
+            defense: 89,
+            rattack: 127,
+            rdefense: 89,
+            speed: 80
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Pyro Pro'],
+        secretAbility: '',
+        weightkg: 102.51,
+        heightcm: 266.7,
+        requiredItem: 'Eruptiburst' },
     { name: 'Craytal', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/craytal.png'),
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
             "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
             "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate"
-        ] },
+        ],
+        stats: {
+            hp: 76,
+            energy: 74,
+            attack: 34,
+            defense: 43,
+            rattack: 76,
+            rdefense: 43,
+            speed: 62
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Volcanic', 'Territorial'],
+        secretAbility: 'Combustible',
+        weightkg: 11.79,
+        heightcm: 81.28 },
     { name: 'Craytal (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/craytal.png'), specialTypeChart: 'Combustible' },
     { name: 'Craytal-Holiday', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/craytal-holiday.png'),
         moves: [
@@ -1032,14 +1525,42 @@ export const loomiansData = [
             "Icicle Trap", "Bush Whack", "Briar Block", "Ice Hammer", "Thistle Slash", "Brawn Boost", 
             "Earthquake", "Raging Tackle", "Timber Thrash", "Tricky Tactics", "Bait", "Dodge",
             "Frost Beam", "Hypnotize", "Ill Will", "Rejuvenate"
-        ] },
+        ],
+        stats: {
+            hp: 76,
+            energy: 74,
+            attack: 76,
+            defense: 43,
+            rattack: 14,
+            rdefense: 63,
+            speed: 62
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Chill', 'Parting Gift'],
+        secretAbility: 'Regift',
+        weightkg: 11.79,
+        heightcm: 81.28 },
     { name: 'Krakaloa', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/krakaloa.png'),
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
             "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
             "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge"
-        ] },
+        ],
+        stats: {
+            hp: 85,
+            energy: 125,
+            attack: 35,
+            defense: 90,
+            rattack: 81,
+            rdefense: 94,
+            speed: 22
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Volcanic', 'Territorial'],
+        secretAbility: 'Combustible',
+        weightkg: 155.58,
+        heightcm: 205.74 },
     { name: 'Krakaloa (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/krakaloa.png'), specialTypeChart: 'Combustible' },
     { name: 'Krakaloa-Lavafiend', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/krakaloa-lavafiend.png'),
         moves: [
@@ -1048,14 +1569,43 @@ export const loomiansData = [
             "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge",
             "Eruption"
-        ] },
+        ],
+        stats: {
+            hp: 115,
+            energy: 125,
+            attack: 55,
+            defense: 100,
+            rattack: 121,
+            rdefense: 104,
+            speed: 12
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Heat Summon'],
+        secretAbility: '',
+        weightkg: 155.58,
+        heightcm: 205.74,
+        requiredItem: 'Krakaburst' },
     { name: 'Volkaloa', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/volkaloa.png'),
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
             "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
             "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Savage Greed", "Coconut Bomb", "Blaze Chomp", "Primal Slash", "Blaze Punch", "Ill Will"
-        ] },
+        ],
+        stats: {
+            hp: 81,
+            energy: 86,
+            attack: 105,
+            defense: 74,
+            rattack: 20,
+            rdefense: 64,
+            speed: 102
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Volcanic', 'Territorial'],
+        secretAbility: 'Combustible',
+        weightkg: 108,
+        heightcm: 198.1 },
     { name: 'Volkaloa (Combustible)', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/volkaloa.png'), specialTypeChart: 'Combustible' },
     { name: 'Festifir', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/festifir.png'),
         moves: [
@@ -1063,55 +1613,181 @@ export const loomiansData = [
             "Icicle Trap", "Bush Whack", "Briar Block", "Ice Hammer", "Thistle Slash", "Brawn Boost", 
             "Earthquake", "Raging Tackle", "Timber Thrash", "Tricky Tactics", "Bait", "Dodge",
             "Frost Beam", "Hypnotize", "Ill Will", "Rejuvenate", "Fungus Curse", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 113,
+            energy: 90,
+            attack: 119,
+            defense: 56,
+            rattack: 44,
+            rdefense: 88,
+            speed: 22
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Chill', 'Parting Gift'],
+        secretAbility: 'Regift',
+        weightkg: 67.6,
+        heightcm: 205.7 },
     { name: 'Igneol', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/igneol.png'),
         moves: [
             "Gnaw", "Burrow", "Mud Spatter", "Power Focus", "Headbutt", "Scapegoat", "Raging Tackle", 
             "Sharpen", "Primal Slash", "Body Crash", "Body Slam", "Earthquake", "Mega Chomp", 
             "Dodge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 62,
+            energy: 75,
+            attack: 60,
+            defense: 70,
+            rattack: 42,
+            rdefense: 41,
+            speed: 42
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Premonition', 'Sharp Edges'],
+        secretAbility: 'Resilience',
+        weightkg: 15.9,
+        heightcm: 63.5 },
     { name: 'Chrysite', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/chrysite.png'),
         moves: [
             "Gnaw", "Burrow", "Mud Spatter", "Power Focus", "Headbutt", "Scapegoat", "Raging Tackle", 
             "Sharpen", "Primal Slash", "Body Crash", "Body Slam", "Earthquake", "Mega Chomp", 
             "Dodge", "Brace", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 82,
+            energy: 80,
+            attack: 64,
+            defense: 99,
+            rattack: 47,
+            rdefense: 46,
+            speed: 42
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Premonition', 'Sharp Edges'],
+        secretAbility: 'Resilience',
+        weightkg: 77.1,
+        heightcm: 134.6 },
     { name: 'Obsidrugon', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/obsidrugon.png'),
         moves: [
             "Gnaw", "Burrow", "Mud Spatter", "Power Focus", "Headbutt", "Scapegoat", "Raging Tackle", 
             "Sharpen", "Primal Slash", "Body Crash", "Body Slam", "Earthquake", "Mega Chomp", 
             "Dodge", "Brace", "Beast's Slumber", "Drudge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 99,
+            energy: 100,
+            attack: 90,
+            defense: 124,
+            rattack: 67,
+            rdefense: 65,
+            speed: 65
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Premonition', 'Sharp Edges'],
+        secretAbility: 'Resilience',
+        weightkg: 133.8,
+        heightcm: 256.5 },
     { name: 'Cafnote-Male', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-male.png'),
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Tone Barrier", "Quick Pounce", "Headbutt", 
             "Provoke", "Body Slam", "Driving Force", "Earthquake", "Mega Chomp", "Raging Tackle",
             "Rogue Assault", "Dodge"
-        ] },
+        ],
+        stats: {
+            hp: 60,
+            energy: 60,
+            attack: 42,
+            defense: 62,
+            rattack: 42,
+            rdefense: 58,
+            speed: 53
+        },
+        gender: ['Male'], 
+        abilities: ['Territorial', 'Virtuoso'],
+        secretAbility: 'Brute Force',
+        weightkg: 57.61,
+        heightcm: 124.46 },
     { name: 'Cafnote-Female', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-female.png'),
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Repeating Tune", "Quick Pounce", "Harmonious Chord", 
             "Tease", "Dissonant Chord", "Gamma Pulse", "Peace of Mind", "Raging Howl", "Dodge"
-        ] },
+        ],
+        stats: {
+            hp: 60,
+            energy: 60,
+            attack: 42,
+            defense: 58,
+            rattack: 42,
+            rdefense: 62,
+            speed: 53
+        },
+        gender: ['Female'], 
+        abilities: ['Adorable', 'Virtuoso'],
+        secretAbility: 'Tone Deaf',
+        weightkg: 57.61,
+        heightcm: 124.46 },
     { name: 'Trumbull', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/trumbull.png'),
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Tone Barrier", "Quick Pounce", "Headbutt", 
             "Provoke", "Body Slam", "Driving Force", "Earthquake", "Mega Chomp", "Raging Tackle",
             "Rogue Assault", "Dodge", "Battle Horn"
-        ] },
+        ],
+        stats: {
+            hp: 92,
+            energy: 75,
+            attack: 134,
+            defense: 102,
+            rattack: 42,
+            rdefense: 62,
+            speed: 73
+        },
+        gender: ['Male'], 
+        abilities: ['Territorial', 'Virtuoso'],
+        secretAbility: 'Brute Force',
+        weightkg: 187.8,
+        heightcm: 177.8 },
     { name: 'Mootune', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/mootune.png'),
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Repeating Tune", "Quick Pounce", "Harmonious Chord", 
             "Tease", "Dissonant Chord", "Gamma Pulse", "Peace of Mind", "Raging Howl", "Dodge",
             "Resonate"
-        ] },
+        ],
+        stats: {
+            hp: 92,
+            energy: 75,
+            attack: 42,
+            defense: 73,
+            rattack: 134,
+            rdefense: 102,
+            speed: 62
+        },
+        gender: ['Female'], 
+        abilities: ['Adorable', 'Virtuoso'],
+        secretAbility: 'Tone Deaf',
+        weightkg: 147,
+        heightcm: 172.7 },
     { name: 'Gobbidemic', primaryType: 'Toxic', secondaryType: 'None', icon: require('../assets/icons/gobbidemic.png'),
         moves: [
             "Sting", "Squawk", "Peck", "Corrode", "Stretch", "Slime", "Muck Blast", 
             "Gobble Goop", "Air Blade", "Barbs", "Energy Gift", "Far Enchantment", "Near Enchantment",
             "Poison", "Poison Barbs", "Provoke", "Trip Root", "Wonder Herb", "Bait", "Dodge",
             "Hypnotize", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 70,
+            energy: 80,
+            attack: 15,
+            defense: 60,
+            rattack: 88,
+            rdefense: 64,
+            speed: 123
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Immunized'],
+        secretAbility: 'Baneful',
+        weightkg: 43.1,
+        heightcm: 101.6 },
     { name: 'Icigool', primaryType: 'Spirit', secondaryType: 'Ice', icon: require('../assets/icons/icigool.png'),
         moves: [
             "Bag of Tricks", "Startle", "Snowdozer", "Chomp", "Gain Drain", "Chilly Chomp", 
@@ -1119,7 +1795,21 @@ export const loomiansData = [
             "Blaze Chomp", "Energy Gift", "Fade Away", "Health Gift", "Ice Hammer", "Icicle Trap",
             "Thunder Chomp", "Tricky Tactics", "Barter", "Dark Surge", "Dodge", "Frost Beam", 
             "Hypnotize", "Ill Will", "Rejuvenate", "Spectral Burst", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 95,
+            energy: 69,
+            attack: 112,
+            defense: 94,
+            rattack: 10,
+            rdefense: 81,
+            speed: 39
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Parting Gift', 'Expertise'],
+        secretAbility: 'Power Jaw',
+        weightkg: 6.8,
+        heightcm: 109.22 },
     { name: 'Icigool-Incarnate', primaryType: 'Spirit', secondaryType: 'Ice', icon: require('../assets/icons/icigool-incarnate.png'),
         moves: [
             "Bag of Tricks", "Startle", "Snowdozer", "Chomp", "Gain Drain", "Chilly Chomp", 
@@ -1127,7 +1817,22 @@ export const loomiansData = [
             "Blaze Chomp", "Energy Gift", "Fade Away", "Health Gift", "Ice Hammer", "Icicle Trap",
             "Thunder Chomp", "Tricky Tactics", "Barter", "Dark Surge", "Dodge", "Frost Beam", 
             "Hypnotize", "Ill Will", "Rejuvenate", "Spectral Burst", "Frightful Surprise", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 105,
+            energy: 99,
+            attack: 132,
+            defense: 104,
+            rattack: 19,
+            rdefense: 91,
+            speed: 50
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Party Trick'],
+        secretAbility: '',
+        weightkg: 6.8,
+        heightcm: 109.22,
+        requiredItem: 'Iciburst' },
     { name: 'Pyramind', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pyramind.png'),
         moves: [
             "Brainwash", "Mind's Eye", "Rant", "Return to Sender", "Boulder Blast", "Peace of Mind", 
@@ -1135,7 +1840,21 @@ export const loomiansData = [
             "Dark Surge", "Déjà Vu", "Deja Vu", "Draco Beam", "Earthquake", "Gain Drain", 
             "Outburst", "Phantom Slash", "Primal Slash", "Provoke", "Psycho Blast", "Rogue Assault", 
             "Talent Trade", "Tribute", "Dodge", "Mud Spatter", "Rainbow Blast", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 88,
+            energy: 60,
+            attack: 45,
+            defense: 69,
+            rattack: 84,
+            rdefense: 99,
+            speed: 35
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Idiosyncratic', 'Temper'],
+        secretAbility: 'Contact Curse',
+        weightkg: 113.4,
+        heightcm: 139.7 },
     { name: 'Pharoglyph', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pharoglyph.png'),
         moves: [
             "Brainwash", "Mind's Eye", "Rant", "Return to Sender", "Boulder Blast", "Peace of Mind", 
@@ -1144,72 +1863,227 @@ export const loomiansData = [
             "Outburst", "Phantom Slash", "Primal Slash", "Provoke", "Psycho Blast", "Rogue Assault", 
             "Talent Trade", "Tribute", "Dodge", "Mud Spatter", "Rainbow Blast", "Memorize", "Hop Kick",
             "Cerebral Slash", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 88,
+            energy: 95,
+            attack: 50,
+            defense: 50,
+            rattack: 120,
+            rdefense: 101,
+            speed: 106
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Idiosyncratic', 'Temper'],
+        secretAbility: 'Contact Curse',
+        weightkg: 166.5,
+        heightcm: 218.4 },
     { name: 'Burroach', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/burroach.png'),
         moves: [
             "Gnaw", "Burrow", "Bug Bite", "Mud Spatter", "Stretch", "Venom Chomp", "Headbutt",
             "Eerie Stare", "Provoke", "Clay Slap", "Parasitize", "Earthquake", "Body Crash", 
             "Poison", "Dodge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 32,
+            energy: 60,
+            attack: 46,
+            defense: 63,
+            rattack: 45,
+            rdefense: 54,
+            speed: 77
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Slimy', 'Trash Armor'],
+        secretAbility: 'Sharp Claws',
+        weightkg: 15.9,
+        heightcm: 38.1 },
     { name: 'Garbantis', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/garbantis.png'),
         moves: [
             "Gnaw", "Burrow", "Bug Bite", "Mud Spatter", "Stretch", "Venom Chomp", "Headbutt",
             "Eerie Stare", "Provoke", "Clay Slap", "Parasitize", "Earthquake", "Body Crash", 
             "Poison", "Dodge", "Battering Ram", "Molt", "Bulk Up", "Tamp", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 53,
+            energy: 76,
+            attack: 77,
+            defense: 90,
+            rattack: 54,
+            rdefense: 64,
+            speed: 104
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Slimy', 'Trash Armor'],
+        secretAbility: 'Sharp Claws',
+        weightkg: 57.6,
+        heightcm: 165.1 },
     { name: 'Whimpor', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png'),
         moves: [
             "Tail Slap", "Metal Swipes", "Brace", "Gust", "Body Slam", "Metal Shriek", "Cyclone Slam",
             "Heavy Bash", "Air Blade", "Reflection Burst", "Dissonant Chord", "Energy Surge", "Jet Stream", 
             "Jump Start", "Metal Blast", "Perch", "Tase", "Dodge", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 62,
+            energy: 58,
+            attack: 21,
+            defense: 46,
+            rattack: 59,
+            rdefense: 62,
+            speed: 53
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Clutch', 'Frail Armor'],
+        secretAbility: 'Toxic Filter',
+        weightkg: 31.8,
+        heightcm: 78.7 },
     { name: 'Whimpor (Toxic Filter)', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png'), specialTypeChart: 'ToxicFilter' },
     { name: 'Stratusoar', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar.png'),
         moves: [
             "Tail Slap", "Metal Swipes", "Brace", "Gust", "Body Slam", "Metal Shriek", "Cyclone Slam",
             "Heavy Bash", "Air Blade", "Reflection Burst", "Dissonant Chord", "Energy Surge", "Jet Stream", 
             "Jump Start", "Metal Blast", "Perch", "Tase", "Dodge", "Second Wind", "Magnify", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 95,
+            energy: 80,
+            attack: 34,
+            defense: 77,
+            rattack: 105,
+            rdefense: 108,
+            speed: 81
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Clutch', 'Frail Armor'],
+        secretAbility: 'Toxic Filter',
+        weightkg: 220.9,
+        heightcm: 228.6 },
     { name: 'Stratusoar (Toxic Filter)', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar.png'), specialTypeChart: 'ToxicFilter' },
     { name: 'Stratusoar-Jetwing', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar-jetwing.png'),
         moves: [
             "Tail Slap", "Metal Swipes", "Brace", "Gust", "Body Slam", "Metal Shriek", "Cyclone Slam",
             "Heavy Bash", "Air Blade", "Reflection Burst", "Dissonant Chord", "Energy Surge", "Jet Stream", 
             "Jump Start", "Metal Blast", "Perch", "Tase", "Dodge", "Second Wind", "Magnify", "Airstrike", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 95,
+            energy: 100,
+            attack: 56,
+            defense: 67,
+            rattack: 135,
+            rdefense: 78,
+            speed: 119
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Turbulent'],
+        secretAbility: '',
+        weightkg: 220.9,
+        heightcm: 228.6,
+        requiredItem: 'Stratuburst' },
     { name: 'Territi', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/territi.png'),
         moves: [
             "Corrode", "Dawdle", "Bash", "Punch", "Power Focus", "Hop Kick", "Canister Burst", "Heavy Bash",
             "Paint Shower", "Provoke", "Bag of Tricks", "Baneful Bash", "Far Enchantment", "Mega Punch", 
             "Metal Blast", "Muck Blast", "Near Enchantment", "Poison", "Square One", "Steel Crusher",
             "Tricky Tactics", "Barter", "Dodge", "Hypnotize", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 51,
+            energy: 58,
+            attack: 61,
+            defense: 44,
+            rattack: 59,
+            rdefense: 48,
+            speed: 52
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Confidence', 'Immunized'],
+        secretAbility: 'Handy',
+        weightkg: 29,
+        heightcm: 101.6 },
     { name: 'Dyeborg', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/dyeborg.png'),
         moves: [
             "Corrode", "Dawdle", "Bash", "Punch", "Power Focus", "Hop Kick", "Canister Burst", "Heavy Bash",
             "Paint Shower", "Provoke", "Bag of Tricks", "Baneful Bash", "Far Enchantment", "Mega Punch", 
             "Metal Blast", "Muck Blast", "Near Enchantment", "Poison", "Square One", "Steel Crusher",
             "Tricky Tactics", "Barter", "Dodge", "Hypnotize", "Graffiti", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 73,
+            energy: 86,
+            attack: 92,
+            defense: 78,
+            rattack: 88,
+            rdefense: 82,
+            speed: 68
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Tank', 'Immunized'],
+        secretAbility: 'Handy',
+        weightkg: 179.6,
+        heightcm: 203.2 },
     { name: 'Operaptor', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/operaptor.png'),
         moves: [
             "Gnaw", "Clamp", "Burrow", "Chomp", "Headbutt", "Power Focus", "Quicksand", "Scapegoat",
             "Body Slam", "Heavy Bash", "Metal Shriek", "Earthquake", "Sharpen", "Steel Crusher", 
             "Tear Down", "Thunder Chomp", "Vice Jaws", "Dodge", "Mud Spatter", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 53,
+            energy: 67,
+            attack: 64,
+            defense: 61,
+            rattack: 45,
+            rdefense: 53,
+            speed: 49
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Terrifying', 'Power Jaw'],
+        secretAbility: 'Staunch',
+        weightkg: 39.5,
+        heightcm: 106.7 },
     { name: 'Concredon', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/concredon.png'),
         moves: [
             "Gnaw", "Clamp", "Burrow", "Chomp", "Headbutt", "Power Focus", "Quicksand", "Scapegoat",
             "Body Slam", "Heavy Bash", "Metal Shriek", "Earthquake", "Sharpen", "Steel Crusher", 
             "Tear Down", "Thunder Chomp", "Vice Jaws", "Dodge", "Mud Spatter", "Clay Slap", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 77,
+            energy: 77,
+            attack: 84,
+            defense: 69,
+            rattack: 53,
+            rdefense: 64,
+            speed: 66
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Terrifying', 'Power Jaw'],
+        secretAbility: 'Staunch',
+        weightkg: 106.1,
+        heightcm: 180.3 },
     { name: 'Tyrecks', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/tyrecks.png'),
         moves: [
             "Gnaw", "Clamp", "Burrow", "Chomp", "Headbutt", "Power Focus", "Quicksand", "Scapegoat",
             "Body Slam", "Heavy Bash", "Metal Shriek", "Earthquake", "Sharpen", "Steel Crusher", 
             "Tear Down", "Thunder Chomp", "Vice Jaws", "Dodge", "Mud Spatter", "Clay Slap", 
             "Complete Demolition", "Spare"
-        ] },
+        ],
+        stats: {
+            hp: 89,
+            energy: 89,
+            attack: 111,
+            defense: 102,
+            rattack: 62,
+            rdefense: 83,
+            speed: 74
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Terrifying', 'Power Jaw'],
+        secretAbility: 'Staunch',
+        weightkg: 404.6,
+        heightcm: 299.7 },
     { name: 'Chompactor', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/chompactor.png'),
         moves: [
             "Gnaw", "Aim", "Metal Swipes", "Oil Leak", "Chomp", "Bash", "Double Whack", "Quick Punch",
@@ -2008,40 +2882,170 @@ export const loomiansData = [
         moves: [
             "Spit", "Daydream", "Growl", "Chase Down", "Stretch", "Quick Pounce", "Scapegoat", "Nab", "Accelerate", "High Pitch Screech", 
             "Recycle", "Body Slam", "Power Focus", "Stampede", "Boom Bash", "Energy Gift", "Health Gift", "Mega Kick", "Provoke",
-            "Raging Howl", "Raging Tackle", "Slumber", "Bait", "Dodge", "Ill Will", "Spare"
+            "Raging Howl", "Raging Tackle", "Slumber", "Bait", "Dodge", "Ill Will", "Spare", "Rainbow Blast"
         ] },
     { name: 'Llamba (Wholesome)', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/llamba.png'), specialTypeChart: 'Wholesome' },
-    { name: 'Choochew', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/choochew.png') },
+    { name: 'Choochew', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/choochew.png'),
+        moves: [
+            "Spit", "Daydream", "Growl", "Chase Down", "Stretch", "Quick Pounce", "Scapegoat", "Nab", "Accelerate", "High Pitch Screech", 
+            "Recycle", "Body Slam", "Power Focus", "Stampede", "Boom Bash", "Energy Gift", "Health Gift", "Mega Kick", "Provoke",
+            "Raging Howl", "Raging Tackle", "Slumber", "Bait", "Dodge", "Ill Will", "Spare", "Rainbow Blast",
+            "Headbutt", "Bulk Up", "Mud Spatter", "Peace of Mind"
+        ] },
     { name: 'Choochew (Wholesome)', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/choochew.png'), specialTypeChart: 'Wholesome' },
-    { name: 'Loomala', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/loomala.png') },
+    { name: 'Loomala', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/loomala.png'),
+        moves: [
+            "Spit", "Daydream", "Growl", "Chase Down", "Stretch", "Quick Pounce", "Scapegoat", "Nab", "Accelerate", "High Pitch Screech", 
+            "Recycle", "Body Slam", "Power Focus", "Stampede", "Boom Bash", "Energy Gift", "Health Gift", "Mega Kick", "Provoke",
+            "Raging Howl", "Raging Tackle", "Slumber", "Bait", "Dodge", "Ill Will", "Spare", "Rainbow Blast",
+            "Headbutt", "Bulk Up", "Mud Spatter", "Peace of Mind", "Spit Out"
+        ] },
     { name: 'Loomala (Wholesome)', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/loomala.png'), specialTypeChart: 'Wholesome' },
-    { name: 'Fentern', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/fentern.png') },
-    { name: 'Weaselin', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/weaselin.png') },
-    { name: 'Singeel', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/singeel.png') },
-    { name: 'Moreel', primaryType: 'Electric', secondaryType: 'Dark', icon: require('../assets/icons/moreel.png') },
-    { name: 'Crabushi', primaryType: 'Metal', secondaryType: 'Brawler', icon: require('../assets/icons/crabushi.png') },
-    { name: 'Crabtana', primaryType: 'Metal', secondaryType: 'Brawler', icon: require('../assets/icons/crabtana.png') },
-    { name: 'Teripod', primaryType: 'Ancient', secondaryType: 'Light', icon: require('../assets/icons/teripod.png') },
-    { name: 'Teridescent', primaryType: 'Ancient', secondaryType: 'Light', icon: require('../assets/icons/teridescent.png') },
-    { name: 'Skampi', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/skampi.png') },
-    { name: 'Prawnsu', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/prawnsu.png') },
-    { name: 'Shrimposte', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/shrimposte.png') },
-    { name: 'Dokan', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokan.png') },
+    { name: 'Fentern', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/fentern.png'),
+        moves: [
+            "Dawdle", "Strike", "Stretch", "Quick Pounce", "Spare", "Recycle", "Headbutt", "Tribute", "Slash", "Bequeath",
+            "Scapegoat", "Body Slam", "Slumber", "Baffle", "Barbs", "Driving Force", "Energy Gift", "Health Gift", "Provoke",
+            "Rant", "Slap Down", "Tricky Tactics", "Bait", "Barter", "Dodge", "Ill Will"
+        ] },
+    { name: 'Weaselin', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/weaselin.png'),
+        moves: [
+            "Dawdle", "Strike", "Stretch", "Quick Pounce", "Spare", "Recycle", "Headbutt", "Tribute", "Slash", "Bequeath",
+            "Scapegoat", "Body Slam", "Slumber", "Baffle", "Barbs", "Driving Force", "Energy Gift", "Health Gift", "Provoke",
+            "Rant", "Slap Down", "Tricky Tactics", "Bait", "Barter", "Dodge", "Ill Will", "Teamwork"
+        ] },
+    { name: 'Singeel', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/singeel.png'),
+        moves: [
+            "Brace", "Static Shock", "Spray", "Tase", "Confound", "Precision Bolt", "Jolt", "Bamboozle", "Soft Water", "Thunder Slam",
+            "Energize", "Dark Surge", "Tamp", "Earthquake", "Landslide", "Mega Chomp", "Primal Slash", "Provoke", "Shrewd Blast",
+            "Thunder Crash", "Tricky Tactics", "Bulk Up", "Dodge", "Plunge", "Spare", "Thunderstrike", "Zip-Zap"
+        ] },
+    { name: 'Moreel', primaryType: 'Electric', secondaryType: 'Dark', icon: require('../assets/icons/moreel.png'),
+        moves: [
+            "Brace", "Static Shock", "Spray", "Tase", "Confound", "Precision Bolt", "Jolt", "Bamboozle", "Soft Water", "Thunder Slam",
+            "Energize", "Dark Surge", "Tamp", "Earthquake", "Landslide", "Mega Chomp", "Primal Slash", "Provoke", "Shrewd Blast",
+            "Thunder Crash", "Tricky Tactics", "Bulk Up", "Dodge", "Plunge", "Spare", "Thunderstrike", "Zip-Zap", "Shadow Lurk"
+        ] },
+    { name: 'Crabushi', primaryType: 'Metal', secondaryType: 'Brawler', icon: require('../assets/icons/crabushi.png'),
+        moves: [
+            "Metal Swipes", "Strike", "Chop", "Swipe", "Sharpen", "Hydro Slash", "Heavy Bash", "Slash", "Barbs", "Bulk Up",
+            "Steel Crusher", "Drudge", "Rogue Assault", "Tribute", "Wave Wrecker", "Dodge", "Plunge", "Spare"
+        ] },
+    { name: 'Crabtana', primaryType: 'Metal', secondaryType: 'Brawler', icon: require('../assets/icons/crabtana.png'),
+        moves: [
+            "Metal Swipes", "Strike", "Chop", "Swipe", "Sharpen", "Hydro Slash", "Heavy Bash", "Slash", "Barbs", "Bulk Up",
+            "Steel Crusher", "Drudge", "Rogue Assault", "Tribute", "Wave Wrecker", "Dodge", "Plunge", "Spare", "Razor Slash"
+        ] },
+    { name: 'Teripod', primaryType: 'Ancient', secondaryType: 'Light', icon: require('../assets/icons/teripod.png'),
+        moves: [
+            "Shine", "Dino Claws", "Flash", "Bug Bite", "Luster Loot", "Aqua Jaws", "Shrewd Blast", "Drudge", "Dazzling Barrage", "Slash",
+            "Hydro Slash", "Blindspot Batter", "Primal Slash", "Energy Surge", "Nova Blast", "Parasitize", "Dodge", "Flash 'n Flee",
+            "Gamma Pulse", "Hypnotize", "Maroon", "Spare"
+        ] },
+    { name: 'Teridescent', primaryType: 'Ancient', secondaryType: 'Light', icon: require('../assets/icons/teridescent.png'),
+        moves: [
+            "Shine", "Dino Claws", "Flash", "Bug Bite", "Luster Loot", "Aqua Jaws", "Shrewd Blast", "Drudge", "Dazzling Barrage", "Slash",
+            "Hydro Slash", "Blindspot Batter", "Primal Slash", "Energy Surge", "Nova Blast", "Parasitize", "Dodge", "Flash 'n Flee",
+            "Gamma Pulse", "Hypnotize", "Maroon", "Spare", "Hyper Sting", "Rainbow Blast"
+        ] },
+    { name: 'Skampi', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/skampi.png'),
+        moves: [
+            "Brace", "Pounce", "Spray", "Stare", "Quick Pounce", "Stretch", "Spare", "Eerie Stare", "Accelerate", "Tamp",
+            "Battering Ram", "Body Crash", "Recycle", "Tribute", "Wave Wrecker", "Dodge", "Spare"
+        ] },
+    { name: 'Prawnsu', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/prawnsu.png'),
+        moves: [
+            "Brace", "Pounce", "Spray", "Stare", "Quick Pounce", "Stretch", "Spare", "Eerie Stare", "Accelerate", "Tamp",
+            "Battering Ram", "Body Crash", "Recycle", "Tribute", "Wave Wrecker", "Dodge", "Spare", "Shell Shrapnel", "Pheroblast",
+            "Maroon", "Boom Bash", "Peace of Mind", "Plunge", "Tsunami"
+        ] },
+    { name: 'Shrimposte', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/shrimposte.png'),
+        moves: [
+            "Brace", "Pounce", "Spray", "Stare", "Quick Pounce", "Stretch", "Spare", "Eerie Stare", "Accelerate", "Tamp",
+            "Battering Ram", "Body Crash", "Recycle", "Tribute", "Wave Wrecker", "Dodge", "Spare", "Shell Bash", "Parasitize",
+            "Hydro Slash", "Mega Punch", "Bulk Up", "Maroon", "Plunge", "Tsunami"
+        ] },
+    { name: 'Dokan', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokan.png'),
+        moves: [
+            "Stare", "Sting", "Burrow", "Toxic Tail", "Clay Slap", "Headbutt", "Baffle", "Aqua Jaws", "Quicksand", "Venom Chomp",
+            "Tamp", "Earthquake", "Baneful Bash", "Landslide", "Muck Blast", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter",
+            "Plunge", "Spare"
+        ] },
     { name: 'Dokan (Sponge)', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokan.png'), specialTypeChart: 'Sponge' },
-    { name: 'Dokumori', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokumori.png') },
+    { name: 'Dokumori', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokumori.png'),
+        moves: [
+            "Stare", "Sting", "Burrow", "Toxic Tail", "Clay Slap", "Headbutt", "Baffle", "Aqua Jaws", "Quicksand", "Venom Chomp",
+            "Tamp", "Earthquake", "Baneful Bash", "Landslide", "Muck Blast", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter",
+            "Plunge", "Spare", "Icicle Trap"
+        ] },
     { name: 'Dokumori (Sponge)', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokumori.png'), specialTypeChart: 'Sponge' },
-    { name: 'Mirrami', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirrami.png') },
+    { name: 'Mirrami', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirrami.png'),
+        moves: [
+            "Metal Swipes", "Stupefy", "Power Focus", "Bamboozle", "Reflection Burst", "Phantom Slash", "Dark Surge", "Chase Down", "Double Whack", 
+            "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Déjà Vu", "Deja Vu", 
+            "Far Enchantment", "Impersonate", "Near Enchantment", "Shadow Sprint", "Square One", "Steel Crusher", "Tricky Tactics", "Bulk Up",
+            "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Spare"
+        ] },
     { name: 'Mirrami (Reflective)', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirrami.png'), specialTypeChart: 'Reflective' },
-    { name: 'Mirraith', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirraith.png') },
+    { name: 'Mirraith', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirraith.png'),
+        moves: [
+            "Metal Swipes", "Stupefy", "Power Focus", "Bamboozle", "Reflection Burst", "Phantom Slash", "Dark Surge", "Chase Down", "Double Whack", 
+            "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Déjà Vu", "Deja Vu", 
+            "Far Enchantment", "Impersonate", "Near Enchantment", "Shadow Sprint", "Square One", "Steel Crusher", "Tricky Tactics", "Bulk Up",
+            "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Spare", "Shatter"
+        ] },
     { name: 'Mirraith (Reflective)', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirraith.png'), specialTypeChart: 'Reflective' },
-    { name: 'Thawmin', primaryType: 'Ice', secondaryType: 'Mind', icon: require('../assets/icons/thawmin.png') },
-    { name: 'Leshent', primaryType: 'Plant', secondaryType: 'Dark', icon: require('../assets/icons/leshent.png') },
-    { name: 'Kayute', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/kayute.png') },
-    { name: 'Kayappa', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/kayappa.png') },
-    { name: 'Kramboss', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/kramboss.png') },
-    { name: 'Leopaw', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/leopaw.png') },
+    { name: 'Thawmin', primaryType: 'Ice', secondaryType: 'Mind', icon: require('../assets/icons/thawmin.png'),
+        moves: [
+            "Frost Beam", "Petal Pummel", "Pine Shot", "Life Drain", "Photosynthesis", "Nature's Force", "Strike", "Brace", "Snowdozer", 
+            "Brainwash", "Sleet Shot", "Bane of Haste", "Deep Freeze", "Flabbergast", "Icicle Trap", "Ice Hammer", "Peace of Mind", "Bag of Tricks", 
+            "Gamma Pulse", "Luster Loot", "Muck Blast", "Provoke", "Psycho Blast", "Scapegoat", "Tear Down", "Toxic Spores", "Barter",
+            "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Rejuvenate", "Spare", "Thunderstrike", "Zip-Zap"
+        ] },
+    { name: 'Leshent', primaryType: 'Plant', secondaryType: 'Dark', icon: require('../assets/icons/leshent.png'),
+        moves: [
+            "Petal Pummel", "Flurry", "Brace", "Spare", "Leaf Barrage", "Snowdozer", "Sap Plant", 
+            "Icicle Trap", "Bush Whack", "Briar Block", "Ice Hammer", "Thistle Slash", "Brawn Boost", 
+            "Earthquake", "Raging Tackle", "Timber Thrash", "Tricky Tactics", "Bait", "Dodge",
+            "Frost Beam", "Hypnotize", "Ill Will", "Rejuvenate", "Gnarly Gash", "Chomp", "Bamboozle",
+            "Provoke", "Slap Down"
+        ] },
+    { name: 'Kayute', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/kayute.png'),
+        moves: [
+            "Flurry", "Gnaw", "Chomp", "Stretch", "Sleet Shot", "Wonder Herb", "Bamboozle",
+            "Square One", "Chilly Chomp", "Metal Shriek", "Slap Down", "Frost Beam", "Mega Chomp", 
+            "Vice Jaws", "Baffle", "Barbs", "Body Slam", "Gnarly Gash", "Ice Hammer", "Primal Slash",
+            "Bulk Up", "Dark Surge", "Dodge", "Spare"
+        ] },
+    { name: 'Kayappa', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/kayappa.png'),
+        moves: [
+            "Flurry", "Gnaw", "Chomp", "Stretch", "Sleet Shot", "Wonder Herb", "Bamboozle",
+            "Square One", "Chilly Chomp", "Metal Shriek", "Slap Down", "Frost Beam", "Mega Chomp", 
+            "Vice Jaws", "Baffle", "Barbs", "Body Slam", "Gnarly Gash", "Ice Hammer", "Primal Slash",
+            "Bulk Up", "Dark Surge", "Dodge", "Spare", "Icicle Trap"
+        ] },
+    { name: 'Kramboss', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/kramboss.png'),
+        moves: [
+            "Flurry", "Gnaw", "Chomp", "Stretch", "Sleet Shot", "Wonder Herb", "Bamboozle",
+            "Square One", "Chilly Chomp", "Metal Shriek", "Slap Down", "Frost Beam", "Mega Chomp", 
+            "Vice Jaws", "Baffle", "Barbs", "Body Slam", "Gnarly Gash", "Ice Hammer", "Primal Slash",
+            "Bulk Up", "Dark Surge", "Dodge", "Spare", "Icicle Traps", "Battle Chime"
+        ] },
+    { name: 'Leopaw', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/leopaw.png'),
+        moves: [
+            "Light Dash", "Pounce", "Snowdozer", "Flash", "Quick Pounce", "Swat", "Energy Surge",
+            "Frost Punch", "Slash", "Blindspot Batter", "Icicle Trap", "Radiant Rush", "Body Slam", 
+            "Brawn Boost", "Dazzling Barrage", "Ice Hammer", "Primal Slash", "Bulk Up", "Dodge", 
+            "Flash 'n Flee", "Frost Beam", "Gamma Pulse", "Spare"
+        ] },
     { name: 'Leopaw (Prismatic)', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/leopaw.png'), specialTypeChart: 'Prismatic' },
-    { name: 'Chienta', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/chienta.png') },
+    { name: 'Chienta', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/chienta.png'),
+        moves: [
+            "Light Dash", "Pounce", "Snowdozer", "Flash", "Quick Pounce", "Swat", "Energy Surge",
+            "Frost Punch", "Slash", "Blindspot Batter", "Icicle Trap", "Radiant Rush", "Body Slam", 
+            "Brawn Boost", "Dazzling Barrage", "Ice Hammer", "Primal Slash", "Bulk Up", "Dodge", 
+            "Flash 'n Flee", "Frost Beam", "Gamma Pulse", "Spare", "Solar Punch", "Mega Punch",
+            "Ill Will"
+        ] },
     { name: 'Chienta (Prismatic)', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/chienta.png'), specialTypeChart: 'Prismatic' },
     { name: 'Eyebrella', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/eyebrella.png'),
         moves: [
@@ -2360,13 +3364,90 @@ export const loomiansData = [
             "Meteor Crash", "Meteor Smash", "Headbutt", "Slumber", "Psycho Blast", "Bulk Up", "Dissipate",
             "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast"
         ] },
-    { name: 'Nevermare', primaryType: 'Plant', secondaryType: 'Spirit', icon: require('../assets/icons/nevermare.png') },
-    { name: 'Akhalos', primaryType: 'Ice', secondaryType: 'Water', icon: require('../assets/icons/akhalos.png') },
+    { name: 'Cosmiore-Cracked', primaryType: 'Ancient', secondaryType: 'Mind', icon: require('../assets/icons/cosmiore-cracked.png'),
+        moves: [
+            "Brace", "Confound", "Brainwash", "Bane of Haste", "Spare", "Power Focus", "Cerebral Slash", 
+            "Meteor Crash", "Meteor Smash", "Headbutt", "Slumber", "Psycho Blast", "Bulk Up", "Dissipate",
+            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast"
+        ] },
+    { name: 'Cosmiore-Unleashed', primaryType: 'Ancient', secondaryType: 'Mind', icon: require('../assets/icons/cosmiore-unleashed.png'),
+        moves: [
+            "Brace", "Confound", "Brainwash", "Bane of Haste", "Spare", "Power Focus", "Cerebral Slash", 
+            "Meteor Crash", "Meteor Smash", "Headbutt", "Slumber", "Psycho Blast", "Bulk Up", "Dissipate",
+            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast"
+        ] },
+    { name: 'Nevermare', primaryType: 'Plant', secondaryType: 'Spirit', icon: require('../assets/icons/nevermare.png'),
+        moves: [
+            "Petal Pummel", "Stupefy", "Stretch", "Startle", "Rant", "Bush Whack", "Sharpen", "Headbutt",
+            "Thistle Slash", "Phantom Slash", "Provoke", "Bulk Up", "Primal Slash", "Wonder Herb", "Dark Surge",
+            "Dodge", "Ill Will", "Mud Spatter", "Spare", "Spectral Burst"
+        ] },
+    { name: 'Akhalos', primaryType: 'Ice', secondaryType: 'Water', icon: require('../assets/icons/akhalos.png'),
+        moves: [
+            "Spray", "Flurry", "Growl", "Water Bomb", "Chilly Chomp", "Slash", "Icicle Trap", "Hydro Slash",
+            "Deep Freeze", "Brawn Boost", "Aqua Jaws", "Body Slam", "Driving Force", "Drudge", "Gnarly Gash",
+            "Ice Hammer", "Rogue Assault", "Soft Water", "Tsunami", "Wave Wrecker", "Dodge", "Frost Beam",
+            "Maroon", "Plunge", "Spare"
+        ] },
     { name: 'Akhalos (Aqua Body)', primaryType: 'Ice', secondaryType: 'Water', icon: require('../assets/icons/akhalos.png'), specialTypeChart: 'AquaBody' },
-    { name: 'Gargolem', primaryType: 'Earth', secondaryType: 'Air', icon: require('../assets/icons/gargolem.png') },
-    { name: 'Celesting', primaryType: 'Metal', secondaryType: 'Light', icon: require('../assets/icons/celesting.png') },
-    { name: 'Odoyaga', primaryType: 'Mind', secondaryType: 'Air', icon: require('../assets/icons/odoyaga.png') },
-    { name: 'Mimask', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/mimask.png') },
+    { name: 'Gargolem', primaryType: 'Earth', secondaryType: 'Air', icon: require('../assets/icons/gargolem.png'),
+        moves: [
+            "Gust", "Dino Claws", "Wing Slap", "Clay Slap", "Slash", "Tamp", "Accelerate", "Air Blade",
+            "Mudslide", "Barbs", "Nosedive", "Earthquake", "Bane of Haste", "Body Slam", "Boom Bash",
+            "Cerebral Slash", "Chase Down", "Driving Force", "Gnarly Gash", "Icicle Trap", "Jet Stream", 
+            "Landslide", "Nab", "Primal Slash", "Provoke", "Return to Sender", "Rogue Assault", "Scapegoat",
+            "Slap Down", "Swat", "Tribute", "Bait", "Dark Surge", "Dodge", "Mud Spatter", "Spare"
+        ] },
+    { name: 'Gargolem-Attack', primaryType: 'Earth', secondaryType: 'Air', icon: require('../assets/icons/gargolem-attack.png'),
+        moves: [
+            "Gust", "Dino Claws", "Wing Slap", "Clay Slap", "Slash", "Tamp", "Accelerate", "Air Blade",
+            "Mudslide", "Barbs", "Nosedive", "Earthquake", "Bane of Haste", "Body Slam", "Boom Bash",
+            "Cerebral Slash", "Chase Down", "Driving Force", "Gnarly Gash", "Icicle Trap", "Jet Stream", 
+            "Landslide", "Nab", "Primal Slash", "Provoke", "Return to Sender", "Rogue Assault", "Scapegoat",
+            "Slap Down", "Swat", "Tribute", "Bait", "Dark Surge", "Dodge", "Mud Spatter", "Spare"
+        ] },
+    { name: 'Gargolem-Defense', primaryType: 'Earth', secondaryType: 'Air', icon: require('../assets/icons/gargolem-defense.png'),
+        moves: [
+            "Gust", "Dino Claws", "Wing Slap", "Clay Slap", "Slash", "Tamp", "Accelerate", "Air Blade",
+            "Mudslide", "Barbs", "Nosedive", "Earthquake", "Bane of Haste", "Body Slam", "Boom Bash",
+            "Cerebral Slash", "Chase Down", "Driving Force", "Gnarly Gash", "Icicle Trap", "Jet Stream", 
+            "Landslide", "Nab", "Primal Slash", "Provoke", "Return to Sender", "Rogue Assault", "Scapegoat",
+            "Slap Down", "Swat", "Tribute", "Bait", "Dark Surge", "Dodge", "Mud Spatter", "Spare"
+        ] },
+    { name: 'Gargolem-Speed', primaryType: 'Earth', secondaryType: 'Air', icon: require('../assets/icons/gargolem-speed.png'),
+        moves: [
+            "Gust", "Dino Claws", "Wing Slap", "Clay Slap", "Slash", "Tamp", "Accelerate", "Air Blade",
+            "Mudslide", "Barbs", "Nosedive", "Earthquake", "Bane of Haste", "Body Slam", "Boom Bash",
+            "Cerebral Slash", "Chase Down", "Driving Force", "Gnarly Gash", "Icicle Trap", "Jet Stream", 
+            "Landslide", "Nab", "Primal Slash", "Provoke", "Return to Sender", "Rogue Assault", "Scapegoat",
+            "Slap Down", "Swat", "Tribute", "Bait", "Dark Surge", "Dodge", "Mud Spatter", "Spare"
+        ] },
+    { name: 'Celesting', primaryType: 'Metal', secondaryType: 'Light', icon: require('../assets/icons/celesting.png'),
+        moves: [
+            "Summon", "Shine", "Flash", "Bash", "Mind's Eye", "Harmonious Chord", "Lightspeed Ray", "Heavy Bash",
+            "Disperse", "Energy Surge", "Metal Blast", "Barbs", "Déjà Vu", "Deja Vu", "Dissonant Chord",
+            "Energy Gift", "Gamma Pulse", "Health Gift", "Icicle Trap", "Luster Loot", "Nova Blast",
+            "Reflection Burst", "Repeating Tune", "Resonate", "Tear Down", "Barter", "Dodge", "Flash 'n Flee",
+            "Peace of Mind", "Spare"
+        ]  },
+    { name: 'Odoyaga', primaryType: 'Mind', secondaryType: 'Air', icon: require('../assets/icons/odoyaga.png'),
+        moves: [
+            "Gust", "Brainwash", "Mind's Eye", "Cyclone Slam", "Flabbergast", "Scapegoat", "Phantom Slash", 
+            "Peace of Mind", "Shrewd Blast", "Air Blade", "Splitting Headache", "Blaze Punch", "Cerebral Slash", 
+            "Electro-Punch", "Frost Punch", "Gnarly Gash", "High-Pitch Screech", "Jet Stream", "Nosedive", 
+            "Outburst", "Primal Slash", "Provoke", "Psycho Blast", "Summon", "Tear Down", "Bulk Up", "Dark Surge", 
+            "Dodge", "Fire Breath", "Frost Beam", "Ill Will", "Peace of Mind", "Spare", "Spectral Burst", 
+            "Thunderstrike"
+        ] },
+    { name: 'Mimask', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/mimask.png'),
+        moves: [
+            "Quick Pounce", "Chomp", "Provoke", "Bamboozle", "Slash", "Sharpen", "Pilfer", "Phantom Slash",
+            "Body Slam", "Slap Down", "Harrow", "Bag of Tricks", "Baneful Bash", "Barbs", "Chase Down",
+            "Gnarly Gash", "Muck Blast", "Poison Barbs", "Power Focus", "Primal Slash", "Shadow Sprint",
+            "Shrewd Blast", "Soul Storm", "Tear Down", "Tricky Tactics", "Barter", "Bulk Up",
+            "Dark Surge", "Dodge", "Fade Away", "Ill Will", "Mud Spatter", "Peace of Mind", "Spare", 
+            "Spectral Burst"
+        ] },
 ];
 
 export default loomiansData;

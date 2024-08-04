@@ -119,6 +119,8 @@ function Teambuilder() {
         const teamString = currentTeam.map(loomian => {
             const { name, attributes } = loomian;
             const { item, ability, gender, tps, ups, personality, moves } = attributes;
+            const loomianData = loomiansData.find(l => l.name === name);
+            const requiredItem = loomianData.requiredItem;
     
             const combinedPersonality = [
                 personality.primary,
@@ -140,7 +142,7 @@ function Teambuilder() {
                 .map(move => `- ${move}`)
                 .join('\n');
     
-            return `${name} @ ${item}\nAbility: ${ability}\nGender: ${gender}\nTPs: ${tpsString}\nUPs: ${upsString}\nPersonality: ${combinedPersonality}\n${movesString}`;
+            return `${name} @ ${requiredItem || item}\nAbility: ${ability}\nGender: ${gender}\nTPs: ${tpsString}\nUPs: ${upsString}\nPersonality: ${combinedPersonality}\n${movesString}`;
         }).join('\n\n');
     
         navigator.clipboard.writeText(teamString).then(() => {
@@ -149,13 +151,14 @@ function Teambuilder() {
         });
     };
     
+    
 
     const filteredLoomians = loomiansData.filter(loomian => loomian.stats);
 
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#36</h3>
+            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#89</h3>
             {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>
