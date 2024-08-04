@@ -1,6 +1,6 @@
 // src/components/ActiveUsers.js
 import React, { useEffect, useState } from 'react';
-import './ActiveUsers.css';
+import '../App.css';
 
 function ActiveUsers() {
   const [activeUsers, setActiveUsers] = useState(0);
