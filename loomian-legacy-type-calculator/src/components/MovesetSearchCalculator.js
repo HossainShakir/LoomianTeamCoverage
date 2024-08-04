@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import loomiansData from './loomiansData';
 import movesData from './movesData';
-import ActiveUsers from './ActiveUsers';
 import '../App.css';
 
 function MovesetSearchCalculator() {
@@ -66,7 +65,6 @@ function MovesetSearchCalculator() {
     return (
         <div className="App">
             <h1>Loomian Legacy Moveset Searcher</h1>
-            <ActiveUsers />
             {selectedMoves.map((move, index) => (
                 <div key={index} className="move-selector">
                     <label htmlFor={`move-${index}`}>Select Move {index + 1}: </label>

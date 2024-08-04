@@ -1,15 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import TeamTypeCalculator from './components/TeamTypeCalculator';
 import TypeCoverageCalculator from './components/TypeCoverageCalculator';
 import MovesetSearchCalculator from './components/MovesetSearchCalculator';
 import Teambuilder from './components/Teambuilder'; 
 import './App.css';
 
+// Create the root element
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render the initial component
+root.render(<TeamTypeCalculator />);
+
+// Function to render a specific component
 function renderApp(Component) {
-    ReactDOM.render(<Component />, document.getElementById('root'));
+    root.render(<Component />);
 }
 
+// Add event listeners for button clicks
 document.getElementById('team-type-calculator-btn').addEventListener('click', () => {
     renderApp(TeamTypeCalculator);
 });
@@ -25,5 +33,3 @@ document.getElementById('moveset-search-calculator-btn').addEventListener('click
 document.getElementById('teambuilder-btn').addEventListener('click', () => {
     renderApp(Teambuilder);
 });
-
-renderApp(TeamTypeCalculator);

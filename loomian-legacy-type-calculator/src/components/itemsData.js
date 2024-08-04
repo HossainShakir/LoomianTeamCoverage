@@ -165,8 +165,8 @@ export const itemsData = [
         description: "Empowers Icigool to Soul Burst. Enables one use of Frightful Surprise: Spirit-type, Melee, 100 Strength. Fill your foe with dread and attack them unexpectedly. This also casts or breaks the Bane of Haste curse."
     },
     {
-        icon: require('../assets/icons/joltburst.png'),
-        name: 'Joltburst',
+        icon: require('../assets/icons/joltiburst.png'),
+        name: 'Joltiburst',
         description: "Empowers Joltooth to Soul Burst. Enables one use of Fulgur Fangs: Electric-type, Melee, 100 Strength. Electrocute the foe with a charged bite. They will be left unable to use Support moves for a few turrns."
     },
     {

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { typeChart, specialTypeCharts } from '../typechart';
 import loomiansData from './loomiansData'; 
-import ActiveUsers from './ActiveUsers';
 import '../App.css';
 
 const allTypes = [
@@ -124,7 +123,6 @@ function TypeCoverageCalculator() {
     return (
         <div className="App">
             <h1>Loomian Legacy Type Coverage Calculator</h1>
-            <ActiveUsers />
             {selectedTypes.map((type, index) => (
                 <div key={index} className="type-selector">
                     <label htmlFor={`type-${index}`}>Select Type {index + 1}:</label>
