@@ -1,4 +1,3 @@
-// src/components/ActiveUsers.js
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 
@@ -33,7 +32,7 @@ function ActiveUsers() {
 
   return (
     <div className="active-users-overlay">
-      <p>Active Users: {activeUsers}</p>
+      <p>WIP Active Users: {activeUsers}</p>
     </div>
   );
 }
