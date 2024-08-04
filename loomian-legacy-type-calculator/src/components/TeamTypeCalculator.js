@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import typeChart from '../typechart';
 import TypeBadge from '../typeBadge';
+import ActiveUsers from './ActiveUsers';
 import '../App.css';
 
 const initialLoomians = Array.from({ length: 7 }, () => ({
@@ -129,6 +130,7 @@ function TeamTypeCalculator() {
     return (
         <div className="App">
             <h1>Loomian Legacy Team Type Calculator</h1>
+            <ActiveUsers />
             {loomians.map((loomian, index) => (
                 <div key={index} className={`loomian-container ${index < 5 ? 'main-team' : 'benched-loomian'}`}>
                     <div className="loomian">
