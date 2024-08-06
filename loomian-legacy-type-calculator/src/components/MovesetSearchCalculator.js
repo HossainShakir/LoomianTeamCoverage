@@ -48,7 +48,7 @@ function MovesetSearchCalculator() {
 
     const filterMoves = (input) => {
         if (!input) return [];
-        return movesData.filter(move => move.toLowerCase().includes(input.toLowerCase()));
+        return movesData.filter(move => move.name.toLowerCase().includes(input.toLowerCase())).map(move => move.name);
     };
 
     const addMoveSelector = () => {

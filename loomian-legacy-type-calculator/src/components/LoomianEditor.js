@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import loomiansData from './loomiansData';
+import movesData from './movesData';
 import itemsData from './itemsData';
 import secretAbilityIcon from '../assets/icons/secretability.png';
 import '../App.css';
@@ -150,6 +151,10 @@ function LoomianEditor({ loomian, onSave }) {
     
         return Math.floor(Math.floor(statValue) * multiplier);
     };
+
+    const getMoveData = (moveName) => {
+        return movesData.find((move) => move.name === moveName) || {};
+    };
     
     return (
         <div className="loomian-editor">
@@ -229,18 +234,33 @@ function LoomianEditor({ loomian, onSave }) {
                     </span>
                 )}
             </div>
-            <div>
-                <label>Moves:</label>
-                {attributes.moves.map((move, index) => (
-                    <div key={index} className="input-group">
-                        <select value={move} onChange={(e) => handleMoveChange(index, e.target.value)}>
-                            <option value="">--Select Move--</option>
-                            {availableMoves.map((availableMove, i) => (
-                                <option key={i} value={availableMove}>{availableMove}</option>
-                            ))}
-                        </select>
-                    </div>
-                ))}
+            <div className="input-group-moves">
+                <label>Moves: </label>
+                {Array(4).fill().map((_, index) => {
+                    const moveData = getMoveData(attributes.moves[index] || '');
+                    return (
+                        <div key={index}>
+                            <select
+                                value={attributes.moves[index] || ''}
+                                onChange={(e) => handleMoveChange(index, e.target.value)}
+                            >
+                                <option value="">--Select Move--</option>
+                                {availableMoves.map((move, i) => (
+                                    <option key={i} value={move}>{move}</option>
+                                ))}
+                            </select>
+                            {moveData && attributes.moves[index] && (
+                                <div className="move-details">
+                                    <span>Power: {moveData.power}</span>
+                                    <span>Energy: {moveData.energy}</span>
+                                    <span>Accuracy: {moveData.accuracy}</span>
+                                    <span>Type: {moveData.type}</span>
+                                    <span>Category: {moveData.mr}</span>
+                                </div>
+                            )}
+                        </div>
+                    );
+                })}
             </div>
             <div className="stats-container">
                 <div className="tp-up-labels">

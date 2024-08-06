@@ -443,3 +443,54 @@ button {
 .gender-icon.ungendered {
   background-color: green;
 }
+
+.input-group-moves {
+  margin-bottom: 1rem;
+}
+
+.input-group-moves label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input-group-moves select {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.move-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.move-details span {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  color: #333;
+  margin-bottom: 10px;
+  margin-left: 0.8rem;
+}
+
+.move-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.move-row select {
+  margin-right: 1rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.move-row .move-details {
+  flex: 2;
+}
