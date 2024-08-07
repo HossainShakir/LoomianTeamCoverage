@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { typeChart, specialTypeCharts } from '../typechart';
 import loomiansData from './loomiansData'; 
+import LastUpdated from './lastUpdated';
 import '../App.css';
 
 const allTypes = [
@@ -196,6 +197,7 @@ function TypeCoverageCalculator() {
                 </a>
                 <span>Sergeant Shaky</span>
             </div>
+            <LastUpdated />
         </div>
     );
 }

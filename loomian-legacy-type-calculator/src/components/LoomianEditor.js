@@ -149,8 +149,15 @@ function LoomianEditor({ loomian, onSave }) {
             statValue = (((2 * baseStat + statUp + statTp / 4) * level) / 100) + 5;
         }
     
-        return Math.floor(Math.floor(statValue) * multiplier);
+        statValue = Math.floor(statValue) * multiplier;
+    
+        if (statType === 'energy' && baseStat === 0) {
+            return 0;
+        }
+    
+        return Math.floor(statValue);
     };
+    
 
     const getMoveData = (moveName) => {
         return movesData.find((move) => move.name === moveName) || {};

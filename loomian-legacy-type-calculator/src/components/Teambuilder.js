@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import loomiansData from './loomiansData';
 import LoomianEditor from './LoomianEditor';
 import TypeBadge from '../typeBadge';
+import LastUpdated from './lastUpdated';
 import '../App.css';
 
 const MAX_TEAM_SIZE = 7;
@@ -158,7 +159,7 @@ function Teambuilder() {
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#155</h3>
+            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#180</h3>
             {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>
@@ -257,6 +258,7 @@ function Teambuilder() {
                 </a>
                 <span>Sergeant Shaky</span>
             </div>
+            <LastUpdated />
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import typeChart from '../typechart';
 import TypeBadge from '../typeBadge';
+import LastUpdated from './lastUpdated';
 import '../App.css';
 
 const initialLoomians = Array.from({ length: 7 }, () => ({
@@ -211,6 +212,7 @@ function TeamTypeCalculator() {
                 </a>
                 <span>Sergeant Shaky</span>
             </div>
+            <LastUpdated />
         </div>
     );
 }

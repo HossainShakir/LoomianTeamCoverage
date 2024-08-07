@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import loomiansData from './loomiansData';
 import movesData from './movesData';
+import LastUpdated from './lastUpdated';
 import '../App.css';
 
 function MovesetSearchCalculator() {
@@ -122,6 +123,7 @@ function MovesetSearchCalculator() {
                 </a>
                 <span>Sergeant Shaky</span>
             </div>
+            <LastUpdated />
             <style jsx>{`
                 .loomian-grid {
                     display: grid;
