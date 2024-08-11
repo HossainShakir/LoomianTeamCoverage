@@ -150,11 +150,16 @@ function LoomianEditor({ loomian, onSave }) {
         }
     
         statValue = Math.floor(statValue) * multiplier;
-    
-        if (statType === 'energy' && baseStat === 0) {
-            return 0;
+
+        if (statType === 'rattack' && attributes.ability === 'Festive Spirit') {
+            const energyValue = calculateStat(statsData.energy, 'energy');
+            return energyValue;
         }
     
+        if (baseStat === 0) {
+            return 0;
+        }
+
         return Math.floor(statValue);
     };
     

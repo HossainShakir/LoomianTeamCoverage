@@ -505,6 +505,7 @@ button {
   border-radius: 5px;
   font-size: 12px;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .changelog-overlay {
@@ -552,3 +553,58 @@ button {
   background: #0056b3;
 }
 
+.loomian-dropdown {
+  position: relative;
+  width: 200px;
+  margin: 0 auto; /* Centers the dropdown horizontally */
+}
+
+.dropdown-header {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: left; /* Aligns text to the left */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%; /* Aligns the dropdown menu relative to the container */
+  transform: translateX(-50%); /* Centers the dropdown menu */
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown-search {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.dropdown-options {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.dropdown-option:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-no-options {
+  padding: 10px;
+  color: #999;
+  text-align: center;
+}

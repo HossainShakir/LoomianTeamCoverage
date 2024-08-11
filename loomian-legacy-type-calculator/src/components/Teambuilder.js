@@ -3,6 +3,7 @@ import loomiansData from './loomiansData';
 import LoomianEditor from './LoomianEditor';
 import TypeBadge from '../typeBadge';
 import LastUpdated from './lastUpdated';
+import LoomianDropdown from './LoomianDropdown';
 import '../App.css';
 
 const MAX_TEAM_SIZE = 7;
@@ -16,8 +17,8 @@ function Teambuilder() {
     const [error, setError] = useState('');
     const [teamToDelete, setTeamToDelete] = useState(null);
     const [message, setMessage] = useState('');
-    const [selectedTeamIndex, setSelectedTeamIndex] = useState(null); 
-    const [showAddTeam, setShowAddTeam] = useState(false); 
+    const [selectedTeamIndex, setSelectedTeamIndex] = useState(null);
+    const [showAddTeam, setShowAddTeam] = useState(false);
 
     useEffect(() => {
         const savedTeams = JSON.parse(localStorage.getItem('teams')) || [];
@@ -152,14 +153,9 @@ function Teambuilder() {
         });
     };
     
-    
-
-    const filteredLoomians = loomiansData.filter(loomian => loomian.stats);
-
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-            <h3>WORK IN PROGRESS, ONLY (SOMEWHAT) WORKS FOR LOOMIANS #1-#180</h3>
             {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>
@@ -195,12 +191,10 @@ function Teambuilder() {
                         </div>
                         <div>
                             <h2>Select Loomian</h2>
-                            <select value={selectedLoomian} onChange={(e) => setSelectedLoomian(e.target.value)}>
-                                <option value="">--Select Loomian--</option>
-                                {filteredLoomians.map((loomian) => (
-                                    <option key={loomian.name} value={loomian.name}>{loomian.name}</option>
-                                ))}
-                            </select>
+                            <LoomianDropdown 
+                                selectedLoomian={selectedLoomian}
+                                onSelectLoomian={(loomianName) => setSelectedLoomian(loomianName)}
+                            />
                             <button onClick={addLoomianToTeam}>Add Loomian</button>
                             {error && <div className="error">{error}</div>}
                         </div>

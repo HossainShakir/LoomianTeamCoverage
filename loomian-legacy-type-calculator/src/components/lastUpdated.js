@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Bug fixes for Moveset Searcher
-- Added "Last Updated" and "Changelog" features
-- Added 25 more loomians to Teambuilder
+- Bug fixes for Teambuilder
+- Searchbar added to loomian dropdown in Teambuilder
+- Added all loomians to Teambuilder
 `;
 
 const LastUpdated = () => {
@@ -21,7 +21,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-08-05
+                Last Updated: 2024-08-11
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">
