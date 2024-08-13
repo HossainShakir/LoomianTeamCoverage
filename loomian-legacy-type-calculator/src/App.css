@@ -309,6 +309,7 @@ button {
   align-items: center;
   gap: 15px;
   width: 100%;
+  padding-top: 5px;
 }
 
 .loomian-editor .input-group label {
@@ -394,6 +395,7 @@ button {
 .teambuilder-editor .loomian-builder {
   width: 100%;
   max-width: 800px; 
+  padding-top: 5px;
 }
 
 .teambuilder-editor .loomian-header {

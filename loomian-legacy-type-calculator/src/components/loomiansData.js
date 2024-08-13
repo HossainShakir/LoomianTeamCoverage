@@ -265,7 +265,7 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Growl", "Chomp", "Tease", "Dive Bomb", "Bamboozle", "Air Blade", 
             "Sharpen", "Shadow Sprint", "Phantom Slash", "Dark Surge", "Harrow", 
-            "Mega Chomp", "Phantom Slash", "Slap Down", "Slash", "Spectral Burst", "Dodge", "Spare"
+            "Mega Chomp", "Slap Down", "Slash", "Spectral Burst", "Dodge", "Spare"
         ],
         stats: {
             hp: 47,
@@ -285,7 +285,7 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Growl", "Chomp", "Tease", "Dive Bomb", "Blood Drain", "Bamboozle", "Air Blade", 
             "Sharpen", "Shadow Sprint", "Phantom Slash", "Dark Surge", "Harrow", 
-            "Mega Chomp", "Phantom Slash", "Slap Down", "Slash", "Spectral Burst", "Dodge", "Spare"
+            "Mega Chomp", "Slap Down", "Slash", "Spectral Burst", "Dodge", "Spare"
         ],
         stats: {
             hp: 60,
@@ -303,8 +303,8 @@ export const loomiansData = [
         heightcm: 154.9 },
     { name: 'Vesperatu', primaryType: 'Dark', secondaryType: 'Spirit', icon: require('../assets/icons/vesperatu.png'),
         moves: [
-            "Revival", "Shadow Sprint", "Phantom Slash", "Dark Surge", "Harrow", "Mega Chomp", 
-            "Phantom Slash", "Slap Down", "Slash", "Spectral Burst", "Dodge", "Spectral Burst",
+            "Revival", "Shadow Sprint", "Dark Surge", "Harrow", "Mega Chomp", 
+            "Phantom Slash", "Slap Down", "Slash", "Dodge", "Spectral Burst",
             "Gnaw", "Growl", "Chomp", "Tease", "Dive Bomb", "Blood Drain", "Bamboozle", 
             "Air Blade", "Sharpen", "Spare"
         ],
@@ -573,7 +573,7 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Brace", "Mystic Breeze", "Snore Spores", "Toxic Spores",
-            "Gust", "Pestilence", "Wing Slap", "Life Drain", "Magnify", "Jet Stream", "Spare"
+            "Gust", "Wing Slap", "Life Drain", "Magnify", "Jet Stream", "Spare"
         ],
         stats: {
             hp: 60,

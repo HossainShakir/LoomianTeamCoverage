@@ -24,7 +24,6 @@ function LoomianEditor({ loomian, onSave }) {
     const [remainingTP, setRemainingTP] = useState(TOTAL_MAX_TP);
     const [statsData, setStatsData] = useState({});
     const [abilityOptions, setAbilityOptions] = useState([]);
-    const [confirmationMessage, setConfirmationMessage] = useState('');
     const [genderOptions, setGenderOptions] = useState([]);
     const [requiredItem, setRequiredItem] = useState('');
 
@@ -51,59 +50,50 @@ function LoomianEditor({ loomian, onSave }) {
     }, [attributes.tps]);
 
     const handleAttributeChange = (attribute, value) => {
-        setAttributes((prevAttributes) => ({
-            ...prevAttributes,
-            [attribute]: value,
-        }));
+        const updatedAttributes = { ...attributes, [attribute]: value };
+        setAttributes(updatedAttributes);
+        onSave(updatedAttributes);
     };
 
     const handlePersonalityChange = (type, value) => {
-        setAttributes((prevAttributes) => ({
-            ...prevAttributes,
-            personality: {
-                ...prevAttributes.personality,
-                [type]: value
-            }
-        }));
+        const updatedPersonality = {
+            ...attributes.personality,
+            [type]: value,
+        };
+        const updatedAttributes = { ...attributes, personality: updatedPersonality };
+        setAttributes(updatedAttributes);
+        onSave(updatedAttributes); 
     };
-    
+
     const handleMoveChange = (index, value) => {
-        setAttributes((prevAttributes) => {
-            const updatedMoves = prevAttributes.moves.map((move, i) => (i === index ? value : move));
-            return { ...prevAttributes, moves: updatedMoves };
-        });
+        const updatedMoves = attributes.moves.map((move, i) => (i === index ? value : move));
+        const updatedAttributes = { ...attributes, moves: updatedMoves };
+        setAttributes(updatedAttributes);
+        onSave(updatedAttributes); 
     };
 
     const handleTPChange = (stat, value) => {
         const newValue = Math.min(MAX_TP, Math.max(0, parseInt(value, 10)));
-        setAttributes((prevAttributes) => {
-            const totalTP = Object.values(prevAttributes.tps).reduce((a, b) => a + b, 0) - (prevAttributes.tps[stat] || 0) + newValue;
+        const updatedAttributes = { ...attributes };
+        const totalTP = Object.values(updatedAttributes.tps).reduce((a, b) => a + b, 0) - (updatedAttributes.tps[stat] || 0) + newValue;
 
-            if (totalTP <= TOTAL_MAX_TP) {
-                return {
-                    ...prevAttributes,
-                    tps: { ...prevAttributes.tps, [stat]: newValue },
-                };
-            }
-
-            return prevAttributes;
-        });
+        if (totalTP <= TOTAL_MAX_TP) {
+            updatedAttributes.tps = { ...updatedAttributes.tps, [stat]: newValue };
+            setAttributes(updatedAttributes);
+            onSave(updatedAttributes); 
+        }
     };
 
     const handleUPChange = (stat, value) => {
         const newValue = parseInt(value, 10);
         if (!isNaN(newValue)) {
-            setAttributes((prevAttributes) => ({
-                ...prevAttributes,
-                ups: { ...prevAttributes.ups, [stat]: Math.min(MAX_UP, Math.max(0, newValue)) },
-            }));
+            const updatedAttributes = {
+                ...attributes,
+                ups: { ...attributes.ups, [stat]: Math.min(MAX_UP, Math.max(0, newValue)) },
+            };
+            setAttributes(updatedAttributes);
+            onSave(updatedAttributes); 
         }
-    };
-
-    const handleSave = () => {
-        onSave(attributes);
-        setConfirmationMessage('Saved changes!');
-        setTimeout(() => setConfirmationMessage(''), 2000); 
     };
 
     const genderIcon = {
@@ -340,8 +330,6 @@ function LoomianEditor({ loomian, onSave }) {
     </select>
 </div>
 
-            <button onClick={handleSave}>Save</button>
-            {confirmationMessage && <div className="confirmation-message">{confirmationMessage}</div>}
         </div>
     );
 }

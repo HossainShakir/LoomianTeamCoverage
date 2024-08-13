@@ -5,6 +5,8 @@ const changelog = `
 - Bug fixes for Teambuilder
 - Searchbar added to loomian dropdown in Teambuilder
 - Added all loomians to Teambuilder
+- Removed save button for each loomian in Teambuilder 
+  and instead added auto-save
 `;
 
 const LastUpdated = () => {
@@ -21,7 +23,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-08-11
+                Last Updated: 2024-08-13
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">
