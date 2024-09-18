@@ -3489,7 +3489,7 @@ export const movesData = [
     },
 
     {
-        name: "Peace Of Mind",
+        name: "Peace of Mind",
         power: 0,
         energy: 25,
         accuracy: "N/A",

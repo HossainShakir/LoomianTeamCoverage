@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Bug fixes for Teambuilder
-- Searchbar added to loomian dropdown in Teambuilder
-- Added all loomians to Teambuilder
-- Removed save button for each loomian in Teambuilder 
-  and instead added auto-save
+- Fixed peace of mind not working properly in moveset searcher
+- Fixed ordering of primary and secondary typings for each loomian
 `;
 
 const LastUpdated = () => {
@@ -23,7 +20,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-08-13
+                Last Updated: 2024-09-17
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

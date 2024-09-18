@@ -715,7 +715,7 @@ export const loomiansData = [
         weightkg: 24,
         heightcm: 94 },
     { name: 'Swolder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'), specialTypeChart: 'CoursingVenom' },
-    { name: 'Antsee', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png'),
+    { name: 'Antsee', primaryType: 'Plant', secondaryType: 'Bug', icon: require('../assets/icons/antsee.png'),
         moves: [
             "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
             "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
@@ -736,8 +736,8 @@ export const loomiansData = [
         secretAbility: 'Drainage',
         weightkg: 5.4,
         heightcm: 38.1 },
-    { name: 'Antsee (Woodsman)', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/antsee.png'), specialTypeChart: 'Woodsman' },
-    { name: 'Florant', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png'),
+    { name: 'Antsee (Woodsman)', primaryType: 'Plant', secondaryType: 'Bug', icon: require('../assets/icons/antsee.png'), specialTypeChart: 'Woodsman' },
+    { name: 'Florant', primaryType: 'Plant', secondaryType: 'Bug', icon: require('../assets/icons/florant.png'),
         moves: [
             "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
             "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
@@ -759,8 +759,8 @@ export const loomiansData = [
         secretAbility: 'Drainage',
         weightkg: 74,
         heightcm: 111.76 },
-    { name: 'Florant (Woodsman)', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant.png'), specialTypeChart: 'Woodsman' },
-    { name: 'Florant-Flychomp', primaryType: 'Bug', secondaryType: 'Plant', icon: require('../assets/icons/florant-flychomp.png'),
+    { name: 'Florant (Woodsman)', primaryType: 'Plant', secondaryType: 'Bug', icon: require('../assets/icons/florant.png'), specialTypeChart: 'Woodsman' },
+    { name: 'Florant-Flychomp', primaryType: 'Plant', secondaryType: 'Bug', icon: require('../assets/icons/florant-flychomp.png'),
         moves: [
             "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
             "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
@@ -1981,7 +1981,7 @@ export const loomiansData = [
         weightkg: 220.9,
         heightcm: 228.6,
         requiredItem: 'Stratuburst' },
-    { name: 'Territi', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/territi.png'),
+    { name: 'Territi', primaryType: 'Toxic', secondaryType: 'Metal', icon: require('../assets/icons/territi.png'),
         moves: [
             "Corrode", "Dawdle", "Bash", "Punch", "Power Focus", "Hop Kick", "Canister Burst", "Heavy Bash",
             "Paint Shower", "Provoke", "Bag of Tricks", "Baneful Bash", "Far Enchantment", "Mega Punch", 
@@ -2002,7 +2002,7 @@ export const loomiansData = [
         secretAbility: 'Handy',
         weightkg: 29,
         heightcm: 101.6 },
-    { name: 'Dyeborg', primaryType: 'Metal', secondaryType: 'Toxic', icon: require('../assets/icons/dyeborg.png'),
+    { name: 'Dyeborg', primaryType: 'Toxic', secondaryType: 'Metal', icon: require('../assets/icons/dyeborg.png'),
         moves: [
             "Corrode", "Dawdle", "Bash", "Punch", "Power Focus", "Hop Kick", "Canister Burst", "Heavy Bash",
             "Paint Shower", "Provoke", "Bag of Tricks", "Baneful Bash", "Far Enchantment", "Mega Punch", 
