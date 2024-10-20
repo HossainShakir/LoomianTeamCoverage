@@ -5642,6 +5642,7 @@ export const loomiansData = [
         secretAbility: 'Devious',
         weightkg: 2.3,
         heightcm: 20.3 },
+    { name: 'Spirwix (Raging Fire)', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/spirwix.png'), specialTypeChart: 'RagingFire' },
     { name: 'Malevowax', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/malevowax.png'),
         moves: [
             "Startle", "Singe", "Chase Down", "Burn Up", "Shine", "Pepper Burst", "Fade Away", "Provoke", "Gamma Pulse",
@@ -5663,6 +5664,7 @@ export const loomiansData = [
         secretAbility: 'Devious',
         weightkg: 8.2,
         heightcm: 63.5 },
+    { name: 'Malevowax (Raging Fire)', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/malevowax.png'), specialTypeChart: 'RagingFire' },
     { name: 'Grievestone', primaryType: 'Earth', secondaryType: 'Spirit', icon: require('../assets/icons/grievestone.png'),
         moves: [
             "Pebble Toss", "Stupefy", "Shriek", "Tamp", "Empathize", "Quicksand", "Spectral Burst", "Dissonant Chord", 
