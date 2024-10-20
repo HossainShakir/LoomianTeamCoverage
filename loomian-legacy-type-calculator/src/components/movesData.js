@@ -674,6 +674,19 @@ export const movesData = [
     },
 
     {
+        name: "Banana Slam",
+        power: 95,
+        energy: 55,
+        accuracy: "N/A",
+        type: "Brawler",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        secondaryEffect: true
+    },
+
+    {
         name: "Air Whip",
         power: 60,
         energy: 32,
@@ -1566,6 +1579,17 @@ export const movesData = [
     },
 
     {
+        name: "Incinerate",
+        power: 130,
+        energy: 60,
+        accuracy: 80,
+        type: "Fire",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    {
         name: "Geyser",
         power: 75,
         energy: 40,
@@ -1798,6 +1822,18 @@ export const movesData = [
         mr2: "Ranged Defense",
         sound: true,
         secondaryEffect: true
+    },
+
+    {
+        name: "Trick Shot",
+        power: 70,
+        energy: 45,
+        accuracy: 100,
+        type: "Spirit",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        priority: true
     },
 
     {
@@ -2505,6 +2541,30 @@ export const movesData = [
     },
 
     {
+        name: "Aggravate",
+        power: 30,
+        energy: 20,
+        accuracy: 100,
+        type: "Dark",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        drain: 1/2
+    },
+
+    {
+        name: "Shadow Pulse",
+        power: 80,
+        energy: 40,
+        accuracy: 100,
+        type: "Dark",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        aoe: true
+    },
+
+    {
         name: "Marsh Wave",
         power: 75,
         energy: 45,
@@ -3138,6 +3198,30 @@ export const movesData = [
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense"
+    },
+
+    {
+        name: "Rock Slide",
+        power: 60,
+        energy: 40,
+        accuracy: 100,
+        type: "Earth",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        typeModifier: { type: "Air", modifier: 2 }
+    },
+
+    {
+        name: "Pebble Toss",
+        power: 30,
+        energy: 15,
+        accuracy: 100,
+        type: "Earth",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        aoe: true
     },
 
     {
@@ -4210,6 +4294,24 @@ export const movesData = [
         power: 0,
         energy: 40,
         accuracy: "N/A",
+        type: "Simple",
+        mr: "Support"
+    },
+
+    {
+        name: "Banana Split",
+        power: 0,
+        energy: 100,
+        accuracy: "N/A",
+        type: "Simple",
+        mr: "Support"
+    },
+
+    {
+        name: "Daydream",
+        power: 0,
+        energy: 0,
+        accuracy: 100,
         type: "Simple",
         mr: "Support"
     },

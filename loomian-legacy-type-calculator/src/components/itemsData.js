@@ -315,6 +315,16 @@ export const itemsData = [
         description: "A Loomian equipped with Specialty Boots will have increased Speed, but will only be able to use the first move it uses in battle."
     },
     {
+        icon: require('../assets/icons/specialtygloves.png'),
+        name: 'Specialty Gloves',
+        description: "A Loomian equipped with Specialty Gloves will have increased Melee Attack, but will only be able to use the first move it uses in battle."
+    },
+    {
+        icon: require('../assets/icons/specialtygoggles.png'),
+        name: 'Specialty Goggles',
+        description: "A Loomian equipped with Specialty Boots will have increased Ranged Attack, but will only be able to use the first move it uses in battle."
+    },
+    {
         icon: require('../assets/icons/spectralpearl.png'),
         name: 'Spectral Pearl',
         description: "Absorbs half the power of a Spirit-type attack used against the Loomian equipped with this item."
