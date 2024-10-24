@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Added Specialty Gloves and Specialty Goggles
-- Added Nymesis, Banooh, Banokey, Spirwix, Malevowax, Grievestone, and Obelost
-- Added New Moves to Moveset Searcher
+- Added the rest of Banooh and Banokey's abilities
 `;
 
 const LastUpdated = () => {
@@ -21,7 +19,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-10-19
+                Last Updated: 2024-10-23
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

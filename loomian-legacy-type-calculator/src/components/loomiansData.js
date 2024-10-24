@@ -5596,8 +5596,8 @@ export const loomiansData = [
             speed: 66
         },
         gender: ['Male', 'Female'],
-        abilities: ['Shakedown', ''],
-        secretAbility: '',
+        abilities: ['Shakedown', 'Assertive'],
+        secretAbility: 'Berserk',
         weightkg: 3.6,
         heightcm: 33 },
     { name: 'Banokey', primaryType: 'Simple', secondaryType: 'Brawler', icon: require('../assets/icons/banokey.png'),
@@ -5617,8 +5617,8 @@ export const loomiansData = [
             speed: 96
         },
         gender: ['Male', 'Female'],
-        abilities: ['Shakedown', ''],
-        secretAbility: '',
+        abilities: ['Shakedown', 'Assertive'],
+        secretAbility: 'Berserk',
         weightkg: 16.8,
         heightcm: 104.1 },
     { name: 'Spirwix', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/spirwix.png'),
