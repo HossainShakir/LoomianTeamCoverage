@@ -245,6 +245,11 @@ export const itemsData = [
         description: "Increases the Strength of Ranged Attacks by 50% when held by a Shawchi."
     },
     {
+        icon: require('../assets/icons/noshburst.png'),
+        name: 'Noshburst',
+        description: "Empowers Hoganosh to Soul Burst. Enables one use of Meltdown: Fire-type, Melee, 100 Strength."
+    },
+    {
         icon: require('../assets/icons/noxiouspearl.png'),
         name: 'Noxious Pearl',
         description: "Absorbs half the power of a Toxic-type attack used against the Loomian equipped with this item."

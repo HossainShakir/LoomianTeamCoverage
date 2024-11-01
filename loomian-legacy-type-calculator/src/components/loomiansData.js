@@ -2878,6 +2878,27 @@ export const loomiansData = [
         secretAbility: 'Sweet Touch',
         weightkg: 40.4,
         heightcm: 129.5 },
+    { name: 'Hoganosh-Atomic', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/hoganosh.png'),
+        moves: [
+            "Stare", "Singe", "Pounce", "Burn Up", "Chomp", "Headbutt", "Fire Slam", "Sharpen", "Body Slam",
+            "Mega Chomp", "Bait", "Baneful Bash", "Battle Chime", "Muck Buck", "Raging Tackle", "Venom Chomp",
+            "Bulk Up", "Dodge", "Ill Will", "Rejuvenate", "Fiery Fondant", "Spare", "Meltdown"
+        ],
+        stats: {
+            hp: 89,
+            energy: 93,
+            attack: 129,
+            defense: 95,
+            rattack: 67,
+            rdefense: 114,
+            speed: 61
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Gorge'],
+        secretAbility: '',
+        weightkg: 40.4,
+        heightcm: 129.5,
+        requiredItem: 'Noshburst' },
     { name: 'Mochibi', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/mochibi.png'),
         moves: [
             "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
