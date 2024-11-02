@@ -2878,7 +2878,7 @@ export const loomiansData = [
         secretAbility: 'Sweet Touch',
         weightkg: 40.4,
         heightcm: 129.5 },
-    { name: 'Hoganosh-Atomic', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/hoganosh.png'),
+    { name: 'Hoganosh-Atomic', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/hoganosh-atomic.png'),
         moves: [
             "Stare", "Singe", "Pounce", "Burn Up", "Chomp", "Headbutt", "Fire Slam", "Sharpen", "Body Slam",
             "Mega Chomp", "Bait", "Baneful Bash", "Battle Chime", "Muck Buck", "Raging Tackle", "Venom Chomp",
