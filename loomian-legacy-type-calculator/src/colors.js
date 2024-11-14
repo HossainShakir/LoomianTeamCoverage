@@ -1,4 +1,3 @@
-// colors.js
 import FireIcon from './assets/icons/Fire.png';
 import WaterIcon from './assets/icons/Water.png';
 import PlantIcon from './assets/icons/Plant.png';
@@ -16,7 +15,6 @@ import MindIcon from './assets/icons/Mind.png';
 import SimpleIcon from './assets/icons/Simple.png';
 import SpiritIcon from './assets/icons/Spirit.png';
 import ToxicIcon from './assets/icons/Toxic.png';
-// Import other icons similarly
 
 export const typeAttributes = {
     Fire: { color: '#F2421F', textColor: 'white', icon: FireIcon },
@@ -36,5 +34,4 @@ export const typeAttributes = {
     Simple: { color: '#CCCCCC', textColor: 'black', icon: SimpleIcon },
     Spirit: { color: '#8000FF', textColor: 'white', icon: SpiritIcon },
     Toxic: { color: '#CC66FF', textColor: 'black', icon: ToxicIcon }
-    // Add other types similarly
 };

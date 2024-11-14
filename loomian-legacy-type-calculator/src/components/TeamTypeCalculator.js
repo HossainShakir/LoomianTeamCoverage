@@ -68,7 +68,6 @@ function TeamTypeCalculator() {
 
         setResults(newResults);
 
-        // Calculate team weaknesses and resistances
         const typeCount = {};
         newResults.forEach((result) => {
             for (const [type, effectiveness] of Object.entries(result.combinedEffects)) {
@@ -91,7 +90,6 @@ function TeamTypeCalculator() {
         setTeamWeaknesses(teamWeaknessesArray);
         setTeamResistances(teamResistancesArray);
 
-        // Calculate unresisted types
         const resistedTypes = {};
         newResults.forEach((result) => {
             for (const [type, effectiveness] of Object.entries(result.combinedEffects)) {
@@ -104,7 +102,6 @@ function TeamTypeCalculator() {
         const updatedUnresistedTypes = allTypes.filter((type) => type !== 'None' && !resistedTypes[type]);
         setUnresistedTypes(updatedUnresistedTypes);
 
-        // Calculate recommendations
         const recommendationsArray = allTypes.slice(1).map((type) => {
             let rating = 0;
             teamWeaknessesArray.forEach(({ type: weaknessType }) => {

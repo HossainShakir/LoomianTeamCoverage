@@ -1,4 +1,3 @@
-// src/typeChart.js
 export const typeChart = {
     Fire: { Fire: 0.5, Water: 2, Plant: 0.5, Light: 1, Dark: 1, Ice: 0.5, Electric: 1, Air: 2, Bug: 0.5, Earth: 2, Toxic: 1, Metal: 0.5, Ancient: 1, Spirit: 1, Brawler: 1, Mind: 1, Simple: 1 },
     Water: { Fire: 0.5, Water: 0.5, Plant: 2, Light: 1, Dark: 1, Ice: 0.5, Electric: 2, Air: 1, Bug: 1, Earth: 1, Toxic: 2, Metal: 0.5, Ancient: 1, Spirit: 1, Brawler: 1, Mind: 1, Simple: 1  },

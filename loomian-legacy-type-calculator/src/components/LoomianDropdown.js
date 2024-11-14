@@ -1,13 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import loomiansData from './loomiansData.js'; // Adjust the path as necessary
+import loomiansData from './loomiansData.js'; 
 import '../App.css';
 
 const LoomianDropdown = ({ selectedLoomian, onSelectLoomian }) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const dropdownRef = useRef(null); // Ref for the dropdown container
+    const dropdownRef = useRef(null); 
 
-    // Filter loomiansData to include only Loomians with the `stats` attribute
     const filteredLoomians = loomiansData.filter(loomian =>
         loomian.stats && loomian.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -17,7 +16,7 @@ const LoomianDropdown = ({ selectedLoomian, onSelectLoomian }) => {
             onSelectLoomian(loomianName);
         }
         setIsDropdownOpen(false);
-        setSearchQuery(''); // Clear search after selection
+        setSearchQuery(''); 
     };
 
     const handleClickOutside = (event) => {
@@ -27,10 +26,8 @@ const LoomianDropdown = ({ selectedLoomian, onSelectLoomian }) => {
     };
 
     useEffect(() => {
-        // Attach the event listener to the document
         document.addEventListener('mousedown', handleClickOutside);
 
-        // Clean up the event listener on component unmount
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };

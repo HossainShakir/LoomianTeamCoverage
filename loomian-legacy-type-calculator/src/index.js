@@ -6,18 +6,14 @@ import MovesetSearchCalculator from './components/MovesetSearchCalculator';
 import Teambuilder from './components/Teambuilder'; 
 import './App.css';
 
-// Create the root element
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Render the initial component
 root.render(<TeamTypeCalculator />);
 
-// Function to render a specific component
 function renderApp(Component) {
     root.render(<Component />);
 }
 
-// Add event listeners for button clicks
 document.getElementById('team-type-calculator-btn').addEventListener('click', () => {
     renderApp(TeamTypeCalculator);
 });
