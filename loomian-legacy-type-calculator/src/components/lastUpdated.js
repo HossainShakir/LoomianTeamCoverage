@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Added Hoganosh's Soulburst (some icons are not finished)
+- Added a pop up for saving teams
 `;
 
 const LastUpdated = () => {
@@ -19,7 +19,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-11-1
+                Last Updated: 2024-11-14
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

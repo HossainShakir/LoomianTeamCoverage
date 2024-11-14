@@ -19,6 +19,9 @@ function Teambuilder() {
     const [message, setMessage] = useState('');
     const [selectedTeamIndex, setSelectedTeamIndex] = useState(null);
     const [showAddTeam, setShowAddTeam] = useState(false);
+    const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
+    const [showUnsavedChangesDialog, setShowUnsavedChangesDialog] = useState(false);
+    const [backActionPending, setBackActionPending] = useState(false);
 
     useEffect(() => {
         const savedTeams = JSON.parse(localStorage.getItem('teams')) || [];
@@ -37,6 +40,7 @@ function Teambuilder() {
                 }
             ]);
             setSelectedLoomian('');
+            setHasUnsavedChanges(true);
         } else if (currentTeam.length >= MAX_TEAM_SIZE) {
             setError('Cannot add more than 7 Loomians to a team.');
             setTimeout(() => setError(''), 2000);
@@ -46,12 +50,14 @@ function Teambuilder() {
     const updateLoomianAttributes = (index, newAttributes) => {
         const updatedTeam = currentTeam.map((loomian, i) => (i === index ? { ...loomian, attributes: newAttributes } : loomian));
         setCurrentTeam(updatedTeam);
+        setHasUnsavedChanges(true);
     };
 
     const removeLoomianFromTeam = (index) => {
         const updatedTeam = [...currentTeam];
         updatedTeam.splice(index, 1);
         setCurrentTeam(updatedTeam);
+        setHasUnsavedChanges(true);
     };
 
     const getDefaultAttributes = () => ({
@@ -83,7 +89,32 @@ function Teambuilder() {
         setTeams(updatedTeams);
         localStorage.setItem('teams', JSON.stringify(updatedTeams));
         setMessage('Team saved!');
+        setHasUnsavedChanges(false);
         setTimeout(() => setMessage(''), 2000);
+    };
+
+    const handleBackToTeams = () => {
+        if (hasUnsavedChanges) {
+            setShowUnsavedChangesDialog(true);
+            setBackActionPending(true);
+        } else {
+            setShowAddTeam(false);
+            setSelectedTeamIndex(null);
+        }
+    };
+
+    const confirmUnsavedChanges = () => {
+        if (backActionPending) {
+            setShowAddTeam(false);
+            setSelectedTeamIndex(null);
+        }
+        setShowUnsavedChangesDialog(false);
+        setBackActionPending(false);
+    };
+
+    const cancelUnsavedChangesDialog = () => {
+        setShowUnsavedChangesDialog(false);
+        setBackActionPending(false);
     };
 
     const createNewTeam = () => {
@@ -152,17 +183,16 @@ function Teambuilder() {
             setTimeout(() => setMessage(''), 2000);
         });
     };
-    
+
     return (
         <div className="App">
             <h1>Loomian Legacy Teambuilder</h1>
-            {/* Manage Teams or Add New Team View */}
             <div>
                 <h2>{showAddTeam ? (selectedTeamIndex === null ? 'Create New Team' : 'Edit Team') : 'Manage Teams'}</h2>
 
                 {!showAddTeam ? (
                     <>
-                        <button onClick={createNewTeam}>Add New Team</button>
+                        <button onClick={() => { createNewTeam(); setHasUnsavedChanges(false); }}>Add New Team</button>
                         <div>
                             <h2>Saved Teams</h2>
                             {teams.map((team, index) => (
@@ -185,7 +215,7 @@ function Teambuilder() {
                             <input
                                 type="text"
                                 value={teamName}
-                                onChange={(e) => setTeamName(e.target.value)}
+                                onChange={(e) => { setTeamName(e.target.value); setHasUnsavedChanges(true); }}
                                 placeholder="Enter team name"
                             />
                         </div>
@@ -193,7 +223,7 @@ function Teambuilder() {
                             <h2>Select Loomian</h2>
                             <LoomianDropdown 
                                 selectedLoomian={selectedLoomian}
-                                onSelectLoomian={(loomianName) => setSelectedLoomian(loomianName)}
+                                onSelectLoomian={(loomianName) => { setSelectedLoomian(loomianName); setHasUnsavedChanges(true); }}
                             />
                             <button onClick={addLoomianToTeam}>Add Loomian</button>
                             {error && <div className="error">{error}</div>}
@@ -231,13 +261,20 @@ function Teambuilder() {
                             ))}
                             <button onClick={saveTeam}>{selectedTeamIndex !== null ? 'Save Changes' : 'Add Team'}</button>
                             <button onClick={exportTeam}>Export Team</button>
-                            <button onClick={() => { setShowAddTeam(false); setSelectedTeamIndex(null); }}>Back to Teams</button>
+                            <button onClick={handleBackToTeams}>Back to Teams</button>
                             {message && <div className="message">{message}</div>}
                         </div>
                     </>
                 )}
-            </div>
 
+                {showUnsavedChangesDialog && (
+                    <div className="unsaved-changes-dialog">
+                        <p>You have unsaved changes. Are you sure you want to leave without saving?</p>
+                        <button onClick={confirmUnsavedChanges}>Yes</button>
+                        <button onClick={cancelUnsavedChangesDialog}>No</button>
+                    </div>
+                )}
+            </div>
             {teamToDelete !== null && (
                 <div className="confirmation-dialog">
                     <p>Are you sure you want to delete {teams[teamToDelete].name}?</p>
