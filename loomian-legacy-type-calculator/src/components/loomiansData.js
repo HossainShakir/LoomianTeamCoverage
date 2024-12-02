@@ -52,12 +52,12 @@ export const loomiansData = [
             "Power Focus", "Preemptive Strike", "Spare"
         ],
         stats: {
-            hp: 88,
+            hp: 89,
             energy: 88,
             attack: 102,
             defense: 125,
-            rattack: 60,
-            rdefense: 82,
+            rattack: 71,
+            rdefense: 85,
             speed: 65
         },
         gender: ['Male', 'Female'], 
@@ -119,12 +119,12 @@ export const loomiansData = [
             "Swipe", "Submerge", "Sleet Shot", "Spare"
         ],
         stats: {
-            hp: 102,
+            hp: 105,
             energy: 88,
-            attack: 90,
-            defense: 93,
-            rattack: 94,
-            rdefense: 83,
+            attack: 94,
+            defense: 95,
+            rattack: 98,
+            rdefense: 85,
             speed: 60
         },
         gender: ['Male', 'Female'], 
@@ -186,11 +186,11 @@ export const loomiansData = [
             "Life Drain", "Spare"
         ],
         stats: {
-            hp: 72,
+            hp: 75,
             energy: 88,
             attack: 126,
             defense: 75,
-            rattack: 80,
+            rattack: 92,
             rdefense: 65,
             speed: 104
         },
@@ -248,12 +248,12 @@ export const loomiansData = [
             "Growl", "Peck", "Radiant Forecast", "Luster Loot", "Cyclone Slam", "Power Focus", "Spare"
         ],
         stats: {
-            hp: 84,
+            hp: 86,
             energy: 88,
-            attack: 80,
-            defense: 71,
+            attack: 87,
+            defense: 74,
             rattack: 125,
-            rdefense: 87,
+            rdefense: 90,
             speed: 75
         },
         gender: ['Male', 'Female'], 
@@ -312,8 +312,8 @@ export const loomiansData = [
             hp: 76,
             energy: 88,
             attack: 110,
-            defense: 90,
-            rattack: 82,
+            defense: 97,
+            rattack: 90,
             rdefense: 65,
             speed: 99
         },
@@ -372,11 +372,11 @@ export const loomiansData = [
             "Winter's Fury", "Chilly Chomp", "Quick Punch", "Sleet Shot"
         ],
         stats: {
-            hp: 124,
+            hp: 132,
             energy: 88,
             attack: 98,
             defense: 115,
-            rattack: 65,
+            rattack: 72,
             rdefense: 75,
             speed: 45
         },
@@ -436,10 +436,10 @@ export const loomiansData = [
         stats: {
             hp: 78,
             energy: 88,
-            attack: 89,
-            defense: 56,
-            rattack: 106,
-            rdefense: 74,
+            attack: 92,
+            defense: 60,
+            rattack: 109,
+            rdefense: 79,
             speed: 119
         },
         gender: ['Male', 'Female'], 
@@ -476,11 +476,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 75,
-            energy: 75,
-            attack: 96,
-            defense: 79,
-            rattack: 51,
-            rdefense: 78,
+            energy: 84,
+            attack: 106,
+            defense: 90,
+            rattack: 61,
+            rdefense: 88,
             speed: 71
         },
         gender: ['Male', 'Female'], 
@@ -497,12 +497,12 @@ export const loomiansData = [
         ],
         stats: {
             hp: 75,
-            energy: 75,
-            attack: 51,
-            defense: 68,
-            rattack: 96,
-            rdefense: 69,
-            speed: 91
+            energy: 84,
+            attack: 61,
+            defense: 73,
+            rattack: 106,
+            rdefense: 75,
+            speed: 101
         },
         gender: ['Male', 'Female'], 
         abilities: ['Dawn', 'Confidence'],
@@ -517,13 +517,13 @@ export const loomiansData = [
             "Peace of Mind", "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe"
         ],
         stats: {
-            hp: 85,
-            energy: 80,
-            attack: 51,
-            defense: 84,
-            rattack: 116,
-            rdefense: 83,
-            speed: 96
+            hp: 75,
+            energy: 84,
+            attack: 106,
+            defense: 90,
+            rattack: 106,
+            rdefense: 75,
+            speed: 89
         },
         gender: ['Male', 'Female'], 
         abilities: ['Circadian'],
@@ -576,13 +576,13 @@ export const loomiansData = [
             "Gust", "Wing Slap", "Life Drain", "Magnify", "Jet Stream", "Spare"
         ],
         stats: {
-            hp: 60,
+            hp: 70,
             energy: 80,
-            attack: 45,
-            defense: 55,
-            rattack: 92,
-            rdefense: 80,
-            speed: 83
+            attack: 55,
+            defense: 85,
+            rattack: 98,
+            rdefense: 99,
+            speed: 88
         },
         gender: ['Male', 'Female'], 
         abilities: ['Mystery Toxins'],
@@ -597,13 +597,13 @@ export const loomiansData = [
             "Fire Slam", "Barter", "Ill will", "Spare"
         ],
         stats: {
-            hp: 57,
+            hp: 87,
             energy: 80,
             attack: 110,
-            defense: 91,
-            rattack: 21,
-            rdefense: 86,
-            speed: 50
+            defense: 106,
+            rattack: 51,
+            rdefense: 101,
+            speed: 55
         },
         gender: ['Male', 'Female'], 
         abilities: ['Guru'],
@@ -660,10 +660,10 @@ export const loomiansData = [
         ],
         stats: {
             hp: 79,
-            energy: 80,
+            energy: 85,
             attack: 100,
-            defense: 68,
-            rattack: 62,
+            defense: 78,
+            rattack: 67,
             rdefense: 63,
             speed: 113
         },
@@ -702,10 +702,10 @@ export const loomiansData = [
         ],
         stats: {
             hp: 85,
-            energy: 70,
-            attack: 115,
-            defense: 85,
-            rattack: 10,
+            energy: 85,
+            attack: 120,
+            defense: 105,
+            rattack: 50,
             rdefense: 65,
             speed: 65
         },
@@ -746,12 +746,12 @@ export const loomiansData = [
             "Rainbow Blast", "Spare"
         ],
         stats: {
-            hp: 85,
-            energy: 68,
-            attack: 45,
-            defense: 90,
-            rattack: 65,
-            rdefense: 90,
+            hp: 105,
+            energy: 88,
+            attack: 55,
+            defense: 105,
+            rattack: 82,
+            rdefense: 105,
             speed: 35
         },
         gender: ['Male', 'Female'], 
@@ -769,12 +769,12 @@ export const loomiansData = [
             "Rainbow Blast", "Carnivorous Snap", "Spare"
         ],
         stats: {
-            hp: 100,
-            energy: 80,
+            hp: 105,
+            energy: 88,
             attack: 123,
-            defense: 100,
-            rattack: 25,
-            rdefense: 100,
+            defense: 112,
+            rattack: 55,
+            rdefense: 112,
             speed: 50
         },
         gender: ['Male', 'Female'], 
@@ -828,13 +828,13 @@ export const loomiansData = [
             "Double Sting", "Poison Barbs", "Slime", "Muck Blast", "Air Whip", "Drudge", "Spare"
         ],
         stats: {
-            hp: 70,
-            energy: 70,
-            attack: 97,
-            defense: 80,
-            rattack: 46,
+            hp: 75,
+            energy: 85,
+            attack: 112,
+            defense: 87,
+            rattack: 61,
             rdefense: 60,
-            speed: 72
+            speed: 95
         },
         gender: ['Male', 'Female'], 
         abilities: ['Odd Husk', 'Ambush'],
@@ -849,11 +849,11 @@ export const loomiansData = [
             "Mud Spatter", "Bulk Up", "Spare"
         ],
         stats: {
-            hp: 79,
-            energy: 72,
+            hp: 94,
+            energy: 87,
             attack: 121,
-            defense: 106,
-            rattack: 20,
+            defense: 116,
+            rattack: 60,
             rdefense: 54,
             speed: 43
         },
@@ -891,12 +891,12 @@ export const loomiansData = [
             "Rogue Assault", "Spare", "Tricky Tactics", "Barter", "Dodge", "Ill Will", "Slap Down"
         ],
         stats: {
-            hp: 90,
-            energy: 75,
-            attack: 95,
-            defense: 85,
-            rattack: 40,
-            rdefense: 50,
+            hp: 95,
+            energy: 80,
+            attack: 100,
+            defense: 95,
+            rattack: 60,
+            rdefense: 55,
             speed: 90
         },
         gender: ['Male', 'Female'], 
@@ -931,12 +931,12 @@ export const loomiansData = [
             "Mega Chomp", "Raging Tackle", "Rogue Assault", "Dodge", "Muck Buck"
         ],
         stats: {
-            hp: 92,
-            energy: 76,
+            hp: 102,
+            energy: 81,
             attack: 110,
-            defense: 90,
-            rattack: 40,
-            rdefense: 60,
+            defense: 95,
+            rattack: 49,
+            rdefense: 70,
             speed: 68
         },
         gender: ['Male', 'Female'], 
@@ -977,9 +977,9 @@ export const loomiansData = [
         stats: {
             hp: 80,
             energy: 80,
-            attack: 50,
+            attack: 55,
             defense: 85,
-            rattack: 80,
+            rattack: 90,
             rdefense: 115,
             speed: 80
         },
@@ -1040,12 +1040,12 @@ export const loomiansData = [
             "Sap Plant", "Tamp", "Peace Mind", "Trip Root", "Briar Block", "Spare"
         ],
         stats: {
-            hp: 115,
-            energy: 83,
-            attack: 55,
-            defense: 35,
-            rattack: 85,
-            rdefense: 115,
+            hp: 120,
+            energy: 88,
+            attack: 60,
+            defense: 40,
+            rattack: 92,
+            rdefense: 120,
             speed: 55
         },
         gender: ['Male', 'Female'], 
@@ -1065,7 +1065,7 @@ export const loomiansData = [
             energy: 88,
             attack: 60,
             defense: 45,
-            rattack: 105,
+            rattack: 107,
             rdefense: 140,
             speed: 65
         },
@@ -1129,12 +1129,12 @@ export const loomiansData = [
             "Sap Plant", "Mudslide", "Hypnotize", "Spare"
         ],
         stats: {
-            hp: 152,
+            hp: 162,
             energy: 125,
             attack: 49,
-            defense: 55,
-            rattack: 49,
-            rdefense: 55,
+            defense: 70,
+            rattack: 62,
+            rdefense: 70,
             speed: 47
         },
         gender: ['Male', 'Female'], 
@@ -1151,12 +1151,12 @@ export const loomiansData = [
             "Rejuvenate", "Fire Breath", "Briar Block", "Blaze Punch", "Spare"
         ],
         stats: {
-            hp: 98,
-            energy: 104,
-            attack: 15,
-            defense: 75,
-            rattack: 103,
-            rdefense: 75,
+            hp: 108,
+            energy: 94,
+            attack: 49,
+            defense: 80,
+            rattack: 112,
+            rdefense: 80,
             speed: 62
         },
         gender: ['Male', 'Female'], 
@@ -1174,12 +1174,12 @@ export const loomiansData = [
             "Rejuvenate", "Thunderstrike", "Fungus Curse", "Spare", "Zip-Zap"
         ],
         stats: {
-            hp: 99,
-            energy: 68,
-            attack: 23,
-            defense: 76,
+            hp: 104,
+            energy: 73,
+            attack: 49,
+            defense: 86,
             rattack: 124,
-            rdefense: 101,
+            rdefense: 108,
             speed: 41
         },
         gender: ['Male', 'Female'], 
@@ -1198,9 +1198,9 @@ export const loomiansData = [
             hp: 79,
             energy: 91,
             attack: 36,
-            defense: 42,
-            rattack: 99,
-            rdefense: 64,
+            defense: 52,
+            rattack: 104,
+            rdefense: 74,
             speed: 89
         },
         gender: ['Female'], 
@@ -1238,10 +1238,10 @@ export const loomiansData = [
         stats: {
             hp: 107,
             energy: 87,
-            attack: 88,
-            defense: 98,
-            rattack: 47,
-            rdefense: 76,
+            attack: 91,
+            defense: 108,
+            rattack: 52,
+            rdefense: 81,
             speed: 54
         },
         gender: ['Male', 'Female'], 
@@ -1277,11 +1277,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 90,
-            energy: 85,
-            attack: 52,
+            energy: 90,
+            attack: 57,
             defense: 142,
-            rattack: 75,
-            rdefense: 53,
+            rattack: 90,
+            rdefense: 58,
             speed: 48
         },
         gender: ['Male', 'Female'], 
@@ -1338,10 +1338,10 @@ export const loomiansData = [
         stats: {
             hp: 99,
             energy: 89,
-            attack: 115,
-            defense: 63,
-            rattack: 30,
-            rdefense: 80,
+            attack: 120,
+            defense: 68,
+            rattack: 50,
+            rdefense: 90,
             speed: 75
         },
         gender: ['Ungendered'], 
@@ -1357,11 +1357,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 99,
-            energy: 92,
-            attack: 86,
-            defense: 110,
-            rattack: 21,
-            rdefense: 88,
+            energy: 89,
+            attack: 95,
+            defense: 113,
+            rattack: 50,
+            rdefense: 90,
             speed: 55
         },
         gender: ['Ungendered'], 
@@ -1397,12 +1397,12 @@ export const loomiansData = [
             "Ghostly Howl"
         ],
         stats: {
-            hp: 60,
+            hp: 65,
             energy: 89,
-            attack: 90,
-            defense: 58,
+            attack: 105,
+            defense: 63,
             rattack: 115,
-            rdefense: 62,
+            rdefense: 67,
             speed: 97
         },
         gender: ['Male', 'Female'], 
@@ -1464,10 +1464,10 @@ export const loomiansData = [
         stats: {
             hp: 81,
             energy: 90,
-            attack: 89,
-            defense: 69,
-            rattack: 100,
-            rdefense: 84,
+            attack: 94,
+            defense: 74,
+            rattack: 105,
+            rdefense: 89,
             speed: 77
         },
         gender: ['Male', 'Female'], 
@@ -1486,10 +1486,10 @@ export const loomiansData = [
         stats: {
             hp: 81,
             energy: 90,
-            attack: 99,
-            defense: 89,
+            attack: 104,
+            defense: 90,
             rattack: 127,
-            rdefense: 89,
+            rdefense: 94,
             speed: 80
         },
         gender: ['Male', 'Female'], 
@@ -1548,12 +1548,12 @@ export const loomiansData = [
             "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge"
         ],
         stats: {
-            hp: 85,
+            hp: 95,
             energy: 125,
-            attack: 35,
-            defense: 90,
-            rattack: 81,
-            rdefense: 94,
+            attack: 58,
+            defense: 95,
+            rattack: 91,
+            rdefense: 99,
             speed: 22
         },
         gender: ['Male', 'Female'], 
@@ -1573,10 +1573,10 @@ export const loomiansData = [
         stats: {
             hp: 115,
             energy: 125,
-            attack: 55,
-            defense: 100,
-            rattack: 121,
-            rdefense: 104,
+            attack: 63,
+            defense: 105,
+            rattack: 126,
+            rdefense: 109,
             speed: 12
         },
         gender: ['Male', 'Female'], 
@@ -1594,10 +1594,10 @@ export const loomiansData = [
         ],
         stats: {
             hp: 81,
-            energy: 86,
-            attack: 105,
+            energy: 90,
+            attack: 110,
             defense: 74,
-            rattack: 20,
+            rattack: 64,
             rdefense: 64,
             speed: 102
         },
@@ -1615,12 +1615,12 @@ export const loomiansData = [
             "Frost Beam", "Hypnotize", "Ill Will", "Rejuvenate", "Fungus Curse", "Spare"
         ],
         stats: {
-            hp: 113,
-            energy: 90,
+            hp: 128,
+            energy: 101,
             attack: 119,
-            defense: 56,
-            rattack: 44,
-            rdefense: 88,
+            defense: 71,
+            rattack: 46,
+            rdefense: 98,
             speed: 22
         },
         gender: ['Male', 'Female'], 
@@ -1677,9 +1677,9 @@ export const loomiansData = [
         stats: {
             hp: 99,
             energy: 100,
-            attack: 90,
+            attack: 100,
             defense: 124,
-            rattack: 67,
+            rattack: 72,
             rdefense: 65,
             speed: 65
         },
@@ -1735,11 +1735,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 92,
-            energy: 75,
+            energy: 79,
             attack: 134,
             defense: 102,
-            rattack: 42,
-            rdefense: 62,
+            rattack: 52,
+            rdefense: 68,
             speed: 73
         },
         gender: ['Male'], 
@@ -1755,9 +1755,9 @@ export const loomiansData = [
         ],
         stats: {
             hp: 92,
-            energy: 75,
-            attack: 42,
-            defense: 73,
+            energy: 79,
+            attack: 52,
+            defense: 79,
             rattack: 134,
             rdefense: 102,
             speed: 62
@@ -1777,9 +1777,9 @@ export const loomiansData = [
         stats: {
             hp: 70,
             energy: 80,
-            attack: 15,
+            attack: 35,
             defense: 60,
-            rattack: 88,
+            rattack: 93,
             rdefense: 64,
             speed: 123
         },
@@ -1801,7 +1801,7 @@ export const loomiansData = [
             energy: 69,
             attack: 112,
             defense: 94,
-            rattack: 10,
+            rattack: 35,
             rdefense: 81,
             speed: 39
         },
@@ -1823,7 +1823,7 @@ export const loomiansData = [
             energy: 99,
             attack: 132,
             defense: 104,
-            rattack: 19,
+            rattack: 44,
             rdefense: 91,
             speed: 50
         },
@@ -1866,9 +1866,9 @@ export const loomiansData = [
         ],
         stats: {
             hp: 88,
-            energy: 95,
-            attack: 50,
-            defense: 50,
+            energy: 100,
+            attack: 55,
+            defense: 55,
             rattack: 120,
             rdefense: 101,
             speed: 106
@@ -1905,12 +1905,12 @@ export const loomiansData = [
             "Poison", "Dodge", "Battering Ram", "Molt", "Bulk Up", "Tamp", "Spare"
         ],
         stats: {
-            hp: 53,
+            hp: 55,
             energy: 76,
-            attack: 77,
-            defense: 90,
+            attack: 97,
+            defense: 115,
             rattack: 54,
-            rdefense: 64,
+            rdefense: 74,
             speed: 104
         },
         gender: ['Male', 'Female'], 
@@ -1946,9 +1946,9 @@ export const loomiansData = [
             "Jump Start", "Metal Blast", "Perch", "Tase", "Dodge", "Second Wind", "Magnify", "Spare"
         ],
         stats: {
-            hp: 95,
+            hp: 100,
             energy: 80,
-            attack: 34,
+            attack: 49,
             defense: 77,
             rattack: 105,
             rdefense: 108,
@@ -1967,9 +1967,9 @@ export const loomiansData = [
             "Jump Start", "Metal Blast", "Perch", "Tase", "Dodge", "Second Wind", "Magnify", "Airstrike", "Spare"
         ],
         stats: {
-            hp: 95,
+            hp: 100,
             energy: 100,
-            attack: 56,
+            attack: 66,
             defense: 67,
             rattack: 135,
             rdefense: 78,
@@ -2010,12 +2010,12 @@ export const loomiansData = [
             "Tricky Tactics", "Barter", "Dodge", "Hypnotize", "Graffiti", "Spare"
         ],
         stats: {
-            hp: 73,
+            hp: 78,
             energy: 86,
-            attack: 92,
-            defense: 78,
-            rattack: 88,
-            rdefense: 82,
+            attack: 97,
+            defense: 83,
+            rattack: 93,
+            rdefense: 87,
             speed: 68
         },
         gender: ['Male', 'Female'], 
@@ -2072,10 +2072,10 @@ export const loomiansData = [
         ],
         stats: {
             hp: 89,
-            energy: 89,
+            energy: 94,
             attack: 111,
             defense: 102,
-            rattack: 62,
+            rattack: 72,
             rdefense: 83,
             speed: 74
         },
@@ -2111,11 +2111,11 @@ export const loomiansData = [
             "Steel Crusher", "Thunder Chomp", "Vice Jaws", "Dodge", "Heavy Bash", "Spare"
         ],
         stats: {
-            hp: 89,
+            hp: 94,
             energy: 79,
-            attack: 94,
+            attack: 104,
             defense: 113,
-            rattack: 42,
+            rattack: 52,
             rdefense: 78,
             speed: 66
         },
@@ -2170,10 +2170,10 @@ export const loomiansData = [
             "Jump Start", "Metal Blast", "Steel Crusher", "Thunderstrike", "Fire Breath", "Frost Beam"
         ],
         stats: {
-            hp: 69,
+            hp: 74,
             energy: 82,
             attack: 54,
-            defense: 68,
+            defense: 73,
             rattack: 132,
             rdefense: 119,
             speed: 61
@@ -2214,7 +2214,7 @@ export const loomiansData = [
             energy: 84,
             attack: 94,
             defense: 83,
-            rattack: 43,
+            rattack: 63,
             rdefense: 69,
             speed: 116
         },
@@ -2254,9 +2254,9 @@ export const loomiansData = [
             hp: 95,
             energy: 79,
             attack: 51,
-            defense: 74,
-            rattack: 99,
-            rdefense: 74,
+            defense: 84,
+            rattack: 104,
+            rdefense: 84,
             speed: 105
         },
         gender: ['Male', 'Female'], 
@@ -2299,8 +2299,8 @@ export const loomiansData = [
             energy: 100,
             attack: 104,
             defense: 82,
-            rattack: 45,
-            rdefense: 68,
+            rattack: 55,
+            rdefense: 73,
             speed: 87
         },
         gender: ['Ungendered'], 
@@ -2321,7 +2321,7 @@ export const loomiansData = [
             energy: 100,
             attack: 134,
             defense: 92,
-            rattack: 55,
+            rattack: 65,
             rdefense: 78,
             speed: 77
         },
@@ -2364,7 +2364,7 @@ export const loomiansData = [
             energy: 89,
             attack: 126,
             defense: 87,
-            rattack: 36,
+            rattack: 56,
             rdefense: 84,
             speed: 69
         },
@@ -2385,7 +2385,7 @@ export const loomiansData = [
             energy: 89,
             attack: 136,
             defense: 87,
-            rattack: 51,
+            rattack: 66,
             rdefense: 84,
             speed: 109
         },
@@ -2424,12 +2424,12 @@ export const loomiansData = [
             "Wonder Herb", "Dodge", "Mud Spatter", "Phoenix Flame", "Spare"
         ],
         stats: {
-            hp: 79,
-            energy: 90,
+            hp: 84,
+            energy: 95,
             attack: 57,
-            defense: 53,
+            defense: 58,
             rattack: 110,
-            rdefense: 107,
+            rdefense: 117,
             speed: 89
         },
         gender: ['Male', 'Female'], 
@@ -2467,10 +2467,10 @@ export const loomiansData = [
         ],
         stats: {
             hp: 66,
-            energy: 81,
-            attack: 85,
+            energy: 86,
+            attack: 86,
             defense: 72,
-            rattack: 81,
+            rattack: 90,
             rdefense: 69,
             speed: 116
         },
@@ -2509,12 +2509,12 @@ export const loomiansData = [
             "Wave Wrecker", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Marsh Wave", "Spare"
         ],
         stats: {
-            hp: 109,
-            energy: 78,
-            attack: 92,
-            defense: 87,
-            rattack: 89,
-            rdefense: 84,
+            hp: 119,
+            energy: 83,
+            attack: 97,
+            defense: 92,
+            rattack: 94,
+            rdefense: 89,
             speed: 41
         },
         gender: ['Male', 'Female'], 
@@ -2573,12 +2573,12 @@ export const loomiansData = [
             "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash", "Psychal Slap", "Electro-Punch"
         ],
         stats: {
-            hp: 89,
+            hp: 99,
             energy: 86,
             attack: 95,
-            defense: 87,
+            defense: 92,
             rattack: 99,
-            rdefense: 91,
+            rdefense: 96,
             speed: 43
         },
         gender: ['Male', 'Female'], 
@@ -2617,7 +2617,7 @@ export const loomiansData = [
         stats: {
             hp: 93,
             energy: 80,
-            attack: 89,
+            attack: 109,
             defense: 91,
             rattack: 57,
             rdefense: 73,
@@ -2637,11 +2637,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 96,
-            energy: 83,
-            attack: 57,
-            defense: 102,
+            energy: 88,
+            attack: 72,
+            defense: 107,
             rattack: 89,
-            rdefense: 93,
+            rdefense: 88,
             speed: 37
         },
         gender: ['Male', 'Female'], 
@@ -2702,8 +2702,8 @@ export const loomiansData = [
             hp: 87,
             energy: 89,
             attack: 100,
-            defense: 79,
-            rattack: 53,
+            defense: 84,
+            rattack: 63,
             rdefense: 72,
             speed: 100
         },
@@ -2765,11 +2765,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 60,
-            energy: 80,
-            attack: 109,
-            defense: 53,
+            energy: 85,
+            attack: 114,
+            defense: 58,
             rattack: 122,
-            rdefense: 62,
+            rdefense: 67,
             speed: 94
         },
         gender: ['Male', 'Female'], 
@@ -2829,7 +2829,7 @@ export const loomiansData = [
             energy: 96,
             attack: 124,
             defense: 111,
-            rattack: 55,
+            rattack: 70,
             rdefense: 67,
             speed: 54
         },
@@ -2865,12 +2865,12 @@ export const loomiansData = [
             "Bulk Up", "Dodge", "Ill Will", "Rejuvenate", "Fiery Fondant", "Spare"
         ],
         stats: {
-            hp: 74,
+            hp: 84,
             energy: 88,
             attack: 109,
-            defense: 85,
-            rattack: 42,
-            rdefense: 99,
+            defense: 90,
+            rattack: 57,
+            rdefense: 109,
             speed: 41
         },
         gender: ['Male', 'Female'], 
@@ -2948,7 +2948,7 @@ export const loomiansData = [
         stats: {
             hp: 71,
             energy: 90,
-            attack: 37,
+            attack: 72,
             defense: 102,
             rattack: 120,
             rdefense: 93,
@@ -3008,11 +3008,11 @@ export const loomiansData = [
             "Hypnotize", "Pester", "Return to Sender", "Twirly Whirl", "Gust"
         ],
         stats: {
-            hp: 62,
+            hp: 72,
             energy: 95,
-            attack: 41,
-            defense: 93,
-            rattack: 79,
+            attack: 46,
+            defense: 103,
+            rattack: 94,
             rdefense: 76,
             speed: 93
         },
@@ -3072,11 +3072,11 @@ export const loomiansData = [
             "Gust", "Static Spores", "Typhoon", "Dodge", "Spare", "Pine Shot", "Tempest"
         ],
         stats: {
-            hp: 67,
+            hp: 72,
             energy: 90,
             attack: 53,
-            defense: 110,
-            rattack: 100,
+            defense: 115,
+            rattack: 110,
             rdefense: 71,
             speed: 89
         },
@@ -3112,7 +3112,7 @@ export const loomiansData = [
             "Ill Will"
         ],
         stats: {
-            hp: 82,
+            hp: 92,
             energy: 85,
             attack: 110,
             defense: 85,
@@ -3136,8 +3136,8 @@ export const loomiansData = [
             hp: 50,
             energy: 80,
             attack: 119,
-            defense: 55,
-            rattack: 93,
+            defense: 60,
+            rattack: 98,
             rdefense: 75,
             speed: 103
         },
@@ -3159,7 +3159,7 @@ export const loomiansData = [
             attack: 137,
             defense: 69,
             rattack: 73,
-            rdefense: 53,
+            rdefense: 63,
             speed: 82
         },
         gender: ['Male', 'Female'], 
@@ -3176,10 +3176,10 @@ export const loomiansData = [
         stats: {
             hp: 70,
             energy: 92,
-            attack: 52,
+            attack: 57,
             defense: 90,
             rattack: 123,
-            rdefense: 61,
+            rdefense: 66,
             speed: 87
         },
         gender: ['Male', 'Female'], 
@@ -3197,8 +3197,8 @@ export const loomiansData = [
         stats: {
             hp: 83,
             energy: 90,
-            attack: 56,
-            defense: 62,
+            attack: 61,
+            defense: 67,
             rattack: 101,
             rdefense: 122,
             speed: 61
@@ -3220,7 +3220,7 @@ export const loomiansData = [
             energy: 79,
             attack: 130,
             defense: 88,
-            rattack: 17,
+            rattack: 27,
             rdefense: 79,
             speed: 78
         },
@@ -3241,7 +3241,7 @@ export const loomiansData = [
             energy: 100,
             attack: 99,
             defense: 75,
-            rattack: 35,
+            rattack: 45,
             rdefense: 96,
             speed: 101
         },
@@ -3261,7 +3261,7 @@ export const loomiansData = [
             energy: 86,
             attack: 91,
             defense: 130,
-            rattack: 61,
+            rattack: 71,
             rdefense: 66,
             speed: 50
         },
@@ -3281,7 +3281,7 @@ export const loomiansData = [
         stats: {
             hp: 119,
             energy: 91,
-            attack: 24,
+            attack: 34,
             defense: 63,
             rattack: 133,
             rdefense: 79,
@@ -3304,7 +3304,7 @@ export const loomiansData = [
             hp: 80,
             energy: 85,
             attack: 97,
-            defense: 49,
+            defense: 59,
             rattack: 97,
             rdefense: 60,
             speed: 107
@@ -3369,7 +3369,7 @@ export const loomiansData = [
             energy: 90,
             attack: 123,
             defense: 113,
-            rattack: 38,
+            rattack: 63,
             rdefense: 76,
             speed: 63
         },
@@ -3431,7 +3431,7 @@ export const loomiansData = [
             energy: 0,
             attack: 100,
             defense: 119,
-            rattack: 34,
+            rattack: 57,
             rdefense: 77,
             speed: 56
         },
@@ -3486,10 +3486,10 @@ export const loomiansData = [
             "Power Focus", "Air Whip", "Provoke", "Air Blade", "Frost Beam", "Mud Spatter", "Brain Freeze"
         ],
         stats: {
-            hp: 66,
+            hp: 81,
             energy: 92,
-            attack: 58,
-            defense: 81,
+            attack: 63,
+            defense: 86,
             rattack: 114,
             rdefense: 85,
             speed: 94
@@ -3548,10 +3548,10 @@ export const loomiansData = [
         stats: {
             hp: 50,
             energy: 89,
-            attack: 58,
-            defense: 72,
+            attack: 68,
+            defense: 77,
             rattack: 121,
-            rdefense: 89,
+            rdefense: 94,
             speed: 108
         },
         gender: ['Male', 'Female'], 
@@ -3611,9 +3611,9 @@ export const loomiansData = [
         stats: {
             hp: 91,
             energy: 80,
-            attack: 42,
+            attack: 67,
             defense: 120,
-            rattack: 111,
+            rattack: 116,
             rdefense: 77,
             speed: 34
         },
@@ -3653,10 +3653,10 @@ export const loomiansData = [
         stats: {
             hp: 72,
             energy: 79,
-            attack: 53,
-            defense: 92,
-            rattack: 98,
-            rdefense: 66,
+            attack: 58,
+            defense: 97,
+            rattack: 103,
+            rdefense: 71,
             speed: 109
         },
         gender: ['Male', 'Female'], 
@@ -3695,7 +3695,7 @@ export const loomiansData = [
             energy: 97,
             attack: 125,
             defense: 103,
-            rattack: 9,
+            rattack: 39,
             rdefense: 73,
             speed: 80
         },
@@ -3734,9 +3734,9 @@ export const loomiansData = [
             hp: 120,
             energy: 87,
             attack: 117,
-            defense: 72,
-            rattack: 33,
-            rdefense: 59,
+            defense: 82,
+            rattack: 58,
+            rdefense: 64,
             speed: 80
         },
         gender: ['Genderless'], 
@@ -3771,12 +3771,12 @@ export const loomiansData = [
             "Provoke", "Slumber", "Tear Down", "Wave Wrecker", "Dodge", "Spare", "Hypnotize", "Baneful Bash"
         ],
         stats: {
-            hp: 95,
+            hp: 100,
             energy: 100,
             attack: 99,
-            defense: 86,
-            rattack: 52,
-            rdefense: 81,
+            defense: 106,
+            rattack: 62,
+            rdefense: 96,
             speed: 15
         },
         gender: ['Male', 'Female'], 
@@ -3835,10 +3835,10 @@ export const loomiansData = [
         stats: {
             hp: 100,
             energy: 99,
-            attack: 18,
+            attack: 58,
             defense: 66,
             rattack: 95,
-            rdefense: 110,
+            rdefense: 100,
             speed: 92
         },
         gender: ['Ungendered'], 
@@ -3877,7 +3877,7 @@ export const loomiansData = [
             energy: 90,
             attack: 93,
             defense: 94,
-            rattack: 18,
+            rattack: 48,
             rdefense: 89,
             speed: 62
         },
@@ -3917,10 +3917,10 @@ export const loomiansData = [
         stats: {
             hp: 90,
             energy: 93,
-            attack: 59,
-            defense: 57,
-            rattack: 97,
-            rdefense: 59,
+            attack: 69,
+            defense: 62,
+            rattack: 107,
+            rdefense: 64,
             speed: 101
         },
         gender: ['Male', 'Female'], 
@@ -3976,7 +3976,7 @@ export const loomiansData = [
         stats: {
             hp: 97,
             energy: 91,
-            attack: 14,
+            attack: 44,
             defense: 66,
             rattack: 95,
             rdefense: 127,
@@ -4017,10 +4017,10 @@ export const loomiansData = [
         stats: {
             hp: 112,
             energy: 99,
-            attack: 35,
-            defense: 61,
-            rattack: 110,
-            rdefense: 81,
+            attack: 55,
+            defense: 71,
+            rattack: 115,
+            rdefense: 86,
             speed: 77
         },
         gender: ['Male', 'Female'], 
@@ -4034,12 +4034,12 @@ export const loomiansData = [
             "Provoke", "Nosedive", "Perch", "Jet Stream", "Barter", "Dodge", "Mud Spatter"
         ],
         stats: {
-            hp: 60,
+            hp: 65,
             energy: 100,
-            attack: 60,
-            defense: 60,
-            rattack: 60,
-            rdefense: 60,
+            attack: 65,
+            defense: 65,
+            rattack: 65,
+            rdefense: 65,
             speed: 100
         },
         gender: ['Male', 'Female'], 
@@ -4074,9 +4074,9 @@ export const loomiansData = [
             "Dodge", "Frost Beam", "Peace of Mind", "Plunge", "Spare", "Tsunami", "Recycle"
         ],
         stats: {
-            hp: 69,
+            hp: 79,
             energy: 88,
-            attack: 23,
+            attack: 43,
             defense: 87,
             rattack: 113,
             rdefense: 110,
@@ -4115,11 +4115,11 @@ export const loomiansData = [
             "Pheroblast", "Poison", "Timber Thrash", "Wonder Herb", "Dodge", "Mud Spatter", "Spare", "Nab", "Boulder Blast"
         ],
         stats: {
-            hp: 72,
+            hp: 77,
             energy: 94,
-            attack: 48,
-            defense: 67,
-            rattack: 92,
+            attack: 73,
+            defense: 72,
+            rattack: 102,
             rdefense: 80,
             speed: 102
         },
@@ -4180,11 +4180,11 @@ export const loomiansData = [
             "Sap Plant", "Take Root", "Harvest", "Bequeath", "Thorn Slam"
         ],
         stats: {
-            hp: 74,
-            energy: 86,
+            hp: 81,
+            energy: 89,
             attack: 120,
             defense: 89,
-            rattack: 92,
+            rattack: 97,
             rdefense: 66,
             speed: 83
         },
@@ -4225,7 +4225,7 @@ export const loomiansData = [
             energy: 95,
             attack: 130,
             defense: 71,
-            rattack: 26,
+            rattack: 51,
             rdefense: 60,
             speed: 85
         },
@@ -4286,10 +4286,10 @@ export const loomiansData = [
         stats: {
             hp: 97,
             energy: 91,
-            attack: 78,
-            defense: 57,
+            attack: 93,
+            defense: 62,
             rattack: 115,
-            rdefense: 52,
+            rdefense: 57,
             speed: 100
         },
         gender: ['Male', 'Female'], 
@@ -4326,7 +4326,7 @@ export const loomiansData = [
         stats: {
             hp: 65,
             energy: 110,
-            attack: 26,
+            attack: 51,
             defense: 130,
             rattack: 0,
             rdefense: 130,
@@ -4363,12 +4363,12 @@ export const loomiansData = [
             "Mega Punch", "Ill Will"
         ],
         stats: {
-            hp: 73,
+            hp: 78,
             energy: 93,
             attack: 115,
-            defense: 101,
-            rattack: 42,
-            rdefense: 67,
+            defense: 106,
+            rattack: 57,
+            rdefense: 72,
             speed: 82
         },
         gender: ['Male', 'Female'], 
@@ -4425,7 +4425,7 @@ export const loomiansData = [
         stats: {
             hp: 96,
             energy: 92,
-            attack: 58,
+            attack: 73,
             defense: 77,
             rattack: 135,
             rdefense: 82,
@@ -4487,7 +4487,7 @@ export const loomiansData = [
         stats: {
             hp: 56,
             energy: 101,
-            attack: 48,
+            attack: 68,
             defense: 96,
             rattack: 122,
             rdefense: 106,
@@ -4549,10 +4549,10 @@ export const loomiansData = [
         stats: {
             hp: 80,
             energy: 87,
-            attack: 112,
+            attack: 117,
             defense: 104,
-            rattack: 112,
-            rdefense: 61,
+            rattack: 117,
+            rdefense: 71,
             speed: 24
         },
         gender: ['Male', 'Female'], 
@@ -4570,10 +4570,10 @@ export const loomiansData = [
         stats: {
             hp: 69,
             energy: 85,
-            attack: 22,
+            attack: 42,
             defense: 97,
             rattack: 94,
-            rdefense: 57,
+            rdefense: 62,
             speed: 76
         },
         gender: ['Ungendered'], 
@@ -4634,7 +4634,7 @@ export const loomiansData = [
         stats: {
             hp: 92,
             energy: 98,
-            attack: 45,
+            attack: 60,
             defense: 89,
             rattack: 95,
             rdefense: 80,
@@ -4676,9 +4676,9 @@ export const loomiansData = [
             hp: 75,
             energy: 150,
             attack: 72,
-            defense: 66,
-            rattack: 36,
-            rdefense: 61,
+            defense: 71,
+            rattack: 56,
+            rdefense: 66,
             speed: 90
         },
         gender: ['Male', 'Female'], 
@@ -4715,10 +4715,10 @@ export const loomiansData = [
         stats: {
             hp: 105,
             energy: 53,
-            attack: 76,
+            attack: 86,
             defense: 104,
             rattack: 121,
-            rdefense: 76,
+            rdefense: 81,
             speed: 35
         },
         gender: ['Male', 'Female'], 
@@ -4755,7 +4755,7 @@ export const loomiansData = [
             energy: 90,
             attack: 100,
             defense: 117,
-            rattack: 9,
+            rattack: 39,
             rdefense: 79,
             speed: 100
         },
@@ -4795,7 +4795,7 @@ export const loomiansData = [
             energy: 90,
             attack: 112,
             defense: 105,
-            rattack: 20,
+            rattack: 45,
             rdefense: 73,
             speed: 70
         },
@@ -4832,8 +4832,8 @@ export const loomiansData = [
         stats: {
             hp: 50,
             energy: 100,
-            attack: 14,
-            defense: 77,
+            attack: 44,
+            defense: 97,
             rattack: 130,
             rdefense: 67,
             speed: 92
@@ -4853,9 +4853,9 @@ export const loomiansData = [
             hp: 50,
             energy: 100,
             attack: 130,
-            defense: 97,
-            rattack: 14,
-            rdefense: 67,
+            defense: 107,
+            rattack: 44,
+            rdefense: 77,
             speed: 72
         },
         gender: ['Male'], 
@@ -4895,7 +4895,7 @@ export const loomiansData = [
             energy: 101,
             attack: 101,
             defense: 96,
-            rattack: 40,
+            rattack: 60,
             rdefense: 70,
             speed: 59
         },
@@ -4938,7 +4938,7 @@ export const loomiansData = [
             hp: 50,
             energy: 84,
             attack: 125,
-            defense: 62,
+            defense: 72,
             rattack: 125,
             rdefense: 105,
             speed: 44
@@ -4958,11 +4958,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 77,
-            energy: 85,
-            attack: 23,
-            defense: 53,
-            rattack: 108,
-            rdefense: 87,
+            energy: 92,
+            attack: 49,
+            defense: 58,
+            rattack: 118,
+            rdefense: 92,
             speed: 99
         },
         gender: ['Male', 'Female'], 
@@ -4979,12 +4979,12 @@ export const loomiansData = [
             "Provoke", "Slap Down", "Fade Away"
         ],
         stats: {
-            hp: 96,
-            energy: 82,
+            hp: 104,
+            energy: 86,
             attack: 103,
-            defense: 88,
-            rattack: 25,
-            rdefense: 74,
+            defense: 93,
+            rattack: 56,
+            rdefense: 79,
             speed: 64
         },
         gender: ['Male', 'Female'],
@@ -5046,7 +5046,7 @@ export const loomiansData = [
             energy: 98,
             attack: 110,
             defense: 91,
-            rattack: 51,
+            rattack: 66,
             rdefense: 86,
             speed: 95
         },
@@ -5090,7 +5090,7 @@ export const loomiansData = [
             energy: 97,
             attack: 95,
             defense: 73,
-            rattack: 38,
+            rattack: 73,
             rdefense: 57,
             speed: 115
         },
@@ -5134,7 +5134,7 @@ export const loomiansData = [
             energy: 80,
             attack: 113,
             defense: 92,
-            rattack: 54,
+            rattack: 64,
             rdefense: 71,
             speed: 74
         },
@@ -5176,9 +5176,9 @@ export const loomiansData = [
             hp: 113,
             energy: 80,
             attack: 44,
-            defense: 92,
+            defense: 97,
             rattack: 98,
-            rdefense: 92,
+            rdefense: 97,
             speed: 56
         },
         gender: ['Male', 'Female'],
@@ -5218,9 +5218,9 @@ export const loomiansData = [
             hp: 68,
             energy: 80,
             attack: 98,
-            defense: 57,
+            defense: 62,
             rattack: 113,
-            rdefense: 66,
+            rdefense: 71,
             speed: 93
         },
         gender: ['Male', 'Female'],
@@ -5259,8 +5259,8 @@ export const loomiansData = [
         stats: {
             hp: 93,
             energy: 80,
-            attack: 44,
-            defense: 54,
+            attack: 49,
+            defense: 59,
             rattack: 99,
             rdefense: 92,
             speed: 113
@@ -5377,8 +5377,8 @@ export const loomiansData = [
             hp: 82,
             energy: 87,
             attack: 115,
-            defense: 56,
-            rattack: 51,
+            defense: 66,
+            rattack: 61,
             rdefense: 95,
             speed: 104
         },
@@ -5438,8 +5438,8 @@ export const loomiansData = [
             energy: 87,
             attack: 115,
             defense: 95,
-            rattack: 51,
-            rdefense: 56,
+            rattack: 61,
+            rdefense: 66,
             speed: 104
         },
         gender: ['Male', 'Female'],
@@ -5502,9 +5502,9 @@ export const loomiansData = [
         stats: {
             hp: 86,
             energy: 93,
-            attack: 39,
+            attack: 49,
             defense: 67,
-            rattack: 74,
+            rattack: 84,
             rdefense: 109,
             speed: 112
         },
@@ -5740,8 +5740,8 @@ export const loomiansData = [
             energy: 100,
             attack: 100,
             defense: 81,
-            rattack: 105,
-            rdefense: 81,
+            rattack: 132,
+            rdefense: 104,
             speed: 109
         },
         gender: ['Ungendered'],
@@ -5756,12 +5756,12 @@ export const loomiansData = [
             "Magnify", "Raging Flame", "Thunderstrike", "Zip-Zap", "Bait", "Dodge", "Flash 'n Flee", "Spare", 
         ],
         stats: {
-            hp: 68,
-            energy: 110,
-            attack: 104,
+            hp: 72,
+            energy: 115,
+            attack: 119,
             defense: 62,
-            rattack: 139,
-            rdefense: 73,
+            rattack: 149,
+            rdefense: 89,
             speed: 94
         },
         gender: ['Ungendered'],
@@ -5778,12 +5778,12 @@ export const loomiansData = [
             "Dodge", "Spare", "Zip-Zap"
         ],
         stats: {
-            hp: 53,
-            energy: 108,
-            attack: 67,
-            defense: 94,
-            rattack: 111,
-            rdefense: 96,
+            hp: 58,
+            energy: 118,
+            attack: 82,
+            defense: 99,
+            rattack: 121,
+            rdefense: 101,
             speed: 121
         },
         gender: ['Ungendered'],
@@ -5798,12 +5798,12 @@ export const loomiansData = [
             "Dodge", "Gamma Pulse", "Ill Will", "Maroon", "Plunge", "Spare", "Thunderstrike", "Tsunami"
         ],
         stats: {
-            hp: 94,
-            energy: 99,
-            attack: 122,
-            defense: 76,
-            rattack: 90,
-            rdefense: 72,
+            hp: 99,
+            energy: 119,
+            attack: 127,
+            defense: 86,
+            rattack: 95,
+            rdefense: 77,
             speed: 97
         },
         gender: ['Male', 'Female'],
@@ -5820,12 +5820,12 @@ export const loomiansData = [
             "Electro Blast"
         ],
         stats: {
-            hp: 114,
-            energy: 99,
-            attack: 90,
-            defense: 86,
-            rattack: 152,
-            rdefense: 82,
+            hp: 119,
+            energy: 119,
+            attack: 95,
+            defense: 96,
+            rattack: 157,
+            rdefense: 87,
             speed: 77
         },
         gender: ['Male', 'Female'],
@@ -5867,10 +5867,10 @@ export const loomiansData = [
         stats: {
             hp: 107,
             energy: 123,
-            attack: 104,
-            defense: 134,
-            rattack: 48,
-            rdefense: 63,
+            attack: 114,
+            defense: 139,
+            rattack: 78,
+            rdefense: 68,
             speed: 71
         },
         gender: ['Ungendered'],
@@ -5885,12 +5885,12 @@ export const loomiansData = [
             "Hypnotize", "Plunge", "Spare"
         ],
         stats: {
-            hp: 154,
-            energy: 96,
+            hp: 164,
+            energy: 116,
             attack: 96,
-            defense: 64,
-            rattack: 119,
-            rdefense: 69,
+            defense: 69,
+            rattack: 129,
+            rdefense: 74,
             speed: 52
         },
         gender: ['Male', 'Female'],
@@ -5930,10 +5930,10 @@ export const loomiansData = [
         ],
         stats: {
             hp: 105,
-            energy: 100,
-            attack: 55,
-            defense: 100,
-            rattack: 140,
+            energy: 105,
+            attack: 75,
+            defense: 120,
+            rattack: 145,
             rdefense: 55,
             speed: 95
         },
@@ -5950,12 +5950,12 @@ export const loomiansData = [
             "Dodge", "Ill Will", "Peace of Mind", "Spare"
         ],
         stats: {
-            hp: 91,
+            hp: 96,
             energy: 115,
-            attack: 63,
-            defense: 59,
+            attack: 88,
+            defense: 69,
             rattack: 119,
-            rdefense: 92,
+            rdefense: 102,
             speed: 111
         },
         gender: ['Ungendered'],
@@ -5971,12 +5971,12 @@ export const loomiansData = [
             "Fire Breath", "Ill Will", "Spare"
         ],
         stats: {
-            hp: 91,
+            hp: 96,
             energy: 115,
             attack: 119,
             defense: 112,
-            rattack: 63,
-            rdefense: 59,
+            rattack: 88,
+            rdefense: 79,
             speed: 91
         },
         gender: ['Ungendered'],
@@ -5993,12 +5993,12 @@ export const loomiansData = [
             "Burn Up", "Flaming Kick", "Blaze Chomp", "Near Enchantment", "Pyrokinesis", "Bulk Up", "Fire Breath"
         ],
         stats: {
-            hp: 91,
-            energy: 90,
-            attack: 129,
-            defense: 85,
-            rattack: 129,
-            rdefense: 75,
+            hp: 96,
+            energy: 115,
+            attack: 134,
+            defense: 90,
+            rattack: 134,
+            rdefense: 80,
             speed: 101
         },
         gender: ['Ungendered'],
@@ -6079,8 +6079,8 @@ export const loomiansData = [
         ],
         stats: {
             hp: 83,
-            energy: 118,
-            attack: 69,
+            energy: 128,
+            attack: 84,
             defense: 69,
             rattack: 127,
             rdefense: 79,
@@ -6101,8 +6101,8 @@ export const loomiansData = [
         ],
         stats: {
             hp: 53,
-            energy: 98,
-            attack: 114,
+            energy: 118,
+            attack: 119,
             defense: 119,
             rattack: 147,
             rdefense: 54,
@@ -6122,12 +6122,12 @@ export const loomiansData = [
             "Power Focus", "Rant", "Rogue Assault", "Scapegoat", "Dodge", "Ill Will", "Mud Spatter", "Spare"
         ],
         stats: {
-            hp: 101,
-            energy: 93,
+            hp: 106,
+            energy: 103,
             attack: 99,
-            defense: 83,
+            defense: 88,
             rattack: 112,
-            rdefense: 93,
+            rdefense: 98,
             speed: 69
         },
         gender: ['Ungendered'],
@@ -6143,9 +6143,9 @@ export const loomiansData = [
             "Rainbow Blast"
         ],
         stats: {
-            hp: 71,
+            hp: 76,
             energy: 115,
-            attack: 46,
+            attack: 66,
             defense: 77,
             rattack: 119,
             rdefense: 122,
@@ -6163,9 +6163,9 @@ export const loomiansData = [
             "Perch", "Barter", "Dodge", "Dark Surge",  "Hypnotize", "Peace of Mind", "Spare"
         ],
         stats: {
-            hp: 71,
+            hp: 76,
             energy: 115,
-            attack: 46,
+            attack: 66,
             defense: 77,
             rattack: 119,
             rdefense: 122,
@@ -6185,7 +6185,7 @@ export const loomiansData = [
         stats: {
             hp: 99,
             energy: 145,
-            attack: 43,
+            attack: 68,
             defense: 135,
             rattack: 84,
             rdefense: 98,
@@ -6205,7 +6205,7 @@ export const loomiansData = [
         stats: {
             hp: 99,
             energy: 115,
-            attack: 43,
+            attack: 68,
             defense: 115,
             rattack: 124,
             rdefense: 78,
@@ -6227,7 +6227,7 @@ export const loomiansData = [
             energy: 105,
             attack: 134,
             defense: 105,
-            rattack: 43,
+            rattack: 68,
             rdefense: 68,
             speed: 96
         },
@@ -6243,11 +6243,11 @@ export const loomiansData = [
             "Dodge", "Ill Will", "Mud Spatter", "Spare", "Spectral Burst"
         ],
         stats: {
-            hp: 61,
+            hp: 66,
             energy: 120,
             attack: 113,
             defense: 89,
-            rattack: 46,
+            rattack: 66,
             rdefense: 110,
             speed: 111
         },
@@ -6264,12 +6264,12 @@ export const loomiansData = [
             "Maroon", "Plunge", "Spare"
         ],
         stats: {
-            hp: 111,
+            hp: 116,
             energy: 94,
             attack: 120,
-            defense: 92,
-            rattack: 63,
-            rdefense: 86,
+            defense: 97,
+            rattack: 73,
+            rdefense: 91,
             speed: 84
         },
         gender: ['Male', 'Female'],
@@ -6288,11 +6288,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 55,
-            energy: 100,
-            attack: 115,
-            defense: 80,
-            rattack: 115,
-            rdefense: 80,
+            energy: 105,
+            attack: 120,
+            defense: 85,
+            rattack: 120,
+            rdefense: 85,
             speed: 105
         },
         gender: ['Ungendered'],
@@ -6310,10 +6310,10 @@ export const loomiansData = [
         ],
         stats: {
             hp: 55,
-            energy: 100,
-            attack: 155,
+            energy: 105,
+            attack: 165,
             defense: 40,
-            rattack: 155,
+            rattack: 165,
             rdefense: 40,
             speed: 105
         },
@@ -6332,11 +6332,11 @@ export const loomiansData = [
         ],
         stats: {
             hp: 55,
-            energy: 100,
+            energy: 105,
             attack: 60,
-            defense: 155,
+            defense: 165,
             rattack: 60,
-            rdefense: 155,
+            rdefense: 165,
             speed: 65
         },
         gender: ['Ungendered'],
@@ -6354,12 +6354,12 @@ export const loomiansData = [
         ],
         stats: {
             hp: 55,
-            energy: 100,
-            attack: 85,
+            energy: 105,
+            attack: 90,
             defense: 85,
-            rattack: 85,
+            rattack: 90,
             rdefense: 85,
-            speed: 155
+            speed: 165
         },
         gender: ['Ungendered'],
         abilities: ['Immunized'],
@@ -6377,10 +6377,10 @@ export const loomiansData = [
         stats: {
             hp: 125,
             energy: 125,
-            attack: 53,
-            defense: 74,
-            rattack: 103,
-            rdefense: 79,
+            attack: 63,
+            defense: 79,
+            rattack: 108,
+            rdefense: 84,
             speed: 91
         },
         gender: ['Ungendered'],
@@ -6398,9 +6398,9 @@ export const loomiansData = [
             "Thunderstrike"
         ],
         stats: {
-            hp: 83,
-            energy: 90,
-            attack: 93,
+            hp: 93,
+            energy: 95,
+            attack: 103,
             defense: 109,
             rattack: 131,
             rdefense: 73,
@@ -6421,12 +6421,12 @@ export const loomiansData = [
             "Spectral Burst"
         ],
         stats: {
-            hp: 90,
+            hp: 95,
             energy: 113,
             attack: 117,
-            defense: 55,
+            defense: 65,
             rattack: 107,
-            rdefense: 55,
+            rdefense: 65,
             speed: 113
         },
         gender: ['Male', 'Female'],
