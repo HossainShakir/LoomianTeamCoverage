@@ -4,8 +4,8 @@ import '../App.css';
 const changelog = `
 - Fixed several loomian data entries
 - Added item icons to saved teams in teambuilder
-- Added a conditional to only show gender in 
-  exported team if a gender is specified
+- Added conditionals to only show gender in exported team if a 
+  gender is specified and only show UPs when it is not 40
 - Loomians with only 1 ability have their ability locked
 `;
 

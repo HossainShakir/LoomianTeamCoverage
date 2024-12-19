@@ -177,13 +177,14 @@ function Teambuilder() {
                 .join('\n');
     
             const genderLine = gender ? `Gender: ${gender}\n` : '';
+            const upLine = upsString ? `UPs: ${upsString}\n` : '';
     
             return (
                 `${name} @ ${requiredItem || item}\n` +
                 `Ability: ${ability}\n` +
                 genderLine +
                 `TPs: ${tpsString}\n` +
-                `UPs: ${upsString}\n` +
+                upLine +
                 `Personality: ${combinedPersonality}\n` +
                 `${movesString}`
             );
