@@ -287,10 +287,43 @@ button {
   font-weight: bold;
 }
 
+.loomian-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Optional spacing between loomians */
+}
+
+.loomian-with-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* This affects all images in .loomian-icons */
 .loomian-icons img {
   width: 70px;
   height: 50px;
   margin-right: 5px;
+}
+
+/* Place the item icon rules after the above so it can override */
+.loomian-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25px !important;
+  height: 25px !important;
+  object-fit: cover;
+}
+
+/* Position the item icon at bottom right of the Loomian icon */
+.loomian-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
 }
 
 /* loomian editor */
@@ -339,7 +372,6 @@ button {
   padding-left: 55px; 
 }
 
-/* Loomian Editor */
 .loomian-editor .stat-item {
   display: flex;
   align-items: center;
@@ -558,7 +590,7 @@ button {
 .loomian-dropdown {
   position: relative;
   width: 200px;
-  margin: 0 auto; /* Centers the dropdown horizontally */
+  margin: 0 auto; 
 }
 
 .dropdown-header {
@@ -566,14 +598,14 @@ button {
   border: 1px solid #ccc;
   background-color: #fff;
   cursor: pointer;
-  text-align: left; /* Aligns text to the left */
+  text-align: left; 
 }
 
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 50%; /* Aligns the dropdown menu relative to the container */
-  transform: translateX(-50%); /* Centers the dropdown menu */
+  left: 50%; 
+  transform: translateX(-50%); 
   width: 100%;
   border: 1px solid #ccc;
   background-color: #fff;

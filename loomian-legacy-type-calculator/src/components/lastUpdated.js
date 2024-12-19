@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Added PvP 2.0 stats
+- Fixed several loomian data entries
+- Added item icons to saved teams in teambuilder
+- Added a conditional to only show gender in 
+  exported team if a gender is specified
 `;
 
 const LastUpdated = () => {
@@ -19,7 +22,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-12-01
+                Last Updated: 2024-12-19
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

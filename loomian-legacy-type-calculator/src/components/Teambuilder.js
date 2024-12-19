@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import loomiansData from './loomiansData';
+import itemsData from './itemsData';
 import LoomianEditor from './LoomianEditor';
 import TypeBadge from '../typeBadge';
 import LastUpdated from './lastUpdated';
@@ -175,14 +176,24 @@ function Teambuilder() {
                 .map(move => `- ${move}`)
                 .join('\n');
     
-            return `${name} @ ${requiredItem || item}\nAbility: ${ability}\nGender: ${gender}\nTPs: ${tpsString}\nUPs: ${upsString}\nPersonality: ${combinedPersonality}\n${movesString}`;
+            const genderLine = gender ? `Gender: ${gender}\n` : '';
+    
+            return (
+                `${name} @ ${requiredItem || item}\n` +
+                `Ability: ${ability}\n` +
+                genderLine +
+                `TPs: ${tpsString}\n` +
+                `UPs: ${upsString}\n` +
+                `Personality: ${combinedPersonality}\n` +
+                `${movesString}`
+            );
         }).join('\n\n');
     
         navigator.clipboard.writeText(teamString).then(() => {
             setMessage('Copied to clipboard!');
             setTimeout(() => setMessage(''), 2000);
         });
-    };
+    };    
 
     return (
         <div className="App">
@@ -199,9 +210,21 @@ function Teambuilder() {
                                 <div key={index} className="saved-team" onClick={() => editTeam(index)} style={{ cursor: 'pointer' }}>
                                     <h3>{team.name}</h3>
                                     <div className="loomian-icons">
-                                        {team.loomians.map((loomian, idx) => (
-                                            <img key={idx} src={loomiansData.find((l) => l.name === loomian.name).icon} alt={loomian.name} />
-                                        ))}
+                                    {team.loomians.map((loomian, idx) => {
+                                        const loomianData = loomiansData.find((l) => l.name === loomian.name);
+                                        const itemData = loomian.attributes && loomian.attributes.item
+                                        ? itemsData.find((item) => item.name === loomian.attributes.item)
+                                        : null;
+
+                                    return (
+                                        <div key={idx} className="loomian-with-item">
+                                        <img src={loomianData.icon} alt={loomian.name} className="loomian-icon" />
+                                        {itemData && (
+                                            <img src={itemData.icon} alt={itemData.name} className="loomian-item-icon" />
+                                        )}
+                                        </div>
+                                    )
+                                    })}
                                     </div>
                                     <button className="delete-button" onClick={(e) => { e.stopPropagation(); confirmDeleteTeam(index); }}>🗑️</button>
                                 </div>

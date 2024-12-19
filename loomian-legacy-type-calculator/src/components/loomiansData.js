@@ -4714,7 +4714,7 @@ export const loomiansData = [
         ],
         stats: {
             hp: 105,
-            energy: 53,
+            energy: 83,
             attack: 86,
             defense: 104,
             rattack: 121,
@@ -5691,7 +5691,7 @@ export const loomiansData = [
             "Pebble Toss", "Stupefy", "Shriek", "Tamp", "Empathize", "Quicksand", "Spectral Burst", "Dissonant Chord", 
             "Scapegoat", "Rock Slide", "Soul Storm", "Body Crash", "Déjà Vu", "Deja Vu", "Splitting Headache",
             "Bane of Haste", "Landslide", "Mudslide", "Phantom Slash", "Provoke", "Sap Plant", "Dodge", "Ill Will",
-            "Mud Spatter", "Peace of Mind", "Spare"
+            "Mud Spatter", "Peace of Mind", "Spare", "Slumber"
         ],
         stats: {
             hp: 48,
@@ -5707,12 +5707,12 @@ export const loomiansData = [
         secretAbility: 'Seize',
         weightkg: 85.7,
         heightcm: 88.9 },
-    { name: 'Obelost', primaryType: 'Earth', secondaryType: 'Spirit', icon: require('../assets/icons/grievestone.png'),
+    { name: 'Obelost', primaryType: 'Earth', secondaryType: 'Spirit', icon: require('../assets/icons/obelost.png'),
         moves: [
             "Pebble Toss", "Stupefy", "Shriek", "Tamp", "Empathize", "Quicksand", "Spectral Burst", "Dissonant Chord", 
             "Scapegoat", "Rock Slide", "Soul Storm", "Body Crash", "Déjà Vu", "Deja Vu", "Splitting Headache",
             "Bane of Haste", "Landslide", "Mudslide", "Phantom Slash", "Provoke", "Sap Plant", "Dodge", "Ill Will",
-            "Mud Spatter", "Peace of Mind", "Spare", "Trick Shot"
+            "Mud Spatter", "Peace of Mind", "Spare", "Trick Shot", "Slumber"
         ],
         stats: {
             hp: 84,
