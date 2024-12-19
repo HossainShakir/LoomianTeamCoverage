@@ -6,6 +6,7 @@ const changelog = `
 - Added item icons to saved teams in teambuilder
 - Added a conditional to only show gender in 
   exported team if a gender is specified
+- Loomians with only 1 ability have their ability locked
 `;
 
 const LastUpdated = () => {

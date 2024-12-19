@@ -212,18 +212,17 @@ function Teambuilder() {
                                     <div className="loomian-icons">
                                     {team.loomians.map((loomian, idx) => {
                                         const loomianData = loomiansData.find((l) => l.name === loomian.name);
-                                        const itemData = loomian.attributes && loomian.attributes.item
-                                        ? itemsData.find((item) => item.name === loomian.attributes.item)
-                                        : null;
+                                        const itemName = loomian.attributes.item || loomianData.requiredItem;
+                                        const itemData = itemName ? itemsData.find((item) => item.name === itemName) : null;
 
-                                    return (
-                                        <div key={idx} className="loomian-with-item">
-                                        <img src={loomianData.icon} alt={loomian.name} className="loomian-icon" />
-                                        {itemData && (
-                                            <img src={itemData.icon} alt={itemData.name} className="loomian-item-icon" />
-                                        )}
-                                        </div>
-                                    )
+                                        return (
+                                            <div key={idx} className="loomian-with-item">
+                                                <img src={loomianData.icon} alt={loomian.name} className="loomian-icon" />
+                                                {itemData && (
+                                                    <img src={itemData.icon} alt={itemData.name} className="loomian-item-icon" />
+                                                )}
+                                            </div>
+                                        );
                                     })}
                                     </div>
                                     <button className="delete-button" onClick={(e) => { e.stopPropagation(); confirmDeleteTeam(index); }}>🗑️</button>

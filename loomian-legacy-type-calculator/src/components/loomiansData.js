@@ -949,7 +949,7 @@ export const loomiansData = [
             "Static Shock", "Stare", "Spare", "Shine", "Dodge", "Tase", "Light Dash", 
             "Energize", "Examine", "Gamma Pulse", "Thunder Crash", "Dazzling Barrage",
             "Earthquake", "Jolt", "Luster Loot", "Mudslide", "Thunderstrike", "Zip-Zap",
-            "Flash 'n Flee", "Gamma Pulse", "Rejuvenate"
+            "Flash 'n Flee", "Rejuvenate"
         ],
         stats: {
             hp: 50,
@@ -972,7 +972,7 @@ export const loomiansData = [
             "Static Shock", "Stare", "Spare", "Shine", "Dodge", "Tase", "Light Dash", 
             "Energize", "Examine", "Gamma Pulse", "Thunder Crash", "Dazzling Barrage",
             "Earthquake", "Jolt", "Luster Loot", "Mudslide", "Thunderstrike", "Zip-Zap",
-            "Flash 'n Flee", "Gamma Pulse", "Rejuvenate", "Magnify"
+            "Flash 'n Flee", "Rejuvenate", "Magnify"
         ],
         stats: {
             hp: 80,
@@ -2391,7 +2391,7 @@ export const loomiansData = [
         },
         gender: ['Male', 'Female'], 
         abilities: ['Royal Decree'],
-        secretAbility: 'Overcharged',
+        secretAbility: '',
         weightkg: 62.14,
         heightcm: 154.94,
         requiredItem: 'Joltburst' },
@@ -4520,10 +4520,10 @@ export const loomiansData = [
         heightcm: 48.3 },
     { name: 'Charkiln', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/charkiln.png'),
         moves: [
-            "Slime", "Blaze Punch", "Power Focus", "Double Whack", "Baneful Bash", "Muck Blast", "Heavy Bash", "Fire Breath", "Boiling Press",
-            "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast", "Paint Shower", "Raging Flame", "Steel Crusher", 
-            "Tamp", "Tear Down", "Tribute", "Bulk Up", "Dodge", "Ill Will", "Spare", "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", 
-            "Bash", "Poison", "Fire Slam", "Burn Up"
+            "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", "Bash", "Poison", "Fire Slam", "Burn Up", "Power Focus", "Baneful Bash",
+            "Muck Blast", "Heavy Bash", "Fire Breath", "Boiling Press", "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast",
+            "Paint Shower", "Raging Flame", "Steel Crusher", "Tamp", "Tear Down", "Tribute", "Bulk Up", "Dodge", "Ill Will", "Spare", "Slime",
+            "Blaze Punch", "Double Whack"
         ],
         stats: {
             hp: 56,
@@ -4541,10 +4541,10 @@ export const loomiansData = [
         heightcm: 114.3 },
     { name: 'Billoforge', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/billoforge.png'),
         moves: [
-            "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", "Bash", "Poison", "Fire Slam", "Burn Up",
-            "Slime", "Blaze Punch", "Power Focus", "Double Whack", "Baneful Bash", "Boiling Press",
-            "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast", "Paint Shower", "Raging Flame", "Steel Crusher", 
-            "Tamp", "Tear Down", "Tribute"
+            "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", "Bash", "Poison", "Fire Slam", "Burn Up", "Power Focus", "Baneful Bash",
+            "Muck Blast", "Heavy Bash", "Fire Breath", "Boiling Press", "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast",
+            "Paint Shower", "Raging Flame", "Steel Crusher", "Tamp", "Tear Down", "Tribute", "Bulk Up", "Dodge", "Ill Will", "Spare", "Slime",
+            "Blaze Punch", "Double Whack", "Kindled Rage"
         ],
         stats: {
             hp: 80,

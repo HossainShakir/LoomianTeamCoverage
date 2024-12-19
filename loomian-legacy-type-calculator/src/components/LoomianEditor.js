@@ -29,20 +29,28 @@ function LoomianEditor({ loomian, onSave }) {
 
     useEffect(() => {
         const loomianData = loomiansData.find((l) => l.name === loomian.name);
-
+    
         if (loomianData) {
             const sortedMoves = loomianData.moves.sort();
             setAvailableMoves(sortedMoves);
             setStatsData(loomianData.stats);
-
+    
             const abilitiesWithSecret = loomianData.secretAbility
                 ? loomianData.abilities.concat(loomianData.secretAbility)
                 : loomianData.abilities;
+    
             setAbilityOptions(abilitiesWithSecret);
             setGenderOptions(loomianData.gender || []);
             setRequiredItem(loomianData.requiredItem || '');
+    
+            if (abilitiesWithSecret.length === 1 && !attributes.ability) {
+                const [onlyAbility] = abilitiesWithSecret;
+                const updatedAttributes = { ...attributes, ability: onlyAbility };
+                setAttributes(updatedAttributes);
+                onSave(updatedAttributes);
+            }
         }
-    }, [loomian.name]);
+    }, [loomian.name, attributes, onSave]);
 
     useEffect(() => {
         const totalTP = Object.values(attributes.tps).reduce((a, b) => a + b, 0);
@@ -161,24 +169,26 @@ function LoomianEditor({ loomian, onSave }) {
     return (
         <div className="loomian-editor">
             <div className="input-group">
-                <label>Ability: </label>
-                <select
-                    value={attributes.ability}
-                    onChange={(e) => handleAttributeChange('ability', e.target.value)}
+            <label>Ability: </label>
+            <select
+                value={attributes.ability}
+                onChange={(e) => handleAttributeChange('ability', e.target.value)}
+                disabled={abilityOptions.length === 1} 
                 >
-                    <option value="">--Select Ability--</option>
-                    {abilityOptions.map((ability, i) => (
-                        <option key={i} value={ability}>{ability}</option>
-                    ))}
-                </select>
-                {attributes.ability && loomiansData.find((l) => l.name === loomian.name).secretAbility === attributes.ability && (
-                    <img
-                        src={secretAbilityIcon}
-                        alt="Secret Ability"
-                        className="secret-ability-icon"
-                    />
-                )}
-            </div>
+            <option value="">--Select Ability--</option>
+                {abilityOptions.map((ability, i) => (
+                    <option key={i} value={ability}>{ability}</option>
+                 ))}
+            </select>
+            {attributes.ability && loomiansData.secretAbility === attributes.ability && (
+                <img
+                    src={secretAbilityIcon}
+                    alt="Secret Ability"
+                    className="secret-ability-icon"
+                />
+            )}
+        </div>
+
             <div className="input-group">
                 <label>Level: </label>
                 <input
