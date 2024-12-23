@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Fixed several loomian data entries
-- Added item icons to saved teams in teambuilder
-- Added conditionals to only show gender in exported team if a 
-  gender is specified and only show UPs when it is not 40
-- Loomians with only 1 ability have their ability locked
+- Added New Jolly Village loomians
+- Removed instances of "Déjà Vu" and kept "Deja Vu" for simplicity
 `;
 
 const LastUpdated = () => {
@@ -23,7 +20,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-12-19
+                Last Updated: 2024-12-23
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

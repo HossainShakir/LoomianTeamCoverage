@@ -1837,7 +1837,7 @@ export const loomiansData = [
         moves: [
             "Brainwash", "Mind's Eye", "Rant", "Return to Sender", "Boulder Blast", "Peace of Mind", 
             "Spectral Burst", "Flabbergast", "Bane of Haste", "Shrewd Blast", "Bulk up", "Landslide",
-            "Dark Surge", "Déjà Vu", "Deja Vu", "Draco Beam", "Earthquake", "Gain Drain", 
+            "Dark Surge", "Deja Vu", "Draco Beam", "Earthquake", "Gain Drain", 
             "Outburst", "Phantom Slash", "Primal Slash", "Provoke", "Psycho Blast", "Rogue Assault", 
             "Talent Trade", "Tribute", "Dodge", "Mud Spatter", "Rainbow Blast", "Spare"
         ],
@@ -1859,7 +1859,7 @@ export const loomiansData = [
         moves: [
             "Brainwash", "Mind's Eye", "Rant", "Return to Sender", "Boulder Blast", "Peace of Mind", 
             "Spectral Burst", "Flabbergast", "Bane of Haste", "Shrewd Blast", "Bulk up", "Landslide",
-            "Dark Surge", "Déjà Vu", "Deja Vu", "Draco Beam", "Earthquake", "Gain Drain", 
+            "Dark Surge", "Deja Vu", "Draco Beam", "Earthquake", "Gain Drain", 
             "Outburst", "Phantom Slash", "Primal Slash", "Provoke", "Psycho Blast", "Rogue Assault", 
             "Talent Trade", "Tribute", "Dodge", "Mud Spatter", "Rainbow Blast", "Memorize", "Hop Kick",
             "Cerebral Slash", "Spare"
@@ -2526,7 +2526,7 @@ export const loomiansData = [
     { name: 'Ampole', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/ampole.png'),
         moves: [
             "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
-            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", "Déjà Vu", 
+            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", 
             "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Barter", "Dodge", "Hypnotize", 
             "Ill Will", "Thunderstrike", "Spare", "Zip-Zap"
         ],
@@ -2547,7 +2547,7 @@ export const loomiansData = [
     { name: 'Amphiton', primaryType: 'Electric', secondaryType: 'Mind', icon: require('../assets/icons/amphiton.png'),
         moves: [
             "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
-            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", "Déjà Vu", 
+            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", 
             "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Barter", "Dodge", "Hypnotize", 
             "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash", "Zip-Zap"
         ],
@@ -2568,7 +2568,7 @@ export const loomiansData = [
     { name: 'Meditoad', primaryType: 'Electric', secondaryType: 'Mind', icon: require('../assets/icons/meditoad.png'),
         moves: [
             "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", "Zip-Zap", 
-            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", "Déjà Vu", 
+            "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", 
             "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Barter", "Dodge", "Hypnotize", 
             "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash", "Psychal Slap", "Electro-Punch"
         ],
@@ -3787,7 +3787,7 @@ export const loomiansData = [
     { name: 'Polypi', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/polypi.png'),
         moves: [
             "Spray", "Dawdle", "Shine", "Disperse", "Luster Loot", "Water Bomb", "Soft Water", 
-            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Déjà Vu", "Deja Vu", 
+            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Deja Vu", 
             "Resonate", "Tease", "Dodge", "Flash 'n Flee", "Frost Beam", "Spare", "Tsunami"
         ],
         stats: {
@@ -3807,7 +3807,7 @@ export const loomiansData = [
     { name: 'Laphyra', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/laphyra.png'),
         moves: [
             "Spray", "Dawdle", "Shine", "Disperse", "Luster Loot", "Water Bomb", "Soft Water", 
-            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Déjà Vu", "Deja Vu", 
+            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Deja Vu", 
             "Resonate", "Tease", "Dodge", "Flash 'n Flee", "Frost Beam", "Spare", "Tsunami", 
             "Peace of Mind"
         ],
@@ -3828,7 +3828,7 @@ export const loomiansData = [
     { name: 'Jellusa', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/jellusa.png'),
         moves: [
             "Spray", "Dawdle", "Shine", "Disperse", "Luster Loot", "Water Bomb", "Soft Water", 
-            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Déjà Vu", "Deja Vu", 
+            "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Deja Vu", 
             "Resonate", "Tease", "Dodge", "Flash 'n Flee", "Frost Beam", "Spare", "Tsunami", 
             "Peace of Mind", "Enamor"
         ],
@@ -3949,7 +3949,7 @@ export const loomiansData = [
     { name: 'Somata', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/somata.png'),
         moves: [
             "Spray", "Brainwash", "Dawdle", "Mind's Eye", "Spare", "Water Bomb", "Bait", "Flabbergast",
-            "Peace of Mind", "Dissipate", "Maroon", "Rant", "Déjà Vu", "Deja Vu", "Stratagem",
+            "Peace of Mind", "Dissipate", "Maroon", "Rant", "Deja Vu", "Stratagem",
             "Energy Gift", "Gust", "Health Gift", "Dodge", "Rejuvenate", "Tsunami"
         ],
         stats: {
@@ -3969,7 +3969,7 @@ export const loomiansData = [
     { name: 'Clionae', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/clionae.png'),
         moves: [
             "Spray", "Brainwash", "Dawdle", "Mind's Eye", "Spare", "Water Bomb", "Bait", "Flabbergast",
-            "Peace of Mind", "Dissipate", "Maroon", "Rant", "Déjà Vu", "Deja Vu", "Stratagem",
+            "Peace of Mind", "Dissipate", "Maroon", "Rant", "Deja Vu", "Stratagem",
             "Energy Gift", "Gust", "Health Gift", "Dodge", "Rejuvenate", "Tsunami", "Far Enchantment",
             "Near Enchantment"
         ],
@@ -4236,7 +4236,7 @@ export const loomiansData = [
         heightcm: 218.4 },
     { name: 'Impkin', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/impkin.png'),
         moves: [
-            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt", "Déjà Vu",
+            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Energy Gift", "Fade Away", "Health Gift",
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Bait", "Barter",
             "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare"
@@ -4257,7 +4257,7 @@ export const loomiansData = [
         heightcm: 71.1 },
     { name: 'Grimmick', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/grimmick.png'),
         moves: [
-            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt", "Déjà Vu",
+            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Energy Gift", "Fade Away", "Health Gift",
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Bait", "Barter",
             "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare"
@@ -4278,7 +4278,7 @@ export const loomiansData = [
         heightcm: 132.1 },
     { name: 'Imperior', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/imperior.png'),
         moves: [
-            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt", "Déjà Vu",
+            "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Energy Gift", "Fade Away", "Health Gift",
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Bait", "Barter",
             "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Tricky Tactics", "Boom Bash"
@@ -4908,7 +4908,7 @@ export const loomiansData = [
     { name: 'Mirrami', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirrami.png'),
         moves: [
             "Metal Swipes", "Stupefy", "Power Focus", "Bamboozle", "Reflection Burst", "Phantom Slash", "Dark Surge", "Chase Down", "Double Whack", 
-            "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Déjà Vu", "Deja Vu", 
+            "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Deja Vu", 
             "Far Enchantment", "Impersonate", "Near Enchantment", "Shadow Sprint", "Square One", "Steel Crusher", "Tricky Tactics", "Bulk Up",
             "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Spare"
         ],
@@ -4930,7 +4930,7 @@ export const loomiansData = [
     { name: 'Mirraith', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirraith.png'),
         moves: [
             "Metal Swipes", "Stupefy", "Power Focus", "Bamboozle", "Reflection Burst", "Phantom Slash", "Dark Surge", "Chase Down", "Double Whack", 
-            "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Déjà Vu", "Deja Vu", 
+            "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Deja Vu", 
             "Far Enchantment", "Impersonate", "Near Enchantment", "Shadow Sprint", "Square One", "Steel Crusher", "Tricky Tactics", "Bulk Up",
             "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Spare", "Shatter"
         ],
@@ -5148,7 +5148,7 @@ export const loomiansData = [
         moves: [
             "Startle", "Brainwash", "Stupefy", "Harmonious Chord", "Tribute", "Flabbergast", "Soul Storm",
             "Final Ruse", "Teamwork", "Cerebral Slash", "Spectral Burst", "High-Pitch Screech", "Peace of Mind", 
-            "Déjà Vu", "Deja Vu", "Dissonant Chord", "Power Focus", "Psycho Blast", "Repeating Tune", "Resonate", 
+            "Deja Vu", "Dissonant Chord", "Power Focus", "Psycho Blast", "Repeating Tune", "Resonate", 
             "Bait", "Dodge", "Fade Away", "Ill Will", "Spare"
         ],
         stats: {
@@ -5169,7 +5169,7 @@ export const loomiansData = [
         moves: [
             "Startle", "Brainwash", "Stupefy", "Harmonious Chord", "Tribute", "Flabbergast", "Soul Storm",
             "Final Ruse", "Teamwork", "Cerebral Slash", "Spectral Burst", "High-Pitch Screech", "Peace of Mind", 
-            "Déjà Vu", "Deja Vu", "Dissonant Chord", "Power Focus", "Psycho Blast", "Repeating Tune", "Resonate", 
+            "Deja Vu", "Dissonant Chord", "Power Focus", "Psycho Blast", "Repeating Tune", "Resonate", 
             "Bait", "Dodge", "Fade Away", "Ill Will", "Spare", "Conclusion", "Hypnotize"
         ],
         stats: {
@@ -5515,7 +5515,7 @@ export const loomiansData = [
         heightcm: 175.3 },
     { name: 'Cicalute', primaryType: 'Bug', secondaryType: 'Mind', icon: require('../assets/icons/cicalute.png'),
         moves: [
-            "Bug Bite", "Shriek", "Brainwash", "Brace", "Pester", "Déjà Vu", "Deja Vu", "Harmonious Chord",
+            "Bug Bite", "Shriek", "Brainwash", "Brace", "Pester", "Deja Vu", "Harmonious Chord",
             "Flabbergast", "Mind's Eye", "Dissonant Chord", "Stratagem", "Pheroblast", "High-Pitch Screech", 
             "Landslide", "Psycho Blast", "Repeating Tune", "Resonate", "Square One", "Dodge", "Mud Splatter",
             "Peace of Mind", "Rejuvenate", "Spare"
@@ -5536,7 +5536,7 @@ export const loomiansData = [
         heightcm: 38.1 },
     { name: 'Violana', primaryType: 'Bug', secondaryType: 'Mind', icon: require('../assets/icons/violana.png'),
         moves: [
-            "Bug Bite", "Shriek", "Brainwash", "Brace", "Pester", "Déjà Vu", "Deja Vu", "Harmonious Chord",
+            "Bug Bite", "Shriek", "Brainwash", "Brace", "Pester", "Deja Vu", "Harmonious Chord",
             "Flabbergast", "Mind's Eye", "Dissonant Chord", "Stratagem", "Pheroblast", "High-Pitch Screech", 
             "Landslide", "Psycho Blast", "Repeating Tune", "Resonate", "Square One", "Dodge", "Mud Splatter",
             "Peace of Mind", "Rejuvenate", "Spare", "Discordance", "Air Blade", "Gust"
@@ -5689,7 +5689,7 @@ export const loomiansData = [
     { name: 'Grievestone', primaryType: 'Earth', secondaryType: 'Spirit', icon: require('../assets/icons/grievestone.png'),
         moves: [
             "Pebble Toss", "Stupefy", "Shriek", "Tamp", "Empathize", "Quicksand", "Spectral Burst", "Dissonant Chord", 
-            "Scapegoat", "Rock Slide", "Soul Storm", "Body Crash", "Déjà Vu", "Deja Vu", "Splitting Headache",
+            "Scapegoat", "Rock Slide", "Soul Storm", "Body Crash", "Deja Vu", "Splitting Headache",
             "Bane of Haste", "Landslide", "Mudslide", "Phantom Slash", "Provoke", "Sap Plant", "Dodge", "Ill Will",
             "Mud Spatter", "Peace of Mind", "Spare", "Slumber"
         ],
@@ -5710,7 +5710,7 @@ export const loomiansData = [
     { name: 'Obelost', primaryType: 'Earth', secondaryType: 'Spirit', icon: require('../assets/icons/obelost.png'),
         moves: [
             "Pebble Toss", "Stupefy", "Shriek", "Tamp", "Empathize", "Quicksand", "Spectral Burst", "Dissonant Chord", 
-            "Scapegoat", "Rock Slide", "Soul Storm", "Body Crash", "Déjà Vu", "Deja Vu", "Splitting Headache",
+            "Scapegoat", "Rock Slide", "Soul Storm", "Body Crash", "Deja Vu", "Splitting Headache",
             "Bane of Haste", "Landslide", "Mudslide", "Phantom Slash", "Provoke", "Sap Plant", "Dodge", "Ill Will",
             "Mud Spatter", "Peace of Mind", "Spare", "Trick Shot", "Slumber"
         ],
@@ -5728,10 +5728,94 @@ export const loomiansData = [
         secretAbility: 'Seize',
         weightkg: 338.8,
         heightcm: 218.4 },
+    { name: 'Jimby', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/jimby.png'),
+        moves: [
+            "Spare", "Shriek", "Scapegoat", "Flurry", "Sap Plant", "Harmonious Chord", "Empathize", "Tear Down",
+            "Repeating Tune", "Power Focus", "Frost Breath", "Wonder Herb", "Dissonant Chord", "Tribute", "Frost Beam",
+            "Burn Up", "Energy Gift", "Health Gift", "Icicle Trap", "Magnify", "Raging Howl", "Dodge", "Peace of Mind"
+        ],
+        stats: {
+            hp: 40,
+            energy: 58,
+            attack: 28,
+            defense: 27,
+            rattack: 81,
+            rdefense: 100,
+            speed: 90
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Fortissimo', 'Carol'],
+        secretAbility: 'Virtuoso',
+        weightkg: 4.1,
+        heightcm: 33 },
+    { name: 'Piccolio', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/piccolio.png'),
+        moves: [
+            "Spare", "Shriek", "Scapegoat", "Flurry", "Sap Plant", "Harmonious Chord", "Empathize", "Tear Down",
+            "Repeating Tune", "Power Focus", "Frost Breath", "Wonder Herb", "Dissonant Chord", "Tribute", "Frost Beam",
+            "Burn Up", "Energy Gift", "Health Gift", "Icicle Trap", "Magnify", "Raging Howl", "Dodge", "Peace of Mind",
+            "Hullabaloo"
+        ],
+        stats: {
+            hp: 80,
+            energy: 79,
+            attack: 48,
+            defense: 47,
+            rattack: 111,
+            rdefense: 120,
+            speed: 90
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Fortissimo', 'Carol'],
+        secretAbility: 'Virtuoso',
+        weightkg: 10.9,
+        heightcm: 81.3 },
+    { name: 'Wassel', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/wassel.png'),
+        moves: [
+            "Flurry", "Stretch", "Gnaw", "Sleet Shot", "Light Dash", "Nab", "Chilly Chomp", "Chase Down",
+            "Blindspot Batter", "Psychal Chomp", "Undermine", "Icicle Trap", "Deep Freeze", "Radiant Rush", 
+            "Bitter Cold", "Deja Vu", "Disperse", "Far Enchantment", "Near Enchantment", "Nova Blast", 
+            "Provoke", "Slumber", "Stratagem", "Bulk Up", "Dodge", "Frost Beam", "Gamma Pulse", "Ill Will", "Spare"
+        ],
+        stats: {
+            hp: 29,
+            energy: 35,
+            attack: 38,
+            defense: 10,
+            rattack: 14,
+            rdefense: 21,
+            speed: 53
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Adorable'],
+        secretAbility: 'Elusive',
+        weightkg: 6.8,
+        heightcm: 38.1 },
+    { name: 'Borealisk', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/borealisk.png'),
+        moves: [
+            "Flurry", "Stretch", "Gnaw", "Sleet Shot", "Light Dash", "Nab", "Chilly Chomp", "Chase Down",
+            "Blindspot Batter", "Psychal Chomp", "Undermine", "Icicle Trap", "Deep Freeze", "Radiant Rush", 
+            "Bitter Cold", "Deja Vu", "Disperse", "Far Enchantment", "Near Enchantment", "Nova Blast", 
+            "Provoke", "Slumber", "Stratagem", "Bulk Up", "Dodge", "Frost Beam", "Gamma Pulse", "Ill Will", "Spare",
+            "Icicle Tremor"
+        ],
+        stats: {
+            hp: 98,
+            energy: 70,
+            attack: 118,
+            defense: 57,
+            rattack: 68,
+            rdefense: 101,
+            speed: 103
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Upper Hand'],
+        secretAbility: 'Elusive',
+        weightkg: 84.8,
+        heightcm: 287 },
     { name: 'Duskit', primaryType: 'Spirit', secondaryType: 'Mind', icon: require('../assets/icons/duskit.png'),
         moves: [
             "Startle", "Final Ruse", "Brainwash", "Stupefy", "Return to Sender", "Oppress", "Spectral Burst", 
-            "Peace of Mind", "Phantom Slash", "Déjà Vu", "Deja Vu", "Cerebral Slash", "Chase Down", "Dark Surge",
+            "Peace of Mind", "Phantom Slash", "Deja Vu", "Cerebral Slash", "Chase Down", "Dark Surge",
             "Fade Away", "Flabbergast", "Harrow", "Outburst", "Psycho Blast", "Pyrokinesis", "Raging Flame", 
             "Shadow Sprint", "Spare", "Tribute", "Dodge", "Hypnotize", "Rainbow Blast"
         ],
@@ -5774,7 +5858,7 @@ export const loomiansData = [
     { name: 'Protogon', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/protogon.png'),
         moves: [
             "Bash", "Tail Slap", "Tune-Up", "Metal Swipes", "Power Siphon", "Dart Burst", "Energy Surge", 
-            "Augment", "Metal Blast", "Déjà Vu", "Deja Vu", "Electro-Punch", "Steel Crusher", "Thunderstrike",
+            "Augment", "Metal Blast", "Deja Vu", "Electro-Punch", "Steel Crusher", "Thunderstrike",
             "Dodge", "Spare", "Zip-Zap"
         ],
         stats: {
@@ -5901,7 +5985,7 @@ export const loomiansData = [
     { name: 'Elephage', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/elephage.png'),
         moves: [
             "Static Shock", "Memorize", "Examine", "Jolt", "Jump Start", "Tase", "Thunder Slam", "Power Siphon",
-            "Precision Bolt", "Energize", "Zip-Zap", "Thunder Clap", "Thunder Crash", "Body Slam", "Déjà Vu",
+            "Precision Bolt", "Energize", "Zip-Zap", "Thunder Clap", "Thunder Crash", "Body Slam",
             "Deja Vu", "Dissonant Chord", "Final Ruse", "Harmonious Chord", "High-Pitch Screech", "Magnify",
             "Provoke", "Quick Pounce", "Rant", "Repeating Tune", "Tear Down", "Bait", "Barter", "Dodge",
             "Flash 'n Flee", "Ill Will", "Rejuvenate", "Spare", "Thunderstrike"
@@ -5923,7 +6007,7 @@ export const loomiansData = [
     { name: 'Phagenaut', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/phagenaut.png'),
         moves: [
             "Static Shock", "Memorize", "Examine", "Jolt", "Jump Start", "Tase", "Thunder Slam", "Power Siphon",
-            "Precision Bolt", "Energize", "Zip-Zap", "Thunder Clap", "Thunder Crash", "Body Slam", "Déjà Vu",
+            "Precision Bolt", "Energize", "Zip-Zap", "Thunder Clap", "Thunder Crash", "Body Slam",
             "Deja Vu", "Dissonant Chord", "Final Ruse", "Harmonious Chord", "High-Pitch Screech", "Magnify",
             "Provoke", "Quick Pounce", "Rant", "Repeating Tune", "Tear Down", "Bait", "Barter", "Dodge",
             "Flash 'n Flee", "Ill Will", "Rejuvenate", "Spare", "Thunderstrike", "Power Draw"
@@ -6072,7 +6156,7 @@ export const loomiansData = [
     { name: 'Metronette', primaryType: 'Dark', secondaryType: 'Mind', icon: require('../assets/icons/metronette.png'),
         moves: [
             "Chomp", "Brainwash", "Stupefy", "Mind's Eye", "Flabbergast", "Eerie Stare", "Pyrokinesis", 
-            "Déjà Vu", "Deja Vu", "Phantom Slash", "Dark Surge", "Charade", "Bag of Tricks",
+            "Deja Vu", "Phantom Slash", "Dark Surge", "Charade", "Bag of Tricks",
             "Cerebral Slash", "Gnarly Gash", "Mega Punch", "Peace of Mind", "Provoke", "Psycho Blast",
             "Soul Storm", "Splitting Headache", "Barter", "Bulk Up", "Dodge", "Hypnotize", "Ill Will",
             "Mud Spatter", "Spare"
@@ -6094,7 +6178,7 @@ export const loomiansData = [
     { name: 'Metronette-Willbound', primaryType: 'Dark', secondaryType: 'Mind', icon: require('../assets/icons/metronette-willbound.png'),
         moves: [
             "Chomp", "Brainwash", "Stupefy", "Mind's Eye", "Flabbergast", "Eerie Stare", "Pyrokinesis", 
-            "Déjà Vu", "Deja Vu", "Phantom Slash", "Dark Surge", "Charade", "Bag of Tricks",
+            "Deja Vu", "Phantom Slash", "Dark Surge", "Charade", "Bag of Tricks",
             "Cerebral Slash", "Gnarly Gash", "Mega Punch", "Peace of Mind", "Provoke", "Psycho Blast",
             "Soul Storm", "Splitting Headache", "Barter", "Bulk Up", "Dodge", "Hypnotize", "Ill Will",
             "Mud Spatter", "Spare", "Sinister Shackles"
@@ -6138,7 +6222,7 @@ export const loomiansData = [
     { name: 'Nymaurae', primaryType: 'Light', secondaryType: 'Air', icon: require('../assets/icons/nymaurae.png'),
         moves: [
             "Shine", "Gust", "Tail Slap", "Disperse", "Air Whip", "Luster Loot", "Harmonious Chord", 
-            "Déjà Vu", "Deja Vu", "Air Blade", "Dissonant Chord", "Gamma Pulse", "Jet Stream", "Peace of Mind",
+            "Deja Vu", "Air Blade", "Dissonant Chord", "Gamma Pulse", "Jet Stream", "Peace of Mind",
             "Perch", "Wonder Herb", "Barter", "Dodge", "Flash 'n Flee", "Hypnotize", "Spare",
             "Rainbow Blast"
         ],
@@ -6158,8 +6242,7 @@ export const loomiansData = [
         heightcm: 68.6 },
     { name: 'Nymesis', primaryType: 'Dark', secondaryType: 'Air', icon: require('../assets/icons/nymesis.png'),
         moves: [
-            "Gust", "Aggravate", "Tail Slap", "Provoke", "Air Whip", "Bamboozle", "Swipe",
-            "Déjà Vu", "Deja Vu", "Air Blade", "High-Pitch Screech", "Shadow Pulse", "Jet Stream", "Pepper Burst",
+            "Gust", "Aggravate", "Tail Slap", "Provoke", "Air Whip", "Bamboozle", "Swipe", "Deja Vu", "Air Blade", "High-Pitch Screech", "Shadow Pulse", "Jet Stream", "Pepper Burst",
             "Perch", "Barter", "Dodge", "Dark Surge",  "Hypnotize", "Peace of Mind", "Spare"
         ],
         stats: {
@@ -6369,7 +6452,7 @@ export const loomiansData = [
     { name: 'Celesting', primaryType: 'Metal', secondaryType: 'Light', icon: require('../assets/icons/celesting.png'),
         moves: [
             "Summon", "Shine", "Flash", "Bash", "Mind's Eye", "Harmonious Chord", "Lightspeed Ray", "Heavy Bash",
-            "Disperse", "Energy Surge", "Metal Blast", "Barbs", "Déjà Vu", "Deja Vu", "Dissonant Chord",
+            "Disperse", "Energy Surge", "Metal Blast", "Barbs", "Deja Vu", "Dissonant Chord",
             "Energy Gift", "Gamma Pulse", "Health Gift", "Icicle Trap", "Luster Loot", "Nova Blast",
             "Reflection Burst", "Repeating Tune", "Resonate", "Tear Down", "Barter", "Dodge", "Flash 'n Flee",
             "Peace of Mind", "Spare"
@@ -6434,6 +6517,28 @@ export const loomiansData = [
         secretAbility: 'Facade',
         weightkg: 34.5,
         heightcm: 144.8 },
+    { name: 'Grimyuline', primaryType: 'Dark', secondaryType: 'Brawler', icon: require('../assets/icons/grimyuline.png'),
+        moves: [
+            "Chomp", "Punch", "Swipe", "Provoke", "Preemptive Strike", "Pilfer", "Quick Pounce",
+            "Boom Bash", "Dark Surge", "Chase Down", "High-Pitch Screech", "Gain Drain", "Sharpen", 
+            "Mega Chomp", "Vital Jab", "Slumber", "Barbs", "Briar Block", "Gnarly Gash", "Nab",
+            "Pep Jab", "Poison Barbs", "Quick Punch", "Raging Howl", "Raging Tackle", "Rogue Assault",
+            "Slap Down", "Bulk Up", "Dodge", "Ill Will", "Peace of Mind", "Spare"
+        ],
+        stats: {
+            hp: 101,
+            energy: 78,
+            attack: 107,
+            defense: 110,
+            rattack: 84,
+            rdefense: 97,
+            speed: 98
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Sharp Edges'],
+        secretAbility: 'Sharp Claws',
+        weightkg: 106.1,
+        heightcm: 248.9 },
 ];
 
 export default loomiansData;

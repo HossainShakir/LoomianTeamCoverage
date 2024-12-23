@@ -19,7 +19,11 @@ const veryPersonalityOptions = personalityOptions
     .map(p => `very ${p}`);
 
 function LoomianEditor({ loomian, onSave }) {
-    const [attributes, setAttributes] = useState(loomian.attributes || { tps: {}, ups: {}, level: 50, personality: {} });
+    const loomianData = loomiansData.find((l) => l.name === loomian.name);
+
+    const [attributes, setAttributes] = useState(
+        loomian.attributes || { tps: {}, ups: {}, level: 50, personality: {} }
+    );
     const [availableMoves, setAvailableMoves] = useState([]);
     const [remainingTP, setRemainingTP] = useState(TOTAL_MAX_TP);
     const [statsData, setStatsData] = useState({});
@@ -28,21 +32,19 @@ function LoomianEditor({ loomian, onSave }) {
     const [requiredItem, setRequiredItem] = useState('');
 
     useEffect(() => {
-        const loomianData = loomiansData.find((l) => l.name === loomian.name);
-    
         if (loomianData) {
             const sortedMoves = loomianData.moves.sort();
             setAvailableMoves(sortedMoves);
             setStatsData(loomianData.stats);
-    
+
             const abilitiesWithSecret = loomianData.secretAbility
                 ? loomianData.abilities.concat(loomianData.secretAbility)
                 : loomianData.abilities;
-    
+
             setAbilityOptions(abilitiesWithSecret);
             setGenderOptions(loomianData.gender || []);
             setRequiredItem(loomianData.requiredItem || '');
-    
+
             if (abilitiesWithSecret.length === 1 && !attributes.ability) {
                 const [onlyAbility] = abilitiesWithSecret;
                 const updatedAttributes = { ...attributes, ability: onlyAbility };
@@ -50,7 +52,7 @@ function LoomianEditor({ loomian, onSave }) {
                 onSave(updatedAttributes);
             }
         }
-    }, [loomian.name, attributes, onSave]);
+    }, [loomianData, attributes, onSave]);
 
     useEffect(() => {
         const totalTP = Object.values(attributes.tps).reduce((a, b) => a + b, 0);
@@ -70,25 +72,30 @@ function LoomianEditor({ loomian, onSave }) {
         };
         const updatedAttributes = { ...attributes, personality: updatedPersonality };
         setAttributes(updatedAttributes);
-        onSave(updatedAttributes); 
+        onSave(updatedAttributes);
     };
 
     const handleMoveChange = (index, value) => {
-        const updatedMoves = attributes.moves.map((move, i) => (i === index ? value : move));
+        const updatedMoves = attributes.moves.map((move, i) =>
+            i === index ? value : move
+        );
         const updatedAttributes = { ...attributes, moves: updatedMoves };
         setAttributes(updatedAttributes);
-        onSave(updatedAttributes); 
+        onSave(updatedAttributes);
     };
 
     const handleTPChange = (stat, value) => {
         const newValue = Math.min(MAX_TP, Math.max(0, parseInt(value, 10)));
         const updatedAttributes = { ...attributes };
-        const totalTP = Object.values(updatedAttributes.tps).reduce((a, b) => a + b, 0) - (updatedAttributes.tps[stat] || 0) + newValue;
+        const totalTP =
+            Object.values(updatedAttributes.tps).reduce((a, b) => a + b, 0) -
+            (updatedAttributes.tps[stat] || 0) +
+            newValue;
 
         if (totalTP <= TOTAL_MAX_TP) {
             updatedAttributes.tps = { ...updatedAttributes.tps, [stat]: newValue };
             setAttributes(updatedAttributes);
-            onSave(updatedAttributes); 
+            onSave(updatedAttributes);
         }
     };
 
@@ -97,10 +104,13 @@ function LoomianEditor({ loomian, onSave }) {
         if (!isNaN(newValue)) {
             const updatedAttributes = {
                 ...attributes,
-                ups: { ...attributes.ups, [stat]: Math.min(MAX_UP, Math.max(0, newValue)) },
+                ups: {
+                    ...attributes.ups,
+                    [stat]: Math.min(MAX_UP, Math.max(0, newValue)),
+                },
             };
             setAttributes(updatedAttributes);
-            onSave(updatedAttributes); 
+            onSave(updatedAttributes);
         }
     };
 
@@ -114,9 +124,9 @@ function LoomianEditor({ loomian, onSave }) {
         const level = attributes.level || 50;
         const statUp = attributes.ups[statType] || 0;
         const statTp = attributes.tps[statType] || 0;
-    
+
         let multiplier = 1;
-    
+
         const personalityBoosts = {
             energy: { "hyper": 1.1, "dull": 0.9, "very hyper": 1.2, "very dull": 0.8 },
             attack: { "brawny": 1.1, "frail": 0.9, "very brawny": 1.2, "very frail": 0.8 },
@@ -125,80 +135,88 @@ function LoomianEditor({ loomian, onSave }) {
             rdefense: { "clever": 1.1, "foolish": 0.9, "very clever": 1.2, "very foolish": 0.8 },
             speed: { "nimble": 1.1, "sluggish": 0.9, "very nimble": 1.2, "very sluggish": 0.8 }
         };
-    
+
         if (personalityBoosts[statType]) {
-            const primary = attributes.personality.primary;
-            const secondary = attributes.personality.secondary;
-            const tertiary = attributes.personality.tertiary;
-    
-            [primary, secondary, tertiary].forEach(personality => {
-                if (personality && personalityBoosts[statType][personality]) {
-                    multiplier *= personalityBoosts[statType][personality];
+            const { primary, secondary, tertiary } = attributes.personality;
+            [primary, secondary, tertiary].forEach(p => {
+                if (p && personalityBoosts[statType][p]) {
+                    multiplier *= personalityBoosts[statType][p];
                 }
             });
         }
-    
+
         let statValue;
         if (statType === 'hp') {
-            statValue = ((2 * baseStat + statUp + statTp / 4) * level) / 100 + level + 10;
+            statValue =
+                ((2 * baseStat + statUp + statTp / 4) * level) / 100 + level + 10;
         } else if (statType === 'energy') {
-            statValue = ((Math.floor(2 * baseStat + statUp + statTp / 4) * level) / 65) + 80;
+            statValue =
+                ((Math.floor(2 * baseStat + statUp + statTp / 4) * level) / 65) +
+                80;
         } else {
-            statValue = (((2 * baseStat + statUp + statTp / 4) * level) / 100) + 5;
+            statValue =
+                (((2 * baseStat + statUp + statTp / 4) * level) / 100) + 5;
         }
-    
+
         statValue = Math.floor(statValue) * multiplier;
 
         if (statType === 'rattack' && attributes.ability === 'Festive Spirit') {
             const energyValue = calculateStat(statsData.energy, 'energy');
             return energyValue;
         }
-    
+
         if (baseStat === 0) {
             return 0;
         }
 
         return Math.floor(statValue);
     };
-    
 
     const getMoveData = (moveName) => {
         return movesData.find((move) => move.name === moveName) || {};
     };
-    
+
     return (
         <div className="loomian-editor">
             <div className="input-group">
-            <label>Ability: </label>
-            <select
-                value={attributes.ability}
-                onChange={(e) => handleAttributeChange('ability', e.target.value)}
-                disabled={abilityOptions.length === 1} 
+                <label>Ability: </label>
+                <select
+                    value={attributes.ability}
+                    onChange={(e) => handleAttributeChange('ability', e.target.value)}
+                    disabled={abilityOptions.length === 1}
                 >
-            <option value="">--Select Ability--</option>
-                {abilityOptions.map((ability, i) => (
-                    <option key={i} value={ability}>{ability}</option>
-                 ))}
-            </select>
-            {attributes.ability && loomiansData.secretAbility === attributes.ability && (
-                <img
-                    src={secretAbilityIcon}
-                    alt="Secret Ability"
-                    className="secret-ability-icon"
-                />
-            )}
-        </div>
+                    <option value="">--Select Ability--</option>
+                    {abilityOptions.map((ability, i) => (
+                        <option key={i} value={ability}>
+                            {ability}
+                        </option>
+                    ))}
+                </select>
+                {attributes.ability && loomianData && loomianData.secretAbility === attributes.ability && (
+                    <img
+                        src={secretAbilityIcon}
+                        alt="Secret Ability"
+                        className="secret-ability-icon"
+                    />
+                )}
+            </div>
 
             <div className="input-group">
                 <label>Level: </label>
                 <input
                     type="number"
                     value={attributes.level}
-                    onChange={(e) => handleAttributeChange('level', Math.max(1, Math.min(100, parseInt(e.target.value, 10))))}
+                    onChange={(e) =>
+                        handleAttributeChange(
+                            'level',
+                            Math.max(1, Math.min(100, parseInt(e.target.value, 10)))
+                        )
+                    }
                     min="1"
                     max="100"
                 />
             </div>
+
             <div className="input-group">
                 <label>Item: </label>
                 <select
@@ -212,7 +230,9 @@ function LoomianEditor({ loomian, onSave }) {
                         <>
                             <option value="">--Select Item--</option>
                             {itemsData.map((item, i) => (
-                                <option key={i} value={item.name}>{item.name}</option>
+                                <option key={i} value={item.name}>
+                                    {item.name}
+                                </option>
                             ))}
                         </>
                     )}
@@ -225,19 +245,25 @@ function LoomianEditor({ loomian, onSave }) {
                     />
                 )}
                 {requiredItem && (
-            <img 
-                src={itemsData.find(item => item.name === requiredItem)?.icon} 
-                alt={requiredItem} 
-                style={{ width: '24px', height: '24px' }} 
-            />
-        )}
+                    <img
+                        src={itemsData.find(item => item.name === requiredItem)?.icon}
+                        alt={requiredItem}
+                        style={{ width: '24px', height: '24px' }}
+                    />
+                )}
             </div>
+
             <div className="input-group">
                 <label>Gender: </label>
-                <select value={attributes.gender || ''} onChange={(e) => handleAttributeChange('gender', e.target.value)}>
+                <select
+                    value={attributes.gender || ''}
+                    onChange={(e) => handleAttributeChange('gender', e.target.value)}
+                >
                     <option value="">--Select Gender--</option>
                     {genderOptions.map((gender, i) => (
-                        <option key={i} value={gender}>{gender}</option>
+                        <option key={i} value={gender}>
+                            {gender}
+                        </option>
                     ))}
                 </select>
                 {attributes.gender && (
@@ -246,34 +272,40 @@ function LoomianEditor({ loomian, onSave }) {
                     </span>
                 )}
             </div>
+
             <div className="input-group-moves">
                 <label>Moves: </label>
-                {Array(4).fill().map((_, index) => {
-                    const moveData = getMoveData(attributes.moves[index] || '');
-                    return (
-                        <div key={index}>
-                            <select
-                                value={attributes.moves[index] || ''}
-                                onChange={(e) => handleMoveChange(index, e.target.value)}
-                            >
-                                <option value="">--Select Move--</option>
-                                {availableMoves.map((move, i) => (
-                                    <option key={i} value={move}>{move}</option>
-                                ))}
-                            </select>
-                            {moveData && attributes.moves[index] && (
-                                <div className="move-details">
-                                    <span>Power: {moveData.power}</span>
-                                    <span>Energy: {moveData.energy}</span>
-                                    <span>Accuracy: {moveData.accuracy}</span>
-                                    <span>Type: {moveData.type}</span>
-                                    <span>Category: {moveData.mr}</span>
-                                </div>
-                            )}
-                        </div>
-                    );
-                })}
+                {Array(4)
+                    .fill()
+                    .map((_, index) => {
+                        const moveData = getMoveData(attributes.moves[index] || '');
+                        return (
+                            <div key={index}>
+                                <select
+                                    value={attributes.moves[index] || ''}
+                                    onChange={(e) => handleMoveChange(index, e.target.value)}
+                                >
+                                    <option value="">--Select Move--</option>
+                                    {availableMoves.map((move, i) => (
+                                        <option key={i} value={move}>
+                                            {move}
+                                        </option>
+                                    ))}
+                                </select>
+                                {moveData && attributes.moves[index] && (
+                                    <div className="move-details">
+                                        <span>Power: {moveData.power}</span>
+                                        <span>Energy: {moveData.energy}</span>
+                                        <span>Accuracy: {moveData.accuracy}</span>
+                                        <span>Type: {moveData.type}</span>
+                                        <span>Category: {moveData.mr}</span>
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
             </div>
+
             <div className="stats-container">
                 <div className="tp-up-labels">
                     <div className="label">TPs</div>
@@ -281,7 +313,9 @@ function LoomianEditor({ loomian, onSave }) {
                 </div>
                 {Object.keys(statsData).map((stat) => (
                     <div key={stat} className="stat-item">
-                        <span>{stat.toUpperCase()}: {statsData[stat]}</span>
+                        <span>
+                            {stat.toUpperCase()}: {statsData[stat]}
+                        </span>
                         <input
                             type="number"
                             className="tp-number"
@@ -300,7 +334,9 @@ function LoomianEditor({ loomian, onSave }) {
                         <input
                             type="number"
                             className="up-number"
-                            value={attributes.ups[stat] !== undefined ? attributes.ups[stat] : 40}
+                            value={
+                                attributes.ups[stat] !== undefined ? attributes.ups[stat] : 40
+                            }
                             onChange={(e) => handleUPChange(stat, e.target.value)}
                             max={MAX_UP}
                         />
@@ -309,37 +345,43 @@ function LoomianEditor({ loomian, onSave }) {
                 ))}
                 <div>Remaining TPs: {remainingTP}</div>
             </div>
-            <div className="input-group">
-    <label>Personality:</label>
-    <select
-        value={attributes.personality.primary || ''}
-        onChange={(e) => handlePersonalityChange('primary', e.target.value)}
-    >
-        <option value="">--Select Personality--</option>
-        {personalityOptions.map((option, i) => (
-            <option key={i} value={option}>{option}</option>
-        ))}
-    </select>
-    <select
-        value={attributes.personality.secondary || ''}
-        onChange={(e) => handlePersonalityChange('secondary', e.target.value)}
-    >
-        <option value="">--Select Personality--</option>
-        {personalityOptions.map((option, i) => (
-            <option key={i} value={option}>{option}</option>
-        ))}
-    </select>
-    <select
-        value={attributes.personality.tertiary || ''}
-        onChange={(e) => handlePersonalityChange('tertiary', e.target.value)}
-    >
-        <option value="">--Select Very Personality--</option>
-        {veryPersonalityOptions.map((option, i) => (
-            <option key={i} value={option}>{option}</option>
-        ))}
-    </select>
-</div>
 
+            <div className="input-group">
+                <label>Personality:</label>
+                <select
+                    value={attributes.personality.primary || ''}
+                    onChange={(e) => handlePersonalityChange('primary', e.target.value)}
+                >
+                    <option value="">--Select Personality--</option>
+                    {personalityOptions.map((option, i) => (
+                        <option key={i} value={option}>
+                            {option}
+                        </option>
+                    ))}
+                </select>
+                <select
+                    value={attributes.personality.secondary || ''}
+                    onChange={(e) => handlePersonalityChange('secondary', e.target.value)}
+                >
+                    <option value="">--Select Personality--</option>
+                    {personalityOptions.map((option, i) => (
+                        <option key={i} value={option}>
+                            {option}
+                        </option>
+                    ))}
+                </select>
+                <select
+                    value={attributes.personality.tertiary || ''}
+                    onChange={(e) => handlePersonalityChange('tertiary', e.target.value)}
+                >
+                    <option value="">--Select Very Personality--</option>
+                    {veryPersonalityOptions.map((option, i) => (
+                        <option key={i} value={option}>
+                            {option}
+                        </option>
+                    ))}
+                </select>
+            </div>
         </div>
     );
 }

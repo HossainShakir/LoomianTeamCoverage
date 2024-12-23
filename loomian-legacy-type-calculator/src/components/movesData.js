@@ -2661,6 +2661,18 @@ export const movesData = [
     },
 
     {
+        name: "Hullabaloo",
+        power: 75,
+        energy: 40,
+        accuracy: 100,
+        type: "Simple",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        secondaryEffect: true
+    },
+
+    {
         name: "Twirly Whirl",
         power: 75,
         energy: 40,
@@ -3559,6 +3571,15 @@ export const movesData = [
         power: 0,
         energy: 45,
         accuracy: "N/A",
+        type: "Ice",
+        mr: "Support"
+    },
+
+    {
+        name: "Bitter Cold",
+        power: 0,
+        energy: 35,
+        accuracy: 90,
         type: "Ice",
         mr: "Support"
     },
