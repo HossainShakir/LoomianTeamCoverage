@@ -1,3 +1,267 @@
+.dark-mode {
+  background-color: #121212;  
+  color: #f0f0f0;            
+}
+
+.dark-mode .App {
+  background-color: #1e1e1e; 
+  color: #f0f0f0;
+  box-shadow: none; 
+}
+
+.dark-mode h1,
+.dark-mode h2 {
+  color: #fff;
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: #fff;
+}
+.dark-mode button:hover {
+  background-color: #555;
+}
+
+.dark-mode select,
+.dark-mode input[type="text"],
+.dark-mode input[type="number"] {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode .saved-team {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+}
+
+.dark-mode .confirmation-dialog {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+.dark-mode .loomian-editor {
+  background-color: #2a2a2a; 
+  color: #f0f0f0; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .input-group,
+.dark-mode .input-group-moves {
+  color: #f0f0f0; 
+  border-radius: 5px;
+}
+
+.dark-mode .input-group select,
+.dark-mode .input-group input[type="text"],
+.dark-mode .input-group input[type="number"] {
+  background-color: #444; 
+  color: #fff; 
+  border: 1px solid #555; 
+}
+
+.dark-mode .input-group select:focus,
+.dark-mode .input-group input[type="number"]:focus {
+  border-color: #777;
+}
+
+.dark-mode .input-group-moves select,
+.dark-mode .input-group-moves input {
+  background-color: #444;
+  color: #fff; 
+}
+
+.dark-mode .stat-item {
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.dark-mode .stat-item input[type="number"] {
+  background-color: #555; 
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.dark-mode .tp-slider {
+  background-color: #555; 
+}
+
+.dark-mode .move-details {
+  color: #f0f0f0; 
+}
+
+.dark-mode .move-details span {
+  background-color: #555; 
+  color: white
+}
+
+.dark-mode .button-group button {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-mode .button-group button:hover {
+  background-color: #666; 
+}
+
+.dark-mode .loomian-dropdown {
+  background-color: #333; 
+  color: #f0f0f0; 
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .loomian-dropdown .dropdown-header {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dark-mode .loomian-dropdown .dropdown-header:hover {
+  background-color: #555; 
+}
+
+.dark-mode .loomian-dropdown .dropdown-menu {
+  background-color: #2a2a2a; 
+  color: #f0f0f0; 
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  max-height: 300px;
+  overflow-y: auto; 
+}
+
+.dark-mode .loomian-dropdown .dropdown-search {
+  background-color: #444; 
+  color: #fff; 
+  border: 1px solid #555;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.dark-mode .loomian-dropdown .dropdown-search::placeholder {
+  color: #bbb; 
+}
+
+.dark-mode .loomian-dropdown .dropdown-options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dark-mode .loomian-dropdown .dropdown-option {
+  padding: 8px;
+  margin: 4px 0;
+  background-color: #333; 
+  color: #f0f0f0; 
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dark-mode .loomian-dropdown .dropdown-option:hover {
+  background-color: #444; 
+}
+
+.dark-mode .loomian-dropdown .dropdown-no-options {
+  color: #aaa; 
+  padding: 10px;
+  text-align: center;
+}
+
+.dark-mode .loomian-container-teambuild {
+  color: #ffffff;
+}
+
+.dark-mode .teambuilder-editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.dark-mode .teambuilder-editor .loomian-header,
+.dark-mode .teambuilder-editor .loomian-builder {
+  width: 100%;
+  max-width: 800px;
+  padding-top: 5px;
+}
+
+.dark-mode .teambuilder-editor .loomian-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2a2a2a;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .teambuilder-editor .loomian-builder {
+  position: relative;
+  z-index: 1;
+  margin-top: -10px;
+  width: 100%;
+}
+
+.dark-mode body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;  
+  color: #f0f0f0;  
+  text-align: center;
+}
+
+.dark-mode .changelog-overlay {
+  background: rgba(0, 0, 0, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dark-mode .changelog-content {
+  background: #333333; 
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.dark-mode .changelog-content h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.dark-mode .changelog-content pre {
+  padding: 10px;
+  border-radius: 5px;
+  color: #f0f0f0;
+  overflow-x: auto; 
+}
+
+.dark-mode .changelog-content button {
+  padding: 10px 20px;
+  background: #555555; 
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dark-mode .changelog-content button:hover {
+  background: #666666;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -56,10 +320,6 @@ h2 {
 
 .main-team {
   border: 2px solid #007bff; 
-}
-
-.benched-loomian {
-  border: 2px solid #ff9800; 
 }
 
 .loomian {
@@ -292,7 +552,7 @@ button {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Optional spacing between loomians */
+  gap: 10px; 
 }
 
 .loomian-with-item {
@@ -300,14 +560,12 @@ button {
   display: inline-block;
 }
 
-/* This affects all images in .loomian-icons */
 .loomian-icons img {
   width: 70px;
   height: 50px;
   margin-right: 5px;
 }
 
-/* Place the item icon rules after the above so it can override */
 .loomian-item-icon {
   position: absolute;
   bottom: 0;
@@ -317,7 +575,6 @@ button {
   object-fit: cover;
 }
 
-/* Position the item icon at bottom right of the Loomian icon */
 .loomian-item-icon {
   position: absolute;
   bottom: 0;
@@ -325,8 +582,6 @@ button {
   width: 16px;
   height: 16px;
 }
-
-/* loomian editor */
 
 .loomian-editor {
   display: flex;
@@ -416,37 +671,38 @@ button {
   margin-bottom: 20px;
 }
 
-.teambuilder-editor {
+.light-mode .teambuilder-editor {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%; 
 }
 
-.teambuilder-editor .loomian-header,
-.teambuilder-editor .loomian-builder {
+.light-mode .teambuilder-editor .loomian-header,
+.light-mode .teambuilder-editor .loomian-builder {
   width: 100%;
   max-width: 800px; 
   padding-top: 5px;
 }
 
-.teambuilder-editor .loomian-header {
+.light-mode .teambuilder-editor .loomian-header {
   position: relative;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; 
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-.teambuilder-editor .loomian-builder {
+.light-mode .teambuilder-editor .loomian-builder {
   position: relative;
   z-index: 1;
   margin-top: -10px; 
   width: 100%; 
 }
+
 
 .secret-ability-icon {
   width: 30px;

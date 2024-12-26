@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Added New Jolly Village loomians
-- Removed instances of "Déjà Vu" and kept "Deja Vu" for simplicity
+- Added an import feature to teambuilder
+- Added dark mode (Slightly buggy tho...)
+- Fixed some data entry issues
 `;
 
 const LastUpdated = () => {
@@ -20,7 +21,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-12-23
+                Last Updated: 2024-12-25
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

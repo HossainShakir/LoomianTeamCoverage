@@ -2199,6 +2199,18 @@ export const movesData = [
     },
 
     {
+        name: "Undermine",
+        power: 70,
+        energy: 35,
+        accuracy: 100,
+        type: "Earth",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+    },
+
+    {
         name: "Tail Slap",
         power: 40,
         energy: 10,
@@ -2327,6 +2339,18 @@ export const movesData = [
         aoe: true,
         slap: true,
         secondaryEffect: true
+    },
+
+    {
+        name: "Psychal Chomp",
+        power: 80,
+        energy: 40,
+        accuracy: 100,
+        type: "Mind",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        bite: true,
     },
 
     {

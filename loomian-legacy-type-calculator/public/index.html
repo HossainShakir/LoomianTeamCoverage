@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
     <title>Loomian Legacy Calculators</title>
     <meta name="description" content="Various resources to help you teambuild in Loomian Legacy!">
     <meta name="keywords" content="Loomian Legacy, Loomian Teambuilder, Team Type Calculator, Type Coverage Calculator, Moveset Searcher, Loomian, Battle, Strategy, Pokemon">
     <meta name="author" content="Sergeant Shaky">
+    <link rel="preload" href="App.css" as="style">
     <link rel="stylesheet" href="App.css">
     <meta name="google-site-verification" content="mnhpJYWYt1kc6S5iCbpzBVIQCoQs-F8pRuioLdE__UA" />
+    
+    <script>
+      (function() {
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode === 'true') {
+          document.documentElement.classList.add('dark-mode');
+        }
+      })();
+    </script>    
 </head>
 <body>
     <div id="navbar">
@@ -18,6 +28,7 @@
         <button id="teambuilder-btn">Teambuilder</button>
     </div>
     <div id="root"></div>
+
     <script src="../src/index.js"></script>
 </body>
 </html>

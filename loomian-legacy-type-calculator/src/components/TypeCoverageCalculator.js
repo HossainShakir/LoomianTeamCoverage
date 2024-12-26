@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { typeChart, specialTypeCharts } from '../typechart';
 import loomiansData from './loomiansData'; 
 import LastUpdated from './lastUpdated';
@@ -20,6 +20,28 @@ function TypeCoverageCalculator() {
     });
     const [error, setError] = useState('');
     const [excludeParentheses, setExcludeParentheses] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+          setDarkMode(true);
+        }
+      }, []);
+
+      useEffect(() => {
+              if (darkMode) {
+                document.documentElement.classList.add('dark-mode');
+              } else {
+                document.documentElement.classList.remove('dark-mode');
+              }
+            }, [darkMode]);
+    
+      const toggleDarkMode = () => {
+        const newMode = !darkMode;
+        setDarkMode(newMode);
+        localStorage.setItem('darkMode', newMode); 
+      };
 
     const handleTypeChange = (index, value) => {
         const updatedTypes = selectedTypes.map((type, i) =>
@@ -122,6 +144,10 @@ function TypeCoverageCalculator() {
     };
 
     return (
+        <div className={darkMode ? "dark-mode" : ""}>
+                <button onClick={toggleDarkMode}>
+                    {darkMode ? "Light Mode" : "Dark Mode"}
+                </button>
         <div className="App">
             <h1>Loomian Legacy Type Coverage Calculator</h1>
             {selectedTypes.map((type, index) => (
@@ -198,6 +224,7 @@ function TypeCoverageCalculator() {
                 <span>Sergeant Shaky</span>
             </div>
             <LastUpdated />
+        </div>
         </div>
     );
 }

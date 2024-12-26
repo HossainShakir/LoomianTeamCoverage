@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import loomiansData from './loomiansData';
 import movesData from './movesData';
 import LastUpdated from './lastUpdated';
@@ -9,6 +9,25 @@ function MovesetSearchCalculator() {
     const [searchResults, setSearchResults] = useState([]);
     const [error, setError] = useState('');
     const [searchAtLeastOne, setSearchAtLeastOne] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        setDarkMode(document.documentElement.classList.contains('dark-mode'));
+      }, []);      
+
+      useEffect(() => {
+              if (darkMode) {
+                document.documentElement.classList.add('dark-mode');
+              } else {
+                document.documentElement.classList.remove('dark-mode');
+              }
+            }, [darkMode]);
+    
+      const toggleDarkMode = () => {
+        const newMode = !darkMode;
+        setDarkMode(newMode);
+        localStorage.setItem('darkMode', newMode); 
+      };
 
     const handleMoveChange = (index, value) => {
         const updatedMoves = selectedMoves.map((move, i) => (i === index ? value : move));
@@ -64,6 +83,10 @@ function MovesetSearchCalculator() {
     };
 
     return (
+        <div className={darkMode ? "dark-mode" : ""}>
+                <button onClick={toggleDarkMode}>
+                    {darkMode ? "Light Mode" : "Dark Mode"}
+                </button> 
         <div className="App">
             <h1>Loomian Legacy Moveset Searcher</h1>
             {selectedMoves.map((move, index) => (
@@ -157,6 +180,7 @@ function MovesetSearchCalculator() {
                     font-size: 16px;
                 }
             `}</style>
+        </div>
         </div>
     );
 }

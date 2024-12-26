@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import typeChart from '../typechart';
 import TypeBadge from '../typeBadge';
 import LastUpdated from './lastUpdated';
@@ -22,6 +22,28 @@ function TeamTypeCalculator() {
     const [teamResistances, setTeamResistances] = useState([]);
     const [unresistedTypes, setUnresistedTypes] = useState(allTypes.slice(1)); 
     const [recommendations, setRecommendations] = useState([]);
+    const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'true') {
+          setDarkMode(true);
+        }
+      }, []);
+
+      useEffect(() => {
+              if (darkMode) {
+                document.documentElement.classList.add('dark-mode');
+              } else {
+                document.documentElement.classList.remove('dark-mode');
+              }
+            }, [darkMode]);
+    
+      const toggleDarkMode = () => {
+        const newMode = !darkMode;
+        setDarkMode(newMode);
+        localStorage.setItem('darkMode', newMode); 
+      };
 
     const handleTypeChange = (index, type, value) => {
         const updatedLoomians = loomians.map((loomian, i) =>
@@ -125,6 +147,10 @@ function TeamTypeCalculator() {
     };
 
     return (
+        <div className={darkMode ? "dark-mode" : ""}>
+                <button onClick={toggleDarkMode}>
+                    {darkMode ? "Light Mode" : "Dark Mode"}
+                </button>
         <div className="App">
             <h1>Loomian Legacy Team Type Calculator</h1>
             {loomians.map((loomian, index) => (
@@ -210,6 +236,7 @@ function TeamTypeCalculator() {
                 <span>Sergeant Shaky</span>
             </div>
             <LastUpdated />
+        </div>
         </div>
     );
 }

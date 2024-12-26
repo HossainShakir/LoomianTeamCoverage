@@ -244,7 +244,7 @@ function LoomianEditor({ loomian, onSave }) {
                         className="item-icon"
                     />
                 )}
-                {requiredItem && (
+                {requiredItem && attributes.item === '' && (
                     <img
                         src={itemsData.find(item => item.name === requiredItem)?.icon}
                         alt={requiredItem}
