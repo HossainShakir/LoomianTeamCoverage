@@ -493,7 +493,7 @@ export const loomiansData = [
             "Luminous Roar", "Scapegoat", "Disperse", "Gamma Pulse", "Peace of Mind",
             "Resonate", "Body Slam", "Chase Down", "Gloominous Roar", "High-Pitch Screech",
             "Power Focus", "Raging Howl", "Raging Tackle", "Sharpen", "Dodge", "Gnaw", "Dawdle",
-            "Stretch", "Quick Pounce", "Swipe", "Spare", "Fire Breath"
+            "Stretch", "Quick Pounce", "Swipe", "Spare", "Fire Breath", "Flash 'n Flee"
         ],
         stats: {
             hp: 75,
