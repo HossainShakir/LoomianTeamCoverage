@@ -82,6 +82,17 @@ export const movesData = [
     },
 
     {
+        name: "Miracle Beam",
+        power: 100,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Light",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+    },
+
+    {
         name: "Nova Blast",
         power: 95,
         energy: 52,
@@ -2134,6 +2145,18 @@ export const movesData = [
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense"
+    },
+
+    {
+        name: "Cosmic Chime",
+        power: 100,
+        energy: 58,
+        accuracy: 100,
+        type: "Metal",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        sound: true
     },
 
     {

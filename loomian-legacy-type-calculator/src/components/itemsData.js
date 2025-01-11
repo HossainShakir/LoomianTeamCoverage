@@ -40,6 +40,11 @@ export const itemsData = [
         description: 'When held by a Loomian, this strange substance will boost the strength of their Bug-type moves in battle.'
     },
     {
+        icon: require('../assets/icons/celeburst.png'),
+        name: 'Celeburst',
+        description: "Empowers Celesting to Soul Burst. Enables one use of Miracle Beam: Light-type, Ranged, 100 Strength. Absorb heavenly light that cleanses your team of its status ailments, then focus that light into a fierce beam directed at your opponent."
+    },
+    {
         icon: require('../assets/icons/chocolatebar.png'),
         name: 'Chocolate Bar',
         description: 'Reduces the energy consumption of the first move a Loomian uses in a battle to zero.'

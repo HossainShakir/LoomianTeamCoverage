@@ -5039,7 +5039,7 @@ export const loomiansData = [
             "Flurry", "Gnaw", "Chomp", "Stretch", "Sleet Shot", "Wonder Herb", "Bamboozle",
             "Square One", "Chilly Chomp", "Metal Shriek", "Slap Down", "Frost Beam", "Mega Chomp", 
             "Vice Jaws", "Baffle", "Barbs", "Body Slam", "Gnarly Gash", "Ice Hammer", "Primal Slash",
-            "Bulk Up", "Dark Surge", "Dodge", "Spare", "Icicle Traps", "Battle Chime"
+            "Bulk Up", "Dark Surge", "Dodge", "Spare", "Icicle Trap", "Battle Chime"
         ],
         stats: {
             hp: 79,
@@ -6471,6 +6471,29 @@ export const loomiansData = [
         secretAbility: 'Mystic Tone',
         weightkg: 21.3,
         heightcm: 83.8 },
+        { name: 'Celesting-Stellarchime', primaryType: 'Metal', secondaryType: 'Light', icon: require('../assets/icons/celesting-stellarchime.png'),
+            moves: [
+                "Summon", "Shine", "Flash", "Bash", "Mind's Eye", "Harmonious Chord", "Lightspeed Ray", "Heavy Bash",
+                "Disperse", "Energy Surge", "Metal Blast", "Barbs", "Deja Vu", "Dissonant Chord",
+                "Energy Gift", "Gamma Pulse", "Health Gift", "Icicle Trap", "Luster Loot", "Nova Blast",
+                "Reflection Burst", "Repeating Tune", "Resonate", "Tear Down", "Barter", "Dodge", "Flash 'n Flee",
+                "Peace of Mind", "Spare", "Miracle Beam", "Cosmic Chime"
+            ],
+            stats: {
+                hp: 150,
+                energy: 111,
+                attack: 82,
+                defense: 19,
+                rattack: 128,
+                rdefense: 114,
+                speed: 121
+            },
+            gender: ['Ungendered'],
+            abilities: ['Effulgent'],
+            secretAbility: '',
+            weightkg: 21.3,
+            heightcm: 83.8,
+            requiredItem: 'Celeburst' },
     { name: 'Odoyaga', primaryType: 'Mind', secondaryType: 'Air', icon: require('../assets/icons/odoyaga.png'),
         moves: [
             "Gust", "Brainwash", "Mind's Eye", "Cyclone Slam", "Flabbergast", "Scapegoat", "Phantom Slash", 

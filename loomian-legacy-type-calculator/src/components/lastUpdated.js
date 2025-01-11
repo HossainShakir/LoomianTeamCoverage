@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Added an import feature to teambuilder
-- Added dark mode (Slightly buggy tho...)
-- Fixed some data entry issues
+- Celesting-Stellarchime added
+- Moveset Searcher is no longer case sensitive
+- Added super effective to all to type coverage calculator
+- Some loomian data fixed
 `;
 
 const LastUpdated = () => {
@@ -21,7 +22,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2024-12-30
+                Last Updated: 2025-01-10
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

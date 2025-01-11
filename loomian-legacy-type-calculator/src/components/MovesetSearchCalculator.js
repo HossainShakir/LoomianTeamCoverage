@@ -48,11 +48,22 @@ function MovesetSearchCalculator() {
         }
 
         setError('');
+
+        const lowerCaseMoves = filteredMoves.map(m => m.toLowerCase());
+
         const results = loomiansData.filter(loomian => {
+            const loomianMovesLower = loomian.moves
+                ? loomian.moves.map(m => m.toLowerCase())
+                : [];
+
             if (searchAtLeastOne) {
-                return filteredMoves.some(move => loomian.moves && Array.isArray(loomian.moves) && loomian.moves.includes(move));
+                return lowerCaseMoves.some(move =>
+                    loomianMovesLower.includes(move)
+                );
             } else {
-                return filteredMoves.every(move => loomian.moves && Array.isArray(loomian.moves) && loomian.moves.includes(move));
+                return lowerCaseMoves.every(move =>
+                    loomianMovesLower.includes(move)
+                );
             }
         });
 
