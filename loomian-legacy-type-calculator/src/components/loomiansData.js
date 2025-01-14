@@ -1,5 +1,5 @@
 export const loomiansData = [
-    { name: 'Embit', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/embit.png'),
+    { name: 'Embit', primaryType: 'Fire', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/embit.png'),
         moves: [
             "Pounce", "Growl", "Singe", "Burrow", "Ear Slap", "Hop Kick", 
             "Fire Slam", "Power Focus", "Flaming Kick", "Barbs", "Body Crash", 
@@ -20,7 +20,7 @@ export const loomiansData = [
         secretAbility: 'Terrifying',
         weightkg: 20.4,
         heightcm: 83.8 },
-    { name: 'Rabburn', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/rabburn.png'),
+    { name: 'Rabburn', primaryType: 'Fire', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/rabburn.png'),
         moves: [
             "Rapid Fire", "Hop Kick", "Fire Slam", "Power Focus", "Flaming Kick",
             "Barbs", "Body Crash", "Boiling Press", "Chase Down", "Drudge",
@@ -65,7 +65,7 @@ export const loomiansData = [
         secretAbility: 'Terrifying',
         weightkg: 98.4,
         heightcm: 208.3 },
-    { name: 'Dripple', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/dripple.png'),
+    { name: 'Dripple', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/dripple.png'),
         moves: [
             "Strike", "Dawdle", "Spray", "Mind's Eye", "Swipe", "Water Bomb",
             "Soft Water", "Maroon", "Blindspot Batter", "Chilly Chomp",
@@ -87,7 +87,7 @@ export const loomiansData = [
         secretAbility: 'Power Napper',
         weightkg: 17.2,
         heightcm: 76.2 },
-    { name: 'Reptide', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/reptide.png'),
+    { name: 'Reptide', primaryType: 'Water', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/reptide.png'),
         moves: [
             "Submerge", "Water Bomb", "Sleet Shot", "Soft Water", "Maroon",
             "Blindspot Batter", "Chilly Chomp", "Gamma Pulse", "Hydro Slash",
@@ -132,7 +132,7 @@ export const loomiansData = [
         secretAbility: 'Power Napper',
         weightkg: 91.6,
         heightcm: 160 },
-    { name: 'Fevine', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/fevine.png'),
+    { name: 'Fevine', primaryType: 'Plant', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/fevine.png'),
         moves: [
             "Pounce", "Growl", "Petal Pummel", "Stretch", "Swipe",
             "Leaf Barrage", "Life Drain", "Nature's Force", "Splitting Headache",
@@ -154,7 +154,7 @@ export const loomiansData = [
         secretAbility: 'Thriving Pace',
         weightkg: 15.9,
         heightcm: 71.1 },
-    { name: 'Felver', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/felver.png'),
+    { name: 'Felver', primaryType: 'Plant', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/felver.png'),
         moves: [
             "Nature's Rage", "Leaf Barrage", "Toxic Tail", "Life Drain", 
             "Nature's Force", "Splitting Headache", "Boom Bash", "Bush Whack", 
@@ -199,7 +199,7 @@ export const loomiansData = [
         secretAbility: 'Thriving Pace',
         weightkg: 74.8,
         heightcm: 162.6 },
-    { name: 'Eaglit', primaryType: 'Light', secondaryType: 'None', icon: require('../assets/icons/eaglit.png'),
+    { name: 'Eaglit', primaryType: 'Light', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/eaglit.png'),
         moves: [
             "Pounce", "Stare", "Shine", "Growl", "Peck", "Luster Loot", "Cyclone Slam", 
             "Power Focus", "Gamma Pulse", "Air Blade", "Magnify", "Metal Blast", "Nosedive", 
@@ -219,7 +219,7 @@ export const loomiansData = [
         secretAbility: 'Applied Frustration',
         weightkg: 17.2,
         heightcm: 73.7 },
-    { name: 'Torprey', primaryType: 'Light', secondaryType: 'None', icon: require('../assets/icons/torprey.png'),
+    { name: 'Torprey', primaryType: 'Light', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/torprey.png'),
         moves: [
             "Radiant Forecast", "Luster Loot", "Cyclone Slam", "Power Focus", 
             "Gamma Pulse", "Air Blade", "Magnify", "Metal Blast", "Nosedive", 
@@ -261,7 +261,7 @@ export const loomiansData = [
         secretAbility: 'Applied Frustration',
         weightkg: 80.7,
         heightcm: 195.6 },
-    { name: 'Vambat', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/vambat.png'),
+    { name: 'Vambat', primaryType: 'Dark', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/vambat.png'),
         moves: [
             "Gnaw", "Growl", "Chomp", "Tease", "Dive Bomb", "Bamboozle", "Air Blade", 
             "Sharpen", "Shadow Sprint", "Phantom Slash", "Dark Surge", "Harrow", 
@@ -281,7 +281,7 @@ export const loomiansData = [
         secretAbility: 'Sharp Claws',
         weightkg: 8.2,
         heightcm: 66 },
-    { name: 'Dimpire', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/dimpire.png'),
+    { name: 'Dimpire', primaryType: 'Dark', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/dimpire.png'),
         moves: [
             "Gnaw", "Growl", "Chomp", "Tease", "Dive Bomb", "Blood Drain", "Bamboozle", "Air Blade", 
             "Sharpen", "Shadow Sprint", "Phantom Slash", "Dark Surge", "Harrow", 
@@ -322,7 +322,7 @@ export const loomiansData = [
         secretAbility: 'Sharp Claws',
         weightkg: 65.8,
         heightcm: 203.2 },
-    { name: 'Snocub', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/snocub.png'),
+    { name: 'Snocub', primaryType: 'Ice', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/snocub.png'),
         moves: [
             "Strike", "Brace", "Flurry", "Dawdle", "Snowdozer", "Chilly Chomp",
             "Sleet Shot", "Icicle Trap", "Body Slam", "Earthquake", "Frost Beam",
@@ -342,7 +342,7 @@ export const loomiansData = [
         secretAbility: 'Staunch',
         weightkg: 6.4,
         heightcm: 48.3 },
-    { name: 'Snowki', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/snowki.png'),
+    { name: 'Snowki', primaryType: 'Ice', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/snowki.png'),
         moves: [
             "Winter's Fury", "Chilly Chomp", "Quick Punch", "Sleet Shot", "Icicle Trap", "Mudslide",
             "Body Slam", "Earthquake", "Frost Beam", "Ice Hammer", "Rogue Assault", "Quicksand",
@@ -385,7 +385,7 @@ export const loomiansData = [
         secretAbility: 'Staunch',
         weightkg: 108.9,
         heightcm: 233.7 },
-    { name: 'Weevolt', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/weevolt.png'),
+    { name: 'Weevolt', primaryType: 'Electric', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/weevolt.png'),
         moves: [
             "Pounce", "Growl", "Static Shock", "Stretch", "Swipe", "Thunder Slam",
             "Thunder Chomp", "Thunderstrike", "Blaze Chomp", "Chilly Chomp", "Jolt",
@@ -405,7 +405,7 @@ export const loomiansData = [
         secretAbility: 'Brute Force',
         weightkg: 14.1,
         heightcm: 68.6 },
-    { name: 'Stozap', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/stozap.png'),
+    { name: 'Stozap', primaryType: 'Electric', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/stozap.png'),
         moves: [
             "Storm Summon", "Thunder Slam", "Elemental Burst", "Thunder Chomp", "Thunderstrike",
             "Shrewd Blast", "Blaze Chomp", "Chilly Chomp", "Jolt", "Primal Slash", "Tase",
@@ -447,7 +447,7 @@ export const loomiansData = [
         secretAbility: 'Brute Force',
         weightkg: 59.9,
         heightcm: 221 },
-    { name: 'Twilat', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/twilat.png'),
+    { name: 'Twilat', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/twilat.png'),
         moves: [
             "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe", "Scapegoat", "Spare",
             "Body Slam", "Chase Down", "Disperse", "Gloominous Roar", "High-Pitch Screech",
@@ -531,7 +531,7 @@ export const loomiansData = [
         weightkg: 42.6,
         heightcm: 114.3 },
     { name: 'Tiklipse (Total Eclipse)', primaryType: 'Light', secondaryType: 'Dark', icon: require('../assets/icons/tiklipse.png'), specialTypeChart: 'TotalEclipse' },
-    { name: 'Cathorn', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/cathorn.png'),
+    { name: 'Cathorn', primaryType: 'Bug', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/cathorn.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Spare"
@@ -550,7 +550,7 @@ export const loomiansData = [
         secretAbility: 'Defensive Priority',
         weightkg: 7.3,
         heightcm: 33 },
-    { name: 'Propae', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/propae.png'),
+    { name: 'Propae', primaryType: 'Bug', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/propae.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Brace", "Snot Shot", "Spare"
@@ -610,7 +610,7 @@ export const loomiansData = [
         secretAbility: 'Double Strike',
         weightkg: 154.2,
         heightcm: 157.5 },
-    { name: 'Twittle', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/twittle.png'),
+    { name: 'Twittle', primaryType: 'Air', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/twittle.png'),
         moves: [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
             "Cyclone Slam", "Perch", "Slash", "Accelerate", "Air Blade", "Body Slam",
@@ -630,7 +630,7 @@ export const loomiansData = [
         secretAbility: 'Rev Up',
         weightkg: 7.7,
         heightcm: 40.6 },
-    { name: 'Paratweet', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/paratweet.png'),
+    { name: 'Paratweet', primaryType: 'Air', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/paratweet.png'),
         moves: [
             "Pounce", "Stare", "Peck", "Squawk", "Stretch", "Gust", "Air Whip",
             "Cyclone Slam", "Perch", "Slash", "Accelerate", "Air Blade", "Body Slam",
@@ -672,7 +672,7 @@ export const loomiansData = [
         secretAbility: 'Rev Up',
         weightkg: 44.5,
         heightcm: 160 },
-    { name: 'Pyder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'),
+    { name: 'Pyder', primaryType: 'Bug', secondaryType: 'Toxic', tier: 'LC', icon: require('../assets/icons/pyder.png'),
         moves: [
             "Web Shot", "Sting", "Bug Bite", "Burrow", "Eerie", "Corrode", "Pestilence",
             "Pester", "Slime", "Parasitize", "Baneful Bash", "Body Slam", "Eerie Stare",
@@ -692,7 +692,7 @@ export const loomiansData = [
         secretAbility: 'Coursing Venom',
         weightkg: 7.7,
         heightcm: 35.6 },
-    { name: 'Pyder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/pyder.png'), specialTypeChart: 'CoursingVenom' },
+    { name: 'Pyder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', tier: 'LC', icon: require('../assets/icons/pyder.png'), specialTypeChart: 'CoursingVenom' },
     { name: 'Swolder', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'),
         moves: [
             "Web Shot", "Sting", "Bug Bite", "Burrow", "Eerie", "Corrode", "Pestilence",
@@ -715,7 +715,7 @@ export const loomiansData = [
         weightkg: 24,
         heightcm: 94 },
     { name: 'Swolder (Coursing Venom)', primaryType: 'Bug', secondaryType: 'Toxic', icon: require('../assets/icons/swolder.png'), specialTypeChart: 'CoursingVenom' },
-    { name: 'Antsee', primaryType: 'Plant', secondaryType: 'Bug', icon: require('../assets/icons/antsee.png'),
+    { name: 'Antsee', primaryType: 'Plant', secondaryType: 'Bug', tier: 'LC', icon: require('../assets/icons/antsee.png'),
         moves: [
             "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
             "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
@@ -736,7 +736,7 @@ export const loomiansData = [
         secretAbility: 'Drainage',
         weightkg: 5.4,
         heightcm: 38.1 },
-    { name: 'Antsee (Woodsman)', primaryType: 'Plant', secondaryType: 'Bug', icon: require('../assets/icons/antsee.png'), specialTypeChart: 'Woodsman' },
+    { name: 'Antsee (Woodsman)', primaryType: 'Plant', secondaryType: 'Bug', tier: 'LC', icon: require('../assets/icons/antsee.png'), specialTypeChart: 'Woodsman' },
     { name: 'Florant', primaryType: 'Plant', secondaryType: 'Bug', icon: require('../assets/icons/florant.png'),
         moves: [
             "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
@@ -783,7 +783,7 @@ export const loomiansData = [
         weightkg: 74,
         heightcm: 111.76,
         requiredItem: 'Floraburst' },
-    { name: 'Grubby', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/grubby.png'),
+    { name: 'Grubby', primaryType: 'Bug', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/grubby.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Spare"
@@ -802,7 +802,7 @@ export const loomiansData = [
         secretAbility: 'Defensive Priority',
         weightkg: 6.8,
         heightcm: 35.6 },
-    { name: 'Coonucopia', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/coonucopia.png'),
+    { name: 'Coonucopia', primaryType: 'Bug', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/coonucopia.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", "Spare", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace"
@@ -862,7 +862,7 @@ export const loomiansData = [
         secretAbility: 'Slick Shell',
         weightkg: 33.1,
         heightcm: 111.8 },
-    { name: 'Kleptyke', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kleptyke.png'),
+    { name: 'Kleptyke', primaryType: 'Dark', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/kleptyke.png'),
         moves: [
             "Pounce", "Dawdle", "Chomp", "Quick Pounce", "Sharpen", "Pilfer", "Charade", 
             "Rant", "Mega Chomp", "Provoke", "Dark Surge", "Mega Punch", "Bag of Tricks", 
@@ -904,7 +904,7 @@ export const loomiansData = [
         secretAbility: 'Ability Thief',
         weightkg: 30.4,
         heightcm: 121.9 },
-    { name: 'Babore', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/babore.png'),
+    { name: 'Babore', primaryType: 'Earth', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/babore.png'),
         moves: [
             "Pounce", "Burrow", "Chomp", "Aim", "Quick Pounce", "Mud Spatter", "Quicksand", 
             "Headbutt", "Body Slam", "Boulder Blast", "Bulk Up", "Body Crash", "Earthquake", 
@@ -944,7 +944,7 @@ export const loomiansData = [
         secretAbility: 'Resilience',
         weightkg: 53.5,
         heightcm: 124.5 },
-    { name: 'Geklow', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'),
+    { name: 'Geklow', primaryType: 'Electric', secondaryType: 'Light', tier: 'LC', icon: require('../assets/icons/geklow.png'),
         moves: [
             "Static Shock", "Stare", "Spare", "Shine", "Dodge", "Tase", "Light Dash", 
             "Energize", "Examine", "Gamma Pulse", "Thunder Crash", "Dazzling Barrage",
@@ -965,8 +965,8 @@ export const loomiansData = [
         secretAbility: 'Prismatic',
         weightkg: 17.2,
         heightcm: 73.7 },
-    { name: 'Geklow (Prismatic)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'Prismatic' },
-    { name: 'Geklow (Lightning Rod)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'LightningRod' },
+    { name: 'Geklow (Prismatic)', primaryType: 'Electric', secondaryType: 'Light', tier: 'LC', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'Prismatic' },
+    { name: 'Geklow (Lightning Rod)', primaryType: 'Electric', secondaryType: 'Light', tier: 'LC', icon: require('../assets/icons/geklow.png'), specialTypeChart: 'LightningRod' },
     { name: 'Eleguana', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'),
         moves: [
             "Static Shock", "Stare", "Spare", "Shine", "Dodge", "Tase", "Light Dash", 
@@ -990,7 +990,7 @@ export const loomiansData = [
         heightcm: 129.5 },
     { name: 'Eleguana (Prismatic)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'), specialTypeChart: 'Prismatic' },
     { name: 'Eleguana (Lightning Rod)', primaryType: 'Electric', secondaryType: 'Light', icon: require('../assets/icons/eleguana.png'), specialTypeChart: 'LightningRod' },
-    { name: 'Slugling', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/slugling.png'),
+    { name: 'Slugling', primaryType: 'Plant', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/slugling.png'),
         moves: [
             "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
             "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
@@ -1011,7 +1011,7 @@ export const loomiansData = [
         secretAbility: 'Slimy',
         weightkg: 12.7,
         heightcm: 38.1 },
-    { name: 'Escargrow', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/escargrow.png'),
+    { name: 'Escargrow', primaryType: 'Plant', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/escargrow.png'),
         moves: [
             "Strike", "Dawdle", "Petal Pummel", "Dodge", "Slime", "Take Root", "Pine Shot",
             "Leaf Barrage", "Poison", "Nature's Force", "Photosynthesis", "Stratagem",
@@ -1075,7 +1075,7 @@ export const loomiansData = [
         weightkg: 287,
         heightcm: 236.22,
         requiredItem: 'Gastroburst' },
-    { name: 'Kabunga', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png'),
+    { name: 'Kabunga', primaryType: 'Plant', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/kabunga.png'),
         moves: [
             "Strike", "Brace", "Petal Pummel", "Dodge", "Pine Shot", "Bush Whack", "Life Drain",
             "Photosynthesis", "Nature's Force", "Bait", "Burn Up", "Coconut Bomb",
@@ -1096,8 +1096,8 @@ export const loomiansData = [
         secretAbility: 'Noxious Weeds',
         weightkg: 53,
         heightcm: 88.9 },
-    { name: 'Kabunga (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga.png'), specialTypeChart: 'NoxiousWeeds' },
-    { name: 'Kabunga-Halloween', primaryType: 'Plant', secondaryType: 'Mind', icon: require('../assets/icons/kabunga-halloween.png'),
+    { name: 'Kabunga (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/kabunga.png'), specialTypeChart: 'NoxiousWeeds' },
+    { name: 'Kabunga-Halloween', primaryType: 'Plant', secondaryType: 'Mind', tier: 'LC', icon: require('../assets/icons/kabunga-halloween.png'),
         moves: [
             "Strike", "Brace", "Petal Pummel", "Brainwash", "Pine Shot", "Bane of Haste", 
             "Life Drain", "Flabbergast", "Photosynthesis", "Nature's Force", "Peace of Mind", 
@@ -1119,7 +1119,7 @@ export const loomiansData = [
         secretAbility: 'Noxious Weeds',
         weightkg: 53,
         heightcm: 88.9 },
-    { name: 'Kabunga-Halloween (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/kabunga-halloween.png'), specialTypeChart: 'NoxiousWeeds' },
+    { name: 'Kabunga-Halloween (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/kabunga-halloween.png'), specialTypeChart: 'NoxiousWeeds' },
     { name: 'Wiki-Wiki', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/wiki-wiki.png'),
         moves: [
             "Strike", "Brace", "Petal Pummel", "Dodge", "Pine Shot", "Bush Whack", "Life Drain",
@@ -1208,7 +1208,7 @@ export const loomiansData = [
         secretAbility: 'Sharp Focus',
         weightkg: 19.1,
         heightcm: 114.3 },
-    { name: 'Rakrawla', primaryType: 'Earth', secondaryType: 'None', icon: require('../assets/icons/rakrawla.png'),
+    { name: 'Rakrawla', primaryType: 'Earth', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/rakrawla.png'),
         moves: [
             "Burrow", "Gnaw", "Boulder Blast", "Swipe", "Mud Spatter", "Examine", "Chomp",
             "Provoke", "Sharpen", "Earthquake", "Mudslide", "Blaze Chomp", "Body Slam", 
@@ -1249,7 +1249,7 @@ export const loomiansData = [
         secretAbility: 'Lazy',
         weightkg: 106.1,
         heightcm: 154.9 },
-    { name: 'Gumpod', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/gumpod.png'),
+    { name: 'Gumpod', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/gumpod.png'),
         moves: [
             "Spray", "Brace", "Eerie Stare", "Sleet Shot", "Water Bomb", "Scapegoat", 
             "Hydro Slash", "Dodge", "Soft Water", "Maroon", "Battering Ram", "Burn Up", 
@@ -1289,7 +1289,7 @@ export const loomiansData = [
         secretAbility: 'Sharp Edges',
         weightkg: 104.3,
         heightcm: 157.5 },
-    { name: 'Phancub', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/phancub.png'),
+    { name: 'Phancub', primaryType: 'Spirit', secondaryType: 'Brawler', tier: 'LC', icon: require('../assets/icons/phancub.png'),
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
@@ -1309,7 +1309,7 @@ export const loomiansData = [
         secretAbility: 'Adorable',
         weightkg: 8.16,
         heightcm: 66.04 },
-    { name: 'Phancub-Valentine', primaryType: 'Spirit', secondaryType: 'Brawler', icon: require('../assets/icons/phancub-valentine.png'),
+    { name: 'Phancub-Valentine', primaryType: 'Spirit', secondaryType: 'Brawler', tier: 'LC', icon: require('../assets/icons/phancub-valentine.png'),
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
@@ -1369,7 +1369,7 @@ export const loomiansData = [
         secretAbility: 'Bursting Seams',
         weightkg: 72.6,
         heightcm: 188 },
-    { name: 'Whispup', primaryType: 'Spirit', secondaryType: 'Fire', icon: require('../assets/icons/whispup.png'),
+    { name: 'Whispup', primaryType: 'Spirit', secondaryType: 'Fire', tier: 'LC', icon: require('../assets/icons/whispup.png'),
         moves: [
             "Startle", "Stare", "Singe", "Gnaw", "Final Ruse", "Stretch", "Shadow Sprint", "Spare",
             "Blaze Chomp", "Accelerate", "Spectral Burst", "Dark Surge", "Fire Breath", "Harrow", 
@@ -1410,7 +1410,7 @@ export const loomiansData = [
         secretAbility: 'Vengeance',
         weightkg: 22.7,
         heightcm: 149.9 },
-    { name: 'Skilava', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/skilava.png'),
+    { name: 'Skilava', primaryType: 'Fire', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/skilava.png'),
         moves: [
             "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Burn Up", "Magma Block",
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
@@ -1431,8 +1431,8 @@ export const loomiansData = [
         secretAbility: 'Pyro',
         weightkg: 6.4,
         heightcm: 55.9 },
-    { name: 'Skilava (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/skilava.png'), specialTypeChart: 'Combustible' },
-    { name: 'Geksplode', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/geksplode.png'),
+    { name: 'Skilava (Combustible)', primaryType: 'Fire', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/skilava.png'), specialTypeChart: 'Combustible' },
+    { name: 'Geksplode', primaryType: 'Fire', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/geksplode.png'),
         moves: [
             "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Burn Up", "Magma Block",
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
@@ -1453,7 +1453,7 @@ export const loomiansData = [
         secretAbility: 'Pyro',
         weightkg: 54.4,
         heightcm: 88.9 },
-    { name: 'Geksplode (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/geksplode.png'), specialTypeChart: 'Combustible' },
+    { name: 'Geksplode (Combustible)', primaryType: 'Fire', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/geksplode.png'), specialTypeChart: 'Combustible' },
     { name: 'Eruptidon', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/eruptidon.png'),
         moves: [
             "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Burn Up", "Magma Block",
@@ -1498,7 +1498,7 @@ export const loomiansData = [
         weightkg: 102.51,
         heightcm: 266.7,
         requiredItem: 'Eruptiburst' },
-    { name: 'Craytal', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/craytal.png'),
+    { name: 'Craytal', primaryType: 'Fire', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/craytal.png'),
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
             "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
@@ -1518,8 +1518,8 @@ export const loomiansData = [
         secretAbility: 'Combustible',
         weightkg: 11.79,
         heightcm: 81.28 },
-    { name: 'Craytal (Combustible)', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/craytal.png'), specialTypeChart: 'Combustible' },
-    { name: 'Craytal-Holiday', primaryType: 'Ice', secondaryType: 'Plant', icon: require('../assets/icons/craytal-holiday.png'),
+    { name: 'Craytal (Combustible)', primaryType: 'Fire', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/craytal.png'), specialTypeChart: 'Combustible' },
+    { name: 'Craytal-Holiday', primaryType: 'Ice', secondaryType: 'Plant', tier: 'LC', icon: require('../assets/icons/craytal-holiday.png'),
         moves: [
             "Petal Pummel", "Flurry", "Brace", "Spare", "Leaf Barrage", "Snowdozer", "Sap Plant", 
             "Icicle Trap", "Bush Whack", "Briar Block", "Ice Hammer", "Thistle Slash", "Brawn Boost", 
@@ -1628,7 +1628,7 @@ export const loomiansData = [
         secretAbility: 'Regift',
         weightkg: 67.6,
         heightcm: 205.7 },
-    { name: 'Igneol', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/igneol.png'),
+    { name: 'Igneol', primaryType: 'Ancient', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/igneol.png'),
         moves: [
             "Gnaw", "Burrow", "Mud Spatter", "Power Focus", "Headbutt", "Scapegoat", "Raging Tackle", 
             "Sharpen", "Primal Slash", "Body Crash", "Body Slam", "Earthquake", "Mega Chomp", 
@@ -1648,7 +1648,7 @@ export const loomiansData = [
         secretAbility: 'Resilience',
         weightkg: 15.9,
         heightcm: 63.5 },
-    { name: 'Chrysite', primaryType: 'Ancient', secondaryType: 'None', icon: require('../assets/icons/chrysite.png'),
+    { name: 'Chrysite', primaryType: 'Ancient', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/chrysite.png'),
         moves: [
             "Gnaw", "Burrow", "Mud Spatter", "Power Focus", "Headbutt", "Scapegoat", "Raging Tackle", 
             "Sharpen", "Primal Slash", "Body Crash", "Body Slam", "Earthquake", "Mega Chomp", 
@@ -1688,7 +1688,7 @@ export const loomiansData = [
         secretAbility: 'Resilience',
         weightkg: 133.8,
         heightcm: 256.5 },
-    { name: 'Cafnote-Male', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-male.png'),
+    { name: 'Cafnote-Male', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/cafnote-male.png'),
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Tone Barrier", "Quick Pounce", "Headbutt", 
             "Provoke", "Body Slam", "Driving Force", "Earthquake", "Mega Chomp", "Raging Tackle",
@@ -1708,7 +1708,7 @@ export const loomiansData = [
         secretAbility: 'Brute Force',
         weightkg: 57.61,
         heightcm: 124.46 },
-    { name: 'Cafnote-Female', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/cafnote-female.png'),
+    { name: 'Cafnote-Female', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/cafnote-female.png'),
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Repeating Tune", "Quick Pounce", "Harmonious Chord", 
             "Tease", "Dissonant Chord", "Gamma Pulse", "Peace of Mind", "Raging Howl", "Dodge"
@@ -1833,7 +1833,7 @@ export const loomiansData = [
         weightkg: 6.8,
         heightcm: 109.22,
         requiredItem: 'Iciburst' },
-    { name: 'Pyramind', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/pyramind.png'),
+    { name: 'Pyramind', primaryType: 'Mind', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/pyramind.png'),
         moves: [
             "Brainwash", "Mind's Eye", "Rant", "Return to Sender", "Boulder Blast", "Peace of Mind", 
             "Spectral Burst", "Flabbergast", "Bane of Haste", "Shrewd Blast", "Bulk up", "Landslide",
@@ -1878,7 +1878,7 @@ export const loomiansData = [
         secretAbility: 'Contact Curse',
         weightkg: 166.5,
         heightcm: 218.4 },
-    { name: 'Burroach', primaryType: 'Bug', secondaryType: 'Earth', icon: require('../assets/icons/burroach.png'),
+    { name: 'Burroach', primaryType: 'Bug', secondaryType: 'Earth', tier: 'LC', icon: require('../assets/icons/burroach.png'),
         moves: [
             "Gnaw", "Burrow", "Bug Bite", "Mud Spatter", "Stretch", "Venom Chomp", "Headbutt",
             "Eerie Stare", "Provoke", "Clay Slap", "Parasitize", "Earthquake", "Body Crash", 
@@ -1918,7 +1918,7 @@ export const loomiansData = [
         secretAbility: 'Sharp Claws',
         weightkg: 57.6,
         heightcm: 165.1 },
-    { name: 'Whimpor', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png'),
+    { name: 'Whimpor', primaryType: 'Metal', secondaryType: 'Air', tier: 'LC', icon: require('../assets/icons/whimpor.png'),
         moves: [
             "Tail Slap", "Metal Swipes", "Brace", "Gust", "Body Slam", "Metal Shriek", "Cyclone Slam",
             "Heavy Bash", "Air Blade", "Reflection Burst", "Dissonant Chord", "Energy Surge", "Jet Stream", 
@@ -1938,7 +1938,7 @@ export const loomiansData = [
         secretAbility: 'Toxic Filter',
         weightkg: 31.8,
         heightcm: 78.7 },
-    { name: 'Whimpor (Toxic Filter)', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/whimpor.png'), specialTypeChart: 'ToxicFilter' },
+    { name: 'Whimpor (Toxic Filter)', primaryType: 'Metal', secondaryType: 'Air', tier: 'LC', icon: require('../assets/icons/whimpor.png'), specialTypeChart: 'ToxicFilter' },
     { name: 'Stratusoar', primaryType: 'Metal', secondaryType: 'Air', icon: require('../assets/icons/stratusoar.png'),
         moves: [
             "Tail Slap", "Metal Swipes", "Brace", "Gust", "Body Slam", "Metal Shriek", "Cyclone Slam",
@@ -1981,7 +1981,7 @@ export const loomiansData = [
         weightkg: 220.9,
         heightcm: 228.6,
         requiredItem: 'Stratuburst' },
-    { name: 'Territi', primaryType: 'Toxic', secondaryType: 'Metal', icon: require('../assets/icons/territi.png'),
+    { name: 'Territi', primaryType: 'Toxic', secondaryType: 'Metal', tier: 'LC', icon: require('../assets/icons/territi.png'),
         moves: [
             "Corrode", "Dawdle", "Bash", "Punch", "Power Focus", "Hop Kick", "Canister Burst", "Heavy Bash",
             "Paint Shower", "Provoke", "Bag of Tricks", "Baneful Bash", "Far Enchantment", "Mega Punch", 
@@ -2023,7 +2023,7 @@ export const loomiansData = [
         secretAbility: 'Handy',
         weightkg: 179.6,
         heightcm: 203.2 },
-    { name: 'Operaptor', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/operaptor.png'),
+    { name: 'Operaptor', primaryType: 'Metal', secondaryType: 'Earth', tier: 'LC', icon: require('../assets/icons/operaptor.png'),
         moves: [
             "Gnaw", "Clamp", "Burrow", "Chomp", "Headbutt", "Power Focus", "Quicksand", "Scapegoat",
             "Body Slam", "Heavy Bash", "Metal Shriek", "Earthquake", "Sharpen", "Steel Crusher", 
@@ -2043,7 +2043,7 @@ export const loomiansData = [
         secretAbility: 'Staunch',
         weightkg: 39.5,
         heightcm: 106.7 },
-    { name: 'Concredon', primaryType: 'Metal', secondaryType: 'Earth', icon: require('../assets/icons/concredon.png'),
+    { name: 'Concredon', primaryType: 'Metal', secondaryType: 'Earth', tier: 'NFE', icon: require('../assets/icons/concredon.png'),
         moves: [
             "Gnaw", "Clamp", "Burrow", "Chomp", "Headbutt", "Power Focus", "Quicksand", "Scapegoat",
             "Body Slam", "Heavy Bash", "Metal Shriek", "Earthquake", "Sharpen", "Steel Crusher", 
@@ -2084,7 +2084,7 @@ export const loomiansData = [
         secretAbility: 'Staunch',
         weightkg: 404.6,
         heightcm: 299.7 },
-    { name: 'Chompactor', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/chompactor.png'),
+    { name: 'Chompactor', primaryType: 'Metal', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/chompactor.png'),
         moves: [
             "Gnaw", "Aim", "Metal Swipes", "Oil Leak", "Chomp", "Bash", "Double Whack", "Quick Punch",
             "Mega Chomp", "Bulk Up", "Barbs", "Blaze Chomp", "Chilly Chomp", "Recycle", 
@@ -2124,7 +2124,7 @@ export const loomiansData = [
         secretAbility: 'Specialization',
         weightkg: 192.8,
         heightcm: 200.7 },
-    { name: 'Scorb', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/scorb.png'),
+    { name: 'Scorb', primaryType: 'Metal', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/scorb.png'),
         moves: [
             "Bash", "Static Shock", "Singe", "Flurry", "Metal Shriek", "Examine", "Dodge", "Spare"
         ],
@@ -2142,7 +2142,7 @@ export const loomiansData = [
         secretAbility: 'Clutch',
         weightkg: 10.89,
         heightcm: 38.1 },
-    { name: 'Veylens', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/veylens.png'),
+    { name: 'Veylens', primaryType: 'Metal', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/veylens.png'),
         moves: [
             "Bash", "Static Shock", "Singe", "Flurry", "Metal Shriek", "Examine", "Dodge", "Heavy Bash",
             "Reflection Burst", "Accelerate", "Thunder Slam", "Precision Bolt", "Fire Slam", 
@@ -2183,7 +2183,7 @@ export const loomiansData = [
         secretAbility: 'Clutch',
         weightkg: 67.1,
         heightcm: 188 },
-    { name: 'Poochrol', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/poochrol.png'),
+    { name: 'Poochrol', primaryType: 'Metal', secondaryType: 'Electric', tier: 'LC', icon: require('../assets/icons/poochrol.png'),
         moves: [
             "Growl", "Static Shock", "Metal Swipes", "Quick Pounce", "Precision Bolt", "Chomp", 
             "Sharpen", "Heavy Bash", "Mega Chomp", "Chase Down", "Blaze Chomp", "Chilly Chomp", 
@@ -2223,7 +2223,7 @@ export const loomiansData = [
         secretAbility: 'Power Jaw',
         weightkg: 42.6,
         heightcm: 137.2 },
-    { name: 'Goppie', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/goppie.png'),
+    { name: 'Goppie', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/goppie.png'),
         moves: [
             "Strike", "Dawdle", "Spray", "Flurry", "Chomp", "Stare", "Body Slam", "Water Bomb",
             "Rant", "Eerie Stare", "Tsunami", "Dark Surge", "Frost Beam", "Magnify", "Dodge",
@@ -2264,7 +2264,7 @@ export const loomiansData = [
         secretAbility: 'Quick Recovery',
         weightkg: 62.6,
         heightcm: 251.5 },
-    { name: 'Pyke', primaryType: 'Ancient', secondaryType: 'Water', icon: require('../assets/icons/pyke.png'),
+    { name: 'Pyke', primaryType: 'Ancient', secondaryType: 'Water', tier: 'LC', icon: require('../assets/icons/pyke.png'),
         moves: [
             "Tail Slap", "Brace", "Spray", "Chomp", "Confound", "Tease", "Water Bomb", "Baffle",
             "Chilly Chomp", "Aqua Jaws", "Final Ruse", "Mega Chomp", "Primal Slash", "Drudge", "Bulk Up",
@@ -2331,7 +2331,7 @@ export const loomiansData = [
         weightkg: 34.47,
         heightcm: 193.04,
         requiredItem: 'Skeliburst' },
-    { name: 'Zaleo', primaryType: 'Ancient', secondaryType: 'Electric', icon: require('../assets/icons/zaleo.png'),
+    { name: 'Zaleo', primaryType: 'Ancient', secondaryType: 'Electric', tier: 'LC', icon: require('../assets/icons/zaleo.png'),
         moves: [
             "Static Shock", "Spare", "Dino Claws", "Power Siphon", "Tase", "Precision Bolt", "Sharpen", 
             "Thunder Slam", "Shrewd Blast", "Bamboozle", "Primal Slash", "Thunder Crash", "Bane of Haste", 
@@ -2395,7 +2395,7 @@ export const loomiansData = [
         weightkg: 62.14,
         heightcm: 154.94,
         requiredItem: 'Joltburst' },
-    { name: 'Dobo', primaryType: 'Ancient', secondaryType: 'Fire', icon: require('../assets/icons/dobo.png'),
+    { name: 'Dobo', primaryType: 'Ancient', secondaryType: 'Fire', tier: 'LC', icon: require('../assets/icons/dobo.png'),
         moves: [
             "Singe", "Squawk", "Peck", "Confound", "Dawdle", "Pyrokinesis", "Power Focus", "Primal Slash",
             "Shrewd Blast", "Burn Up", "Fire Breath", "Bane of Haste", "Air Blade", "Bequeath",
@@ -2437,7 +2437,7 @@ export const loomiansData = [
         secretAbility: 'Power Napper',
         weightkg: 39.5,
         heightcm: 188 },
-    { name: 'Kyogo', primaryType: 'Ancient', secondaryType: 'Dark', icon: require('../assets/icons/kyogo.png'),
+    { name: 'Kyogo', primaryType: 'Ancient', secondaryType: 'Dark', tier: 'LC', icon: require('../assets/icons/kyogo.png'),
         moves: [
             "Gnaw", "Tease", "Chomp", "Dino Claws", "Chop", "Stretch", "Headbutt", "Pilfer",
             "Primal Slash", "Baffle", "Slap Down", "Augment", "Mega Punch", "Barbs", "Bulk Up",
@@ -2479,7 +2479,7 @@ export const loomiansData = [
         secretAbility: 'Surrogate',
         weightkg: 30.8,
         heightcm: 132.1 },
-    { name: 'Wiledile', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/wiledile.png'),
+    { name: 'Wiledile', primaryType: 'Water', secondaryType: 'Plant', tier: 'LC', icon: require('../assets/icons/wiledile.png'),
         moves: [
             "Gnaw", "Growl", "Spray", "Petal Pummel", "Examine", "Chomp", "Sap Plant", "Hydro Slash",
             "Bush Whack", "Aqua Jaws", "Fungus Curse", "Mega Chomp", "Life Drain", "Tsunami", "Boom Bash",
@@ -2500,7 +2500,7 @@ export const loomiansData = [
         secretAbility: 'Woodsman',
         weightkg: 24.9,
         heightcm: 94 },
-    { name: 'Wiledile (Woodsman)', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/wiledile.png'), specialTypeChart: 'Woodsman' },
+    { name: 'Wiledile (Woodsman)', primaryType: 'Water', secondaryType: 'Plant', tier: 'LC', icon: require('../assets/icons/wiledile.png'), specialTypeChart: 'Woodsman' },
     { name: 'Mawamurk', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/mawamurk.png'),
         moves: [
             "Gnaw", "Growl", "Spray", "Petal Pummel", "Examine", "Chomp", "Sap Plant", "Hydro Slash",
@@ -2523,7 +2523,7 @@ export const loomiansData = [
         weightkg: 101.6,
         heightcm: 261.6 },
     { name: 'Mawamurk (Woodsman)', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/mawamurk.png'), specialTypeChart: 'Woodsman' },
-    { name: 'Ampole', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/ampole.png'),
+    { name: 'Ampole', primaryType: 'Electric', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/ampole.png'),
         moves: [
             "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
             "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", 
@@ -2544,7 +2544,7 @@ export const loomiansData = [
         secretAbility: 'Sly',
         weightkg: 3.6,
         heightcm: 33 },
-    { name: 'Amphiton', primaryType: 'Electric', secondaryType: 'Mind', icon: require('../assets/icons/amphiton.png'),
+    { name: 'Amphiton', primaryType: 'Electric', secondaryType: 'Mind', tier: 'NFE', icon: require('../assets/icons/amphiton.png'),
         moves: [
             "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
             "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", 
@@ -2586,7 +2586,7 @@ export const loomiansData = [
         secretAbility: 'Sly',
         weightkg: 55.3,
         heightcm: 142.2 },
-    { name: 'Pwuff', primaryType: 'Water', secondaryType: 'Toxic', icon: require('../assets/icons/pwuff.png'),
+    { name: 'Pwuff', primaryType: 'Water', secondaryType: 'Toxic', tier: 'LC', icon: require('../assets/icons/pwuff.png'),
         moves: [
             "Tail Slap", "Brace", "Spray", "Flurry", "Tease", "Headbutt", "Water Bomb", "Stretch", 
             "Venom Chomp", "Power Focus", "Chilly Chomp", "Hydro Slash", "Baneful Bash", "Icicle Trap", 
@@ -2649,7 +2649,7 @@ export const loomiansData = [
         secretAbility: 'High Explosive',
         weightkg: 33.6,
         heightcm: 76.2 },
-    { name: 'Swimp', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/swimp.png'),
+    { name: 'Swimp', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/swimp.png'),
         moves: [
             "Tail Slap", "Stare", "Spray", "Stretch", "Chomp", "Water Bomb", "Charade", "Sleet Shot",
             "Quick Pounce", "Provoke", "Aqua Jaws", "Mega Chomp", "Shrewd Blast", "Clay Slap", 
@@ -2670,7 +2670,7 @@ export const loomiansData = [
         secretAbility: 'Devious',
         weightkg: 6.8,
         heightcm: 63.5 },
-    { name: 'Snapr', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/snapr.png'),
+    { name: 'Snapr', primaryType: 'Water', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/snapr.png'),
         moves: [
             "Tail Slap", "Stare", "Spray", "Stretch", "Chomp", "Water Bomb", "Charade", "Sleet Shot",
             "Quick Pounce", "Provoke", "Aqua Jaws", "Mega Chomp", "Shrewd Blast", "Clay Slap", 
@@ -2712,7 +2712,7 @@ export const loomiansData = [
         secretAbility: 'Devious',
         weightkg: 27.7,
         heightcm: 165.1 },
-    { name: 'Hydrini', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/hydrini.png'),
+    { name: 'Hydrini', primaryType: 'Bug', secondaryType: 'Water', tier: 'LC', icon: require('../assets/icons/hydrini.png'),
         moves: [
             "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
             "Venom Chomp", "Hydro Slash", "Parasitize", "Pheroblast", "Aqua Jaws", "Baneful Bash", 
@@ -2733,8 +2733,8 @@ export const loomiansData = [
         secretAbility: 'Aqua Body',
         weightkg: 5,
         heightcm: 38.1 },
-    { name: 'Hydrini (Aqua Body)', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/hydrini.png'), specialTypeChart: 'AquaBody' },
-    { name: 'Bezeldew', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/bezeldew.png'),
+    { name: 'Hydrini (Aqua Body)', primaryType: 'Bug', secondaryType: 'Water', tier: 'LC', icon: require('../assets/icons/hydrini.png'), specialTypeChart: 'AquaBody' },
+    { name: 'Bezeldew', primaryType: 'Bug', secondaryType: 'Water', tier: 'NFE', icon: require('../assets/icons/bezeldew.png'),
         moves: [
             "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
             "Venom Chomp", "Hydro Slash", "Parasitize", "Pheroblast", "Aqua Jaws", "Baneful Bash", 
@@ -2755,7 +2755,7 @@ export const loomiansData = [
         secretAbility: 'Aqua Body',
         weightkg: 25.9,
         heightcm: 71.1 },
-    { name: 'Bezeldew (Aqua Body)', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/bezeldew.png'), specialTypeChart: 'AquaBody' },
+    { name: 'Bezeldew (Aqua Body)', primaryType: 'Bug', secondaryType: 'Water', tier: 'NFE', icon: require('../assets/icons/bezeldew.png'), specialTypeChart: 'AquaBody' },
     { name: 'Deludrix', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/deludrix.png'),
         moves: [
             "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
@@ -2778,7 +2778,7 @@ export const loomiansData = [
         weightkg: 57.2,
         heightcm: 139.7 },
     { name: 'Deludrix (Aqua Body)', primaryType: 'Bug', secondaryType: 'Water', icon: require('../assets/icons/deludrix.png'), specialTypeChart: 'AquaBody' },
-    { name: 'Ceratot', primaryType: 'Ancient', secondaryType: 'Plant', icon: require('../assets/icons/ceratot.png'),
+    { name: 'Ceratot', primaryType: 'Ancient', secondaryType: 'Plant', tier: 'LC', icon: require('../assets/icons/ceratot.png'),
         moves: [
             "Gnaw", "Stare", "Petal Pummel", "Dino Claws", "Chomp", "Take Root", "Headbutt", "Leaf Barrage",
             "Life Drain", "Sap Plant", "Primal Slash", "Earthquake", "Brawn Boost", "Bulk Up", "Mega Chomp",
@@ -2798,7 +2798,7 @@ export const loomiansData = [
         secretAbility: 'Vigorous',
         weightkg: 29.5,
         heightcm: 43.2 },
-    { name: 'Trepodon', primaryType: 'Ancient', secondaryType: 'Plant', icon: require('../assets/icons/trepodon.png'),
+    { name: 'Trepodon', primaryType: 'Ancient', secondaryType: 'Plant', tier: 'NFE', icon: require('../assets/icons/trepodon.png'),
         moves: [
             "Gnaw", "Stare", "Petal Pummel", "Dino Claws", "Chomp", "Take Root", "Headbutt", "Leaf Barrage",
             "Life Drain", "Sap Plant", "Primal Slash", "Earthquake", "Brawn Boost", "Bulk Up", "Mega Chomp",
@@ -2838,7 +2838,7 @@ export const loomiansData = [
         secretAbility: 'Vigorous',
         weightkg: 348.4,
         heightcm: 172.7 },
-    { name: 'Cupoink', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/cupoink.png'),
+    { name: 'Cupoink', primaryType: 'Fire', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/cupoink.png'),
         moves: [
             "Stare", "Singe", "Pounce", "Burn Up", "Chomp", "Headbutt", "Fire Slam", "Sharpen", "Body Slam",
             "Mega Chomp", "Bait", "Baneful Bash", "Battle Chime", "Muck Buck", "Raging Tackle", "Venom Chomp",
@@ -2899,7 +2899,7 @@ export const loomiansData = [
         weightkg: 40.4,
         heightcm: 129.5,
         requiredItem: 'Noshburst' },
-    { name: 'Mochibi', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/mochibi.png'),
+    { name: 'Mochibi', primaryType: 'Ice', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/mochibi.png'),
         moves: [
             "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
             "Bamboozle", "Peace of Mind", "Chilly Chomp", "Icicle Trap", "Boom Bash", "Deep Freeze", "Scapegoat", 
@@ -2919,7 +2919,7 @@ export const loomiansData = [
         secretAbility: 'Shakedown',
         weightkg: 6.4,
         heightcm: 33 },
-    { name: 'Totemochi', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/totemochi.png'),
+    { name: 'Totemochi', primaryType: 'Ice', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/totemochi.png'),
         moves: [
             "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
             "Bamboozle", "Peace of Mind", "Chilly Chomp", "Icicle Trap", "Boom Bash", "Deep Freeze", "Scapegoat", 
@@ -2959,7 +2959,7 @@ export const loomiansData = [
         secretAbility: 'Shakedown',
         weightkg: 65.8,
         heightcm: 134.6 },
-    { name: 'Gwurm', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/gwurm.png'),
+    { name: 'Gwurm', primaryType: 'Bug', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/gwurm.png'),
         moves: [
             "Burrow", "Gnaw", "Bug Bite", "Spare", "Sap Plant", "Eerie Stare", "Provoke", "Power Focus", 
             "Pestilence", "Talent Trade", "Pheroblast", "Life Drain", "Poison Barbs", "Tamp", "Dodge", 
@@ -2979,8 +2979,8 @@ export const loomiansData = [
         secretAbility: 'Defensive Priority',
         weightkg: 5,
         heightcm: 35.6 },
-    { name: 'Gwurm (Hard Candy)', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/gwurm.png'), specialTypeChart: 'HardCandy' },
-    { name: 'Odasho', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/odasho.png'),
+    { name: 'Gwurm (Hard Candy)', primaryType: 'Bug', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/gwurm.png'), specialTypeChart: 'HardCandy' },
+    { name: 'Odasho', primaryType: 'Bug', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/odasho.png'),
         moves: [
             "Burrow", "Gnaw", "Bug Bite", "Spare", "Sap Plant", "Eerie Stare", "Provoke", "Power Focus", 
             "Pestilence", "Talent Trade", "Pheroblast", "Life Drain", "Poison Barbs", "Tamp", "Dodge", 
@@ -3000,7 +3000,7 @@ export const loomiansData = [
         secretAbility: 'Defensive Priority',
         weightkg: 5.9,
         heightcm: 88.9 },
-    { name: 'Odasho (Hard Candy)', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/odasho.png'), specialTypeChart: 'HardCandy' },
+    { name: 'Odasho (Hard Candy)', primaryType: 'Bug', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/odasho.png'), specialTypeChart: 'HardCandy' },
     { name: 'Spreezy', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/spreezy.png'),
         moves: [
             "Burrow", "Gnaw", "Bug Bite", "Spare", "Sap Plant", "Eerie Stare", "Provoke", "Power Focus", 
@@ -3022,7 +3022,7 @@ export const loomiansData = [
         weightkg: 15.4,
         heightcm: 96.5 },
     { name: 'Spreezy (Hard Candy)', primaryType: 'Bug', secondaryType: 'None', icon: require('../assets/icons/spreezy.png'), specialTypeChart: 'HardCandy' },
-    { name: 'Pipsee', primaryType: 'Plant', secondaryType: 'Air', icon: require('../assets/icons/pipsee.png'),
+    { name: 'Pipsee', primaryType: 'Plant', secondaryType: 'Air', tier: 'LC', icon: require('../assets/icons/pipsee.png'),
         moves: [
             "Gale Force", "Petal Pummel", "Brace", "Gust", "Take Root", "Leaf Barrage", "Mind's Eye", 
             "Cyclone Slam", "Wonder Herb", "Bequeath", "Sap Plant", "Air Blade", "Life Drain", 
@@ -3043,7 +3043,7 @@ export const loomiansData = [
         secretAbility: 'Vigilant',
         weightkg: 0.9,
         heightcm: 33 },
-    { name: 'Dandylil', primaryType: 'Plant', secondaryType: 'Air', icon: require('../assets/icons/dandylil.png'),
+    { name: 'Dandylil', primaryType: 'Plant', secondaryType: 'Air', tier: 'NFE', icon: require('../assets/icons/dandylil.png'),
         moves: [
             "Gale Force", "Petal Pummel", "Brace", "Gust", "Take Root", "Leaf Barrage", "Mind's Eye", 
             "Cyclone Slam", "Wonder Herb", "Bequeath", "Sap Plant", "Air Blade", "Life Drain", 
@@ -3085,7 +3085,7 @@ export const loomiansData = [
         secretAbility: 'Vigilant',
         weightkg: 2.7,
         heightcm: 114.3 },
-    { name: 'Vari', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/vari.png'),
+    { name: 'Vari', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/vari.png'),
         moves: [
             "Dawdle", "Strike", "Quick Pounce", "Stretch", "Spare", "Headbutt", "Power Focus", 
             "Body Slam", "Bait", "Dodge", "Rainbow Blast"
@@ -3315,7 +3315,7 @@ export const loomiansData = [
         weightkg: 70.31,
         heightcm: 160.02 },
     { name: 'Hydrolen (Hydrate)', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/hydrolen.png'), specialTypeChart: 'Hydrate' },
-    { name: 'Copling', primaryType: 'Ancient', secondaryType: 'Metal', icon: require('../assets/icons/copling.png'),
+    { name: 'Copling', primaryType: 'Ancient', secondaryType: 'Metal', tier: 'LC', icon: require('../assets/icons/copling.png'),
         moves: [
             "Confound", "Gnaw", "Metal Swipes", "Tune-Up", "Chomp", "Shrewd Blast", "Metal Shriek", 
             "Double Whack", "Headbutt", "Sharpen", "Primal Slash", "Bamboozle", "Bait", "Bane of Haste",
@@ -3336,7 +3336,7 @@ export const loomiansData = [
         secretAbility: 'Playful',
         weightkg: 17.2,
         heightcm: 35.6 },
-    { name: 'Copperage', primaryType: 'Ancient', secondaryType: 'Metal', icon: require('../assets/icons/copperage.png'),
+    { name: 'Copperage', primaryType: 'Ancient', secondaryType: 'Metal', tier: 'NFE', icon: require('../assets/icons/copperage.png'),
         moves: [
             "Confound", "Gnaw", "Metal Swipes", "Tune-Up", "Chomp", "Shrewd Blast", "Metal Shriek", 
             "Double Whack", "Headbutt", "Sharpen", "Primal Slash", "Bamboozle", "Bait", "Bane of Haste",
@@ -3378,7 +3378,7 @@ export const loomiansData = [
         secretAbility: 'Combative',
         weightkg: 166.5,
         heightcm: 203.2 },
-    { name: 'Spirivii', primaryType: 'Bug', secondaryType: 'Spirit', icon: require('../assets/icons/spirivii.png'),
+    { name: 'Spirivii', primaryType: 'Bug', secondaryType: 'Spirit', tier: 'LC', icon: require('../assets/icons/spirivii.png'),
         moves: [
             "Bug Bite", "Startle", "Gnaw", "Stare", "Chase Down", "Final Ruse", "Swipe", "Stupefy",
             "Eerie Stare", "Pester", "Parasitize", "Soul Storm", "Bait", "Bulk Up", "Driving Force",
@@ -3398,7 +3398,7 @@ export const loomiansData = [
         secretAbility: '',
         weightkg: 3.6,
         heightcm: 45.7 },
-    { name: 'Eidohusk', primaryType: 'Bug', secondaryType: 'Spirit', icon: require('../assets/icons/eidohusk.png'),
+    { name: 'Eidohusk', primaryType: 'Bug', secondaryType: 'Spirit', tier: 'NFE', icon: require('../assets/icons/eidohusk.png'),
         moves: [
             "Bug Bite", "Startle", "Gnaw", "Stare", "Chase Down", "Final Ruse", "Swipe", "Stupefy",
             "Eerie Stare", "Pester", "Parasitize", "Soul Storm", "Bait", "Bulk Up", "Driving Force",
@@ -3440,7 +3440,7 @@ export const loomiansData = [
         secretAbility: '',
         weightkg: 78.5,
         heightcm: 195.6 },
-    { name: 'Snowl', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/snowl.png'),
+    { name: 'Snowl', primaryType: 'Ice', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/snowl.png'),
         moves: [
             "Snowdozer", "Baffle", "Gust", "Icicle Trap", "Jet Stream", "Peace of Mind", "Perch", "Rant",
             "Resonate", "Square One", "Dodge", "Spare"
@@ -3459,7 +3459,7 @@ export const loomiansData = [
         secretAbility: 'Glide',
         weightkg: 4.1,
         heightcm: 27.9 },
-    { name: 'Stricicle', primaryType: 'Ice', secondaryType: 'Air', icon: require('../assets/icons/stricicle.png'),
+    { name: 'Stricicle', primaryType: 'Ice', secondaryType: 'Air', tier: 'NFE', icon: require('../assets/icons/stricicle.png'),
         moves: [
             "Snowdozer", "Baffle", "Gust", "Icicle Trap", "Jet Stream", "Peace of Mind", "Perch", "Rant",
             "Resonate", "Square One", "Dodge", "Spare", "Sleet Shot", "Scavenge", "Chilly Chomp",
@@ -3499,7 +3499,7 @@ export const loomiansData = [
         secretAbility: 'Glide',
         weightkg: 32.2,
         heightcm: 157.5 },
-    { name: 'Snagull', primaryType: 'Air', secondaryType: 'None', icon: require('../assets/icons/snagull.png'),
+    { name: 'Snagull', primaryType: 'Air', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/snagull.png'),
         moves: [
             "Peck", "Gnaw", "Squawk", "Stretch", "Gust", "Scavenge", "Provoke", "Poison", "Eerie Stare",
             "Air Blade", "Jet Stream", "Perch", "Buck Up", "Muck Blast", "Nab", "Raging Howl", "Barter",
@@ -3519,7 +3519,7 @@ export const loomiansData = [
         secretAbility: 'Marksman',
         weightkg: 5.4,
         heightcm: 58.4 },
-    { name: 'Snagulp', primaryType: 'Air', secondaryType: 'Toxic', icon: require('../assets/icons/snagulp.png'),
+    { name: 'Snagulp', primaryType: 'Air', secondaryType: 'Toxic', tier: 'NFE', icon: require('../assets/icons/snagulp.png'),
         moves: [
             "Peck", "Gnaw", "Squawk", "Stretch", "Gust", "Scavenge", "Provoke", "Poison", "Eerie Stare",
             "Air Blade", "Jet Stream", "Perch", "Buck Up", "Muck Blast", "Nab", "Raging Howl", "Barter",
@@ -3559,7 +3559,7 @@ export const loomiansData = [
         secretAbility: 'Marksman',
         weightkg: 21.3,
         heightcm: 167.6 },
-    { name: 'Makame', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/makame.png'),
+    { name: 'Makame', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/makame.png'),
         moves: [
             "Spray", "Brace", "Examine", "Soft Water", "Repeating Tune", "Water Bomb", "Chilly Chomp", 
             "Harmonious Chord", "Charade", "Dissonant Chord", "Sleet Shot", "Maroon", "Battle Horn", 
@@ -3580,7 +3580,7 @@ export const loomiansData = [
         secretAbility: 'Quick Recovery',
         weightkg: 7.7,
         heightcm: 43.2 },
-    { name: 'Makoro', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/makoro.png'),
+    { name: 'Makoro', primaryType: 'Water', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/makoro.png'),
         moves: [
             "Spray", "Brace", "Examine", "Soft Water", "Repeating Tune", "Water Bomb", "Chilly Chomp", 
             "Harmonious Chord", "Charade", "Dissonant Chord", "Sleet Shot", "Maroon", "Battle Horn", 
@@ -3622,7 +3622,7 @@ export const loomiansData = [
         secretAbility: 'Quick Recovery',
         weightkg: 135.2,
         heightcm: 198.1 },
-    { name: 'Cavenish', primaryType: 'Water', secondaryType: 'Plant', icon: require('../assets/icons/cavenish.png'),
+    { name: 'Cavenish', primaryType: 'Water', secondaryType: 'Plant', tier: 'LC', icon: require('../assets/icons/cavenish.png'),
         moves: [
             "Spray", "Petal Pummel", "Sap Plant", "Pounce", "Water Bomb", "Leaf Barrage", "Tease",
             "Wonder Herb", "Life Drain", "Baffle", "Maroon", "Charade", "Nature's Force", "Photosynthesis",
@@ -3664,7 +3664,7 @@ export const loomiansData = [
         secretAbility: 'Sly',
         weightkg: 83.5,
         heightcm: 221 },
-    { name: 'Kanki', primaryType: 'Water', secondaryType: 'Brawler', icon: require('../assets/icons/kanki.png'),
+    { name: 'Kanki', primaryType: 'Water', secondaryType: 'Brawler', tier: 'LC', icon: require('../assets/icons/kanki.png'),
         moves: [
             "Spray", "Strike", "Swat", "Swipe", "Sharpen", "Hydro Slash", "Bludgeon", "Chase Down",
             "Eerie Stare", "Bulk Up", "Piercing Drive", "Rough Up", "Body Slam", "Wave Wrecker", "Driving Force",
@@ -3704,7 +3704,7 @@ export const loomiansData = [
         secretAbility: 'Ambush',
         weightkg: 47.2,
         heightcm: 129.5 },
-    { name: 'Sharpod', primaryType: 'Water', secondaryType: 'Metal', icon: require('../assets/icons/sharpod.png'),
+    { name: 'Sharpod', primaryType: 'Water', secondaryType: 'Metal', tier: 'LC', icon: require('../assets/icons/sharpod.png'),
         moves: [
             "Spray", "Tune-Up", "Metal Swipes", "Provoke", "Chomp", "Bash", "Sharpen", "Water Bomb", "Baffle",
             "Aqua Jaws", "Double Whack", "Wave Wrecker", "Steel Crusher", "Thunder Chomp", "Vice Jaws", "Dodge",
@@ -3744,7 +3744,7 @@ export const loomiansData = [
         secretAbility: 'Frenzy',
         weightkg: 289.8,
         heightcm: 167.6 },
-    { name: 'Lumica', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/lumica.png'),
+    { name: 'Lumica', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/lumica.png'),
         moves: [
             "Sting", "Spray", "Brace", "Water Bomb", "Sharpen", "Headbutt", "Poison Barbs", "Eerie Stare", 
             "Hydro Slash", "Barbs", "Tamp", "Icicle Trap", "Blindspot Batter", "Bulk Up", "Piercing Drive", 
@@ -3784,7 +3784,7 @@ export const loomiansData = [
         secretAbility: 'Repugnant',
         weightkg: 39.5,
         heightcm: 86.4 },
-    { name: 'Polypi', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/polypi.png'),
+    { name: 'Polypi', primaryType: 'Water', secondaryType: 'Light', tier: 'LC', icon: require('../assets/icons/polypi.png'),
         moves: [
             "Spray", "Dawdle", "Shine", "Disperse", "Luster Loot", "Water Bomb", "Soft Water", 
             "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Deja Vu", 
@@ -3804,7 +3804,7 @@ export const loomiansData = [
         secretAbility: 'Incandescent',
         weightkg: 1.4,
         heightcm: 20.3 },
-    { name: 'Laphyra', primaryType: 'Water', secondaryType: 'Light', icon: require('../assets/icons/laphyra.png'),
+    { name: 'Laphyra', primaryType: 'Water', secondaryType: 'Light', tier: 'NFE', icon: require('../assets/icons/laphyra.png'),
         moves: [
             "Spray", "Dawdle", "Shine", "Disperse", "Luster Loot", "Water Bomb", "Soft Water", 
             "Energy Surge", "Maroon", "Magnify", "Provoke", "Gamma Pulse", "Deja Vu", 
@@ -3846,7 +3846,7 @@ export const loomiansData = [
         secretAbility: 'Incandescent',
         weightkg: 29.9,
         heightcm: 144.8 },
-    { name: 'Taoshi', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/taoshi.png'),
+    { name: 'Taoshi', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/taoshi.png'),
         moves: [
             "Gnaw", "Spare", "Dawdle", "Chomp", "Stretch", "Scapegoat", "Swipe", "Quick Pounce",
             "Sharpen", "Bequeath", "Blindspot Batter", "Mega Chomp", "Body Slam", "Bulk Up", "Swat", 
@@ -3886,7 +3886,7 @@ export const loomiansData = [
         secretAbility: 'Confidence',
         weightkg: 29.5,
         heightcm: 127 },
-    { name: 'Kittone', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/kittone.png'),
+    { name: 'Kittone', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/kittone.png'),
         moves: [
             "Gnaw", "Stare", "Tail Slap", "Stretch", "Quick Pounce", "Harmonious Chord", "Provoke",
             "Repeating Tune", "Peace of Mind", "Rant", "Dissonant Chord", "Magnify", "Resonate", 
@@ -3946,7 +3946,7 @@ export const loomiansData = [
         secretAbility: '',
         weightkg: 0.5,
         heightcm: 25.4 },
-    { name: 'Somata', primaryType: 'Water', secondaryType: 'Mind', icon: require('../assets/icons/somata.png'),
+    { name: 'Somata', primaryType: 'Water', secondaryType: 'Mind', tier: 'LC', icon: require('../assets/icons/somata.png'),
         moves: [
             "Spray", "Brainwash", "Dawdle", "Mind's Eye", "Spare", "Water Bomb", "Bait", "Flabbergast",
             "Peace of Mind", "Dissipate", "Maroon", "Rant", "Deja Vu", "Stratagem",
@@ -3987,7 +3987,7 @@ export const loomiansData = [
         secretAbility: 'Persistence',
         weightkg: 33.1,
         heightcm: 157.5 },
-    { name: 'Cinnaboo', primaryType: 'Spirit', secondaryType: 'None', icon: require('../assets/icons/cinnaboo.png'),
+    { name: 'Cinnaboo', primaryType: 'Spirit', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/cinnaboo.png'),
         moves: [
             "Startle", "Stare", "Stupefy", "Stretch", "Slime", "Mind's Eye", "Headbutt", "Spectral Burst",
             "Provoke", "Fade Away", "Final Ruse", "Bag of Tricks", "Charade", "Energy Gift", "Health Gift",
@@ -4047,7 +4047,7 @@ export const loomiansData = [
         secretAbility: '',
         weightkg: 8.6,
         heightcm: 86.4 },
-    { name: 'Swishy', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/swishy.png'),
+    { name: 'Swishy', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/swishy.png'),
         moves: [
             "Strike", "Spray", "Brace", "Water Bomb", "Provoke", "Examine", "Soft Water", "Maroon", "Scapegoat",
             "Square One", "Mudslide", "Empathize", "Energy Gift", "Health Gift", "Stratagem", "Bait", "Barter",
@@ -4087,7 +4087,7 @@ export const loomiansData = [
         secretAbility: 'Viscid',
         weightkg: 85.7,
         heightcm: 193 },
-    { name: 'Bunpuff', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunpuff.png'),
+    { name: 'Bunpuff', primaryType: 'Plant', secondaryType: 'Earth', tier: 'LC', icon: require('../assets/icons/bunpuff.png'),
         moves: [
             "Gnaw", "Petal Pummel", "Burrow", "Quicksand", "Swat", "Leaf Barrage", "Sap Plant", "Hop Kick", "Pine Shot",
             "Tease", "Landslide", "Boom Bash", "Brawn Boost", "Earthquake", "Life Drain", "Magnify", "Nature's Force",
@@ -4107,7 +4107,7 @@ export const loomiansData = [
         secretAbility: 'Glutton',
         weightkg: 11.8,
         heightcm: 76.2 },
-    { name: 'Bunpuff (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunpuff.png'), specialTypeChart: 'NoxiousWeeds' },
+    { name: 'Bunpuff (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'Earth', tier: 'LC', icon: require('../assets/icons/bunpuff.png'), specialTypeChart: 'NoxiousWeeds' },
     { name: 'Bunnecki', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunnecki.png'),
         moves: [
             "Gnaw", "Petal Pummel", "Burrow", "Quicksand", "Swat", "Leaf Barrage", "Sap Plant", "Hop Kick", "Pine Shot",
@@ -4129,7 +4129,7 @@ export const loomiansData = [
         weightkg: 40.4,
         heightcm: 170.2 },
     { name: 'Bunnecki (Noxious Weeds)', primaryType: 'Plant', secondaryType: 'Earth', icon: require('../assets/icons/bunnecki.png'), specialTypeChart: 'NoxiousWeeds' },
-    { name: 'Dractus', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/dractus.png'),
+    { name: 'Dractus', primaryType: 'Plant', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/dractus.png'),
         moves: [
             "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
             "Pine Shot", "Coconut Bomb", "Hydro Slash", "Life Drain", "Nature's Force", "Primal Slash", "Shrewd Blast", 
@@ -4149,8 +4149,8 @@ export const loomiansData = [
         secretAbility: 'Anomaly',
         weightkg: 21.3,
         heightcm: 83.8 },
-    { name: 'Dractus (Insulated)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/dractus.png'), specialTypeChart: 'Insulated' },
-    { name: 'Frutress', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/frutress.png'),
+    { name: 'Dractus (Insulated)', primaryType: 'Plant', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/dractus.png'), specialTypeChart: 'Insulated' },
+    { name: 'Frutress', primaryType: 'Plant', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/frutress.png'),
         moves: [
             "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
             "Pine Shot", "Coconut Bomb", "Hydro Slash", "Life Drain", "Nature's Force", "Primal Slash", "Shrewd Blast", 
@@ -4171,7 +4171,7 @@ export const loomiansData = [
         secretAbility: 'Anomaly',
         weightkg: 22.7,
         heightcm: 91.4 },
-    { name: 'Frutress (Insulated)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/frutress.png'), specialTypeChart: 'Insulated' },
+    { name: 'Frutress (Insulated)', primaryType: 'Plant', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/frutress.png'), specialTypeChart: 'Insulated' },
     { name: 'Seedrake', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/seedrake.png'),
         moves: [
             "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
@@ -4194,7 +4194,7 @@ export const loomiansData = [
         weightkg: 170.6,
         heightcm: 302.3 },
     { name: 'Seedrake (Insulated)', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/seedrake.png'), specialTypeChart: 'Insulated' },
-    { name: 'Volpup', primaryType: 'Electric', secondaryType: 'Toxic', icon: require('../assets/icons/volpup.png'),
+    { name: 'Volpup', primaryType: 'Electric', secondaryType: 'Toxic', tier: 'LC', icon: require('../assets/icons/volpup.png'),
         moves: [
             "Static Shock", "Gnaw", "Stare", "Chomp", "Poison", "Tase", "Swat", "Venom Chomp", "Stretch", "Thunder Chomp",
             "Slash", "Sharpen", "Electro-Punch", "Baneful Bash", "Mega Chomp", "Muck Blast", "Primal Slash", 
@@ -4234,7 +4234,7 @@ export const loomiansData = [
         secretAbility: 'Mystery Toxins',
         weightkg: 144.2,
         heightcm: 218.4 },
-    { name: 'Impkin', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/impkin.png'),
+    { name: 'Impkin', primaryType: 'Dark', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/impkin.png'),
         moves: [
             "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Energy Gift", "Fade Away", "Health Gift",
@@ -4255,7 +4255,7 @@ export const loomiansData = [
         secretAbility: 'Handy',
         weightkg: 14.5,
         heightcm: 71.1 },
-    { name: 'Grimmick', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/grimmick.png'),
+    { name: 'Grimmick', primaryType: 'Dark', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/grimmick.png'),
         moves: [
             "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Energy Gift", "Fade Away", "Health Gift",
@@ -4297,7 +4297,7 @@ export const loomiansData = [
         secretAbility: 'Handy',
         weightkg: 65.8,
         heightcm: 195.6 },
-    { name: 'Mistlebud', primaryType: 'Plant', secondaryType: 'None', icon: require('../assets/icons/mistlebud.png'),
+    { name: 'Mistlebud', primaryType: 'Plant', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/mistlebud.png'),
         moves: [
             "Dawdle", "Petal Pummel", "Shine", "Sap Plant", "Leaf Barrage", "Energy Surge", "Disperse", "Summon", "Wonder Herb", 
             "Gamma Pulse", "Nature's Force", "Energy Gift", "Health Gift", "Life Drain", "Luster Loot", "Pheroblast", "Dodge", 
@@ -4337,7 +4337,7 @@ export const loomiansData = [
         secretAbility: '',
         weightkg: 6.8,
         heightcm: 63.5 },
-    { name: 'Cryocub', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/cryocub.png'),
+    { name: 'Cryocub', primaryType: 'Ice', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/cryocub.png'),
         moves: [
             "Dawdle", "Flurry", "Burrow", "Gnaw", "Snowdozer", "Chomp", "Swipe", "Tamp", "Chilly Chomp", "Brawn Boost",
             "Body Slam", "Ice Hammer", "Clay Slap", "Earthquake", "Dodge", "Frost Beam", "Spare"
@@ -4376,7 +4376,7 @@ export const loomiansData = [
         secretAbility: 'Mysterious Cloak',
         weightkg: 89.8,
         heightcm: 188 }, 
-    { name: 'Kyeggo', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/kyeggo.png'),
+    { name: 'Kyeggo', primaryType: 'Dark', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/kyeggo.png'),
         moves: [
             "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
             "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
@@ -4396,7 +4396,7 @@ export const loomiansData = [
         secretAbility: 'Vicious',
         weightkg: 5,
         heightcm: 45.7 },
-    { name: 'Doreggo', primaryType: 'Dark', secondaryType: 'Air', icon: require('../assets/icons/doreggo.png'),
+    { name: 'Doreggo', primaryType: 'Dark', secondaryType: 'Air', tier: 'NFE', icon: require('../assets/icons/doreggo.png'),
         moves: [
             "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
             "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
@@ -4436,7 +4436,7 @@ export const loomiansData = [
         secretAbility: 'Vicious',
         weightkg: 146.1,
         heightcm: 264.2 },
-    { name: 'Wispur', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/wispur.png'),
+    { name: 'Wispur', primaryType: 'Spirit', secondaryType: 'Light', tier: 'LC', icon: require('../assets/icons/wispur.png'),
         moves: [
             "Hazy Shroud", "Dawdle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Spectral Burst", 
             "Luster Loot", "Gamma Pulse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast", "Rant", "Soul Storm", "Spite", "Square One", 
@@ -4456,7 +4456,7 @@ export const loomiansData = [
         secretAbility: 'Captivating',
         weightkg: 0.5,
         heightcm: 33 },
-    { name: 'Lampurge', primaryType: 'Spirit', secondaryType: 'Light', icon: require('../assets/icons/lampurge.png'),
+    { name: 'Lampurge', primaryType: 'Spirit', secondaryType: 'Light', tier: 'NFE', icon: require('../assets/icons/lampurge.png'),
         moves: [
             "Hazy Shroud", "Dawdle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Blindspot Batter",
             "Charade", "Spectral Burst", "Luster Loot", "Gamma Pulse", "Final Ruse", "Chase Down", "Magnify", "Nova Blast", "Phantom Blast",
@@ -4498,7 +4498,7 @@ export const loomiansData = [
         secretAbility: 'Reaper',
         weightkg: 5,
         heightcm: 124.5 },
-    { name: 'Smoal', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/smoal.png'),
+    { name: 'Smoal', primaryType: 'Fire', secondaryType: 'Toxic', tier: 'LC', icon: require('../assets/icons/smoal.png'),
         moves: [
             "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", "Bash", "Poison", "Fire Slam", "Burn Up", "Power Focus", "Baneful Bash",
             "Muck Blast", "Heavy Bash", "Fire Breath", "Boiling Press", "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast",
@@ -4518,7 +4518,7 @@ export const loomiansData = [
         secretAbility: 'Blistering Heat',
         weightkg: 20.4,
         heightcm: 48.3 },
-    { name: 'Charkiln', primaryType: 'Fire', secondaryType: 'Toxic', icon: require('../assets/icons/charkiln.png'),
+    { name: 'Charkiln', primaryType: 'Fire', secondaryType: 'Toxic', tier: 'NFE', icon: require('../assets/icons/charkiln.png'),
         moves: [
             "Growl", "Singe", "Heat Wave", "Corrode", "Eerie Stare", "Bash", "Poison", "Fire Slam", "Burn Up", "Power Focus", "Baneful Bash",
             "Muck Blast", "Heavy Bash", "Fire Breath", "Boiling Press", "Driving Force", "Earthquake", "Flare Blast", "Landslide", "Metal Blast",
@@ -4581,7 +4581,7 @@ export const loomiansData = [
         secretAbility: 'Chill',
         weightkg: 95.7,
         heightcm: 144.8 },
-    { name: 'Llamba', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/llamba.png'),
+    { name: 'Llamba', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/llamba.png'),
         moves: [
             "Spit", "Daydream", "Growl", "Chase Down", "Stretch", "Quick Pounce", "Scapegoat", "Nab", "Accelerate", "High Pitch Screech", 
             "Recycle", "Body Slam", "Power Focus", "Stampede", "Boom Bash", "Energy Gift", "Health Gift", "Mega Kick", "Provoke",
@@ -4601,8 +4601,8 @@ export const loomiansData = [
         secretAbility: 'Wholesome',
         weightkg: 10.9,
         heightcm: 71.1 },
-    { name: 'Llamba (Wholesome)', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/llamba.png'), specialTypeChart: 'Wholesome' },
-    { name: 'Choochew', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/choochew.png'),
+    { name: 'Llamba (Wholesome)', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/llamba.png'), specialTypeChart: 'Wholesome' },
+    { name: 'Choochew', primaryType: 'Simple', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/choochew.png'),
         moves: [
             "Spit", "Daydream", "Growl", "Chase Down", "Stretch", "Quick Pounce", "Scapegoat", "Nab", "Accelerate", "High Pitch Screech", 
             "Recycle", "Body Slam", "Power Focus", "Stampede", "Boom Bash", "Energy Gift", "Health Gift", "Mega Kick", "Provoke",
@@ -4623,7 +4623,7 @@ export const loomiansData = [
         secretAbility: 'Wholesome',
         weightkg: 40.4,
         heightcm: 139.7 },
-    { name: 'Choochew (Wholesome)', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/choochew.png'), specialTypeChart: 'Wholesome' },
+    { name: 'Choochew (Wholesome)', primaryType: 'Simple', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/choochew.png'), specialTypeChart: 'Wholesome' },
     { name: 'Loomala', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/loomala.png'),
         moves: [
             "Spit", "Daydream", "Growl", "Chase Down", "Stretch", "Quick Pounce", "Scapegoat", "Nab", "Accelerate", "High Pitch Screech", 
@@ -4646,7 +4646,7 @@ export const loomiansData = [
         weightkg: 93,
         heightcm: 203.2 },
     { name: 'Loomala (Wholesome)', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/loomala.png'), specialTypeChart: 'Wholesome' },
-    { name: 'Fentern', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/fentern.png'),
+    { name: 'Fentern', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/fentern.png'),
         moves: [
             "Dawdle", "Strike", "Stretch", "Quick Pounce", "Spare", "Recycle", "Headbutt", "Tribute", "Slash", "Bequeath",
             "Scapegoat", "Body Slam", "Slumber", "Baffle", "Barbs", "Driving Force", "Energy Gift", "Health Gift", "Provoke",
@@ -4686,7 +4686,7 @@ export const loomiansData = [
         secretAbility: 'Trader',
         weightkg: 39.5,
         heightcm: 157.5 },
-    { name: 'Singeel', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/singeel.png'),
+    { name: 'Singeel', primaryType: 'Electric', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/singeel.png'),
         moves: [
             "Brace", "Static Shock", "Spray", "Tase", "Confound", "Precision Bolt", "Jolt", "Bamboozle", "Soft Water", "Thunder Slam",
             "Energize", "Dark Surge", "Tamp", "Earthquake", "Landslide", "Mega Chomp", "Primal Slash", "Provoke", "Shrewd Blast",
@@ -4726,7 +4726,7 @@ export const loomiansData = [
         secretAbility: '',
         weightkg: 34.9,
         heightcm: 200.7 },
-    { name: 'Crabushi', primaryType: 'Metal', secondaryType: 'Brawler', icon: require('../assets/icons/crabushi.png'),
+    { name: 'Crabushi', primaryType: 'Metal', secondaryType: 'Brawler', tier: 'LC', icon: require('../assets/icons/crabushi.png'),
         moves: [
             "Metal Swipes", "Strike", "Chop", "Swipe", "Sharpen", "Hydro Slash", "Heavy Bash", "Slash", "Barbs", "Bulk Up",
             "Steel Crusher", "Drudge", "Rogue Assault", "Tribute", "Wave Wrecker", "Dodge", "Plunge", "Spare"
@@ -4764,7 +4764,7 @@ export const loomiansData = [
         secretAbility: 'Razor Sharp',
         weightkg: 19.5,
         heightcm: 94 },
-    { name: 'Teripod', primaryType: 'Ancient', secondaryType: 'Light', icon: require('../assets/icons/teripod.png'),
+    { name: 'Teripod', primaryType: 'Ancient', secondaryType: 'Light', tier: 'LC', icon: require('../assets/icons/teripod.png'),
         moves: [
             "Shine", "Dino Claws", "Flash", "Bug Bite", "Luster Loot", "Aqua Jaws", "Shrewd Blast", "Drudge", "Dazzling Barrage", "Slash",
             "Hydro Slash", "Blindspot Batter", "Primal Slash", "Energy Surge", "Nova Blast", "Parasitize", "Dodge", "Flash 'n Flee",
@@ -4804,7 +4804,7 @@ export const loomiansData = [
         secretAbility: 'Mesmerizing',
         weightkg: 33.6,
         heightcm: 127 },
-    { name: 'Skampi', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/skampi.png'),
+    { name: 'Skampi', primaryType: 'Water', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/skampi.png'),
         moves: [
             "Brace", "Pounce", "Spray", "Stare", "Quick Pounce", "Stretch", "Spare", "Eerie Stare", "Accelerate", "Tamp",
             "Battering Ram", "Body Crash", "Recycle", "Tribute", "Wave Wrecker", "Dodge", "Spare"
@@ -4863,7 +4863,7 @@ export const loomiansData = [
         secretAbility: 'Viscious',
         weightkg: 12.7,
         heightcm: 94 },
-    { name: 'Dokan', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokan.png'),
+    { name: 'Dokan', primaryType: 'Earth', secondaryType: 'Toxic', tier: 'LC', icon: require('../assets/icons/dokan.png'),
         moves: [
             "Stare", "Sting", "Burrow", "Toxic Tail", "Clay Slap", "Headbutt", "Baffle", "Aqua Jaws", "Quicksand", "Venom Chomp",
             "Tamp", "Earthquake", "Baneful Bash", "Landslide", "Muck Blast", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter",
@@ -4883,7 +4883,7 @@ export const loomiansData = [
         secretAbility: 'Sponge',
         weightkg: 4.1,
         heightcm: 33 },
-    { name: 'Dokan (Sponge)', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokan.png'), specialTypeChart: 'Sponge' },
+    { name: 'Dokan (Sponge)', primaryType: 'Earth', secondaryType: 'Toxic', tier: 'LC', icon: require('../assets/icons/dokan.png'), specialTypeChart: 'Sponge' },
     { name: 'Dokumori', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokumori.png'),
         moves: [
             "Stare", "Sting", "Burrow", "Toxic Tail", "Clay Slap", "Headbutt", "Baffle", "Aqua Jaws", "Quicksand", "Venom Chomp",
@@ -4905,7 +4905,7 @@ export const loomiansData = [
         weightkg: 29.5,
         heightcm: 106.7 },
     { name: 'Dokumori (Sponge)', primaryType: 'Earth', secondaryType: 'Toxic', icon: require('../assets/icons/dokumori.png'), specialTypeChart: 'Sponge' },
-    { name: 'Mirrami', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirrami.png'),
+    { name: 'Mirrami', primaryType: 'Spirit', secondaryType: 'Metal', tier: 'LC', icon: require('../assets/icons/mirrami.png'),
         moves: [
             "Metal Swipes", "Stupefy", "Power Focus", "Bamboozle", "Reflection Burst", "Phantom Slash", "Dark Surge", "Chase Down", "Double Whack", 
             "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Deja Vu", 
@@ -4926,7 +4926,7 @@ export const loomiansData = [
         secretAbility: 'Analyze',
         weightkg: 1.4,
         heightcm: 50.8 },
-    { name: 'Mirrami (Reflective)', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirrami.png'), specialTypeChart: 'Reflective' },
+    { name: 'Mirrami (Reflective)', primaryType: 'Spirit', secondaryType: 'Metal', tier: 'LC', icon: require('../assets/icons/mirrami.png'), specialTypeChart: 'Reflective' },
     { name: 'Mirraith', primaryType: 'Spirit', secondaryType: 'Metal', icon: require('../assets/icons/mirraith.png'),
         moves: [
             "Metal Swipes", "Stupefy", "Power Focus", "Bamboozle", "Reflection Burst", "Phantom Slash", "Dark Surge", "Chase Down", "Double Whack", 
@@ -4992,7 +4992,7 @@ export const loomiansData = [
         secretAbility: 'Petrifying',
         weightkg: 105.7,
         heightcm: 195.6 },
-    { name: 'Kayute', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/kayute.png'),
+    { name: 'Kayute', primaryType: 'Ice', secondaryType: 'Dark', tier: 'LC', icon: require('../assets/icons/kayute.png'),
         moves: [
             "Flurry", "Gnaw", "Chomp", "Stretch", "Sleet Shot", "Wonder Herb", "Bamboozle",
             "Square One", "Chilly Chomp", "Metal Shriek", "Slap Down", "Frost Beam", "Mega Chomp", 
@@ -5013,7 +5013,7 @@ export const loomiansData = [
         secretAbility: 'Designated Chompers',
         weightkg: 29.9,
         heightcm: 81.3 },
-    { name: 'Kayappa', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/kayappa.png'),
+    { name: 'Kayappa', primaryType: 'Ice', secondaryType: 'Dark', tier: 'NFE', icon: require('../assets/icons/kayappa.png'),
         moves: [
             "Flurry", "Gnaw", "Chomp", "Stretch", "Sleet Shot", "Wonder Herb", "Bamboozle",
             "Square One", "Chilly Chomp", "Metal Shriek", "Slap Down", "Frost Beam", "Mega Chomp", 
@@ -5055,7 +5055,7 @@ export const loomiansData = [
         secretAbility: 'Designated Chompers',
         weightkg: 129.7,
         heightcm: 205.7 },
-    { name: 'Leopaw', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/leopaw.png'),
+    { name: 'Leopaw', primaryType: 'Light', secondaryType: 'Ice', tier: 'LC', icon: require('../assets/icons/leopaw.png'),
         moves: [
             "Light Dash", "Pounce", "Snowdozer", "Flash", "Quick Pounce", "Swat", "Energy Surge",
             "Frost Punch", "Slash", "Blindspot Batter", "Icicle Trap", "Radiant Rush", "Body Slam", 
@@ -5076,7 +5076,7 @@ export const loomiansData = [
         secretAbility: 'Prismatic',
         weightkg: 5,
         heightcm: 53.3 },
-    { name: 'Leopaw (Prismatic)', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/leopaw.png'), specialTypeChart: 'Prismatic' },
+    { name: 'Leopaw (Prismatic)', primaryType: 'Light', secondaryType: 'Ice', tier: 'LC', icon: require('../assets/icons/leopaw.png'), specialTypeChart: 'Prismatic' },
     { name: 'Chienta', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/chienta.png'),
         moves: [
             "Light Dash", "Pounce", "Snowdozer", "Flash", "Quick Pounce", "Swat", "Energy Surge",
@@ -5100,7 +5100,7 @@ export const loomiansData = [
         weightkg: 88.9,
         heightcm: 200.7 },
     { name: 'Chienta (Prismatic)', primaryType: 'Light', secondaryType: 'Ice', icon: require('../assets/icons/chienta.png'), specialTypeChart: 'Prismatic' },
-    { name: 'Eyebrella', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/eyebrella.png'),
+    { name: 'Eyebrella', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/eyebrella.png'),
         moves: [
             "Startle", "Spray", "Stupefy", "Rant", "Tribute", "Water Bomb", "Soul Storm",
             "Final Ruse", "Provoke", "Hydro Slash", "Spectral Burst", "Mega Chomp", "Soft Water", 
@@ -5121,7 +5121,7 @@ export const loomiansData = [
         secretAbility: 'Pluvial',
         weightkg: 1.8,
         heightcm: 73.7 },
-    { name: 'Eyebrella (Hydro Vortex)', primaryType: 'Water', secondaryType: 'None', icon: require('../assets/icons/eyebrella.png'), specialTypeChart: 'HydroVortex' },
+    { name: 'Eyebrella (Hydro Vortex)', primaryType: 'Water', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/eyebrella.png'), specialTypeChart: 'HydroVortex' },
     { name: 'Parasoul', primaryType: 'Water', secondaryType: 'Dark', icon: require('../assets/icons/parasoul.png'),
         moves: [
             "Startle", "Spray", "Stupefy", "Rant", "Tribute", "Water Bomb", "Soul Storm",
@@ -5144,7 +5144,7 @@ export const loomiansData = [
         weightkg: 5,
         heightcm: 149.9 },
     { name: 'Parasoul (Hydro Vortex)', primaryType: 'Water', secondaryType: 'Dark', icon: require('../assets/icons/parasoul.png'), specialTypeChart: 'HydroVortex' },
-    { name: 'Lissen', primaryType: 'Mind', secondaryType: 'None', icon: require('../assets/icons/lissen.png'),
+    { name: 'Lissen', primaryType: 'Mind', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/lissen.png'),
         moves: [
             "Startle", "Brainwash", "Stupefy", "Harmonious Chord", "Tribute", "Flabbergast", "Soul Storm",
             "Final Ruse", "Teamwork", "Cerebral Slash", "Spectral Burst", "High-Pitch Screech", "Peace of Mind", 
@@ -5186,7 +5186,7 @@ export const loomiansData = [
         secretAbility: 'Virtuoso',
         weightkg: 12.7,
         heightcm: 119.4 },
-    { name: 'Lantot', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/lantot.png'),
+    { name: 'Lantot', primaryType: 'Fire', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/lantot.png'),
         moves: [
             "Startle", "Singe", "Stupefy", "Luster Loot", "Tribute", "Fire Slam", "Soul Storm",
             "Final Ruse", "Flash", "Pyrokenesis", "Spectral Burst", "Gamma Pulse", "Burn Up", 
@@ -5228,7 +5228,7 @@ export const loomiansData = [
         secretAbility: 'Sendoff',
         weightkg: 7.3,
         heightcm: 101.6 },
-    { name: 'Milgoo', primaryType: 'Toxic', secondaryType: 'None', icon: require('../assets/icons/milgoo.png'),
+    { name: 'Milgoo', primaryType: 'Toxic', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/milgoo.png'),
         moves: [
             "Startle", "Corrode", "Stupefy", "Confound", "Tribute", "Slime", "Soul Storm",
             "Final Ruse", "Augment", "Venom Slash", "Spectral Burst", "Energy Break", "Poison", 
@@ -5270,7 +5270,7 @@ export const loomiansData = [
         secretAbility: 'Devious',
         weightkg: 31.8,
         heightcm: 160 },
-    { name: 'Nautling', primaryType: 'Ancient', secondaryType: 'Simple', icon: require('../assets/icons/nautling.png'),
+    { name: 'Nautling', primaryType: 'Ancient', secondaryType: 'Simple', tier: 'LC', icon: require('../assets/icons/nautling.png'),
         moves: [
             "Confound", "Dino Claws", "Shriek", "Strike", "Dodge", "Spare"
         ],
@@ -5326,7 +5326,7 @@ export const loomiansData = [
         secretAbility: 'Viscid',
         weightkg: 45.8,
         heightcm: 134.6 },
-    { name: 'Yutiny', primaryType: 'Ancient', secondaryType: 'Air', icon: require('../assets/icons/yutiny.png'),
+    { name: 'Yutiny', primaryType: 'Ancient', secondaryType: 'Air', tier: 'LC', icon: require('../assets/icons/yutiny.png'),
         moves: [
             "Dino Claws", "Gust", "Peck", "Stare", "Headbutt", "Augment", "Cyclone Slam", "Slash", 
             "Sharpen", "Air Blade", "Perch", "Body Slam", "Near Enchantment", "Aqua Jaws", "Nosedive",
@@ -5346,7 +5346,7 @@ export const loomiansData = [
         secretAbility: 'Tumultuous',
         weightkg: 21.3,
         heightcm: 66 },
-    { name: 'Yuteen', primaryType: 'Ancient', secondaryType: 'Air', icon: require('../assets/icons/yuteen.png'),
+    { name: 'Yuteen', primaryType: 'Ancient', secondaryType: 'Air', tier: 'NFE', icon: require('../assets/icons/yuteen.png'),
         moves: [
             "Dino Claws", "Gust", "Peck", "Stare", "Headbutt", "Augment", "Cyclone Slam", "Slash", 
             "Sharpen", "Air Blade", "Perch", "Body Slam", "Near Enchantment", "Aqua Jaws", "Nosedive",
@@ -5387,7 +5387,7 @@ export const loomiansData = [
         secretAbility: 'Tumultuous',
         weightkg: 252.2,
         heightcm: 279.4 },
-    { name: 'Venile', primaryType: 'Ancient', secondaryType: 'Toxic', icon: require('../assets/icons/venile.png'),
+    { name: 'Venile', primaryType: 'Ancient', secondaryType: 'Toxic', tier: 'LC', icon: require('../assets/icons/venile.png'),
         moves: [
             "Dino Claws", "Poison Barbs", "Toxic Tail", "Stare", "Headbutt", "Augment", "Venom Chomp", "Slash", 
             "Sharpen", "Venom Slash", "Poison", "Body Slam", "Far Enchantment", "Baneful Bash", "Mega Punch",
@@ -5407,7 +5407,7 @@ export const loomiansData = [
         secretAbility: 'Brutal Wrath',
         weightkg: 24.9,
         heightcm: 66 },
-    { name: 'Verinox', primaryType: 'Ancient', secondaryType: 'Toxic', icon: require('../assets/icons/verinox.png'),
+    { name: 'Verinox', primaryType: 'Ancient', secondaryType: 'Toxic', tier: 'NFE', icon: require('../assets/icons/verinox.png'),
         moves: [
             "Dino Claws", "Poison Barbs", "Toxic Tail", "Stare", "Headbutt", "Augment", "Venom Chomp", "Slash", 
             "Sharpen", "Venom Slash", "Poison", "Body Slam", "Far Enchantment", "Baneful Bash", "Mega Punch",
@@ -5447,7 +5447,7 @@ export const loomiansData = [
         secretAbility: 'Brutal Wrath',
         weightkg: 288.9,
         heightcm: 294.6 },
-    { name: 'Nymvolt', primaryType: 'Electric', secondaryType: 'Bug', icon: require('../assets/icons/nymvolt.png'),
+    { name: 'Nymvolt', primaryType: 'Electric', secondaryType: 'Bug', tier: 'LC', icon: require('../assets/icons/nymvolt.png'),
         moves: [
             "Thunderstorm", "Static Shock", "Preemptive Strike", "Bug Bite", "Tase", "Shine", "Flash", 
             "Precision Bolt", "Pester", "Tribute", "Power Siphon", "Pestilence", "Jump Start", "Energy Surge", 
@@ -5469,7 +5469,7 @@ export const loomiansData = [
         secretAbility: 'Charged Arc',
         weightkg: 5.4,
         heightcm: 94 },
-    { name: 'Ohmbolt', primaryType: 'Electric', secondaryType: 'Bug', icon: require('../assets/icons/ohmbolt.png'),
+    { name: 'Ohmbolt', primaryType: 'Electric', secondaryType: 'Bug', tier: 'NFE', icon: require('../assets/icons/ohmbolt.png'),
         moves: [
             "Thunderstorm", "Static Shock", "Preemptive Strike", "Bug Bite", "Tase", "Shine", "Flash", 
             "Precision Bolt", "Pester", "Tribute", "Power Siphon", "Pestilence", "Jump Start", "Energy Surge", 
@@ -5513,7 +5513,7 @@ export const loomiansData = [
         secretAbility: 'Charged Arc',
         weightkg: 48.1,
         heightcm: 175.3 },
-    { name: 'Cicalute', primaryType: 'Bug', secondaryType: 'Mind', icon: require('../assets/icons/cicalute.png'),
+    { name: 'Cicalute', primaryType: 'Bug', secondaryType: 'Mind', tier: 'LC', icon: require('../assets/icons/cicalute.png'),
         moves: [
             "Bug Bite", "Shriek", "Brainwash", "Brace", "Pester", "Deja Vu", "Harmonious Chord",
             "Flabbergast", "Mind's Eye", "Dissonant Chord", "Stratagem", "Pheroblast", "High-Pitch Screech", 
@@ -5555,7 +5555,7 @@ export const loomiansData = [
         secretAbility: 'Expertise',
         weightkg: 13.2,
         heightcm: 81.3 },
-    { name: 'Goswing', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/goswing.png'),
+    { name: 'Goswing', primaryType: 'Air', secondaryType: 'Simple', tier: 'LC', icon: require('../assets/icons/goswing.png'),
         moves: [
             "Peck", "Strike", "Gust", "Quick Pounce", "Charade", "Scavenge", "Slash", "Enamor", "Slap Down",
             "Chase Down", "Sharpen", "Nab", "Perch", "Nosedive", "Body Slam", "Baffle", "Barbs", "Empathize",
@@ -5577,7 +5577,7 @@ export const loomiansData = [
         secretAbility: 'Hydrate',
         weightkg: 3.2,
         heightcm: 33 },
-    { name: 'Goswing (Hydrate)', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/goswing.png'), specialTypeChart: 'Hydrate' },
+    { name: 'Goswing (Hydrate)', primaryType: 'Air', secondaryType: 'Simple', tier: 'LC', icon: require('../assets/icons/goswing.png'), specialTypeChart: 'Hydrate' },
     { name: 'Ganderveil', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/ganderveil.png'),
         moves: [
             "Peck", "Strike", "Gust", "Quick Pounce", "Charade", "Scavenge", "Slash", "Enamor", "Slap Down",
@@ -5601,7 +5601,7 @@ export const loomiansData = [
         weightkg: 15,
         heightcm: 101.6 },
     { name: 'Ganderveil (Hydrate)', primaryType: 'Air', secondaryType: 'Simple', icon: require('../assets/icons/ganderveil.png'), specialTypeChart: 'Hydrate' },
-    { name: 'Banooh', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/banooh.png'),
+    { name: 'Banooh', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/banooh.png'),
         moves: [
             "Chase Down", "Daydream", "Stare", "Spare", "Teamwork", "Stretch", "Headbutt", "Wonder Herb", "Tamp",
             "Body Slam", "Banana Split", "Coconut Bomb", "Raging Tackle", "Rogue Assault", "Scapegoat", "Barter",
@@ -5642,7 +5642,7 @@ export const loomiansData = [
         secretAbility: 'Berserk',
         weightkg: 16.8,
         heightcm: 104.1 },
-    { name: 'Spirwix', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/spirwix.png'),
+    { name: 'Spirwix', primaryType: 'Fire', secondaryType: 'Spirit', tier: 'LC', icon: require('../assets/icons/spirwix.png'),
         moves: [
             "Startle", "Singe", "Chase Down", "Burn Up", "Shine", "Pepper Burst", "Fade Away", "Provoke", "Gamma Pulse",
             "Tribute", "Spectral Burst", "Scapegoat", "Fire Breath", "Raging Flame", "Rant", "Bequeath",
@@ -5663,7 +5663,7 @@ export const loomiansData = [
         secretAbility: 'Devious',
         weightkg: 2.3,
         heightcm: 20.3 },
-    { name: 'Spirwix (Raging Fire)', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/spirwix.png'), specialTypeChart: 'RagingFire' },
+    { name: 'Spirwix (Raging Fire)', primaryType: 'Fire', secondaryType: 'Spirit', tier: 'LC', icon: require('../assets/icons/spirwix.png'), specialTypeChart: 'RagingFire' },
     { name: 'Malevowax', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/malevowax.png'),
         moves: [
             "Startle", "Singe", "Chase Down", "Burn Up", "Shine", "Pepper Burst", "Fade Away", "Provoke", "Gamma Pulse",
@@ -5686,7 +5686,7 @@ export const loomiansData = [
         weightkg: 8.2,
         heightcm: 63.5 },
     { name: 'Malevowax (Raging Fire)', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/malevowax.png'), specialTypeChart: 'RagingFire' },
-    { name: 'Grievestone', primaryType: 'Earth', secondaryType: 'Spirit', icon: require('../assets/icons/grievestone.png'),
+    { name: 'Grievestone', primaryType: 'Earth', secondaryType: 'Spirit', tier: 'LC', icon: require('../assets/icons/grievestone.png'),
         moves: [
             "Pebble Toss", "Stupefy", "Shriek", "Tamp", "Empathize", "Quicksand", "Spectral Burst", "Dissonant Chord", 
             "Scapegoat", "Rock Slide", "Soul Storm", "Body Crash", "Deja Vu", "Splitting Headache",
@@ -5728,7 +5728,7 @@ export const loomiansData = [
         secretAbility: 'Seize',
         weightkg: 338.8,
         heightcm: 218.4 },
-    { name: 'Jimby', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/jimby.png'),
+    { name: 'Jimby', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/jimby.png'),
         moves: [
             "Spare", "Shriek", "Scapegoat", "Flurry", "Sap Plant", "Harmonious Chord", "Empathize", "Tear Down",
             "Repeating Tune", "Power Focus", "Frost Breath", "Wonder Herb", "Dissonant Chord", "Tribute", "Frost Beam",
@@ -5769,7 +5769,7 @@ export const loomiansData = [
         secretAbility: 'Virtuoso',
         weightkg: 10.9,
         heightcm: 81.3 },
-    { name: 'Wassel', primaryType: 'Ice', secondaryType: 'None', icon: require('../assets/icons/wassel.png'),
+    { name: 'Wassel', primaryType: 'Ice', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/wassel.png'),
         moves: [
             "Flurry", "Stretch", "Gnaw", "Sleet Shot", "Light Dash", "Nab", "Chilly Chomp", "Chase Down",
             "Blindspot Batter", "Psychal Chomp", "Undermine", "Icicle Trap", "Deep Freeze", "Radiant Rush", 
@@ -5982,7 +5982,7 @@ export const loomiansData = [
         secretAbility: 'Nightmarish',
         weightkg: 140.6,
         heightcm: 251.5 },
-    { name: 'Elephage', primaryType: 'Electric', secondaryType: 'None', icon: require('../assets/icons/elephage.png'),
+    { name: 'Elephage', primaryType: 'Electric', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/elephage.png'),
         moves: [
             "Static Shock", "Memorize", "Examine", "Jolt", "Jump Start", "Tase", "Thunder Slam", "Power Siphon",
             "Precision Bolt", "Energize", "Zip-Zap", "Thunder Clap", "Thunder Crash", "Body Slam",

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Celesting-Stellarchime added
-- Moveset Searcher is no longer case sensitive
-- Added super effective to all to type coverage calculator
-- Some loomian data fixed
+- Added type-related abilities to team type calculator
+- Added functionality to remove LC and NFE loomians from results in
+  type coverage calculator as well as moveset searcher
+- Fixed some loomian data
 `;
 
 const LastUpdated = () => {
@@ -22,7 +22,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2025-01-10
+                Last Updated: 2025-01-14
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

@@ -23,6 +23,8 @@ function TypeCoverageCalculator() {
     const [excludeParentheses, setExcludeParentheses] = useState(false);
     const [showSuperEffectiveAll, setShowSuperEffectiveAll] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
+    const [excludeNFE, setExcludeNFE] = useState(false);
+    const [excludeLC, setExcludeLC] = useState(false);
 
     useEffect(() => {
         const savedDarkMode = localStorage.getItem('darkMode');
@@ -60,6 +62,14 @@ function TypeCoverageCalculator() {
         setShowSuperEffectiveAll(e.target.checked);
     };
 
+    const handleExcludeNFEChange = (e) => {
+        setExcludeNFE(e.target.checked);
+    };
+    
+    const handleExcludeLCChange = (e) => {
+        setExcludeLC(e.target.checked);
+    };    
+
     const calculateCoverage = () => {
         const selectedTypesFiltered = selectedTypes.filter(type => type !== 'None');
 
@@ -86,6 +96,13 @@ function TypeCoverageCalculator() {
 
         loomiansData.forEach(loomian => {
             if (excludeParentheses && loomian.name.includes('(')) {
+                return;
+            }
+
+            if (excludeNFE && loomian.tier === 'NFE') {
+                return;
+            }
+            if (excludeLC && loomian.tier === 'LC') {
                 return;
             }
 
@@ -204,7 +221,29 @@ function TypeCoverageCalculator() {
                         style={{ marginLeft: '20px' }}
                     />
                     <label htmlFor="showSuperEffectiveAll" className="checkbox-label">
-                        Show Super Effective to All
+                        Show Super Effective to All  
+                    </label>
+                    <input
+                        type="checkbox"
+                        id="exclude-nfe"
+                        checked={excludeNFE}
+                        onChange={handleExcludeNFEChange}
+                        className="checkbox-input"
+                        style={{ marginLeft: '20px' }}
+                    />
+                    <label htmlFor="exclude-nfe" className="checkbox-label">
+                        Exclude NFE
+                    </label>
+                    <input
+                        type="checkbox"
+                        id="exclude-lc"
+                        checked={excludeLC}
+                        onChange={handleExcludeLCChange}
+                        className="checkbox-input"
+                        style={{ marginLeft: '20px' }}
+                    />
+                    <label htmlFor="exclude-lc" className="checkbox-label">
+                        Exclude LC
                     </label>
                 </div>
                 <button onClick={calculateCoverage}>Calculate Coverage</button>
