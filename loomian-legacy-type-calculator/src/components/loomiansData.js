@@ -5812,6 +5812,50 @@ export const loomiansData = [
         secretAbility: 'Elusive',
         weightkg: 84.8,
         heightcm: 287 },
+    { name: 'Snicle', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/snicle.png'),
+        moves: [
+            "Gnaw", "Daydream", "Flurry", "Chomp", "Poison", "Chase Down", "Chilly Chomp",
+            "Bamboozle", "Provoke", "Icicle Trap", "Venom Chomp", "Power Focus", "Frost Breath",
+            "Mega Chomp", "Spike Rush", "Eerie Stare", "Charade", "Deja Vu", "Final Ruse", "Harrow",
+            "Nab", "Preemptive Strike", "Quick Pounce", "Rough Up", "Slumber", "Square One",
+            "Tricky Tactics", "Bulk Up", "Dark Surge", "Dodge", "Frost Beam", "Ill Will"
+        ],
+        stats: {
+            hp: 30,
+            energy: 30,
+            attack: 53,
+            defense: 49,
+            rattack: 34,
+            rdefense: 29,
+            speed: 47
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Puncture'],
+        secretAbility: 'Toxic Sac',
+        weightkg: 10.9,
+        heightcm: 94 },
+    { name: 'Slivyce', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/slivyce.png'),
+        moves: [
+            "Gnaw", "Daydream", "Flurry", "Chomp", "Poison", "Chase Down", "Chilly Chomp",
+            "Bamboozle", "Provoke", "Icicle Trap", "Venom Chomp", "Power Focus", "Frost Breath",
+            "Mega Chomp", "Spike Rush", "Eerie Stare", "Charade", "Deja Vu", "Final Ruse", "Harrow",
+            "Nab", "Preemptive Strike", "Quick Pounce", "Rough Up", "Slumber", "Square One",
+            "Tricky Tactics", "Bulk Up", "Dark Surge", "Dodge", "Frost Beam", "Ill Will", "Icicle Fangs"
+        ],
+        stats: {
+            hp: 83,
+            energy: 83,
+            attack: 102,
+            defense: 103,
+            rattack: 73,
+            rdefense: 61,
+            speed: 88
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Puncture'],
+        secretAbility: 'Toxic Sac',
+        weightkg: 25.4,
+        heightcm: 218.4 },
     { name: 'Duskit', primaryType: 'Spirit', secondaryType: 'Mind', icon: require('../assets/icons/duskit.png'),
         moves: [
             "Startle", "Final Ruse", "Brainwash", "Stupefy", "Return to Sender", "Oppress", "Spectral Burst", 

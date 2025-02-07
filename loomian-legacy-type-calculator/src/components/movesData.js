@@ -588,6 +588,31 @@ export const movesData = [
     },
 
     {
+        name: "Icicle Fangs",
+        power: 80,
+        energy: 40,
+        accuracy: 100,
+        type: "Ice",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        bite: true
+    },
+
+    {
+        name: "Spike Rush",
+        power: 40,
+        energy: 25,
+        accuracy: 100,
+        type: "Ice",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        priority: true,
+    },
+
+    {
         name: "Nature's Rage",
         power: 70,
         energy: 55,

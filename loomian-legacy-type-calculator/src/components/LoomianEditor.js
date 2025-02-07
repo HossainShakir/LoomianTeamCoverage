@@ -33,18 +33,18 @@ function LoomianEditor({ loomian, onSave }) {
 
     useEffect(() => {
         if (loomianData) {
-            const sortedMoves = loomianData.moves.sort();
-            setAvailableMoves(sortedMoves);
+            const uniqueMoves = [...new Set(loomianData.moves)].sort(); 
+            setAvailableMoves(uniqueMoves);
             setStatsData(loomianData.stats);
-
+    
             const abilitiesWithSecret = loomianData.secretAbility
                 ? loomianData.abilities.concat(loomianData.secretAbility)
                 : loomianData.abilities;
-
+    
             setAbilityOptions(abilitiesWithSecret);
             setGenderOptions(loomianData.gender || []);
             setRequiredItem(loomianData.requiredItem || '');
-
+    
             if (abilitiesWithSecret.length === 1 && !attributes.ability) {
                 const [onlyAbility] = abilitiesWithSecret;
                 const updatedAttributes = { ...attributes, ability: onlyAbility };
@@ -53,6 +53,7 @@ function LoomianEditor({ loomian, onSave }) {
             }
         }
     }, [loomianData, attributes, onSave]);
+    
 
     useEffect(() => {
         const totalTP = Object.values(attributes.tps).reduce((a, b) => a + b, 0);
@@ -279,32 +280,37 @@ function LoomianEditor({ loomian, onSave }) {
                     .fill()
                     .map((_, index) => {
                         const moveData = getMoveData(attributes.moves[index] || '');
+            
+                        const selectedMoves = attributes.moves.filter(move => move); 
+                        const filteredMoves = availableMoves.filter(move => !selectedMoves.includes(move) || move === attributes.moves[index]);
+
                         return (
                             <div key={index}>
                                 <select
                                     value={attributes.moves[index] || ''}
                                     onChange={(e) => handleMoveChange(index, e.target.value)}
-                                >
-                                    <option value="">--Select Move--</option>
-                                    {availableMoves.map((move, i) => (
-                                        <option key={i} value={move}>
-                                            {move}
-                                        </option>
-                                    ))}
-                                </select>
-                                {moveData && attributes.moves[index] && (
-                                    <div className="move-details">
-                                        <span>Power: {moveData.power}</span>
-                                        <span>Energy: {moveData.energy}</span>
-                                        <span>Accuracy: {moveData.accuracy}</span>
-                                        <span>Type: {moveData.type}</span>
-                                        <span>Category: {moveData.mr}</span>
-                                    </div>
-                                )}
-                            </div>
-                        );
-                    })}
-            </div>
+                                    >
+                                        <option value="">--Select Move--</option>
+                                        {filteredMoves.map((move, i) => (
+                                            <option key={i} value={move}>
+                                                {move}
+                                            </option>
+                                        ))}
+                                    </select>
+                                    {moveData && attributes.moves[index] && (
+                                        <div className="move-details">
+                                            <span>Power: {moveData.power}</span>
+                                            <span>Energy: {moveData.energy}</span>
+                                            <span>Accuracy: {moveData.accuracy}</span>
+                                            <span>Type: {moveData.type}</span>
+                                            <span>Category: {moveData.mr}</span>
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        })}
+                </div>
+
 
             <div className="stats-container">
                 <div className="tp-up-labels">

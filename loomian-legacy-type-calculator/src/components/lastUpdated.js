@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Added type-related abilities to team type calculator
-- Added functionality to remove LC and NFE loomians from results in
-  type coverage calculator as well as moveset searcher
-- Fixed some loomian data
+- Added Snicle line
+- Removed duplicate moves showing in teambuilder
 `;
 
 const LastUpdated = () => {
@@ -22,7 +20,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2025-01-14
+                Last Updated: 2025-02-07
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">
