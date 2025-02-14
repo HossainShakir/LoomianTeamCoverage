@@ -38,6 +38,8 @@ export const specialTypeCharts = {
     HydroVortex: { Water: 0 },
     RagingFire: {Fire: 0},
     Rechargeable: { Electric: 0 },
+    Hover: { Earth: 0 },
+    Forge: { Fire: 0.5 }
 };
 
 export default typeChart;

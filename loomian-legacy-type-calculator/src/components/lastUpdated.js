@@ -20,7 +20,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2025-02-13
+                Last Updated: 2025-02-14
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">
