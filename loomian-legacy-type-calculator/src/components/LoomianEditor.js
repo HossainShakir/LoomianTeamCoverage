@@ -299,11 +299,21 @@ function LoomianEditor({ loomian, onSave }) {
                                     </select>
                                     {moveData && attributes.moves[index] && (
                                         <div className="move-details">
-                                            <span>Power: {moveData.power}</span>
-                                            <span>Energy: {moveData.energy}</span>
-                                            <span>Accuracy: {moveData.accuracy}</span>
-                                            <span>Type: {moveData.type}</span>
-                                            <span>Category: {moveData.mr}</span>
+                                        <span>Power: {moveData.power}</span>
+                                        <span>
+                                            Energy: {["Dodge", "Briar Block", "Magma Block", "Barb Trap", "Tone Barrier", "Ruffled Feathers"].includes(moveData.name) 
+                                            ? Math.floor(calculateStat(statsData.energy, 'energy') * 0.1) 
+                                            : moveData.energy}
+                                        </span>
+                                        <span>Accuracy: {moveData.accuracy}</span>
+                                        <span>Type: {["Adaptive Assault"].includes(moveData.name) 
+                                            ? loomianData.primaryType
+                                            : moveData.type}</span>
+                                        <span>Category: {moveData.name === "Adaptive Assault" 
+                                            ? (Math.floor(calculateStat(statsData.attack, 'attack')) > Math.floor(calculateStat(statsData.rattack, 'rattack')) 
+                                            ? "Melee" 
+                                            : "Ranged")
+                                            : moveData.mr}</span>
                                         </div>
                                     )}
                                 </div>

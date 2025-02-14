@@ -303,6 +303,17 @@ export const movesData = [
     },
 
     {
+        name: "Steel Trap",
+        power: 60,
+        energy: 35,
+        accuracy: 100,
+        type: "Metal",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense"
+    },
+
+    {
         name: "Discordance",
         power: 90,
         energy: 50,
@@ -311,13 +322,14 @@ export const movesData = [
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
+        sound: true,
         secondaryEffect: true
     },
 
     {
         name: "Blood Drain",
         power: 20,
-        energy: 34,
+        energy: 30,
         accuracy: 90,
         type: "Dark",
         mr: "Melee",
@@ -378,7 +390,7 @@ export const movesData = [
     {
         name: "Submerge",
         power: 75,
-        energy: 38,
+        energy: 30,
         accuracy: 100,
         type: "Water",
         mr: "Melee",
@@ -761,28 +773,27 @@ export const movesData = [
     {
         name: "Holy Slash",
         power: 75,
-        energy: 32,
+        energy: 35,
         accuracy: 100,
         type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
         typeModifier: { type: "Dark", modifier: 2 },
         contact: true
     },
 
     {
         name: "Muck Buck",
-        power: 85,
-        energy: 50,
-        accuracy: 95,
+        power: 95,
+        energy: 40,
+        accuracy: 100,
         type: "Earth",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        aoe: true,
         contact: true,
-        recoil: 3/20
+        recoil: 1/4
     },
 
     {
@@ -798,9 +809,9 @@ export const movesData = [
 
     {
         name: "Rant",
-        power: 55,
+        power: 65,
         energy: 32,
-        accuracy: 95,
+        accuracy: 90,
         type: "Dark",
         mr: "Ranged",
         mr1: "Ranged Attack",
@@ -949,7 +960,7 @@ export const movesData = [
 
     {
         name: "Oppress",
-        power: 65,
+        power: 70,
         energy: 44,
         accuracy: 100,
         type: "Spirit",
@@ -1024,7 +1035,7 @@ export const movesData = [
     {
         name: "Elemental Burst",
         power: 80,
-        energy: 48,
+        energy: 50,
         accuracy: 100,
         type: "Ancient",
         mr: "Ranged",
@@ -1036,7 +1047,7 @@ export const movesData = [
     {
         name: "Parasitize",
         power: 80,
-        energy: 55,
+        energy: 50,
         accuracy: 100,
         type: "Bug",
         mr: "Melee",
@@ -1075,7 +1086,7 @@ export const movesData = [
     {
         name: "Gamma Pulse",
         power: 80,
-        energy: 50,
+        energy: 40,
         accuracy: 100,
         type: "Light",
         mr: "Ranged",
@@ -1307,7 +1318,7 @@ export const movesData = [
     {
         name: "Raging Tackle",
         power: 120,
-        energy: 62,
+        energy: 60,
         accuracy: 100,
         type: "Simple",
         mr: "Melee",
@@ -1517,7 +1528,7 @@ export const movesData = [
     {
         name: "Raging Howl",
         power: 120,
-        energy: 62,
+        energy: 60,
         accuracy: 100,
         type: "Simple",
         mr: "Ranged",
@@ -1627,7 +1638,7 @@ export const movesData = [
 
     {
         name: "Geyser",
-        power: 75,
+        power: 80,
         energy: 40,
         accuracy: 100,
         type: "Water",
@@ -1799,9 +1810,9 @@ export const movesData = [
 
     {
         name: "Electroburst",
-        power: 85,
-        energy: 50,
-        accuracy: 95,
+        power: 100,
+        energy: 54,
+        accuracy: 90,
         type: "Electric",
         mr: "Ranged",
         mr1: "Ranged Attack",
@@ -1836,8 +1847,8 @@ export const movesData = [
 
     {
         name: "Thunder Crash",
-        power: 90,
-        energy: 38,
+        power: 95,
+        energy: 40,
         accuracy: 100,
         type: "Electric",
         mr: "Melee",
@@ -1922,9 +1933,21 @@ export const movesData = [
     },
 
     {
+        name: "Gloominous Fangs",
+        power: 85,
+        energy: 46,
+        accuracy: 100,
+        type: "Simple",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        bite: true
+    },
+
+    {
         name: "Gobble Goop",
         power: 60,
-        energy: 36,
+        energy: 40,
         accuracy: 100,
         type: "Toxic",
         mr: "Ranged",
@@ -2091,14 +2114,14 @@ export const movesData = [
 
     {
         name: "Dart Burst",
-        power: 35,
+        power: 15,
         energy: 40,
         accuracy: 90,
         type: "Metal",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        hits: 3,
+        hits: 10,
         secondaryEffect: true
     },
 
@@ -2106,7 +2129,7 @@ export const movesData = [
         name: "Double Whack",
         power: 35,
         energy: 34,
-        accuracy: 100,
+        accuracy: 90,
         type: "Metal",
         mr: "Melee",
         mr1: "Melee Attack",
@@ -2118,8 +2141,8 @@ export const movesData = [
     {
         name: "Complete Demolition",
         power: 150,
-        energy: 60,
-        accuracy: 90,
+        energy: 50,
+        accuracy: 100,
         type: "Metal",
         mr: "Melee",
         mr1: "Melee Attack",
@@ -2186,7 +2209,7 @@ export const movesData = [
 
     {
         name: "Reflection Burst",
-        power: 60,
+        power: 70,
         energy: 40,
         accuracy: 100,
         type: "Metal",
@@ -2284,7 +2307,7 @@ export const movesData = [
 
     {
         name: "Ill Will",
-        power: 60,
+        power: 70,
         energy: 40,
         accuracy: 100,
         type: "Simple",
@@ -2296,8 +2319,8 @@ export const movesData = [
 
     {
         name: "Stampede",
-        power: 1,
-        energy: 55,
+        power: 30,
+        energy: 25,
         accuracy: 100,
         type: "Simple",
         mr: "Melee",
@@ -2453,7 +2476,7 @@ export const movesData = [
     {
         name: "Clamp Claw",
         power: 85,
-        energy: 55,
+        energy: 50,
         accuracy: 100,
         type: "Bug",
         mr: "Melee",
@@ -2466,13 +2489,26 @@ export const movesData = [
     {
         name: "Tsunami",
         power: 90,
-        energy: 60,
+        energy: 50,
         accuracy: 100,
         type: "Water",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
         aoe: true
+    },
+
+    {
+        name: "Sea Song",
+        power: 80,
+        energy: 60,
+        accuracy: 100,
+        type: "Water",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        sound: true,
+        pivot: true
     },
 
     {
@@ -2484,12 +2520,12 @@ export const movesData = [
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        secondaryEffect: true
+        aoe: true
     },
 
     {
         name: "Soul Drain",
-        power: 85,
+        power: 80,
         energy: 50,
         accuracy: 100,
         type: "Dark",
@@ -2524,7 +2560,7 @@ export const movesData = [
 
     {
         name: "Piercing Drive",
-        power: 75,
+        power: 85,
         energy: 40,
         accuracy: 90,
         type: "Water",
@@ -2834,7 +2870,7 @@ export const movesData = [
     {
         name: "Meteor Smash",
         power: 90,
-        energy: 55,
+        energy: 50,
         accuracy: 100,
         type: "Ancient",
         mr: "Melee",
@@ -2846,7 +2882,7 @@ export const movesData = [
     {
         name: "Meteor Crash",
         power: 90,
-        energy: 55,
+        energy: 50,
         accuracy: 100,
         type: "Ancient",
         mr: "Ranged",
@@ -2944,6 +2980,20 @@ export const movesData = [
     },
 
     {
+        name: "Bone Crunch",
+        power: 80,
+        energy: 46,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        secondaryEffect: true,
+        bite: true
+    },
+
+    {
         name: "Venom Slash",
         power: 70,
         energy: 45,
@@ -2970,7 +3020,7 @@ export const movesData = [
 
     {
         name: "Soul Harvest",
-        power: 50,
+        power: 60,
         energy: 30,
         accuracy: 100,
         type: "Spirit",
@@ -3069,8 +3119,8 @@ export const movesData = [
 
     {
         name: "Paint Shower",
-        power: 100,
-        energy: 54,
+        power: 110,
+        energy: 50,
         accuracy: 100,
         type: "Toxic",
         mr: "Ranged",
@@ -3081,7 +3131,7 @@ export const movesData = [
     {
         name: "Plunge",
         power: 90,
-        energy: 40,
+        energy: 35,
         accuracy: 100,
         type: "Water",
         mr: "Melee",
@@ -3117,12 +3167,12 @@ export const movesData = [
 
     {
         name: "Tempest",
-        power: -1,
+        power: 80,
         energy: 40,
         accuracy: 100,
         type: "Air",
         mr: "Ranged",
-        mr1: "Ranged Attack",
+        mr1: "Speed",
         mr2: "Ranged Defense",
     },
 
@@ -3186,6 +3236,8 @@ export const movesData = [
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
+
+        typeModifier: { type: "Air", modifier: 2 }
     },
 
     {
@@ -3204,7 +3256,7 @@ export const movesData = [
 
     {
         name: "Horn-Dashi",
-        power: 60,
+        power: 70,
         energy: 40,
         accuracy: 100,
         type: "Brawler",
@@ -3264,7 +3316,7 @@ export const movesData = [
 
     {
         name: "Splitting Headache",
-        power: 60,
+        power: 70,
         energy: 40,
         accuracy: 100,
         type: "Mind",
@@ -3335,7 +3387,7 @@ export const movesData = [
     {
         name: "Pep Jab",
         power: 80,
-        energy: 55,
+        energy: 50,
         accuracy: 100,
         type: "Brawler",
         mr: "Melee",
@@ -3349,7 +3401,7 @@ export const movesData = [
     {
         name: "Vital Jab",
         power: 80,
-        energy: 55,
+        energy: 50,
         accuracy: 100,
         type: "Brawler",
         mr: "Melee",
@@ -3363,7 +3415,7 @@ export const movesData = [
     {
         name: "Power Draw",
         power: 80,
-        energy: 55,
+        energy: 50,
         accuracy: 100,
         type: "Electric",
         mr: "Ranged",
@@ -3767,7 +3819,7 @@ export const movesData = [
     {
         name: "Sap Plant",
         power: 0,
-        energy: 35,
+        energy: 30,
         accuracy: 90,
         type: "Plant",
         mr: "Support"
@@ -3776,7 +3828,7 @@ export const movesData = [
     {
         name: "Scapegoat",
         power: 0,
-        energy: 0,
+        energy: 20,
         accuracy: "N/A",
         type: "Simple",
         mr: "Support",
@@ -3796,7 +3848,7 @@ export const movesData = [
         name: "Snore Spores",
         power: 0,
         energy: 40,
-        accuracy: 75,
+        accuracy: 90,
         type: "Plant",
         mr: "Support"
     },
@@ -3842,7 +3894,7 @@ export const movesData = [
         name: "Static Spores",
         power: 0,
         energy: 25,
-        accuracy: 75,
+        accuracy: 90,
         type: "Plant",
         mr: "Support"
     },
@@ -3878,7 +3930,7 @@ export const movesData = [
         name: "Toxic Spores",
         power: 0,
         energy: 25,
-        accuracy: 75,
+        accuracy: 90,
         type: "Toxic",
         mr: "Support"
     },
@@ -3904,7 +3956,7 @@ export const movesData = [
     {
         name: "Wonder Herb",
         power: 0,
-        energy: 45,
+        energy: 35,
         accuracy: "N/A",
         type: "Plant",
         mr: "Support"
@@ -3922,16 +3974,7 @@ export const movesData = [
     {
         name: "Health Gift",
         power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    {
-        name: "Energy Gift",
-        power: 0,
-        energy: 50,
+        energy: 40,
         accuracy: "N/A",
         type: "Mind",
         mr: "Support"
@@ -3976,7 +4019,7 @@ export const movesData = [
     {
         name: "Battle Horn",
         power: 0,
-        energy: 50,
+        energy: 30,
         accuracy: "N/A",
         type: "Simple",
         mr: "Support",
@@ -4005,7 +4048,7 @@ export const movesData = [
     {
         name: "Gain Drain",
         power: 0,
-        energy: 45,
+        energy: 30,
         accuracy: "N/A",
         type: "Dark",
         mr: "Support"
@@ -4042,7 +4085,7 @@ export const movesData = [
         name: "Hypnotize",
         power: 0,
         energy: 40,
-        accuracy: 75,
+        accuracy: 90,
         type: "Mind",
         mr: "Support"
     },
@@ -4177,7 +4220,7 @@ export const movesData = [
     {
         name: "Square One",
         power: 0,
-        energy: 40,
+        energy: 30,
         accuracy: "N/A",
         type: "Dark",
         mr: "Support"
@@ -4250,7 +4293,7 @@ export const movesData = [
     {
         name: "Dissipate",
         power: 0,
-        energy: 30,
+        energy: 45,
         accuracy: "N/A",
         type: "Mind",
         mr: "Support"
@@ -4259,7 +4302,7 @@ export const movesData = [
     {
         name: "Near Enchantment",
         power: 0,
-        energy: 50,
+        energy: 40,
         accuracy: "N/A",
         type: "Ancient",
         mr: "Support"
@@ -4268,7 +4311,7 @@ export const movesData = [
     {
         name: "Far Enchantment",
         power: 0,
-        energy: 50,
+        energy: 40,
         accuracy: "N/A",
         type: "Ancient",
         mr: "Support"
@@ -4280,15 +4323,6 @@ export const movesData = [
         energy: 25,
         accuracy: "N/A",
         type: "Plant",
-        mr: "Support"
-    },
-
-    {
-        name: "Steel Trap",
-        power: 0,
-        energy: 35,
-        accuracy: 95,
-        type: "Metal",
         mr: "Support"
     },
 
@@ -4347,6 +4381,15 @@ export const movesData = [
     },
 
     {
+        name: "Clean Up",
+        power: 0,
+        energy: 72,
+        accuracy: "N/A",
+        type: "Metal",
+        mr: "Support"
+    },
+
+    {
         name: "Armor Down",
         power: 0,
         energy: 25,
@@ -4358,7 +4401,7 @@ export const movesData = [
     {
         name: "Tear Down",
         power: 0,
-        energy: 45,
+        energy: 35,
         accuracy: "N/A",
         type: "Simple",
         mr: "Support"

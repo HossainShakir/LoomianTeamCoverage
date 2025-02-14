@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Added Snicle line
-- Removed duplicate moves showing in teambuilder
+- Added Season 1 balance changes
+- Fixed adaptive assault move details
 `;
 
 const LastUpdated = () => {
@@ -20,7 +20,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2025-02-07
+                Last Updated: 2025-02-13
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">
