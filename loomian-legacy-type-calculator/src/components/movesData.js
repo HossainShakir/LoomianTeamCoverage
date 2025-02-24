@@ -2320,7 +2320,7 @@ export const movesData = [
     {
         name: "Stampede",
         power: 30,
-        energy: 25,
+        energy: 40,
         accuracy: 100,
         type: "Simple",
         mr: "Melee",

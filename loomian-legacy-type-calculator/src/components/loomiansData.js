@@ -1339,7 +1339,7 @@ export const loomiansData = [
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
-            "Spectral Burst", "Steel Trap", "Hop Kick", "Spare", "Harrow"
+            "Spectral Burst", "Steel Trap", "Hop Kick", "Spare", "Harrow", "Bulk Up"
         ],
         stats: {
             hp: 99,
@@ -1351,7 +1351,7 @@ export const loomiansData = [
             speed: 75
         },
         gender: ['Ungendered'], 
-        abilities: ['Sharp Claws'],
+        abilities: ['Prowler'],
         secretAbility: 'Terrifying',
         weightkg: 95.3,
         heightcm: 203.2 },
@@ -1507,8 +1507,8 @@ export const loomiansData = [
     { name: 'Craytal', primaryType: 'Fire', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/craytal.png'),
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
-            "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
-            "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate"
+            "Brawn Boost", "Fire Breath", "Flare Blast", "High-Pitch Screech", "Tear Down",
+            "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate"
         ],
         stats: {
             hp: 76,
@@ -1549,8 +1549,8 @@ export const loomiansData = [
     { name: 'Krakaloa', primaryType: 'Fire', secondaryType: 'None', icon: require('../assets/icons/krakaloa.png'),
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
-            "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
-            "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
+            "Brawn Boost", "Fire Breath", "Flare Blast", "High-Pitch Screech", "Tear Down",
+            "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge"
         ],
         stats: {
@@ -1571,8 +1571,8 @@ export const loomiansData = [
     { name: 'Krakaloa-Lavafiend', primaryType: 'Fire', secondaryType: 'Spirit', icon: require('../assets/icons/krakaloa-lavafiend.png'),
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
-            "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
-            "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
+            "Brawn Boost", "Fire Breath", "Flare Blast", "High-Pitch Screech", "Tear Down",
+            "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge",
             "Eruption"
         ],
@@ -1594,8 +1594,8 @@ export const loomiansData = [
     { name: 'Volkaloa', primaryType: 'Fire', secondaryType: 'Ancient', icon: require('../assets/icons/volkaloa.png'),
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
-            "Brawn Boost", "Burn Up", "Earthquake", "Fire Breath", "Flare Blast", "High-Pitch Screech", 
-            "Phantom Slash", "Raging Flame", "Raging Tackle", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
+            "Brawn Boost", "Fire Breath", "Flare Blast", "High-Pitch Screech", "Tear Down",
+            "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Savage Greed", "Coconut Bomb", "Blaze Chomp", "Primal Slash", "Blaze Punch", "Ill Will"
         ],
         stats: {
@@ -3129,7 +3129,7 @@ export const loomiansData = [
             speed: 89
         },
         gender: ['Male', 'Female'], 
-        abilities: ['Confidence', 'Boast'],
+        abilities: ['Confidence', 'Staunch'],
         secretAbility: 'Vengeance',
         weightkg: 105.23,
         heightcm: 172.72 },
