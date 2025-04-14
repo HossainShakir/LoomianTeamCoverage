@@ -4392,7 +4392,7 @@ export const loomiansData = [
         moves: [
             "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
             "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
-            "Spare"
+            "Spare", "Mega Chomp", "Gnarly Gash", "Outburst"
         ],
         stats: {
             hp: 67,
@@ -4412,7 +4412,7 @@ export const loomiansData = [
         moves: [
             "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
             "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
-            "Spare", "Air Blade", "Gust", "Jet Stream"
+            "Spare", "Air Blade", "Gust", "Jet Stream", "Mega Chomp", "Gnarly Gash", "Outburst"
         ],
         stats: {
             hp: 86,
@@ -4432,7 +4432,7 @@ export const loomiansData = [
         moves: [
             "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
             "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
-            "Spare", "Air Blade", "Gust", "Jet Stream", "Egg Storm"
+            "Spare", "Air Blade", "Gust", "Jet Stream", "Egg Storm", "Mega Chomp", "Gnarly Gash", "Outburst", "Nosedive", "Double Beat"
         ],
         stats: {
             hp: 96,
@@ -4452,7 +4452,8 @@ export const loomiansData = [
         moves: [
             "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
             "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
-            "Spare", "Air Blade", "Gust", "Jet Stream", "Egg Storm", "Egg Onslaught"
+            "Spare", "Air Blade", "Gust", "Jet Stream", "Egg Storm", "Mega Chomp", "Gnarly Gash", "Outburst", "Nosedive", 
+            "Double Beat", "Egg Onslaught"
         ],
         stats: {
             hp: 96,
