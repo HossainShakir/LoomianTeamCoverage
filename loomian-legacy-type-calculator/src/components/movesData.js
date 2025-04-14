@@ -834,6 +834,18 @@ export const movesData = [
     },
 
     {
+        name: "Egg Onslaught",
+        power: 125,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Dark",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        aoe: true
+    },
+
+    {
         name: "Light Dash",
         power: 40,
         energy: 25,

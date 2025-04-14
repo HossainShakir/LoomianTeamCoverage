@@ -4448,6 +4448,27 @@ export const loomiansData = [
         secretAbility: 'Vicious',
         weightkg: 146.1,
         heightcm: 264.2 },
+    { name: 'Dreggodyne-Tempereign', primaryType: 'Dark', secondaryType: 'Air', icon: require('../assets/icons/dreggodyne-tempereign.png'),
+        moves: [
+            "Tail Slap", "Dino Claws", "Stare", "Rant", "Provoke", "Bamboozle", "Headbutt", "Eerie Stare", "Shrewd Blast", 
+            "Dark Surge", "High-Pitch Screech", "Draco Beam", "Nab", "Slumber", "Tease", "Dodge", "Mud Spatter", "Peace of Mind",
+            "Spare", "Air Blade", "Gust", "Jet Stream", "Egg Storm", "Egg Onslaught"
+        ],
+        stats: {
+            hp: 96,
+            energy: 92,
+            attack: 93,
+            defense: 97,
+            rattack: 145,
+            rdefense: 82,
+            speed: 95
+        },
+        gender: ['Male', 'Female'], 
+        abilities: ['Remorseless'],
+        secretAbility: '',
+        weightkg: 146.1,
+        heightcm: 264.2,
+        requiredItem: 'Dreggoburst' },
     { name: 'Wispur', primaryType: 'Spirit', secondaryType: 'Light', tier: 'LC', icon: require('../assets/icons/wispur.png'),
         moves: [
             "Hazy Shroud", "Dawdle", "Shine", "Startle", "Flash", "Flurry", "Mind's Eye", "Shadow Sprint", "Gust", "Sleet Shot", "Spectral Burst", 

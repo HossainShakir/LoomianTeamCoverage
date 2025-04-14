@@ -80,6 +80,11 @@ export const itemsData = [
         description: 'Increases the Health drained from Health-draining moves by 20%.'
     },
     {
+        icon: require('../assets/icons/dreggoburst.png'),
+        name: 'Dreggoburst',
+        description: "Empowers Dreggodyne to Soul Burst. Enables one use of Egg Onslaught: Dark-type, Ranged, 125 Strength. Blast the battlefield with a deluge of egg-like charges, dealing significant damage to all nearby Loomians."
+    },
+    {
         icon: require('../assets/icons/dropofyouth.png'),
         name: 'Drop of Youth',
         description: 'Boosts the Ranged and Melee Defense stats of the holder by 50% but prevents it from evolving. Has no effect if the holder is fully evolved.'
