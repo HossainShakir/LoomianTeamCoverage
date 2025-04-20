@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Added Soulburst Dreggodyne
+- Easter items added
 `;
 
 const LastUpdated = () => {
@@ -19,7 +19,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2025-04-13
+                Last Updated: 2025-04-19
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">
