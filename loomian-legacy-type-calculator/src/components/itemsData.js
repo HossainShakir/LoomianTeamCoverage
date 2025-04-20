@@ -90,6 +90,11 @@ export const itemsData = [
         description: 'Boosts the Ranged and Melee Defense stats of the holder by 50% but prevents it from evolving. Has no effect if the holder is fully evolved.'
     },
     {
+        icon: require('../assets/icons/dryice.png'),
+        name: 'Dry Ice',
+        description: 'When held by a Loomian, it will be inflicted with frostbite at the end of the turn, unless it already has a non-volatile status ailment, is an Ice-type Loomian, or possesses the Immunized Ability.'
+    },
+    {
         icon: require('../assets/icons/earthessence.png'),
         name: 'Earth Essence',
         description: 'When held by a Loomian, this strange substance will boost the strength of their Earth-type moves in battle.'
@@ -295,6 +300,16 @@ export const itemsData = [
         description: "A Loomian equipped with Rageful Plushie, when strucked by a super-effective move, will become enraged, greatly boosting its Melee Attack and Ranged Attack."
     },
     {
+        icon: require('../assets/icons/restrictivearmor.png'),
+        name: 'Restrictive Armor',
+        description: "When held by a Loomian, it will increase its Melee Defense by 50%. However, the holder can no longer use Support Moves in battle."
+    },
+    {
+        icon: require('../assets/icons/restrictiveshield.png'),
+        name: 'Restrictive Shield',
+        description: "When held by a Loomian, it will increase its Ranged Defense by 50%. However, the holder can no longer use Support Moves in battle."
+    },
+    {
         icon: require('../assets/icons/shadepearl.png'),
         name: 'Shade Pearl',
         description: "Absorbs half the power of a Dark-type attack used against the Loomian equipped with this item."
@@ -378,6 +393,11 @@ export const itemsData = [
         icon: require('../assets/icons/toxicessence.png'),
         name: 'Toxic Essence',
         description: "When held by a Loomian, this strange substance will boost the strength of their Toxic-type moves in battle."
+    },
+    {
+        icon: require('../assets/icons/virulentfang.png'),
+        name: 'Virulent Fang',
+        description: "When held by a Loomian, it will be inflicted with bad poison at the end of the turn, unless it already has a non-volatile status ailment, is a Toxic-type Loomian, or possesses the Immunized Ability."
     },
     {
         icon: require('../assets/icons/volcanicash.png'),
