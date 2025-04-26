@@ -2399,7 +2399,7 @@ export const loomiansData = [
             "Static Shock", "Spare", "Dino Claws", "Power Siphon", "Tase", "Precision Bolt", "Sharpen", 
             "Thunder Slam", "Shrewd Blast", "Bamboozle", "Primal Slash", "Thunder Crash", "Bane of Haste", 
             "Bulk Up", "Clay Slap", "Earthquake", "Jump Start", "Bait", "Dodge", "Ill Will", "Mud Spatter",
-            "Thunderstrike", "Thunder Clap", "Fulgur Fangs", "Zip-Zap"
+            "Thunderstrike", "Thunder Clap", "Fulgur Fangs", "Zip-Zap", "Brawn Boost"
         ],
         stats: {
             hp: 94,
