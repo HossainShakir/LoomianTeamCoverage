@@ -1733,7 +1733,7 @@ export const movesData = [
 
     {
         name: "Expert Onslaught",
-        power: 50,
+        power: 75,
         energy: 40,
         accuracy: 100,
         type: "Simple",
@@ -2128,7 +2128,7 @@ export const movesData = [
         name: "Dart Burst",
         power: 15,
         energy: 40,
-        accuracy: 90,
+        accuracy: 85,
         type: "Metal",
         mr: "Ranged",
         mr1: "Ranged Attack",
@@ -2710,6 +2710,18 @@ export const movesData = [
     },
 
     {
+        name: "Judgement",
+        power: 85,
+        energy: 45,
+        accuracy: 100,
+        type: "Mind",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        secondaryEffect: true
+    },
+
+    {
         name: "Vicious Snap",
         power: 75,
         energy: 45,
@@ -2756,6 +2768,19 @@ export const movesData = [
         mr2: "Melee Defense",
         contact: true,
         recoil: 1/3
+    },
+
+    {
+        name: "Vine Lash",
+        power: 90,
+        energy: 50,
+        accuracy: 100,
+        type: "Plant",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        secondaryEffect: true
     },
 
     {
@@ -2827,6 +2852,33 @@ export const movesData = [
         mr2: "Melee Defense",
         contact: true,
         recoil: 1/4,
+        secondaryEffect: true
+    },
+
+    {
+        name: "Charred Claws",
+        power: 90,
+        energy: 50,
+        accuracy: 100,
+        type: "Fire",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        secondaryEffect: true
+    },
+
+    {
+        name: "Blaze of Glory",
+        power: 120,
+        energy: 60,
+        accuracy: 100,
+        type: "Fire",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        recoil: 1/3,
         secondaryEffect: true
     },
 
@@ -2929,7 +2981,7 @@ export const movesData = [
 
     {
         name: "Outburst",
-        power: 1,
+        power: 125,
         energy: 60,
         accuracy: 100,
         type: "Ancient",
@@ -2937,7 +2989,6 @@ export const movesData = [
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        regen: 1/5
     },
 
     {
@@ -2951,6 +3002,19 @@ export const movesData = [
         mr2: "Melee Defense",
         contact: true,
         punch: true,
+        secondaryEffect: true
+    },
+
+    {
+        name: "Blaze Rush",
+        power: 60,
+        energy: 45,
+        accuracy: 100,
+        type: "Fire",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
         secondaryEffect: true
     },
 
@@ -3075,7 +3139,6 @@ export const movesData = [
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        secondaryEffect: true,
         typeModifier: { type: "Water", modifier: 4 }
     },
 
@@ -3102,6 +3165,18 @@ export const movesData = [
         mr2: "Ranged Defense",
         secondaryEffect: true,
         aoe: true
+    },
+
+    {
+        name: "Frost Blast",
+        power: 110,
+        energy: 60,
+        accuracy: 80,
+        type: "Ice",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        secondaryEffect: true,
     },
 
     {
@@ -3339,8 +3414,8 @@ export const movesData = [
 
     {
         name: "Mudslide",
-        power: 70,
-        energy: 40,
+        power: 30,
+        energy: 35,
         accuracy: 100,
         type: "Earth",
         mr: "Ranged",
@@ -3759,7 +3834,7 @@ export const movesData = [
     {
         name: "Gust",
         power: 0,
-        energy: 25,
+        energy: 40,
         accuracy: 100,
         type: "Air",
         mr: "Support"
@@ -4013,7 +4088,7 @@ export const movesData = [
     {
         name: "Burn Up",
         power: 0,
-        energy: 25,
+        energy: 40,
         accuracy: "N/A",
         type: "Fire",
         mr: "Support"
@@ -4429,6 +4504,15 @@ export const movesData = [
     },
 
     {
+        name: "Hasten",
+        power: 0,
+        energy: 25,
+        accuracy: "N/A",
+        type: "Simple",
+        mr: "Support"
+    },
+
+    {
         name: "Tribute",
         power: 0,
         energy: 50,
@@ -4505,8 +4589,10 @@ export const movesData = [
         power: 0,
         energy: 40,
         accuracy: 90,
-        type: "Dark",
-        mr: "Support"
+        type: "Spirit",
+        mr: "Range",
+        mr1: "Range Attack",
+        mr2: "Range Defense",
     },
 
 ]; 

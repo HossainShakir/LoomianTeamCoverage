@@ -302,12 +302,12 @@ export const itemsData = [
     {
         icon: require('../assets/icons/restrictivearmor.png'),
         name: 'Restrictive Armor',
-        description: "When held by a Loomian, it will increase its Melee Defense by 50%. However, the holder can no longer use Support Moves in battle."
+        description: "When held by a Loomian, it will increase its Melee Defense by 33%. However, the holder can no longer use Support Moves in battle."
     },
     {
         icon: require('../assets/icons/restrictiveshield.png'),
         name: 'Restrictive Shield',
-        description: "When held by a Loomian, it will increase its Ranged Defense by 50%. However, the holder can no longer use Support Moves in battle."
+        description: "When held by a Loomian, it will increase its Ranged Defense by 33%. However, the holder can no longer use Support Moves in battle."
     },
     {
         icon: require('../assets/icons/shadepearl.png'),
