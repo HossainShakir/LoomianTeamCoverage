@@ -5872,7 +5872,7 @@ export const loomiansData = [
         secretAbility: 'Elusive',
         weightkg: 84.8,
         heightcm: 287 },
-    { name: 'Snicle', primaryType: 'Ice', secondaryType: 'Dark', icon: require('../assets/icons/snicle.png'),
+    { name: 'Snicle', primaryType: 'Ice', secondaryType: 'Dark', tier: 'LC', icon: require('../assets/icons/snicle.png'),
         moves: [
             "Gnaw", "Daydream", "Flurry", "Chomp", "Poison", "Chase Down", "Chilly Chomp",
             "Bamboozle", "Provoke", "Icicle Trap", "Venom Chomp", "Power Focus", "Frost Breath",

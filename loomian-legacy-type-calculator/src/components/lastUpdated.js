@@ -3,6 +3,7 @@ import '../App.css';
 
 const changelog = `
 - Season 2 balance changes added
+- Bug Fixes
 `;
 
 const LastUpdated = () => {
@@ -19,7 +20,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2025-04-25
+                Last Updated: 2025-04-29
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">
