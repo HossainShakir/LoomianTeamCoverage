@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Season 2 balance changes added
-- Bug Fixes
+- Solnecta and Dainuki evo line added
+- Text errors fixed
 `;
 
 const LastUpdated = () => {
@@ -20,7 +20,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2025-04-29
+                Last Updated: 2025-06-13
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

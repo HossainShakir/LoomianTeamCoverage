@@ -1071,6 +1071,32 @@ export const movesData = [
     },
 
     {
+        name: "Counter Poise",
+        power: 70,
+        energy: 45,
+        accuracy: 100,
+        type: "Bug",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        priority: true,
+    },
+
+    {
+        name: "Lunge",
+        power: 90,
+        energy: 50,
+        accuracy: 100,
+        type: "Bug",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        secondaryEffect: true,
+    },
+
+    {
         name: "Headbutt",
         power: 60,
         energy: 25,
@@ -4525,6 +4551,15 @@ export const movesData = [
         name: "Empathize",
         power: 0,
         energy: 40,
+        accuracy: "N/A",
+        type: "Simple",
+        mr: "Support"
+    },
+
+    {
+        name: "Hoodwink",
+        power: 0,
+        energy: 35,
         accuracy: "N/A",
         type: "Simple",
         mr: "Support"

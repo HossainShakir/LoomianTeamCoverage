@@ -5916,6 +5916,50 @@ export const loomiansData = [
         secretAbility: 'Toxic Sac',
         weightkg: 25.4,
         heightcm: 218.4 },
+    { name: 'Nukichi', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/nukichi.png'),
+        moves: [
+            "Emulate", "Pounce", "Stupefy", "Scapegoat", "Headbutt", "Swat", "Shadow Sprint",
+            "Sharpen", "Bamboozle", "Slash", "Provoke", "Phantom Slash", "Body Slam", "Tricky Tactics",
+            "Enamor", "Harrow", "Bag of Tricks", "Banana Split", "Coconut Bomb", "Far Enchantment",
+            "Impersonate", "Near Enchantment", "Raging Tackle", "Teamwork", "Tease", "Vital Jab",
+            "Wonder Herb", "Barter", "Bulk Up", "Dodge", "Rejuvenate", "Spare"
+        ],
+        stats: {
+            hp: 54,
+            energy: 75,
+            attack: 89,
+            defense: 45,
+            rattack: 53,
+            rdefense: 37,
+            speed: 96
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Lucky', 'Sly'],
+        secretAbility: 'Handy',
+        weightkg: 5.9,
+        heightcm: 53.3 },
+    { name: 'Dainuki', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/dainuki.png'),
+        moves: [
+            "Emulate", "Pounce", "Stupefy", "Scapegoat", "Headbutt", "Swat", "Shadow Sprint",
+            "Sharpen", "Bamboozle", "Slash", "Provoke", "Phantom Slash", "Body Slam", "Tricky Tactics",
+            "Enamor", "Harrow", "Bag of Tricks", "Banana Split", "Coconut Bomb", "Far Enchantment",
+            "Impersonate", "Near Enchantment", "Raging Tackle", "Teamwork", "Tease", "Vital Jab",
+            "Wonder Herb", "Barter", "Bulk Up", "Dodge", "Rejuvenate", "Spare", "Hoodwink"
+        ],
+        stats: {
+            hp: 108,
+            energy: 96,
+            attack: 89,
+            defense: 93,
+            rattack: 53,
+            rdefense: 61,
+            speed: 96
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Lucky', 'Sly'],
+        secretAbility: 'Handy',
+        weightkg: 30.8,
+        heightcm: 94 },
     { name: 'Duskit', primaryType: 'Spirit', secondaryType: 'Mind', icon: require('../assets/icons/duskit.png'),
         moves: [
             "Startle", "Final Ruse", "Brainwash", "Stupefy", "Return to Sender", "Oppress", "Spectral Burst", 
@@ -6427,6 +6471,30 @@ export const loomiansData = [
         secretAbility: 'Idiosyncratic',
         weightkg: 123.38,
         heightcm: 93.98 },
+    { name: 'Solnecta', primaryType: 'Bug', secondaryType: 'Light', icon: require('../assets/icons/solnecta.png'),
+        moves: [
+            "Shine", "Bug Bite", "Flash", "Sting", "Singe", "Mind's Eye", "Luster Loot",
+            "Pester", "Air Shot", "Pepper Burst", "Flabbergast", "Blindspot Batter", "Counter Poise",
+            "Air Whip", "Magnify", "Gamma Pulse", "Lunge", "Air Blade", "Blaze Rush", "Cerebral Slash",
+            "Disperse", "Double Beat", "Double Sting", "Energy Surge", "Health Gift", "Hyper Sting",
+            "Judgement", "Light Dash", "Lightspeed Ray", "Parasitize", "Pheroblast", "Psycho Blast",
+            "Radiant Rush", "Tear Down", "Wonder Herb", "Barter", "Bulk Up", "Dodge", "Fire Breath",
+            "Peace of Mind", "Rejuvenate", "Spare"
+        ],
+        stats: {
+            hp: 111,
+            energy: 81,
+            attack: 96,
+            defense: 80,
+            rattack: 129,
+            rdefense: 92,
+            speed: 86
+        },
+        gender: ['Male', 'Female'],
+        abilities: ['Night Light'],
+        secretAbility: 'Intensify',
+        weightkg: 13.2,
+        heightcm: 101.6 },
     { name: 'Nevermare', primaryType: 'Plant', secondaryType: 'Spirit', icon: require('../assets/icons/nevermare.png'),
         moves: [
             "Petal Pummel", "Stupefy", "Stretch", "Startle", "Rant", "Bush Whack", "Sharpen", "Headbutt",
