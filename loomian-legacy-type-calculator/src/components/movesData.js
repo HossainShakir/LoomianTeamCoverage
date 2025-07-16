@@ -1,3 +1,5 @@
+// Data taken from i_eaturface's damage calculator
+
 export const movesData = [
     {
         name: "Pounce",
@@ -972,13 +974,14 @@ export const movesData = [
 
     {
         name: "Oppress",
-        power: 70,
-        energy: 44,
+        power: 60,
+        energy: 45,
         accuracy: 100,
         type: "Spirit",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
+        secondaryEffect: true
     },
 
     {
@@ -1163,6 +1166,18 @@ export const movesData = [
         energy: 48,
         accuracy: 100,
         type: "Plant",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        drain: 1/2
+    },
+
+    {
+        name: "Mind Drain",
+        power: 75,
+        energy: 48,
+        accuracy: 100,
+        type: "Mind",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
@@ -1711,9 +1726,9 @@ export const movesData = [
 
     {
         name: "Shell Bash",
-        power: 0,
-        energy: 40,
-        accuracy: "N/A",
+        power: 110,
+        energy: 56,
+        accuracy: 100,
         type: "Water",
         mr: "Melee",
         mr1: "Melee Attack",
@@ -1770,14 +1785,11 @@ export const movesData = [
 
     {
         name: "Goop Spout",
-        power: 50,
+        power: 0,
         energy: 35,
-        accuracy: 100,
+        accuracy: 90,
         type: "Ancient",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
+        mr: "Support",
         aoe: true
     },
 
@@ -2538,7 +2550,7 @@ export const movesData = [
 
     {
         name: "Sea Song",
-        power: 80,
+        power: 60,
         energy: 60,
         accuracy: 100,
         type: "Water",
@@ -3280,12 +3292,12 @@ export const movesData = [
 
     {
         name: "Tempest",
-        power: 80,
+        power: -1,
         energy: 40,
         accuracy: 100,
         type: "Air",
         mr: "Ranged",
-        mr1: "Speed",
+        mr1: "Ranged Attack",
         mr2: "Ranged Defense",
     },
 
@@ -3355,7 +3367,7 @@ export const movesData = [
 
     {
         name: "Preemptive Strike",
-        power: 40,
+        power: 20,
         energy: 25,
         accuracy: 100,
         type: "Brawler",
@@ -3440,13 +3452,14 @@ export const movesData = [
 
     {
         name: "Mudslide",
-        power: 30,
+        power: 50,
         energy: 35,
         accuracy: 100,
         type: "Earth",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
+        secondaryEffect: true
     },
 
     {
@@ -3767,6 +3780,15 @@ export const movesData = [
     },
 
     {
+        name: "Stun",
+        power: 0,
+        energy: 35,
+        accuracy: 90,
+        type: "Electric",
+        mr: "Support"
+    },
+
+    {
         name: "Thunderstorm",
         power: 0,
         energy: 25,
@@ -4022,9 +4044,27 @@ export const movesData = [
     },
 
     {
+        name: "Safeguard",
+        power: 0,
+        energy: 35,
+        accuracy: "N/A",
+        type: "Simple",
+        mr: "Support"
+    },
+
+    {
         name: "Take Root",
         power: 0,
         energy: 40,
+        accuracy: "N/A",
+        type: "Plant",
+        mr: "Support"
+    },
+
+    {
+        name: "Herbal Remedy",
+        power: 0,
+        energy: 70,
         accuracy: "N/A",
         type: "Plant",
         mr: "Support"
@@ -4496,7 +4536,7 @@ export const movesData = [
     {
         name: "Clean Up",
         power: 0,
-        energy: 72,
+        energy: 50,
         accuracy: "N/A",
         type: "Metal",
         mr: "Support"

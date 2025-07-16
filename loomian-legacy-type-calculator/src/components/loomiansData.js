@@ -139,7 +139,7 @@ export const loomiansData = [
             "Leaf Barrage", "Life Drain", "Nature's Force", "Splitting Headache",
             "Boom Bash", "Bush Whack", "Poison", "Power Focus", "Tease",
             "Thistle Slash", "Timber Thrash", "Wonder Herb", "Mudslide",
-            "Barter", "Dodge", "Ill Will", "Mud Spatter", "Spare"
+            "Barter", "Dodge", "Ill Will", "Mud Spatter", "Spare", "Vine Lash"
         ],
         stats: {
             hp: 45,
@@ -161,7 +161,8 @@ export const loomiansData = [
             "Nature's Force", "Splitting Headache", "Boom Bash", "Bush Whack", 
             "Poison", "Power Focus", "Tease", "Thistle Slash", "Timber Thrash", 
             "Wonder Herb", "Barter", "Bulk Up", "Dodge", "Ill Will", "Mud Spatter",
-            "Pounce", "Growl", "Petal Pummel", "Stretch", "Swipe", "Spare", "Mudslide"
+            "Pounce", "Growl", "Petal Pummel", "Stretch", "Swipe", "Spare", "Mudslide",
+            "Vine Lash"
         ],
         stats: {
             hp: 55,
@@ -184,7 +185,7 @@ export const loomiansData = [
             "Thistle Slash", "Timber Thrash", "Wonder Herb", "Barter", "Bulk Up", 
             "Dodge", "Ill Will", "Mud Spatter", "Pounce", "Growl", "Petal Pummel", 
             "Stretch", "Swipe", "Nature's Rage", "Leaf Barrage", "Toxic Tail", 
-            "Life Drain", "Spare", "Mudslide", "Provoke"
+            "Life Drain", "Spare", "Mudslide", "Provoke", "Vine Lash"
         ],
         stats: {
             hp: 75,
@@ -332,7 +333,8 @@ export const loomiansData = [
         moves: [
             "Strike", "Brace", "Flurry", "Dawdle", "Snowdozer", "Chilly Chomp",
             "Sleet Shot", "Icicle Trap", "Body Slam", "Earthquake", "Frost Beam",
-            "Ice Hammer", "Rogue Assault", "Quicksand", "Dodge", "Spare", "Spike Rush"
+            "Ice Hammer", "Rogue Assault", "Quicksand", "Dodge", "Spare", "Spike Rush",
+            "Landslide"
         ],
         stats: {
             hp: 55,
@@ -352,7 +354,7 @@ export const loomiansData = [
         moves: [
             "Winter's Fury", "Chilly Chomp", "Quick Punch", "Sleet Shot", "Icicle Trap", "Mudslide",
             "Body Slam", "Earthquake", "Frost Beam", "Ice Hammer", "Rogue Assault", "Quicksand",
-            "Bulk Up", "Dodge", "Spare", "Spike Rush",
+            "Bulk Up", "Dodge", "Spare", "Spike Rush", "Landslide",
             "Strike", "Brace", "Flurry", "Dawdle", "Snowdozer"
         ],
         stats: {
@@ -371,7 +373,7 @@ export const loomiansData = [
         heightcm: 144.8 },
     { name: 'Himbrr', primaryType: 'Ice', secondaryType: 'Earth', icon: require('../assets/icons/himbrr.png'),
         moves: [
-            "Yeti's Wrath", "Icicle Trap", "Mudslide",
+            "Yeti's Wrath", "Icicle Trap", "Mudslide", "Landslide",
             "Body Slam", "Earthquake", "Frost Beam", "Ice Hammer", "Rogue Assault", "Quicksand",
             "Bulk Up", "Dodge", "Spare", "Spike Rush",
             "Strike", "Brace", "Flurry", "Dawdle", "Snowdozer",
@@ -457,7 +459,8 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe", "Scapegoat", "Spare",
             "Body Slam", "Chase Down", "Disperse", "Gloominous Roar", "High-Pitch Screech",
-            "Power Focus", "Raging Howl", "Raging Tackle", "Sharpen", "Dodge", "Rainbow Blast"
+            "Power Focus", "Raging Howl", "Raging Tackle", "Sharpen", "Dodge", "Rainbow Blast",
+            "Drudge", "Hasten", "Brawn Boost", "Magnify"
         ],
         stats: {
             hp: 50,
@@ -478,7 +481,8 @@ export const loomiansData = [
             "Gloom Fangs", "Scapegoat", "Sharpen", "Raging Tackle", "Mega Chomp", "Bulk Up", 
             "Fade Away", "Body Slam", "Chase Down", "Disperse", "Gloominous Roar",
             "High-Pitch Screech", "Power Focus", "Raging Howl", "Dark Surge", "Dodge",
-            "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe", "Spare", "Chilly Chomp"
+            "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe", "Spare", "Chilly Chomp",
+            "Drudge", "Hasten", "Brawn Boost", "Magnify"
         ],
         stats: {
             hp: 75,
@@ -499,7 +503,8 @@ export const loomiansData = [
             "Luminous Roar", "Scapegoat", "Disperse", "Gamma Pulse", "Peace of Mind",
             "Resonate", "Body Slam", "Chase Down", "Gloominous Roar", "High-Pitch Screech",
             "Power Focus", "Raging Howl", "Raging Tackle", "Sharpen", "Dodge", "Gnaw", "Dawdle",
-            "Stretch", "Quick Pounce", "Swipe", "Spare", "Fire Breath", "Flash 'n Flee", "Resonate"
+            "Stretch", "Quick Pounce", "Swipe", "Spare", "Fire Breath", "Flash 'n Flee", "Resonate",
+            "Drudge", "Hasten", "Brawn Boost", "Magnify"
         ],
         stats: {
             hp: 75,
@@ -521,7 +526,8 @@ export const loomiansData = [
             "Dark Surge", "Rant", "Body Slam", "Chase Down", "Disperse", "Gloominous Roar",
             "High-Pitch Screech", "Power Focus", "Bulk Up", "Dodge", "Spare", 
             "Peace of Mind", "Gnaw", "Dawdle", "Stretch", "Quick Pounce", "Swipe",
-            "Gloominous Fangs", "Blindspot Batter", "Radiant Rush"
+            "Gloominous Fangs", "Blindspot Batter", "Radiant Rush",
+            "Drudge", "Hasten", "Brawn Boost", "Magnify"
         ],
         stats: {
             hp: 75,
@@ -541,7 +547,7 @@ export const loomiansData = [
     { name: 'Cathorn', primaryType: 'Bug', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/cathorn.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
-            "Pester", "Poison", "Dodge", "Spare"
+            "Pester", "Poison", "Dodge", "Spare", "Counter Poise"
         ],
         stats: {
             hp: 35,
@@ -560,7 +566,7 @@ export const loomiansData = [
     { name: 'Propae', primaryType: 'Bug', secondaryType: 'None', tier: 'NFE', icon: require('../assets/icons/propae.png'),
         moves: [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
-            "Pester", "Poison", "Dodge", "Brace", "Snot Shot", "Spare"
+            "Pester", "Poison", "Dodge", "Brace", "Snot Shot", "Spare", "Counter Poise"
         ],
         stats: {
             hp: 50,
@@ -578,9 +584,9 @@ export const loomiansData = [
         heightcm: 88.9 },
     { name: 'Cynamoth', primaryType: 'Bug', secondaryType: 'Air', icon: require('../assets/icons/cynamoth.png'),
         moves: [
-            "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
+            "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade", "Counter Poise",
             "Pester", "Poison", "Dodge", "Brace", "Mystic Breeze", "Snore Spores", "Toxic Spores",
-            "Gust", "Wing Slap", "Life Drain", "Magnify", "Jet Stream", "Spare", "Hasten"
+            "Gust", "Wing Slap", "Life Drain", "Magnify", "Jet Stream", "Spare", "Hasten", "Counter Poise"
         ],
         stats: {
             hp: 70,
@@ -601,7 +607,7 @@ export const loomiansData = [
             "Gnaw", "Stare", "Bug Bite", "Pestilence", "Pheroblast", "Air Blade",
             "Pester", "Poison", "Dodge", "Brace", "Counter Stance", "Chop", "Bamboozle",
             "Quick Punch", "Parasitize", "Bulk Up", "Horn-Dashi", "Body Slam", 
-            "Fire Slam", "Barter", "Ill will", "Spare"
+            "Fire Slam", "Barter", "Ill will", "Spare", "Counter Poise"
         ],
         stats: {
             hp: 87,
@@ -683,7 +689,7 @@ export const loomiansData = [
         moves: [
             "Web Shot", "Sting", "Bug Bite", "Burrow", "Eerie", "Corrode", "Pestilence",
             "Pester", "Slime", "Parasitize", "Baneful Bash", "Body Slam", "Eerie Stare",
-            "Mega Chomp", "Vital Jab", "Dodge", "Rejuvenate", "Spare", "Mudslide"
+            "Mega Chomp", "Vital Jab", "Dodge", "Rejuvenate", "Spare", "Mudslide", "Counter Poise"
         ],
         stats: {
             hp: 45,
@@ -705,7 +711,7 @@ export const loomiansData = [
             "Web Shot", "Sting", "Bug Bite", "Burrow", "Eerie", "Corrode", "Pestilence",
             "Pester", "Slime", "Parasitize", "Baneful Bash", "Body Slam", "Eerie Stare",
             "Mega Chomp", "Vital Jab", "Dodge", "Rejuvenate", "Poison", "Mega Punch", 
-            "Brawn Boost", "Bulk Up", "Spare", "Mudslide"
+            "Brawn Boost", "Bulk Up", "Spare", "Mudslide", "Counter Poise"
         ],
         stats: {
             hp: 85,
@@ -727,7 +733,8 @@ export const loomiansData = [
             "Dawdle", "Gnaw", "Bug Bite", "Burrow", "Take Root", "Pine Shot", "Pestilence",
             "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
             "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
-            "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Spare", "Mudslide"
+            "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Spare", "Mudslide",
+            "Vice Jaws", "Tamp", "Vine Lash", "Tricky Tactics", "Safeguard"
         ],
         stats: {
             hp: 55,
@@ -750,7 +757,8 @@ export const loomiansData = [
             "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
             "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
             "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Sap Plant", "Bulk up",
-            "Rainbow Blast", "Spare", "Mudslide"
+            "Rainbow Blast", "Spare", "Mudslide", "Vice Jaws", "Tamp", "Vine Lash", "Tricky Tactics", 
+            "Safeguard"
         ],
         stats: {
             hp: 105,
@@ -773,7 +781,8 @@ export const loomiansData = [
             "Pester", "Parasitize", "Nature's Force", "Wonder Herb", "Energy Surge",
             "Gain Drain", "Life Drain", "Magnify", "Mega Chomp", "Pheroblast", "Photosynthesis",
             "Poison", "Thistle Slash", "Wonder Herb", "Bait", "Dodge", "Sap Plant", "Bulk up",
-            "Rainbow Blast", "Carnivorous Snap", "Spare", "Mudslide"
+            "Rainbow Blast", "Carnivorous Snap", "Spare", "Mudslide", "Vice Jaws", "Tamp", 
+            "Vine Lash", "Tricky Tactics", "Safeguard"
         ],
         stats: {
             hp: 105,
@@ -853,7 +862,7 @@ export const loomiansData = [
             "Gnaw", "Stare", "Bug Bite", "Sting", "Pestilence", "Life Drain", "Parasitize", 
             "Baneful Bash", "Provoke", "Rough Up", "Venom Chomp", "Wing Slap", "Dodge", "Brace",
             "Clamp Claw", "Eerie Stare", "Cyclone Slam", "Headbutt", "Mega Chomp", "Body Slam",
-            "Mud Spatter", "Bulk Up", "Spare"
+            "Mud Spatter", "Bulk Up", "Spare", "Vital Jab"
         ],
         stats: {
             hp: 94,
@@ -1089,7 +1098,7 @@ export const loomiansData = [
             "Strike", "Brace", "Petal Pummel", "Dodge", "Pine Shot", "Bush Whack", "Life Drain",
             "Photosynthesis", "Nature's Force", "Bait", "Tear Down", "Coconut Bomb",
             "Muck Blast", "Provoke", "Scapegoat", "Toxic Spores", "Barter", "Ill Will",
-            "Rejuvenate", "Spare"
+            "Rejuvenate", "Spare", "Wonder Herb"
         ],
         stats: {
             hp: 52,
@@ -1135,7 +1144,7 @@ export const loomiansData = [
             "Photosynthesis", "Nature's Force", "Bait", "Tear Down", "Coconut Bomb",
             "Muck Blast", "Provoke", "Scapegoat", "Toxic Spores", "Barter", "Ill Will",
             "Rejuvenate", "Wonder Herb", "Health Gift", "Bequeath", "Poison",
-            "Sap Plant", "Mudslide", "Hypnotize", "Spare"
+            "Sap Plant", "Mudslide", "Hypnotize", "Spare", "Herbal Remedy"
         ],
         stats: {
             hp: 162,
@@ -1223,7 +1232,8 @@ export const loomiansData = [
         moves: [
             "Burrow", "Gnaw", "Boulder Blast", "Swipe", "Mud Spatter", "Examine", "Chomp",
             "Provoke", "Sharpen", "Earthquake", "Mudslide", "Blaze Chomp", "Body Slam", 
-            "Chase Down", "Talent Trade", "Thunder Chomp", "Dodge", "Rejuvenate", "Spare"
+            "Chase Down", "Talent Trade", "Thunder Chomp", "Dodge", "Rejuvenate", "Spare",
+            "Safeguard", "Slash", "Phantom Slash", "Charred Claws", "Harrow", "Swat"
         ],
         stats: {
             hp: 75,
@@ -1235,7 +1245,7 @@ export const loomiansData = [
             speed: 43
         },
         gender: ['Male', 'Female'], 
-        abilities: ['Clutch', 'Hasty'],
+        abilities: ['Insulated', 'Hasty'],
         secretAbility: 'Lazy',
         weightkg: 15.9,
         heightcm: 76.2 },
@@ -1244,7 +1254,8 @@ export const loomiansData = [
             "Burrow", "Gnaw", "Boulder Blast", "Swipe", "Mud Spatter", "Examine", "Chomp",
             "Provoke", "Sharpen", "Earthquake", "Mudslide", "Blaze Chomp", "Body Slam", 
             "Chase Down", "Talent Trade", "Thunder Chomp", "Dodge", "Rejuvenate", "Raging Tackle",
-            "Ill Will", "Spare"
+            "Ill Will", "Spare", "Safeguard", "Slash", "Phantom Slash", "Charred Claws", "Harrow", 
+            "Swat"
         ],
         stats: {
             hp: 107,
@@ -1256,7 +1267,7 @@ export const loomiansData = [
             speed: 54
         },
         gender: ['Male', 'Female'], 
-        abilities: ['Clutch', 'Hasty'],
+        abilities: ['Insulated', 'Hasty'],
         secretAbility: 'Lazy',
         weightkg: 106.1,
         heightcm: 154.9 },
@@ -1264,7 +1275,8 @@ export const loomiansData = [
         moves: [
             "Spray", "Brace", "Eerie Stare", "Sleet Shot", "Water Bomb", "Scapegoat", 
             "Hydro Slash", "Dodge", "Soft Water", "Maroon", "Battering Ram", 
-            "Slumber", "Frost Beam", "Tsunami", "Spare", "Tear Down", "Mudslide"
+            "Slumber", "Frost Beam", "Tsunami", "Spare", "Tear Down", "Mudslide",
+            "Burn Up"
         ],
         stats: {
             hp: 60,
@@ -1284,7 +1296,8 @@ export const loomiansData = [
         moves: [
             "Spray", "Brace", "Eerie Stare", "Sleet Shot", "Water Bomb", "Scapegoat", 
             "Hydro Slash", "Dodge", "Soft Water", "Maroon", "Battering Ram", 
-            "Slumber", "Frost Beam", "Tsunami", "Geyser", "Spare", "Tear Down", "Mudslide"
+            "Slumber", "Frost Beam", "Tsunami", "Geyser", "Spare", "Tear Down", "Mudslide",
+            "Burn Up"
         ],
         stats: {
             hp: 90,
@@ -1304,7 +1317,7 @@ export const loomiansData = [
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
-            "Spectral Burst", "Spare", "Harrow", "Provoke", "Shadowbox"
+            "Spectral Burst", "Spare", "Harrow", "Provoke", "Shadowbox", "Vital Jab", "Brawn Boost"
         ],
         stats: {
             hp: 46,
@@ -1345,7 +1358,7 @@ export const loomiansData = [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
             "Spectral Burst", "Steel Trap", "Hop Kick", "Spare", "Harrow", "Bulk Up", "Provoke",
-            "Shadowbox"
+            "Shadowbox", "Vital Jab", "Brawn Boost"
         ],
         stats: {
             hp: 99,
@@ -1428,7 +1441,7 @@ export const loomiansData = [
             "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Magma Block",
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Dark Surge", 
             "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
-            "Mud Spatter", "Spare", "Tear Down"
+            "Mud Spatter", "Spare", "Tear Down", "Blaze Rush", "Blaze of Glory"
         ],
         stats: {
             hp: 50,
@@ -1450,7 +1463,7 @@ export const loomiansData = [
             "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Magma Block",
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Dark Surge", 
             "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
-            "Mud Spatter", "Fire Slam", "Spare", "Tear Down"
+            "Mud Spatter", "Fire Slam", "Spare", "Tear Down", "Blaze Rush", "Blaze of Glory"
         ],
         stats: {
             hp: 65,
@@ -1472,7 +1485,8 @@ export const loomiansData = [
             "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Magma Block",
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Dark Surge", 
             "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
-            "Mud Spatter", "Fire Slam", "Lava Slash", "Spare", "Tear Down"
+            "Mud Spatter", "Fire Slam", "Lava Slash", "Spare", "Tear Down", "Blaze Rush", 
+            "Blaze of Glory"
         ],
         stats: {
             hp: 81,
@@ -1494,7 +1508,8 @@ export const loomiansData = [
             "Growl", "Singe", "Gnaw", "Dodge", "Quick Pounce", "Stretch", "Magma Block",
             "Blaze Chomp", "Power Focus", "Fire Breath", "Mudslide", "Accelerate", "Dark Surge", 
             "Earthquake", "Landslide", "Magnify", "Phantom Slash", "Provoke", "Raging Flame", "Slash",
-            "Mud Spatter", "Fire Slam", "Lava Slash", "Hellstorm", "Spare", "Tear Down"
+            "Mud Spatter", "Fire Slam", "Lava Slash", "Hellstorm", "Spare", "Tear Down",
+            "Blaze Rush", "Blaze of Glory"
         ],
         stats: {
             hp: 81,
@@ -1515,7 +1530,8 @@ export const loomiansData = [
         moves: [
             "Singe", "Brace", "Spare", "Swipe", "Dodge", "Slash", "Power Focus", "Fire Slam",
             "Brawn Boost", "Fire Breath", "Flare Blast", "High-Pitch Screech", "Tear Down",
-            "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate", "Mudslide"
+            "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate", "Mudslide",
+            "Charred Claws", "Blaze Rush", "Blaze of Glory"
         ],
         stats: {
             hp: 76,
@@ -1559,7 +1575,7 @@ export const loomiansData = [
             "Brawn Boost", "Fire Breath", "Flare Blast", "High-Pitch Screech", "Tear Down",
             "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge", 
-            "Mudslide"
+            "Mudslide", "Charred Claws", "Blaze Rush", "Blaze of Glory"
         ],
         stats: {
             hp: 95,
@@ -1582,7 +1598,7 @@ export const loomiansData = [
             "Brawn Boost", "Fire Breath", "Flare Blast", "High-Pitch Screech", "Tear Down",
             "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Magma Burst", "Scapegoat", "Magma Block", "Eerie Stare", "Spectral Burst", "Dark Surge",
-            "Eruption", "Mudslide"
+            "Eruption", "Mudslide", "Charred Claws", "Blaze Rush", "Blaze of Glory"
         ],
         stats: {
             hp: 115,
@@ -1605,7 +1621,7 @@ export const loomiansData = [
             "Brawn Boost", "Fire Breath", "Flare Blast", "High-Pitch Screech", "Tear Down",
             "Phantom Slash", "Raging Flame", "Tricky Tactics", "Mud Spatter", "Rejuvenate",
             "Savage Greed", "Coconut Bomb", "Blaze Chomp", "Primal Slash", "Blaze Punch", "Ill Will", 
-            "Mudslide"
+            "Mudslide", "Charred Claws", "Blaze Rush", "Blaze of Glory"
         ],
         stats: {
             hp: 81,
@@ -1707,7 +1723,7 @@ export const loomiansData = [
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Tone Barrier", "Quick Pounce", "Headbutt", 
             "Provoke", "Body Slam", "Driving Force", "Earthquake", "Mega Chomp", "Raging Tackle",
-            "Rogue Assault", "Dodge"
+            "Rogue Assault", "Dodge", "Battle Chime"
         ],
         stats: {
             hp: 60,
@@ -1727,7 +1743,7 @@ export const loomiansData = [
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Repeating Tune", "Quick Pounce", "Harmonious Chord", 
             "Tease", "Dissonant Chord", "Gamma Pulse", "Peace of Mind", "Raging Howl", "Dodge",
-            "Magnify", "Provoke"
+            "Magnify", "Provoke", "Hullabaloo"
         ],
         stats: {
             hp: 60,
@@ -1747,7 +1763,7 @@ export const loomiansData = [
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Tone Barrier", "Quick Pounce", "Headbutt", 
             "Provoke", "Body Slam", "Driving Force", "Earthquake", "Mega Chomp", "Raging Tackle",
-            "Rogue Assault", "Dodge", "Battle Horn"
+            "Rogue Assault", "Dodge", "Battle Horn", "Battle Chime"
         ],
         stats: {
             hp: 92,
@@ -1767,7 +1783,7 @@ export const loomiansData = [
         moves: [
             "Stare", "Strike", "Spare", "Stretch", "Repeating Tune", "Quick Pounce", "Harmonious Chord", 
             "Tease", "Dissonant Chord", "Gamma Pulse", "Peace of Mind", "Raging Howl", "Dodge",
-            "Resonate", "Magnify", "Provoke"
+            "Resonate", "Magnify", "Provoke", "Hullabaloo"
         ],
         stats: {
             hp: 92,
@@ -2421,7 +2437,8 @@ export const loomiansData = [
             "Singe", "Squawk", "Peck", "Confound", "Dawdle", "Pyrokinesis", "Power Focus", "Primal Slash",
             "Shrewd Blast", "Burn Up", "Fire Breath", "Bane of Haste", "Air Blade", "Bequeath",
             "Draco Beam", "Jet Stream", "Peace of Mind", "Raging Flame", "Return to Sender",
-            "Wonder Herb", "Dodge", "Mud Spatter", "Spare", "Provoke", "Flare Blast"
+            "Wonder Herb", "Dodge", "Mud Spatter", "Spare", "Provoke", "Flare Blast", "Dissipate",
+            "Magnify"
         ],
         stats: {
             hp: 58,
@@ -2442,7 +2459,8 @@ export const loomiansData = [
             "Singe", "Squawk", "Peck", "Confound", "Dawdle", "Pyrokinesis", "Power Focus", "Primal Slash",
             "Shrewd Blast", "Burn Up", "Fire Breath", "Bane of Haste", "Air Blade", "Bequeath",
             "Draco Beam", "Jet Stream", "Peace of Mind", "Raging Flame", "Return to Sender",
-            "Wonder Herb", "Dodge", "Mud Spatter", "Phoenix Flame", "Spare", "Provoke", "Flare Blast"
+            "Wonder Herb", "Dodge", "Mud Spatter", "Phoenix Flame", "Spare", "Provoke", "Flare Blast", 
+            "Dissipate", "Magnify"
         ],
         stats: {
             hp: 84,
@@ -2506,7 +2524,7 @@ export const loomiansData = [
             "Bush Whack", "Aqua Jaws", "Fungus Curse", "Mega Chomp", "Life Drain", "Tsunami", "Boom Bash",
             "Bulk Up", "Driving Force", "Gnarly Gash", "Mudslide", "Photosynthesis", "Provoke",
             "Wave Wrecker", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Spare", "Tear Down",
-            "Vine Lash", "Thistle Slash", "Nature's Force", "Landslide"
+            "Vine Lash", "Thistle Slash", "Nature's Force", "Landslide", "Slap Down"
         ],
         stats: {
             hp: 63,
@@ -2529,7 +2547,7 @@ export const loomiansData = [
             "Bush Whack", "Aqua Jaws", "Fungus Curse", "Mega Chomp", "Life Drain", "Tsunami", "Boom Bash",
             "Bulk Up", "Driving Force", "Gnarly Gash", "Mudslide", "Photosynthesis", "Provoke",
             "Wave Wrecker", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Marsh Wave", "Spare", "Tear Down",
-            "Vine Lash", "Thistle Slash", "Nature's Force", "Landslide"
+            "Vine Lash", "Thistle Slash", "Nature's Force", "Landslide", "Slap Down"
         ],
         stats: {
             hp: 119,
@@ -2551,7 +2569,7 @@ export const loomiansData = [
             "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
             "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", 
             "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Dodge", "Hypnotize", 
-            "Ill Will", "Thunderstrike", "Spare", "Zip-Zap", "Thunder Blast"
+            "Ill Will", "Thunderstrike", "Spare", "Zip-Zap", "Thunder Blast", "Judgement"
         ],
         stats: {
             hp: 44,
@@ -2572,7 +2590,8 @@ export const loomiansData = [
             "Strike", "Static Shock", "Stretch", "Spare", "Tase", "Thunder Slam", "Power Focus", 
             "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", 
             "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Dodge", "Hypnotize", 
-            "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash", "Zip-Zap", "Thunder Blast"
+            "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash", "Zip-Zap", "Thunder Blast",
+            "Judgement"
         ],
         stats: {
             hp: 59,
@@ -2594,7 +2613,7 @@ export const loomiansData = [
             "Quick Pounce", "Jump Start", "Precision Bolt", "Thunderstrike", "Deja Vu", 
             "Mega Punch", "Peace of Mind", "Psycho Blast", "Slap Down", "Dodge", "Hypnotize", 
             "Ill Will", "Thunderstrike", "Flabbergast", "Cerebral Slash", "Psychal Slap", "Electro-Punch",
-            "Thunder Blast"
+            "Thunder Blast", "Judgement"
         ],
         stats: {
             hp: 99,
@@ -2678,7 +2697,7 @@ export const loomiansData = [
             "Tail Slap", "Stare", "Spray", "Stretch", "Chomp", "Water Bomb", "Charade", "Sleet Shot",
             "Quick Pounce", "Provoke", "Aqua Jaws", "Mega Chomp", "Shrewd Blast", "Clay Slap", 
             "Primal Slash", "Tease", "Toxic Tail", "Venom Chomp", "Barter", "Dodge", "Ill Will",
-            "Mud Spatter", "Plunge", "Spare"
+            "Mud Spatter", "Plunge", "Spare", "Wave Wrecker", "Vice Jaws", "Bulk Up"
         ],
         stats: {
             hp: 46,
@@ -2699,7 +2718,7 @@ export const loomiansData = [
             "Tail Slap", "Stare", "Spray", "Stretch", "Chomp", "Water Bomb", "Charade", "Sleet Shot",
             "Quick Pounce", "Provoke", "Aqua Jaws", "Mega Chomp", "Shrewd Blast", "Clay Slap", 
             "Primal Slash", "Tease", "Toxic Tail", "Venom Chomp", "Barter", "Dodge", "Ill Will",
-            "Mud Spatter", "Plunge", "Chilly Chomp", "Spare"
+            "Mud Spatter", "Plunge", "Chilly Chomp", "Spare", "Wave Wrecker", "Vice Jaws", "Bulk Up"
         ],
         stats: {
             hp: 58,
@@ -2720,7 +2739,8 @@ export const loomiansData = [
             "Tail Slap", "Stare", "Spray", "Stretch", "Chomp", "Water Bomb", "Charade", "Sleet Shot",
             "Quick Pounce", "Provoke", "Aqua Jaws", "Mega Chomp", "Shrewd Blast", "Clay Slap", 
             "Primal Slash", "Tease", "Toxic Tail", "Venom Chomp", "Barter", "Dodge", "Ill Will",
-            "Mud Spatter", "Plunge", "Chilly Chomp", "Vicious Snap", "Spare"
+            "Mud Spatter", "Plunge", "Chilly Chomp", "Vicious Snap", "Spare",
+            "Wave Wrecker", "Vice Jaws", "Bulk Up"
         ],
         stats: {
             hp: 87,
@@ -2741,7 +2761,7 @@ export const loomiansData = [
             "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
             "Venom Chomp", "Hydro Slash", "Parasitize", "Pheroblast", "Aqua Jaws", "Baneful Bash", 
             "Hydro Blast", "Jet Stream", "Peace of Mind", "Dodge", "Ill Will",
-            "Maroon", "Tsunami", "Spare", "Dissipate", "Thunder Chomp"
+            "Maroon", "Tsunami", "Spare", "Dissipate", "Thunder Chomp", "Counter Poise"
         ],
         stats: {
             hp: 40,
@@ -2762,7 +2782,7 @@ export const loomiansData = [
         moves: [
             "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
             "Venom Chomp", "Hydro Slash", "Parasitize", "Pheroblast", "Aqua Jaws", "Baneful Bash", 
-            "Hydro Blast", "Jet Stream", "Peace of Mind", "Dodge", "Ill Will",
+            "Hydro Blast", "Jet Stream", "Peace of Mind", "Dodge", "Ill Will", "Counter Poise",
             "Maroon", "Tsunami", "Clay Slap", "Soft Water", "Dissipate", "Thunder Chomp"
         ],
         stats: {
@@ -2784,7 +2804,7 @@ export const loomiansData = [
         moves: [
             "Downpour", "Bug Bite", "Burrow", "Spray", "Spare", "Pester", "Eerie Stare", "Water Bomb",
             "Venom Chomp", "Hydro Slash", "Parasitize", "Pheroblast", "Aqua Jaws", "Baneful Bash", 
-            "Hydro Blast", "Jet Stream", "Peace of Mind", "Dodge", "Ill Will",
+            "Hydro Blast", "Jet Stream", "Peace of Mind", "Dodge", "Ill Will", "Counter Poise",
             "Maroon", "Tsunami", "Clay Slap", "Soft Water", "Douse", "Dissipate", "Thunder Chomp"
         ],
         stats: {
@@ -2806,7 +2826,7 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Stare", "Petal Pummel", "Dino Claws", "Chomp", "Take Root", "Headbutt", "Leaf Barrage",
             "Life Drain", "Sap Plant", "Primal Slash", "Earthquake", "Brawn Boost", "Bulk Up", "Mega Chomp",
-            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter", "Spare"
+            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter", "Spare", "Vine Lash"
         ],
         stats: {
             hp: 59,
@@ -2826,7 +2846,7 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Stare", "Petal Pummel", "Dino Claws", "Chomp", "Take Root", "Headbutt", "Leaf Barrage",
             "Life Drain", "Sap Plant", "Primal Slash", "Earthquake", "Brawn Boost", "Bulk Up", "Mega Chomp",
-            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter", "Briar Block", "Spare"
+            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter", "Briar Block", "Spare", "Vine Lash"
         ],
         stats: {
             hp: 74,
@@ -2846,7 +2866,8 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Stare", "Petal Pummel", "Dino Claws", "Chomp", "Take Root", "Headbutt", "Leaf Barrage",
             "Life Drain", "Sap Plant", "Primal Slash", "Earthquake", "Brawn Boost", "Bulk Up", "Mega Chomp",
-            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter", "Briar Block", "Timber Thrash", "Spare"
+            "Outburst", "Rogue Assault", "Dodge", "Ill Will", "Mud Spatter", "Briar Block", "Timber Thrash", 
+            "Spare", "Vine Lash"
         ],
         stats: {
             hp: 103,
@@ -2927,7 +2948,8 @@ export const loomiansData = [
         moves: [
             "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
             "Bamboozle", "Peace of Mind", "Chilly Chomp", "Icicle Trap", "Boom Bash", "Deep Freeze", "Scapegoat", 
-            "Dodge", "Frost Beam", "Spare"
+            "Dodge", "Frost Beam", "Spare", "Hullabaloo", "Nature's Force", "Frost Breath", "Bitter Cold", 
+            "Preemptive Strike", "Energy Break"
         ],
         stats: {
             hp: 51,
@@ -2947,7 +2969,8 @@ export const loomiansData = [
         moves: [
             "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
             "Bamboozle", "Peace of Mind", "Chilly Chomp", "Icicle Trap", "Boom Bash", "Deep Freeze", "Scapegoat", 
-            "Dodge", "Frost Beam", "Charade", "Spare"
+            "Dodge", "Frost Beam", "Charade", "Spare", "Hullabaloo", "Nature's Force", "Frost Breath", "Bitter Cold", 
+            "Preemptive Strike", "Energy Break"
         ],
         stats: {
             hp: 58,
@@ -2967,7 +2990,8 @@ export const loomiansData = [
         moves: [
             "Strike", "Flurry", "Hop Kick", "Mind's Eye", "Snowdozer", "Tease", "Return to Sender", "Sleet Shot", 
             "Bamboozle", "Peace of Mind", "Chilly Chomp", "Icicle Trap", "Boom Bash", "Deep Freeze", "Scapegoat", 
-            "Dodge", "Frost Beam", "Charade", "Peppermint Breath", "Spare"
+            "Dodge", "Frost Beam", "Charade", "Peppermint Breath", "Spare", "Hullabaloo", "Nature's Force", 
+            "Frost Breath", "Bitter Cold", "Preemptive Strike", "Energy Break"
         ],
         stats: {
             hp: 71,
@@ -3051,7 +3075,7 @@ export const loomiansData = [
             "Gale Force", "Petal Pummel", "Brace", "Gust", "Take Root", "Leaf Barrage", "Mind's Eye", 
             "Cyclone Slam", "Wonder Herb", "Bequeath", "Sap Plant", "Air Blade", "Life Drain", 
             "Jet Stream", "Luster Loot", "Magnify", "Nature's Force", "Photosynthesis", "Snore Spores", 
-            "Gust", "Static Spores", "Typhoon", "Dodge", "Spare"
+            "Gust", "Static Spores", "Typhoon", "Dodge", "Spare", "Tribute", "Hasten"
         ],
         stats: {
             hp: 44,
@@ -3072,7 +3096,7 @@ export const loomiansData = [
             "Gale Force", "Petal Pummel", "Brace", "Gust", "Take Root", "Leaf Barrage", "Mind's Eye", 
             "Cyclone Slam", "Wonder Herb", "Bequeath", "Sap Plant", "Air Blade", "Life Drain", 
             "Jet Stream", "Luster Loot", "Magnify", "Nature's Force", "Photosynthesis", "Snore Spores", 
-            "Gust", "Static Spores", "Typhoon", "Dodge", "Spare", "Pine Shot"
+            "Gust", "Static Spores", "Typhoon", "Dodge", "Spare", "Pine Shot", "Tribute", "Hasten"
         ],
         stats: {
             hp: 56,
@@ -3093,7 +3117,7 @@ export const loomiansData = [
             "Gale Force", "Petal Pummel", "Brace", "Gust", "Take Root", "Leaf Barrage", "Mind's Eye", 
             "Cyclone Slam", "Wonder Herb", "Bequeath", "Sap Plant", "Air Blade", "Life Drain", 
             "Jet Stream", "Luster Loot", "Magnify", "Nature's Force", "Photosynthesis", "Snore Spores", 
-            "Gust", "Static Spores", "Typhoon", "Dodge", "Spare", "Pine Shot", "Tempest"
+            "Gust", "Static Spores", "Typhoon", "Dodge", "Spare", "Pine Shot", "Tempest", "Tribute", "Hasten"
         ],
         stats: {
             hp: 72,
@@ -3175,7 +3199,7 @@ export const loomiansData = [
             "Dawdle", "Strike", "Quick Pounce", "Stretch", "Spare", "Headbutt", "Power Focus", 
             "Body Slam", "Dodge", "Rainbow Blast", "Adaptive Assault", "Draco Beam",
             "Outburst", "Sharpen", "Fire Slam", "Shrewd Blast", "Rough Up", "Scapegoat", "Primal Slash",
-            "Mega Kick", "Fire Breath", "Ill Will", "Rejuvenate", "Tear Down"
+            "Mega Kick", "Fire Breath", "Ill Will", "Rejuvenate", "Tear Down", "Blaze Rush"
         ],
         stats: {
             hp: 78,
@@ -3280,7 +3304,8 @@ export const loomiansData = [
         moves: [
             "Dawdle", "Strike", "Quick Pounce", "Stretch", "Spare", "Headbutt", "Power Focus", 
             "Body Slam", "Dodge", "Rainbow Blast", "Adaptive Assault", "Chilly Chomp", "Tear Down",
-            "Bulk Up", "Icicle Trap", "Body Crash", "Ice Hammer", "Frost Beam", "Ill Will", "Rejuvenate"
+            "Bulk Up", "Icicle Trap", "Body Crash", "Ice Hammer", "Frost Beam", "Ill Will", "Rejuvenate",
+            "Mudslide", "Spike Rush", "Blindspot Batter", "Provoke", "Slap Down"
         ],
         stats: {
             hp: 91,
@@ -3409,7 +3434,7 @@ export const loomiansData = [
             "Bug Bite", "Startle", "Gnaw", "Stare", "Chase Down", "Final Ruse", "Swipe", "Stupefy",
             "Eerie Stare", "Pester", "Parasitize", "Soul Storm", "Bulk Up", "Driving Force",
             "Earthquake", "Harrow", "Barter", "Dodge", "Ill Will", "Mud Spatter", "Spare", "Spectral Burst",
-            "Tear Down", "Provoke"
+            "Tear Down", "Provoke", "Empathize", "Counter Poise"
         ],
         stats: {
             hp: 61,
@@ -3430,7 +3455,7 @@ export const loomiansData = [
             "Bug Bite", "Startle", "Gnaw", "Stare", "Chase Down", "Final Ruse", "Swipe", "Stupefy",
             "Eerie Stare", "Pester", "Parasitize", "Soul Storm", "Bulk Up", "Driving Force",
             "Earthquake", "Harrow", "Barter", "Dodge", "Ill Will", "Mud Spatter", "Spare", "Spectral Burst",
-            "Brace", "Tear Down", "Provoke"
+            "Brace", "Tear Down", "Provoke", "Empathize", "Counter Poise"
         ],
         stats: {
             hp: 81,
@@ -3451,7 +3476,7 @@ export const loomiansData = [
             "Bug Bite", "Startle", "Gnaw", "Stare", "Chase Down", "Final Ruse", "Swipe", "Stupefy",
             "Eerie Stare", "Pester", "Parasitize", "Soul Storm", "Bulk Up", "Driving Force",
             "Earthquake", "Harrow", "Barter", "Dodge", "Ill Will", "Mud Spatter", "Spare", "Spectral Burst",
-            "Brace", "Soul Harvest", "Icicle Tremor", "Tear Down", "Provoke"
+            "Brace", "Soul Harvest", "Icicle Tremor", "Tear Down", "Provoke", "Empathize", "Counter Poise"
         ],
         stats: {
             hp: 116,
@@ -3470,7 +3495,7 @@ export const loomiansData = [
     { name: 'Snowl', primaryType: 'Ice', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/snowl.png'),
         moves: [
             "Snowdozer", "Baffle", "Icicle Trap", "Jet Stream", "Peace of Mind", "Perch", "Rant",
-            "Resonate", "Square One", "Dodge", "Spare"
+            "Resonate", "Square One", "Dodge", "Spare", "Preemptive Strike", "Brain Exercise"
         ],
         stats: {
             hp: 15,
@@ -3490,7 +3515,8 @@ export const loomiansData = [
         moves: [
             "Snowdozer", "Baffle", "Icicle Trap", "Jet Stream", "Peace of Mind", "Perch", "Rant",
             "Resonate", "Square One", "Dodge", "Spare", "Sleet Shot", "Scavenge", "Chilly Chomp",
-            "Power Focus", "Air Whip", "Provoke", "Air Blade", "Frost Beam", "Mud Spatter"
+            "Power Focus", "Air Whip", "Provoke", "Air Blade", "Frost Beam", "Mud Spatter",
+            "Preemptive Strike", "Brain Exercise"
         ],
         stats: {
             hp: 48,
@@ -3510,7 +3536,8 @@ export const loomiansData = [
         moves: [
             "Snowdozer", "Baffle", "Icicle Trap", "Jet Stream", "Peace of Mind", "Perch", "Rant",
             "Resonate", "Square One", "Dodge", "Spare", "Sleet Shot", "Scavenge", "Chilly Chomp",
-            "Power Focus", "Air Whip", "Provoke", "Air Blade", "Frost Beam", "Mud Spatter", "Brain Freeze"
+            "Power Focus", "Air Whip", "Provoke", "Air Blade", "Frost Beam", "Mud Spatter", "Brain Freeze",
+            "Preemptive Strike", "Brain Exercise"
         ],
         stats: {
             hp: 81,
@@ -3654,7 +3681,7 @@ export const loomiansData = [
             "Spray", "Petal Pummel", "Sap Plant", "Pounce", "Water Bomb", "Leaf Barrage", "Tease",
             "Wonder Herb", "Life Drain", "Baffle", "Maroon", "Charade", "Nature's Force", "Photosynthesis",
             "Provoke", "Scapegoat", "Slap Down", "Tear Down", "Tsunami", "Dodge", "Frost Beam", "Plunge", 
-            "Spare", "Banana Split"
+            "Spare", "Banana Split", "Magnify"
         ],
         stats: {
             hp: 51,
@@ -3675,7 +3702,7 @@ export const loomiansData = [
             "Spray", "Petal Pummel", "Sap Plant", "Pounce", "Water Bomb", "Leaf Barrage", "Tease",
             "Wonder Herb", "Life Drain", "Baffle", "Maroon", "Charade", "Nature's Force", "Photosynthesis",
             "Provoke", "Scapegoat", "Slap Down", "Tear Down", "Tsunami", "Dodge", "Frost Beam", "Plunge", 
-            "Spare", "Harvest", "Banana Split"
+            "Spare", "Harvest", "Banana Split", "Magnify"
         ],
         stats: {
             hp: 72,
@@ -3775,7 +3802,8 @@ export const loomiansData = [
         moves: [
             "Sting", "Spray", "Brace", "Water Bomb", "Sharpen", "Headbutt", "Poison Barbs", "Eerie Stare", 
             "Hydro Slash", "Barbs", "Tamp", "Icicle Trap", "Blindspot Batter", "Bulk Up", "Piercing Drive", 
-            "Provoke", "Slumber", "Tear Down", "Wave Wrecker", "Dodge", "Spare", "Hypnotize"
+            "Provoke", "Slumber", "Tear Down", "Wave Wrecker", "Dodge", "Spare", "Hypnotize",
+            "Scapegoat", "Square One"
         ],
         stats: {
             hp: 66,
@@ -3795,7 +3823,8 @@ export const loomiansData = [
         moves: [
             "Sting", "Spray", "Brace", "Water Bomb", "Sharpen", "Headbutt", "Poison Barbs", "Eerie Stare", 
             "Hydro Slash", "Barbs", "Tamp", "Icicle Trap", "Blindspot Batter", "Bulk Up", "Piercing Drive", 
-            "Provoke", "Slumber", "Tear Down", "Wave Wrecker", "Dodge", "Spare", "Hypnotize", "Baneful Bash"
+            "Provoke", "Slumber", "Tear Down", "Wave Wrecker", "Dodge", "Spare", "Hypnotize", "Baneful Bash",
+            "Scapegoat", "Square One"
         ],
         stats: {
             hp: 100,
@@ -3878,7 +3907,8 @@ export const loomiansData = [
         moves: [
             "Gnaw", "Spare", "Dawdle", "Chomp", "Stretch", "Scapegoat", "Swipe", "Quick Pounce",
             "Sharpen", "Bequeath", "Blindspot Batter", "Mega Chomp", "Body Slam", "Bulk Up", "Swat", 
-            "Tear Down", "Dodge", "Barter", "Mud Spatter", "Rejuvenate", "Dissipate"
+            "Tear Down", "Dodge", "Barter", "Mud Spatter", "Rejuvenate", "Dissipate",
+            "Far Enchantment", "Near Enchantment", "Augment", "Stun"
         ],
         stats: {
             hp: 70,
@@ -3891,7 +3921,7 @@ export const loomiansData = [
         },
         gender: ['Male', 'Female'], 
         abilities: ['Enchanted Coat', 'Adorable'],
-        secretAbility: 'Confidence',
+        secretAbility: 'Sendoff',
         weightkg: 3.6,
         heightcm: 27.9 },
     { name: 'Taoshinu', primaryType: 'Simple', secondaryType: 'None', icon: require('../assets/icons/taoshinu.png'),
@@ -3899,7 +3929,7 @@ export const loomiansData = [
             "Gnaw", "Spare", "Dawdle", "Chomp", "Stretch", "Scapegoat", "Swipe", "Quick Pounce",
             "Sharpen", "Bequeath", "Blindspot Batter", "Mega Chomp", "Body Slam", "Bulk Up", "Swat", 
             "Tear Down", "Dodge", "Barter", "Mud Spatter", "Rejuvenate", "Empathize",
-            "Dissipate"
+            "Dissipate", "Far Enchantment", "Near Enchantment", "Augment", "Stun"
         ],
         stats: {
             hp: 110,
@@ -3912,7 +3942,7 @@ export const loomiansData = [
         },
         gender: ['Male', 'Female'], 
         abilities: ['Enchanted Coat', 'Guardian'],
-        secretAbility: 'Confidence',
+        secretAbility: 'Sendoff',
         weightkg: 29.5,
         heightcm: 127 },
     { name: 'Kittone', primaryType: 'Simple', secondaryType: 'None', tier: 'LC', icon: require('../assets/icons/kittone.png'),
@@ -3920,7 +3950,7 @@ export const loomiansData = [
             "Gnaw", "Stare", "Tail Slap", "Stretch", "Quick Pounce", "Harmonious Chord", "Provoke",
             "Repeating Tune", "Peace of Mind", "Rant", "Dissonant Chord", "Magnify", "Resonate", 
             "Boom Bash", "Discordance", "Raging Howl", "Splitting Headache", "Swat", "Bait", "Barter", 
-            "Dodge", "Hypnotize", "Ill Will", "Spare"
+            "Dodge", "Hypnotize", "Ill Will", "Spare", "Hullabaloo", "Preemptive Strike"
         ],
         stats: {
             hp: 45,
@@ -3941,7 +3971,7 @@ export const loomiansData = [
             "Gnaw", "Stare", "Tail Slap", "Stretch", "Quick Pounce", "Harmonious Chord", "Provoke",
             "Repeating Tune", "Peace of Mind", "Rant", "Dissonant Chord", "Magnify", "Resonate", 
             "Boom Bash", "Discordance", "Raging Howl", "Splitting Headache", "Swat", "Bait", "Barter", 
-            "Dodge", "Hypnotize", "Ill Will", "Spare", "High-Pitch Screech"
+            "Dodge", "Hypnotize", "Ill Will", "Spare", "High-Pitch Screech", "Hullabaloo", "Preemptive Strike"
         ],
         stats: {
             hp: 90,
@@ -3979,7 +4009,7 @@ export const loomiansData = [
         moves: [
             "Spray", "Brainwash", "Dawdle", "Mind's Eye", "Spare", "Water Bomb", "Bait", "Flabbergast",
             "Peace of Mind", "Dissipate", "Maroon", "Rant", "Deja Vu", "Stratagem",
-            "Health Gift", "Dodge", "Rejuvenate", "Tsunami"
+            "Health Gift", "Dodge", "Rejuvenate", "Tsunami", "Tear Down"
         ],
         stats: {
             hp: 65,
@@ -4000,7 +4030,7 @@ export const loomiansData = [
             "Spray", "Brainwash", "Dawdle", "Mind's Eye", "Spare", "Water Bomb", "Bait", "Flabbergast",
             "Peace of Mind", "Dissipate", "Maroon", "Rant", "Deja Vu", "Stratagem",
             "Health Gift", "Dodge", "Rejuvenate", "Tsunami", "Far Enchantment",
-            "Near Enchantment"
+            "Near Enchantment", "Tear Down"
         ],
         stats: {
             hp: 97,
@@ -4164,7 +4194,7 @@ export const loomiansData = [
             "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
             "Pine Shot", "Coconut Bomb", "Hydro Slash", "Life Drain", "Nature's Force", "Primal Slash", "Shrewd Blast", 
             "Wave Wrecker", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Peace of Mind", "Spare", "Provoke",
-            "Body Crash", "Barbs"
+            "Body Crash", "Barbs", "Tsunami", "Energy Break", "Mudslide", "Splitting Headache", "Wonder Herb"
         ],
         stats: {
             hp: 52,
@@ -4186,7 +4216,8 @@ export const loomiansData = [
             "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
             "Pine Shot", "Coconut Bomb", "Hydro Slash", "Life Drain", "Nature's Force", "Primal Slash", "Shrewd Blast", 
             "Wave Wrecker", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Peace of Mind", "Spare", "Briar Block",
-            "Sap Plant", "Take Root", "Harvest", "Bequeath", "Provoke", "Body Crash", "Barbs"
+            "Sap Plant", "Take Root", "Harvest", "Bequeath", "Provoke", "Body Crash", "Barbs",
+            "Tsunami", "Energy Break", "Mudslide", "Splitting Headache", "Wonder Herb"
         ],
         stats: {
             hp: 67,
@@ -4208,7 +4239,8 @@ export const loomiansData = [
             "Petal Pummel", "Tail Slap", "Growl", "Bush Whack", "Water Bomb", "Slash", "Thistle Slash", "Stretch",
             "Pine Shot", "Coconut Bomb", "Hydro Slash", "Life Drain", "Nature's Force", "Primal Slash", "Shrewd Blast", 
             "Wave Wrecker", "Bulk Up", "Dodge", "Ill Will", "Maroon", "Mud Spatter", "Peace of Mind", "Spare", "Briar Block",
-            "Sap Plant", "Take Root", "Harvest", "Bequeath", "Thorn Slam", "Provoke", "Body Crash", "Barbs"
+            "Sap Plant", "Take Root", "Harvest", "Bequeath", "Thorn Slam", "Provoke", "Body Crash", "Barbs",
+            "Tsunami", "Energy Break", "Mudslide", "Splitting Headache", "Wonder Herb"
         ],
         stats: {
             hp: 81,
@@ -4270,7 +4302,7 @@ export const loomiansData = [
             "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Fade Away", "Health Gift",
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Barter",
-            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Barbs"
+            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Barbs", "Lunge", "Gnarly Gash", "Slap Down"
         ],
         stats: {
             hp: 54,
@@ -4291,7 +4323,7 @@ export const loomiansData = [
             "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Fade Away", "Health Gift",
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Barter",
-            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Barbs"
+            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Barbs", "Lunge", "Gnarly Gash", "Slap Down"
         ],
         stats: {
             hp: 72,
@@ -4312,7 +4344,8 @@ export const loomiansData = [
             "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Fade Away", "Health Gift",
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Barter",
-            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Tricky Tactics", "Boom Bash", "Barbs"
+            "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Tricky Tactics", "Boom Bash", "Barbs",
+            "Lunge", "Gnarly Gash", "Slap Down"
         ],
         stats: {
             hp: 97,
@@ -4745,7 +4778,8 @@ export const loomiansData = [
         moves: [
             "Brace", "Static Shock", "Spray", "Tase", "Confound", "Precision Bolt", "Jolt", "Bamboozle", "Soft Water", "Thunder Slam",
             "Energize", "Dark Surge", "Tamp", "Earthquake", "Landslide", "Mega Chomp", "Primal Slash", "Provoke", "Shrewd Blast",
-            "Thunder Crash", "Tricky Tactics", "Bulk Up", "Dodge", "Plunge", "Spare", "Thunderstrike", "Zip-Zap", "Mudslide"
+            "Thunder Crash", "Tricky Tactics", "Bulk Up", "Dodge", "Plunge", "Spare", "Thunderstrike", "Zip-Zap", "Mudslide",
+            "Slap Down", "Hydro Slash", "Electro-Punch", "Gnarly Gash", "Mega Punch", "Gain Drain", "Pester", "Pheroblast"
         ],
         stats: {
             hp: 75,
@@ -4765,7 +4799,8 @@ export const loomiansData = [
         moves: [
             "Brace", "Static Shock", "Spray", "Tase", "Confound", "Precision Bolt", "Jolt", "Bamboozle", "Soft Water", "Thunder Slam",
             "Energize", "Dark Surge", "Tamp", "Earthquake", "Landslide", "Mega Chomp", "Primal Slash", "Provoke", "Shrewd Blast",
-            "Thunder Crash", "Tricky Tactics", "Bulk Up", "Dodge", "Plunge", "Spare", "Thunderstrike", "Zip-Zap", "Shadow Lurk", "Mudslide"
+            "Thunder Crash", "Tricky Tactics", "Bulk Up", "Dodge", "Plunge", "Spare", "Thunderstrike", "Zip-Zap", "Shadow Lurk", "Mudslide",
+            "Slap Down", "Hydro Slash", "Electro-Punch", "Gnarly Gash", "Mega Punch", "Gain Drain", "Pester", "Pheroblast"
         ],
         stats: {
             hp: 105,
@@ -4969,7 +5004,7 @@ export const loomiansData = [
             "Metal Swipes", "Stupefy", "Power Focus", "Bamboozle", "Reflection Burst", "Phantom Slash", "Dark Surge", "Chase Down", "Double Whack", 
             "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Deja Vu", 
             "Far Enchantment", "Impersonate", "Near Enchantment", "Shadow Sprint", "Square One", "Steel Crusher", "Tricky Tactics", "Bulk Up",
-            "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Spare"
+            "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Spare", "Thunder Chomp"
         ],
         stats: {
             hp: 10,
@@ -4991,7 +5026,7 @@ export const loomiansData = [
             "Metal Swipes", "Stupefy", "Power Focus", "Bamboozle", "Reflection Burst", "Phantom Slash", "Dark Surge", "Chase Down", "Double Whack", 
             "Spectral Burst", "Final Ruse", "Metal Shriek", "Metal Blast", "Soul Storm", "Baffle", "Bag of Tricks", "Deja Vu", 
             "Far Enchantment", "Impersonate", "Near Enchantment", "Shadow Sprint", "Square One", "Steel Crusher", "Tricky Tactics", "Bulk Up",
-            "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Spare", "Shatter"
+            "Dodge", "Fade Away", "Ill Will", "Peace of Mind", "Spare", "Shatter", "Thunder Chomp"
         ],
         stats: {
             hp: 50,
@@ -5165,7 +5200,8 @@ export const loomiansData = [
             "Startle", "Spray", "Stupefy", "Rant", "Tribute", "Water Bomb", "Soul Storm",
             "Final Ruse", "Provoke", "Hydro Slash", "Spectral Burst", "Mega Chomp", "Soft Water", 
             "Bamboozle", "Harrow", "Power Focus", "Slap Down", "Square One", "Wave Wrecker", "Dark Surge", 
-            "Dodge", "Fade Away", "Ill Will", "Maroon", "Plunge", "Spare", "Tsunami", "Mudslide"
+            "Dodge", "Fade Away", "Ill Will", "Maroon", "Plunge", "Spare", "Tsunami", "Mudslide",
+            "Thunder Chomp", "Thunder Crash"
         ],
         stats: {
             hp: 64,
@@ -5187,7 +5223,8 @@ export const loomiansData = [
             "Startle", "Spray", "Stupefy", "Rant", "Tribute", "Water Bomb", "Soul Storm", "Mudslide",
             "Final Ruse", "Provoke", "Hydro Slash", "Spectral Burst", "Mega Chomp", "Soft Water", 
             "Bamboozle", "Harrow", "Power Focus", "Slap Down", "Square One", "Wave Wrecker", "Dark Surge", 
-            "Dodge", "Fade Away", "Ill Will", "Maroon", "Plunge", "Spare", "Tsunami", "Revolution", "Bulk Up"
+            "Dodge", "Fade Away", "Ill Will", "Maroon", "Plunge", "Spare", "Tsunami", "Revolution", "Bulk Up",
+            "Thunder Chomp", "Thunder Crash"
         ],
         stats: {
             hp: 91,
@@ -5209,7 +5246,8 @@ export const loomiansData = [
             "Startle", "Brainwash", "Stupefy", "Harmonious Chord", "Tribute", "Flabbergast", "Soul Storm",
             "Final Ruse", "Teamwork", "Cerebral Slash", "Spectral Burst", "High-Pitch Screech", "Peace of Mind", 
             "Deja Vu", "Dissonant Chord", "Power Focus", "Psycho Blast", "Repeating Tune", "Resonate", 
-            "Bait", "Dodge", "Fade Away", "Ill Will", "Spare", "Dissipate"
+            "Bait", "Dodge", "Fade Away", "Ill Will", "Spare", "Dissipate", "Safeguard", "Splitting Headache", 
+            "Raging Howl", "Hullabaloo", "Spite", "Provoke", "Wonder Herb", "Pester", "Life Drain", "Nature's Force"
         ],
         stats: {
             hp: 69,
@@ -5230,7 +5268,9 @@ export const loomiansData = [
             "Startle", "Brainwash", "Stupefy", "Harmonious Chord", "Tribute", "Flabbergast", "Soul Storm",
             "Final Ruse", "Teamwork", "Cerebral Slash", "Spectral Burst", "High-Pitch Screech", "Peace of Mind", 
             "Deja Vu", "Dissonant Chord", "Power Focus", "Psycho Blast", "Repeating Tune", "Resonate", 
-            "Bait", "Dodge", "Fade Away", "Ill Will", "Spare", "Conclusion", "Hypnotize", "Dissipate"
+            "Bait", "Dodge", "Fade Away", "Ill Will", "Spare", "Conclusion", "Hypnotize", "Dissipate",
+            "Safeguard", "Splitting Headache", "Raging Howl", "Hullabaloo", "Spite", "Provoke", "Wonder Herb", 
+            "Pester", "Life Drain", "Nature's Force"
         ],
         stats: {
             hp: 113,
@@ -5332,7 +5372,8 @@ export const loomiansData = [
         heightcm: 160 },
     { name: 'Nautling', primaryType: 'Ancient', secondaryType: 'Simple', tier: 'LC', icon: require('../assets/icons/nautling.png'),
         moves: [
-            "Confound", "Dino Claws", "Shriek", "Strike", "Dodge", "Spare"
+            "Confound", "Dino Claws", "Shriek", "Strike", "Dodge", "Spare",
+            "Safeguard"
         ],
         stats: {
             hp: 53,
@@ -5351,7 +5392,8 @@ export const loomiansData = [
     { name: 'Nautillect', primaryType: 'Ancient', secondaryType: 'Mind', icon: require('../assets/icons/nautillect.png'),
         moves: [
             "Confound", "Dino Claws", "Shriek", "Strike", "Dodge", "Spare", "Brain Exercise", "Brainwash", "Tamp",
-            "Flabbergast", "Energy Break", "Tsunami", "Bane of Haste", "Psycho Blast", "Peace of Mind"
+            "Flabbergast", "Energy Break", "Tsunami", "Bane of Haste", "Psycho Blast", "Peace of Mind", "Mind Drain",
+            "Safeguard", "Splitting Headache"
         ],
         stats: {
             hp: 106,
@@ -5363,14 +5405,15 @@ export const loomiansData = [
             speed: 34
         },
         gender: ['Male', 'Female'],
-        abilities: ['Watcher', 'Protective Shell'],
+        abilities: ['Watcher', 'Wise'],
         secretAbility: 'Viscid',
         weightkg: 54.4,
         heightcm: 129.5 },
     { name: 'Naukout', primaryType: 'Ancient', secondaryType: 'Brawler', icon: require('../assets/icons/naukout.png'),
         moves: [
             "Confound", "Dino Claws", "Shriek", "Strike", "Dodge", "Spare", "Shadowbox", "Punch", "Tamp", 
-            "Mega Punch", "Primal Slash", "Wave Wrecker", "Bane of Haste", "Vital Jab", "Bulk Up"
+            "Mega Punch", "Primal Slash", "Wave Wrecker", "Bane of Haste", "Vital Jab", "Bulk Up", "Safeguard",
+            "Quick Punch"
         ],
         stats: {
             hp: 106,
@@ -5382,7 +5425,7 @@ export const loomiansData = [
             speed: 34
         },
         gender: ['Male', 'Female'],
-        abilities: ['Watcher', 'Protective Shell'],
+        abilities: ['Watcher', 'Assertive'],
         secretAbility: 'Viscid',
         weightkg: 45.8,
         heightcm: 134.6 },
@@ -5463,7 +5506,7 @@ export const loomiansData = [
             speed: 59
         },
         gender: ['Male', 'Female'],
-        abilities: ['Toxic Spines', 'Venomous'],
+        abilities: ['Power Claw', 'Venomous'],
         secretAbility: 'Brutal Wrath',
         weightkg: 24.9,
         heightcm: 66 },
@@ -5483,7 +5526,7 @@ export const loomiansData = [
             speed: 73
         },
         gender: ['Male', 'Female'],
-        abilities: ['Toxic Spines', 'Venomous'],
+        abilities: ['Power Claw', 'Venomous'],
         secretAbility: 'Brutal Wrath',
         weightkg: 60.3,
         heightcm: 162.6 },
@@ -5503,7 +5546,7 @@ export const loomiansData = [
             speed: 104
         },
         gender: ['Male', 'Female'],
-        abilities: ['Toxic Spines', 'Venomous'],
+        abilities: ['Power Claw', 'Venomous'],
         secretAbility: 'Brutal Wrath',
         weightkg: 288.9,
         heightcm: 294.6 },
@@ -5707,7 +5750,7 @@ export const loomiansData = [
             "Startle", "Singe", "Chase Down", "Burn Up", "Shine", "Pepper Burst", "Fade Away", "Provoke", "Gamma Pulse",
             "Tribute", "Spectral Burst", "Scapegoat", "Fire Breath", "Raging Flame", "Rant", "Bequeath",
             "Flare Blast", "Phantom Blast", "Tricky Tactics", "Dodge", "Fade Away", "Ill Will", "Peace of Mind",
-            "Spare"
+            "Spare", "Hullabaloo"
         ],
         stats: {
             hp: 40,
@@ -5729,7 +5772,7 @@ export const loomiansData = [
             "Startle", "Singe", "Chase Down", "Burn Up", "Shine", "Pepper Burst", "Fade Away", "Provoke", "Gamma Pulse",
             "Tribute", "Spectral Burst", "Scapegoat", "Fire Breath", "Raging Flame", "Rant", "Bequeath",
             "Flare Blast", "Phantom Blast", "Tricky Tactics", "Dodge", "Ill Will", "Peace of Mind",
-            "Spare", "Incinerate"
+            "Spare", "Incinerate", "Hullabaloo"
         ],
         stats: {
             hp: 85,
@@ -5792,7 +5835,7 @@ export const loomiansData = [
         moves: [
             "Spare", "Shriek", "Scapegoat", "Flurry", "Sap Plant", "Harmonious Chord", "Empathize", "Tear Down",
             "Repeating Tune", "Power Focus", "Frost Breath", "Wonder Herb", "Dissonant Chord", "Tribute", "Frost Beam",
-            "Health Gift", "Icicle Trap", "Magnify", "Raging Howl", "Dodge", "Peace of Mind"
+            "Health Gift", "Icicle Trap", "Magnify", "Raging Howl", "Dodge", "Peace of Mind", "Deja Vu", "Slumber"
         ],
         stats: {
             hp: 40,
@@ -5813,7 +5856,7 @@ export const loomiansData = [
             "Spare", "Shriek", "Scapegoat", "Flurry", "Sap Plant", "Harmonious Chord", "Empathize", "Tear Down",
             "Repeating Tune", "Power Focus", "Frost Breath", "Wonder Herb", "Dissonant Chord", "Tribute", "Frost Beam",
             "Health Gift", "Icicle Trap", "Magnify", "Raging Howl", "Dodge", "Peace of Mind",
-            "Hullabaloo"
+            "Hullabaloo", "Deja Vu", "Slumber"
         ],
         stats: {
             hp: 80,
@@ -5878,7 +5921,8 @@ export const loomiansData = [
             "Bamboozle", "Provoke", "Icicle Trap", "Venom Chomp", "Power Focus", "Frost Breath",
             "Mega Chomp", "Spike Rush", "Eerie Stare", "Charade", "Deja Vu", "Final Ruse", "Harrow",
             "Nab", "Preemptive Strike", "Quick Pounce", "Rough Up", "Slumber", "Square One",
-            "Tricky Tactics", "Bulk Up", "Dark Surge", "Dodge", "Frost Beam", "Ill Will"
+            "Tricky Tactics", "Bulk Up", "Dark Surge", "Dodge", "Frost Beam", "Ill Will",
+            "Vice Jaws", "Drudge"
         ],
         stats: {
             hp: 30,
@@ -5900,7 +5944,8 @@ export const loomiansData = [
             "Bamboozle", "Provoke", "Icicle Trap", "Venom Chomp", "Power Focus", "Frost Breath",
             "Mega Chomp", "Spike Rush", "Eerie Stare", "Charade", "Deja Vu", "Final Ruse", "Harrow",
             "Nab", "Preemptive Strike", "Quick Pounce", "Rough Up", "Slumber", "Square One",
-            "Tricky Tactics", "Bulk Up", "Dark Surge", "Dodge", "Frost Beam", "Ill Will", "Icicle Fangs"
+            "Tricky Tactics", "Bulk Up", "Dark Surge", "Dodge", "Frost Beam", "Ill Will", "Icicle Fangs",
+            "Vice Jaws", "Drudge"
         ],
         stats: {
             hp: 83,
@@ -5965,7 +6010,8 @@ export const loomiansData = [
             "Startle", "Final Ruse", "Brainwash", "Stupefy", "Return to Sender", "Oppress", "Spectral Burst", 
             "Peace of Mind", "Phantom Slash", "Deja Vu", "Cerebral Slash", "Chase Down", "Dark Surge",
             "Fade Away", "Flabbergast", "Harrow", "Outburst", "Psycho Blast", "Pyrokinesis", "Raging Flame", 
-            "Shadow Sprint", "Spare", "Tribute", "Dodge", "Hypnotize", "Rainbow Blast", "Provoke", "Phantom Blast"
+            "Shadow Sprint", "Spare", "Tribute", "Dodge", "Hypnotize", "Rainbow Blast", "Provoke", "Phantom Blast",
+            "Hasten", "Bitter Cold", "Poison", "Stun"
         ],
         stats: {
             hp: 74,
@@ -5985,7 +6031,8 @@ export const loomiansData = [
         moves: [
             "Tase", "Singe", "Static Shock", "Thunder Chomp", "Blaze Chomp", "Electro Burst", "Fire Breath", 
             "Power Focus", "Thunder Crash", "Energy Surge", "Nature's Force", "Burn Up", "Energize", "Jolt",
-            "Magnify", "Raging Flame", "Thunderstrike", "Zip-Zap", "Dodge", "Spare", 
+            "Magnify", "Raging Flame", "Thunderstrike", "Zip-Zap", "Dodge", "Spare", "Blaze Rush", 
+            "Blaze of Glory", "Charred Claws"
         ],
         stats: {
             hp: 72,
@@ -6113,8 +6160,8 @@ export const loomiansData = [
         heightcm: 233.7 },
     { name: 'Cephalops', primaryType: 'Water', secondaryType: 'Dark', icon: require('../assets/icons/cephalops.png'),
         moves: [
-            "Spray", "Tease", "Brainwash", "Rant", "Water Bomb", "Soul Drain", "Tsunami", "Eerie Stare",
-            "Sleet Shot", "Square One", "Dark Surge", "Frost Beam", "Icicle Trap", "Dodge",
+            "Spray", "Tease", "Rant", "Water Bomb", "Soul Drain", "Tsunami", "Eerie Stare",
+            "Bug Bite", "Square One", "Dark Surge", "Parasitize", "Icicle Trap", "Dodge",
             "Hypnotize", "Plunge", "Spare", "Wave Wrecker"
         ],
         stats: {
@@ -6288,7 +6335,8 @@ export const loomiansData = [
             "Expert Onslaught", "Stare", "Soft Water", "Water Bomb", "Eerie Stare", "Aqua Jaws", "Power Focus", 
             "Headbutt", "Maroon", "Slumber", "High-Pitch Screech", "Wave Wrecker", "Dark Surge",
             "Mega Chomp", "Phantom Slash", "Primal Slash", "Shrewd Blast", "Spectral Burst", "Bulk Up", "Dodge", 
-            "Hypnotize", "Peace of Mind", "Plunge", "Spare", "Tsunami", "Icicle Trap", "Hydro Blast"
+            "Hypnotize", "Peace of Mind", "Plunge", "Spare", "Tsunami", "Icicle Trap", "Hydro Blast",
+            "Harrow", "Provoke", "Lunge"
         ],
         stats: {
             hp: 115,
@@ -6355,7 +6403,7 @@ export const loomiansData = [
             "Talent Trade", "Frost Punch", "Body Slam", "Frost Beam", "Barbs", "Clay Slap", "Deep Freeze",
             "Driving Force", "Earthquake", "Electro-Punch", "Ice Hammer", "Icicle Trap", "Luster Loot",
             "Power Focus", "Rant", "Rogue Assault", "Scapegoat", "Dodge", "Ill Will", "Mud Spatter", "Spare",
-            "Vital Jab"
+            "Vital Jab", "Slap Down", "Bitter Cold"
         ],
         stats: {
             hp: 106,
@@ -6415,7 +6463,8 @@ export const loomiansData = [
         moves: [
             "Brace", "Confound", "Brainwash", "Bane of Haste", "Spare", "Power Focus", "Cerebral Slash", 
             "Meteor Crash", "Meteor Smash", "Headbutt", "Slumber", "Psycho Blast", "Bulk Up", "Dissipate",
-            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast"
+            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast",
+            "Frost Breath", "Judgement", "Slap Down", "Outburst"
         ],
         stats: {
             hp: 99,
@@ -6435,7 +6484,8 @@ export const loomiansData = [
         moves: [
             "Brace", "Confound", "Brainwash", "Bane of Haste", "Spare", "Power Focus", "Cerebral Slash", 
             "Meteor Crash", "Meteor Smash", "Headbutt", "Slumber", "Psycho Blast", "Bulk Up", "Dissipate",
-            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast"
+            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast",
+            "Frost Breath", "Judgement", "Slap Down", "Outburst"
         ],
         stats: {
             hp: 99,
@@ -6455,7 +6505,8 @@ export const loomiansData = [
         moves: [
             "Brace", "Confound", "Brainwash", "Bane of Haste", "Spare", "Power Focus", "Cerebral Slash", 
             "Meteor Crash", "Meteor Smash", "Headbutt", "Slumber", "Psycho Blast", "Bulk Up", "Dissipate",
-            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast"
+            "Fire Slam", "Icicle Trap", "Peace of Mind", "Dodge", "Hypnotize", "Ill Will", "Rainbow Blast",
+            "Frost Breath", "Judgement", "Slap Down", "Outburst"
         ],
         stats: {
             hp: 99,
@@ -6499,7 +6550,7 @@ export const loomiansData = [
         moves: [
             "Petal Pummel", "Stupefy", "Stretch", "Startle", "Rant", "Bush Whack", "Sharpen", "Headbutt",
             "Thistle Slash", "Phantom Slash", "Provoke", "Bulk Up", "Primal Slash", "Wonder Herb", "Dark Surge",
-            "Dodge", "Ill Will", "Mud Spatter", "Spare", "Spectral Burst"
+            "Dodge", "Ill Will", "Mud Spatter", "Spare", "Spectral Burst", "Harrow", "Vine Lash", "Parasitize"
         ],
         stats: {
             hp: 66,
@@ -6631,7 +6682,7 @@ export const loomiansData = [
             "Disperse", "Energy Surge", "Metal Blast", "Barbs", "Deja Vu", "Dissonant Chord",
             "Gamma Pulse", "Health Gift", "Icicle Trap", "Luster Loot", "Nova Blast",
             "Reflection Burst", "Repeating Tune", "Resonate", "Tear Down", "Barter", "Dodge", "Flash 'n Flee",
-            "Peace of Mind", "Spare"
+            "Peace of Mind", "Spare", "Hullabaloo"
         ],
         stats: {
             hp: 125,

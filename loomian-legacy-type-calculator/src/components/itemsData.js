@@ -77,7 +77,7 @@ export const itemsData = [
     {
         icon: require('../assets/icons/drainorb.png'),
         name: 'Drain Orb',
-        description: 'Increases the Health drained from Health-draining moves by 20%.'
+        description: 'When held, increases the amount of Health gained when using moves that drain the opponents Health.'
     },
     {
         icon: require('../assets/icons/dreggoburst.png'),
@@ -257,7 +257,7 @@ export const itemsData = [
     {
         icon: require('../assets/icons/mysticwand.png'),
         name: 'Mystic Wand',
-        description: "Increases the Strength of Ranged Attacks by 50% when held by a Shawchi."
+        description: "When held by Shawchi, this mysterious stick boosts its Ranged Attack and Ranged Defense."
     },
     {
         icon: require('../assets/icons/noshburst.png'),
