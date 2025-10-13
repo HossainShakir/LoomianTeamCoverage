@@ -61,6 +61,18 @@ export const movesData = [
     },
 
     {
+        name: "Gulp",
+        power: 65,
+        energy: 45,
+        accuracy: 100,
+        type: "Water",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        knockOff: true
+    },
+
+    {
         name: "Strike",
         power: 40,
         energy: 15,
@@ -1074,6 +1086,18 @@ export const movesData = [
     },
 
     {
+        name: "Savage Horn",
+        power: 120,
+        energy: 60,
+        accuracy: 85,
+        type: "Bug",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+    },
+
+    {
         name: "Counter Poise",
         power: 70,
         energy: 45,
@@ -1320,7 +1344,7 @@ export const movesData = [
 
     {
         name: "Flaming Kick",
-        power: 80,
+        power: 90,
         energy: 40,
         accuracy: 90,
         type: "Fire",
@@ -1347,7 +1371,7 @@ export const movesData = [
     {
         name: "Yeti's Wrath",
         power: 120,
-        energy: 90,
+        energy: 60,
         accuracy: 100,
         type: "Earth",
         mr: "Melee",
@@ -2699,6 +2723,18 @@ export const movesData = [
     },
 
     {
+        name: "Last Laugh",
+        power: 100,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Dark",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        secondaryEffect: true,
+    },
+
+    {
         name: "Aggravate",
         power: 30,
         energy: 20,
@@ -3073,6 +3109,18 @@ export const movesData = [
         power: 80,
         energy: 45,
         accuracy: 100,
+        type: "Brawler",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        secondaryEffect: true
+    },
+
+    {
+        name: "Vital Surge",
+        power: 110,
+        energy: 55,
+        accuracy: 80,
         type: "Brawler",
         mr: "Ranged",
         mr1: "Ranged Attack",
@@ -3565,7 +3613,7 @@ export const movesData = [
 
     {
         name: "Mega Kick",
-        power: 90,
+        power: 100,
         energy: 45,
         accuracy: 90,
         type: "Brawler",
@@ -4211,6 +4259,15 @@ export const movesData = [
         name: "Magnify",
         power: 0,
         energy: 25,
+        accuracy: "N/A",
+        type: "Light",
+        mr: "Support"
+    },
+
+    {
+        name: "Swiften",
+        power: 0,
+        energy: 40,
         accuracy: "N/A",
         type: "Light",
         mr: "Support"

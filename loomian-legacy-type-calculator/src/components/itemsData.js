@@ -50,6 +50,11 @@ export const itemsData = [
         description: 'Reduces the energy consumption of the first move a Loomian uses in a battle to zero.'
     },
     {
+        icon: require('../assets/icons/clear-lens.png'),
+        name: 'Clear Lens',
+        description: "Clear Lens, when held, makes all of the holder's moves become Sure Hit moves, able to bypass Dodge."
+    },
+    {
         icon: require('../assets/icons/clutchplushie.png'),
         name: 'Clutch Plushie',
         description: 'When equipped, a Loomian at full Health may barely withstand an attack that would otherwise knock it out. The item will be used up for the remainder of the battle, and the holder will lose one-tenth of its energy.'
@@ -120,6 +125,11 @@ export const itemsData = [
         description: "When held by a Loomian, this strange substance will boost the strength of their Fire-type moves in battle."
     },
     {
+        icon: require('../assets/icons/flame-core.png'),
+        name: 'Flame Core',
+        description: "Flame Core, when held, gives the holder the Fire Type, slightly altering their appearance, and boosts the Strength of their Fire-type moves by 20%."
+    },
+    {
         icon: require('../assets/icons/flamepearl.png'),
         name: 'Flame Pearl',
         description: "Absorbs half the power of a Fire-type attack used against the Loomian equipped with this item."
@@ -133,6 +143,21 @@ export const itemsData = [
         icon: require('../assets/icons/floraburst.png'),
         name: 'Floraburst',
         description: "Empowers Florant to Soul Burst. Enables one use of Carnivorous Snap: Plant-type, Melee, 100 Strength. Bite down on the foe and drain their Health. Your Health is restored by half of the damage dealt..[sic]"
+    },
+    {
+        icon: require('../assets/icons/fogglobe.png'),
+        name: 'Fog Globe',
+        description: "This trinket can be used by a Loomian when entering battle to summon dense fog for 3 turns."
+    },
+    {
+        icon: require('../assets/icons/fogscale.png'),
+        name: 'Fog Scale',
+        description: "When a Loomian equipped with Fog Scale summons dense fog in battle, the fog will last 3 turns longer."
+    },
+    {
+        icon: require('../assets/icons/freezer-core.png'),
+        name: 'Freezer Core',
+        description: "Freezer Core, when held, gives the holder the Ice Type, slightly altering their appearance, and boosts the Strength of their Ice-type moves by 20%."
     },
     {
         icon: require('../assets/icons/frostpearl.png'),
@@ -153,6 +178,16 @@ export const itemsData = [
         icon: require('../assets/icons/healthamulet.png'),
         name: 'Health Amulet',
         description: "The holder recovers 1/16 of its max Health every turn."
+    },
+    {
+        icon: require('../assets/icons/heatglobe.png'),
+        name: 'Heat Globe',
+        description: "This trinket can be used by a Loomian when entering battle to summon a smoldering heat wave for 3 turns."
+    },
+    {
+        icon: require('../assets/icons/heatscale.png'),
+        name: 'Heat Scale',
+        description: "When a Loomian equipped with Heat Scale summons a smoldering heat wave in battle, the heat wave will last 3 turns longer."
     },
     {
         icon: require('../assets/icons/heavyarmor.png'),
@@ -178,6 +213,11 @@ export const itemsData = [
         icon: require('../assets/icons/iciburst.png'),
         name: 'Iciburst',
         description: "Empowers Icigool to Soul Burst. Enables one use of Frightful Surprise: Spirit-type, Melee, 100 Strength. Fill your foe with dread and attack them unexpectedly. This also casts or breaks the Bane of Haste curse."
+    },
+    {
+        icon: require('../assets/icons/imperiburst.png'),
+        name: 'Imperiburst',
+        description: "Empowers Imperior to Soul Burst. Enables one use of Last Laugh: Dark-type, 100 Strength. Melee or Ranged based on your greater Attack stat. Deals damage than lowers your opponent's matching Defense stat."
     },
     {
         icon: require('../assets/icons/joltburst.png'),
@@ -290,14 +330,34 @@ export const itemsData = [
         description: "When held by a Loomian, this strange substance will boost the strength of their Plant-type moves in battle."
     },
     {
+        icon: require('../assets/icons/power-core.png'),
+        name: 'Power Core',
+        description: "Power Core, when held, boosts the Strength of the holder's moves by 20%, but makes them cost 25% more Energy to use. The holder's appearance will also be slightly altered if held."
+    },
+    {
         icon: require('../assets/icons/powercuffs.png'),
         name: 'Power Cuffs',
         description: "Increases the damage of the holder's offensive attacks by 20% and Energy Cost by 25%."
     },
     {
+        icon: require('../assets/icons/quantum-core.png'),
+        name: 'Quantum Core',
+        description: "Quantum Core, when held, decreases the Energy Costs of the holder's moves by 25% and slightly alters their appearance."
+    },
+    {
         icon: require('../assets/icons/ragefulplushie.png'),
         name: 'Rageful Plushie',
         description: "A Loomian equipped with Rageful Plushie, when strucked by a super-effective move, will become enraged, greatly boosting its Melee Attack and Ranged Attack."
+    },
+    {
+        icon: require('../assets/icons/rainglobe.png'),
+        name: 'Rain Globe',
+        description: "This trinket can be used by a Loomian when entering battle to summon heavy rainfall for 3 turns."
+    },
+    {
+        icon: require('../assets/icons/rainscale.png'),
+        name: 'Rain Scale',
+        description: "When a Loomian equipped with Rain Scale summons a downpour in battle, the rain will last 3 turns longer."
     },
     {
         icon: require('../assets/icons/restrictivearmor.png'),
@@ -308,6 +368,11 @@ export const itemsData = [
         icon: require('../assets/icons/restrictiveshield.png'),
         name: 'Restrictive Shield',
         description: "When held by a Loomian, it will increase its Ranged Defense by 33%. However, the holder can no longer use Support Moves in battle."
+    },
+    {
+        icon: require('../assets/icons/scrap-metal.png'),
+        name: 'Scrap Metal',
+        description: "Scrap Metal, when held by a Scorb or Veylens, increases their Melee Defense and Ranged Defense by 40%."
     },
     {
         icon: require('../assets/icons/shadepearl.png'),
@@ -340,6 +405,11 @@ export const itemsData = [
         description: "Empowers Skelic to Soul Burst. Enables one use of Heedless Rush: Water-type, Melee, 100 Strength. Ram into the target, removing anything blocking your way. Breaks down Scapegoats."
     },
     {
+        icon: require('../assets/icons/spare-cable.png'),
+        name: 'Spare Cable',
+        description: "Spare Cable, when the holder's Health drops below 50%, is consumed and heals the holder for 25% of their max Health."
+    },
+    {
         icon: require('../assets/icons/specialtyboots.png'),
         name: 'Specialty Boots',
         description: "A Loomian equipped with Specialty Boots will have increased Speed, but will only be able to use the first move it uses in battle."
@@ -368,6 +438,16 @@ export const itemsData = [
         icon: require('../assets/icons/spiritessence.png'),
         name: 'Spirit Essence',
         description: "When held by a Loomian, this strange substance will boost the strength of their Spirit-type moves in battle."
+    },
+    {
+        icon: require('../assets/icons/stormglobe.png'),
+        name: 'Storm Globe',
+        description: "This trinket can be used by a Loomian when entering battle to summon a thunderstorm for 3 turns."
+    },
+    {
+        icon: require('../assets/icons/stormscale.png'),
+        name: 'Storm Scale',
+        description: "When a Loomian equipped with Storm Scale summons a thunderstorm in battle, the storm will last 3 turns longer."
     },
     {
         icon: require('../assets/icons/stratuburst.png'),
@@ -415,6 +495,11 @@ export const itemsData = [
         description: "Increases the Strength of one Electric-type attack used by the Loomian equipped with this item."
     },
     {
+        icon: require('../assets/icons/voltaic-core.png'),
+        name: 'Voltaic Core',
+        description: "Voltaic Core, when held, gives the holder the Electric Type, slightly altering their appearance, and boosts the Strength of their Electric-type moves by 20%."
+    },
+    {
         icon: require('../assets/icons/wateressence.png'),
         name: 'Water Essence',
         description: "When held by a Loomian, this strange substance will boost the strength of their Water-type moves in battle."
@@ -438,6 +523,16 @@ export const itemsData = [
         icon: require('../assets/icons/webshell.png'),
         name: 'Web Shell',
         description: "Increases the Strength of one Bug-type attack used by the Loomian equipped with this item."
+    },
+    {
+        icon: require('../assets/icons/windglobe.png'),
+        name: 'Wind Globe',
+        description: "This trinket can be used by a Loomian when entering battle to summon strong gusts for 3 turns."
+    },
+    {
+        icon: require('../assets/icons/windscale.png'),
+        name: 'Wind Scale',
+        description: "When a Loomian equipped with Wind Scale summons strong gusts in battle, the winds will last 3 turns longer."
     },
 ];
 
