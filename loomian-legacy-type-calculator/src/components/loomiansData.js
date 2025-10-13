@@ -4365,7 +4365,7 @@ export const loomiansData = [
         secretAbility: 'Handy',
         weightkg: 65.8,
         heightcm: 195.6 },
-    { name: 'Imperior-Archfiend', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/imperior.png'),
+    { name: 'Imperior-Archfiend', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/imperior-archfiend.png'),
         moves: [
             "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
             "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Fade Away", "Health Gift",
