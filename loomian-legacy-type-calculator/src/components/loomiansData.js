@@ -1317,7 +1317,7 @@ export const loomiansData = [
         moves: [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
-            "Spectral Burst", "Spare", "Harrow", "Provoke", "Shadowbox", "Vital Jab", "Brawn Boost", "Scapegoat", "Soul Storm", "Barbs"
+            "Spectral Burst", "Spare", "Harrow", "Provoke", "Shadowbox", "Soul Storm", "Barbs"
         ],
         stats: {
             hp: 46,
@@ -1358,7 +1358,7 @@ export const loomiansData = [
             "Startle", "Stare", "Punch", "Quick Punch", "Slash", "Chase Down", "Sharpen",
             "Phantom Slash", "Pep Jab", "Final Ruse", "Shadow Sprint", "Slap Down", "Dodge", 
             "Spectral Burst", "Steel Trap", "Hop Kick", "Spare", "Harrow", "Bulk Up", "Provoke",
-            "Shadowbox", "Vital Jab", "Brawn Boost", "Scapegoat", "Soul Storm", "Barbs"
+            "Shadowbox", "Soul Storm", "Barbs"
         ],
         stats: {
             hp: 99,
@@ -2220,6 +2220,73 @@ export const loomiansData = [
         secretAbility: 'Clutch',
         weightkg: 67.1,
         heightcm: 188 },
+    { name: 'Gardrone (Hover)', primaryType: 'Metal', secondaryType: 'None', icon: require('../assets/icons/gardrone.png'), specialTypeChart: 'Hover' },
+    { name: 'Gardrone-Flame', primaryType: 'Metal', secondaryType: 'Fire', icon: require('../assets/icons/gardrone.png'),
+        moves: [
+            "Bash", "Static Shock", "Singe", "Flurry", "Metal Shriek", "Examine", "Dodge", "Heavy Bash",
+            "Reflection Burst", "Accelerate", "Thunder Slam", "Precision Bolt", "Fire Slam", "Spare", 
+            "Raging Flame", "Snowdozer", "Sleet Shot", "Eerie Stare", "Mind's Eye", "Deep Freeze",
+            "Jump Start", "Metal Blast", "Steel Crusher", "Thunderstrike", "Fire Breath", "Frost Beam"
+        ],
+        stats: {
+            hp: 74,
+            energy: 82,
+            attack: 54,
+            defense: 73,
+            rattack: 132,
+            rdefense: 119,
+            speed: 61
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Communication', 'Hover'],
+        secretAbility: 'Clutch',
+        weightkg: 67.1,
+        heightcm: 188 },
+    { name: 'Gardrone-Flame (Hover)', primaryType: 'Metal', secondaryType: 'Fire', icon: require('../assets/icons/gardrone.png'), specialTypeChart: 'Hover' },
+    { name: 'Gardrone-Freezer', primaryType: 'Metal', secondaryType: 'Ice', icon: require('../assets/icons/gardrone.png'),
+        moves: [
+            "Bash", "Static Shock", "Singe", "Flurry", "Metal Shriek", "Examine", "Dodge", "Heavy Bash",
+            "Reflection Burst", "Accelerate", "Thunder Slam", "Precision Bolt", "Fire Slam", "Spare", 
+            "Raging Flame", "Snowdozer", "Sleet Shot", "Eerie Stare", "Mind's Eye", "Deep Freeze",
+            "Jump Start", "Metal Blast", "Steel Crusher", "Thunderstrike", "Fire Breath", "Frost Beam"
+        ],
+        stats: {
+            hp: 74,
+            energy: 82,
+            attack: 54,
+            defense: 73,
+            rattack: 132,
+            rdefense: 119,
+            speed: 61
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Communication', 'Hover'],
+        secretAbility: 'Clutch',
+        weightkg: 67.1,
+        heightcm: 188 },
+    { name: 'Gardrone-Freezer (Hover)', primaryType: 'Metal', secondaryType: 'Ice', icon: require('../assets/icons/gardrone.png'), specialTypeChart: 'Hover' },
+    { name: 'Gardrone-Voltaic', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/gardrone.png'),
+        moves: [
+            "Bash", "Static Shock", "Singe", "Flurry", "Metal Shriek", "Examine", "Dodge", "Heavy Bash",
+            "Reflection Burst", "Accelerate", "Thunder Slam", "Precision Bolt", "Fire Slam", "Spare", 
+            "Raging Flame", "Snowdozer", "Sleet Shot", "Eerie Stare", "Mind's Eye", "Deep Freeze",
+            "Jump Start", "Metal Blast", "Steel Crusher", "Thunderstrike", "Fire Breath", "Frost Beam"
+        ],
+        stats: {
+            hp: 74,
+            energy: 82,
+            attack: 54,
+            defense: 73,
+            rattack: 132,
+            rdefense: 119,
+            speed: 61
+        },
+        gender: ['Ungendered'], 
+        abilities: ['Communication', 'Hover'],
+        secretAbility: 'Clutch',
+        weightkg: 67.1,
+        heightcm: 188 },
+    { name: 'Gardrone-Voltaic (Hover)', primaryType: 'Metal', secondaryType: 'Electric', icon: require('../assets/icons/gardrone.png'), specialTypeChart: 'Hover' },
     { name: 'Poochrol', primaryType: 'Metal', secondaryType: 'Electric', tier: 'LC', icon: require('../assets/icons/poochrol.png'),
         moves: [
             "Growl", "Static Shock", "Metal Swipes", "Quick Pounce", "Precision Bolt", "Chomp", 
@@ -4346,10 +4413,11 @@ export const loomiansData = [
     { name: 'Imperior', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/imperior-archfiend.png'),
         moves: [
             "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
-            "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Fade Away", "Health Gift",
+            "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Health Gift",
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Barter",
             "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Tricky Tactics", "Boom Bash", "Barbs",
-            "Lunge", "Gnarly Gash", "Slap Down", "Savage Horn", "Vital Surge"
+            "Lunge", "Gnarly Gash", "Slap Down", "Savage Horn", "Vital Surge", "Brawn Boost", 
+            "Primal Slash"
         ],
         stats: {
             hp: 97,
@@ -4368,10 +4436,11 @@ export const loomiansData = [
     { name: 'Imperior-Archfiend', primaryType: 'Dark', secondaryType: 'None', icon: require('../assets/icons/imperior-archfiend.png'),
         moves: [
             "Startle", "Rant", "Mind's Eye", "Chase Down", "Stretch", "Pilfer", "Tease", "Sharpen", "Headbutt",
-            "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Fade Away", "Health Gift",
+            "Deja Vu", "Bamboozle", "Shrewd Blast", "Bag of Tricks", "Charade", "Health Gift",
             "Memorize", "Power Focus", "Provoke", "Scapegoat", "Splitting Headache", "Talent Trade", "Tribute", "Barter",
             "Dark Surge", "Dodge", "Ill Will", "Peace of Mind", "Spare", "Tricky Tactics", "Boom Bash", "Barbs",
-            "Lunge", "Gnarly Gash", "Slap Down", "Savage Horn", "Vital Surge", "Last Laugh"
+            "Lunge", "Gnarly Gash", "Slap Down", "Savage Horn", "Vital Surge", "Brawn Boost", 
+            "Primal Slash", "Last Laugh"
         ],
         stats: {
             hp: 97,
