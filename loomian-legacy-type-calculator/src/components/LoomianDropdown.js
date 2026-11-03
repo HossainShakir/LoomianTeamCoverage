@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import loomiansData from './loomiansData.js'; 
+import { loomianList } from './gameData';
 import '../App.css';
 
 const LoomianDropdown = ({ selectedLoomian, onSelectLoomian }) => {
@@ -7,7 +7,7 @@ const LoomianDropdown = ({ selectedLoomian, onSelectLoomian }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const dropdownRef = useRef(null); 
 
-    const filteredLoomians = loomiansData.filter(loomian =>
+    const filteredLoomians = loomianList.filter(loomian =>
         loomian.stats && loomian.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 

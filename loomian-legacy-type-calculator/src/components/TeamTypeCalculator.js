@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import typeChart from '../typechart';
 import { specialTypeCharts } from '../typechart.js';
 import TypeBadge from '../typeBadge';
 import LastUpdated from './lastUpdated';
+import useDarkMode from './useDarkMode';
 import '../App.css';
 
 const initialLoomians = Array.from({ length: 7 }, () => ({
@@ -26,28 +27,7 @@ function TeamTypeCalculator() {
     const [teamResistances, setTeamResistances] = useState([]);
     const [unresistedTypes, setUnresistedTypes] = useState(allTypes.slice(1));
     const [recommendations, setRecommendations] = useState([]);
-    const [darkMode, setDarkMode] = useState(false);
-
-    useEffect(() => {
-        const savedDarkMode = localStorage.getItem('darkMode');
-        if (savedDarkMode === 'true') {
-            setDarkMode(true);
-        }
-    }, []);
-
-    useEffect(() => {
-        if (darkMode) {
-            document.documentElement.classList.add('dark-mode');
-        } else {
-            document.documentElement.classList.remove('dark-mode');
-        }
-    }, [darkMode]);
-
-    const toggleDarkMode = () => {
-        const newMode = !darkMode;
-        setDarkMode(newMode);
-        localStorage.setItem('darkMode', newMode);
-    };
+    const [darkMode, toggleDarkMode] = useDarkMode();
 
     const handleTypeChange = (index, type, value) => {
         const updatedLoomians = loomians.map((loomian, i) =>

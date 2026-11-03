@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import '../App.css'; 
 
 const changelog = `
-- Halloween Nerfs added
-- Fixed Gardrone Forms in Type Coverage Calculator
+- Added route 9 loomians (icons and details to be updated soon)
+- Revamped structure with data for more accessibility with newer updates
+- Fixed visual bug with dark mode
 `;
 
 const LastUpdated = () => {
@@ -20,7 +21,7 @@ const LastUpdated = () => {
     return (
         <div>
             <div id="last-updated-overlay" onClick={handleOverlayClick}>
-                Last Updated: 2025-11-10
+                Last Updated: 2026-11-03
             </div>
             {showChangelog && (
                 <div className="changelog-overlay">

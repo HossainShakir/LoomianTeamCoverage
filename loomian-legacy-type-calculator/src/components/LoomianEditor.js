@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import loomiansData from './loomiansData';
-import movesData from './movesData';
-import itemsData from './itemsData';
+import { getLoomian, getMove, itemList, getItem, moveNames, abilityNames, canonicalName } from './gameData';
 import secretAbilityIcon from '../assets/icons/secretability.png';
 import '../App.css';
 
@@ -19,7 +17,7 @@ const veryPersonalityOptions = personalityOptions
     .map(p => `very ${p}`);
 
 function LoomianEditor({ loomian, onSave }) {
-    const loomianData = loomiansData.find((l) => l.name === loomian.name);
+    const loomianData = getLoomian(loomian.name);
 
     const [attributes, setAttributes] = useState(
         loomian.attributes || { tps: {}, ups: {}, level: 50, personality: {} }
@@ -174,25 +172,43 @@ function LoomianEditor({ loomian, onSave }) {
     };
 
     const getMoveData = (moveName) => {
-        return movesData.find((move) => move.name === moveName) || {};
+        return getMove(moveName) || {};
     };
 
     return (
         <div className="loomian-editor">
             <div className="input-group">
                 <label>Ability: </label>
-                <select
-                    value={attributes.ability}
-                    onChange={(e) => handleAttributeChange('ability', e.target.value)}
-                    disabled={abilityOptions.length === 1}
-                >
-                    <option value="">--Select Ability--</option>
-                    {abilityOptions.map((ability, i) => (
-                        <option key={i} value={ability}>
-                            {ability}
-                        </option>
-                    ))}
-                </select>
+                {abilityOptions.length === 0 ? (
+                    // No abilities in the data for this Loomian: let the user type one.
+                    <>
+                        <input
+                            type="text"
+                            list="all-abilities"
+                            placeholder="Type an ability"
+                            value={attributes.ability || ''}
+                            onChange={(e) => handleAttributeChange('ability', canonicalName(e.target.value, abilityNames))}
+                        />
+                        <datalist id="all-abilities">
+                            {abilityNames.map((ability) => (
+                                <option key={ability} value={ability} />
+                            ))}
+                        </datalist>
+                    </>
+                ) : (
+                    <select
+                        value={attributes.ability}
+                        onChange={(e) => handleAttributeChange('ability', e.target.value)}
+                        disabled={abilityOptions.length === 1}
+                    >
+                        <option value="">--Select Ability--</option>
+                        {abilityOptions.map((ability, i) => (
+                            <option key={i} value={ability}>
+                                {ability}
+                            </option>
+                        ))}
+                    </select>
+                )}
                 {attributes.ability && loomianData && loomianData.secretAbility === attributes.ability && (
                     <img
                         src={secretAbilityIcon}
@@ -230,7 +246,7 @@ function LoomianEditor({ loomian, onSave }) {
                     ) : (
                         <>
                             <option value="">--Select Item--</option>
-                            {itemsData.map((item, i) => (
+                            {itemList.map((item, i) => (
                                 <option key={i} value={item.name}>
                                     {item.name}
                                 </option>
@@ -240,14 +256,14 @@ function LoomianEditor({ loomian, onSave }) {
                 </select>
                 {attributes.item && (
                     <img
-                        src={itemsData.find((item) => item.name === attributes.item).icon}
+                        src={getItem(attributes.item)?.icon}
                         alt={attributes.item}
                         className="item-icon"
                     />
                 )}
                 {requiredItem && attributes.item === '' && (
                     <img
-                        src={itemsData.find(item => item.name === requiredItem)?.icon}
+                        src={getItem(requiredItem)?.icon}
                         alt={requiredItem}
                         style={{ width: '24px', height: '24px' }}
                     />
@@ -276,6 +292,13 @@ function LoomianEditor({ loomian, onSave }) {
 
             <div className="input-group-moves">
                 <label>Moves: </label>
+                {availableMoves.length === 0 && (
+                    <datalist id="all-moves">
+                        {moveNames.map((move) => (
+                            <option key={move} value={move} />
+                        ))}
+                    </datalist>
+                )}
                 {Array(4)
                     .fill()
                     .map((_, index) => {
@@ -286,6 +309,16 @@ function LoomianEditor({ loomian, onSave }) {
 
                         return (
                             <div key={index}>
+                                {availableMoves.length === 0 ? (
+                                    // No movepool in the data for this Loomian: let the user type any move.
+                                    <input
+                                        type="text"
+                                        list="all-moves"
+                                        placeholder="Type a move"
+                                        value={attributes.moves[index] || ''}
+                                        onChange={(e) => handleMoveChange(index, canonicalName(e.target.value, moveNames))}
+                                    />
+                                ) : (
                                 <select
                                     value={attributes.moves[index] || ''}
                                     onChange={(e) => handleMoveChange(index, e.target.value)}
@@ -297,7 +330,8 @@ function LoomianEditor({ loomian, onSave }) {
                                             </option>
                                         ))}
                                     </select>
-                                    {moveData && attributes.moves[index] && (
+                                )}
+                                    {moveData.name && attributes.moves[index] && (
                                         <div className="move-details">
                                         <span>Power: {moveData.power}</span>
                                         <span>

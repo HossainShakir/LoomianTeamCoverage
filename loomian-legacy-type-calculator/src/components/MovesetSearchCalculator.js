@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import loomiansData from './loomiansData';
-import movesData from './movesData';
+import React, { useState } from 'react';
+import { loomianList, moveNames } from './gameData';
 import LastUpdated from './lastUpdated';
+import useDarkMode from './useDarkMode';
 import '../App.css';
 
 function MovesetSearchCalculator() {
@@ -9,27 +9,9 @@ function MovesetSearchCalculator() {
     const [searchResults, setSearchResults] = useState([]);
     const [error, setError] = useState('');
     const [searchAtLeastOne, setSearchAtLeastOne] = useState(false);
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, toggleDarkMode] = useDarkMode();
     const [excludeNFE, setExcludeNFE] = useState(false);
     const [excludeLC, setExcludeLC] = useState(false);
-
-    useEffect(() => {
-        setDarkMode(document.documentElement.classList.contains('dark-mode'));
-    }, []);
-
-    useEffect(() => {
-        if (darkMode) {
-            document.documentElement.classList.add('dark-mode');
-        } else {
-            document.documentElement.classList.remove('dark-mode');
-        }
-    }, [darkMode]);
-
-    const toggleDarkMode = () => {
-        const newMode = !darkMode;
-        setDarkMode(newMode);
-        localStorage.setItem('darkMode', newMode);
-    };
 
     const handleMoveChange = (index, value) => {
         const updatedMoves = selectedMoves.map((move, i) => (i === index ? value : move));
@@ -61,7 +43,7 @@ function MovesetSearchCalculator() {
 
         const lowerCaseMoves = filteredMoves.map(m => m.toLowerCase());
 
-        const results = loomiansData.filter(loomian => {
+        const results = loomianList.filter(loomian => {
             const loomianMovesLower = loomian.moves
                 ? loomian.moves.map(m => m.toLowerCase())
                 : [];
@@ -98,7 +80,7 @@ function MovesetSearchCalculator() {
 
     const filterMoves = (input) => {
         if (!input) return [];
-        return movesData.filter(move => move.name.toLowerCase().includes(input.toLowerCase())).map(move => move.name);
+        return moveNames.filter(name => name.toLowerCase().includes(input.toLowerCase()));
     };
 
     const addMoveSelector = () => {

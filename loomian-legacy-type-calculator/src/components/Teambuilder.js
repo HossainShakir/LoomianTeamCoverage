@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import loomiansData from './loomiansData';
-import itemsData from './itemsData';
+import { getLoomian, getItem } from './gameData';
 import LoomianEditor from './LoomianEditor';
 import TypeBadge from '../typeBadge';
 import LastUpdated from './lastUpdated';
 import LoomianDropdown from './LoomianDropdown';
+import useDarkMode from './useDarkMode';
 import '../App.css';
 
 const MAX_TEAM_SIZE = 7;
@@ -82,14 +82,14 @@ function parseTeamString(teamString) {
         }
       }
   
-      const loomianData = loomiansData.find((ld) => ld.name === loomianName);
+      const loomianData = getLoomian(loomianName);
       
       if (!loomianData) {
         return null;
       }
   
       return {
-        name: loomianName,
+        name: loomianData.name,
         attributes,
         types: {
           primary: loomianData.primaryType,
@@ -116,25 +116,7 @@ function Teambuilder() {
     const [backActionPending, setBackActionPending] = useState(false);
     const [showImportDialog, setShowImportDialog] = useState(false);
     const [importedTeamText, setImportedTeamText] = useState('');
-    const [darkMode, setDarkMode] = useState(false);
-
-    useEffect(() => {
-        setDarkMode(document.documentElement.classList.contains('dark-mode'));
-      }, []);      
-
-    useEffect(() => {
-        if (darkMode) {
-          document.documentElement.classList.add('dark-mode');
-        } else {
-          document.documentElement.classList.remove('dark-mode');
-        }
-      }, [darkMode]);
-
-    const toggleDarkMode = () => {
-      const newMode = !darkMode;
-      setDarkMode(newMode);
-      localStorage.setItem('darkMode', newMode); 
-    };
+    const [darkMode, toggleDarkMode] = useDarkMode();
 
     useEffect(() => {
         const savedTeams = JSON.parse(localStorage.getItem('teams')) || [];
@@ -143,7 +125,7 @@ function Teambuilder() {
 
     const addLoomianToTeam = () => {
         if (selectedLoomian && currentTeam.length < MAX_TEAM_SIZE) {
-            const loomianData = loomiansData.find((loomian) => loomian.name === selectedLoomian);
+            const loomianData = getLoomian(selectedLoomian);
             setCurrentTeam([
                 ...currentTeam,
                 { 
@@ -265,8 +247,8 @@ function Teambuilder() {
         const teamString = currentTeam.map(loomian => {
             const { name, attributes } = loomian;
             const { item, ability, gender, tps, ups, personality, moves } = attributes;
-            const loomianData = loomiansData.find(l => l.name === name);
-            const requiredItem = loomianData.requiredItem;
+            const loomianData = getLoomian(name);
+            const requiredItem = loomianData?.requiredItem;
     
             const combinedPersonality = [
                 personality.primary,
@@ -354,13 +336,13 @@ function Teambuilder() {
                                     <h3>{team.name}</h3>
                                     <div className="loomian-icons">
                                     {team.loomians.map((loomian, idx) => {
-                                        const loomianData = loomiansData.find((l) => l.name === loomian.name);
-                                        const itemName = loomianData.requiredItem || loomian.attributes.item;
-                                        const itemData = itemName ? itemsData.find((item) => item.name === itemName) : null;
+                                        const loomianData = getLoomian(loomian.name);
+                                        const itemName = loomianData?.requiredItem || loomian.attributes.item;
+                                        const itemData = itemName ? getItem(itemName) : null;
 
                                         return (
                                             <div className="loomian-with-item">
-                                                <img src={loomianData.icon} alt={loomian.name} className="loomian-icon" />
+                                                <img src={loomianData?.icon} alt={loomian.name} className="loomian-icon" />
                                                 {itemData && (
                                                     <img src={itemData.icon} alt={itemData.name} className="loomian-item-icon" />
                                                 )}
@@ -400,7 +382,7 @@ function Teambuilder() {
                                 <div key={index} className="loomian-container-teambuild">
                                     <div className="teambuilder-editor">
                                         <div className="loomian-header">
-                                            <img src={loomiansData.find((l) => l.name === loomian.name).icon} alt={loomian.name} />
+                                            <img src={getLoomian(loomian.name)?.icon} alt={loomian.name} />
                                             <span>{loomian.name}</span>
                                             <div className="type-badges">
                                                 {loomian.types.primary !== 'None' && <TypeBadge type={loomian.types.primary} />}
@@ -449,7 +431,6 @@ function Teambuilder() {
                     </div>
                 </div>
                 )}
-
 
                 {showUnsavedChangesDialog && (
                     <div className="unsaved-changes-dialog">

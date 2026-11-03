@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { typeChart, specialTypeCharts } from '../typechart';
-import loomiansData from './loomiansData'; 
+import { typeCoverageList } from './gameData';
 import LastUpdated from './lastUpdated';
+import useDarkMode from './useDarkMode';
 import '../App.css';
 
 const allTypes = [
@@ -22,30 +23,9 @@ function TypeCoverageCalculator() {
     const [error, setError] = useState('');
     const [excludeParentheses, setExcludeParentheses] = useState(false);
     const [showSuperEffectiveAll, setShowSuperEffectiveAll] = useState(false);
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, toggleDarkMode] = useDarkMode();
     const [excludeNFE, setExcludeNFE] = useState(false);
     const [excludeLC, setExcludeLC] = useState(false);
-
-    useEffect(() => {
-        const savedDarkMode = localStorage.getItem('darkMode');
-        if (savedDarkMode === 'true') {
-            setDarkMode(true);
-        }
-    }, []);
-
-    useEffect(() => {
-        if (darkMode) {
-            document.documentElement.classList.add('dark-mode');
-        } else {
-            document.documentElement.classList.remove('dark-mode');
-        }
-    }, [darkMode]);
-
-    const toggleDarkMode = () => {
-        const newMode = !darkMode;
-        setDarkMode(newMode);
-        localStorage.setItem('darkMode', newMode);
-    };
 
     const handleTypeChange = (index, value) => {
         const updatedTypes = selectedTypes.map((type, i) =>
@@ -94,7 +74,7 @@ function TypeCoverageCalculator() {
             noEffect: []
         };
 
-        loomiansData.forEach(loomian => {
+        typeCoverageList.forEach(loomian => {
             if (excludeParentheses && loomian.name.includes('(')) {
                 return;
             }
