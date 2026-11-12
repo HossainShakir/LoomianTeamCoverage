@@ -8713,6 +8713,7 @@ var loomians = {
     pikbug: {
         name: "Pikbug",
         types: ["Bug", "Metal"],
+        typeVariants: [{ ability: "Earthmover", typeChart: "Earthmover" }],
         finalEvo: false,
         tier: "NFE",
         weight: 6,
@@ -8731,6 +8732,7 @@ var loomians = {
     crawlley: {
         name: "Crawlley",
         types: ["Bug", "Metal"],
+        typeVariants: [{ ability: "Earthmover", typeChart: "Earthmover" }],
         finalEvo: false,
         tier: "NFE",
         weight: 86,
@@ -8749,6 +8751,7 @@ var loomians = {
     carapede: {
         name: "Carapede",
         types: ["Bug", "Metal"],
+        typeVariants: [{ ability: "Earthmover", typeChart: "Earthmover" }],
         weight: 308,
         height: 160,
         baseStats: {
@@ -9128,6 +9131,7 @@ var loomians = {
     navilite: {
         name: "Navilite",
         types: ["Metal"],
+        typeVariants: [{ ability: "Solar Powered", typeChart: "SolarPowered" }],
         finalEvo: false,
         tier: "NFE",
         weight: 106,
@@ -9146,6 +9150,7 @@ var loomians = {
     xenark: {
         name: "Xenark",
         types: ["Metal", "Dark"],
+        typeVariants: [{ ability: "Solar Powered", typeChart: "SolarPowered" }],
         weight: 86,
         height: 92,
         baseStats: {
@@ -9162,6 +9167,7 @@ var loomians = {
     radiarc: {
         name: "Radiarc",
         types: ["Metal", "Electric"],
+        typeVariants: [{ ability: "Solar Powered", typeChart: "SolarPowered" }],
         weight: 161,
         height: 74,
         baseStats: {

@@ -39,7 +39,9 @@ export const specialTypeCharts = {
     RagingFire: {Fire: 0},
     Rechargeable: { Electric: 0 },
     Hover: { Earth: 0 },
-    Forge: { Fire: 0.5 }
+    Forge: { Fire: 0.5 },
+    Earthmover: { Earth: 0 },
+    SolarPowered: { Light: 0 }
 };
 
 export default typeChart;

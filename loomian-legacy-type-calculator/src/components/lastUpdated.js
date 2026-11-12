@@ -5,6 +5,7 @@ const changelog = `
 - Added route 9 loomians (icons and details to be updated soon)
 - Revamped structure with data for more accessibility with newer updates
 - Fixed visual bug with dark mode
+- Added new type immunity abilities
 `;
 
 const LastUpdated = () => {
