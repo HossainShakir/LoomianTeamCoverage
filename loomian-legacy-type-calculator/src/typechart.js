@@ -41,7 +41,8 @@ export const specialTypeCharts = {
     Hover: { Earth: 0 },
     Forge: { Fire: 0.5 },
     Earthmover: { Earth: 0 },
-    SolarPowered: { Light: 0 }
+    SolarPowered: { Light: 0 },
+    ElderMane: { Dark: 0.5, Spirit: 0.5, Bug: 0.5 }
 };
 
 export default typeChart;

@@ -8436,6 +8436,7 @@ var loomians = {
     psygris: {
         name: "Psygris",
         types: ["Mind", "Earth"],
+        typeVariants: [{ ability: "Elder Mane", typeChart: "ElderMane" }],
         weight: 115,
         height: 89,
         baseStats: {
